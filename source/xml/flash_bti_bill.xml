@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns:util="http://www.springactionscript.org/schema/util">
+	
+	<object id="bill" class="String">
+		<constructor-arg>
+			<value>
+<![CDATA[_receipt_=------------------------------------
+«КИВИ Банк» (ЗАО)
+ИНН 3123011520 БИК 044585416
+К/с 30101810200000000416
+Лицензия No. 2241
+&_receipt_Вид oперации=044&_receipt_Услуга=организация и осуществление Расчетов с использованием предоплаченной карты&_receipt_Принято=%total%&_receipt_Комиссия=%commission%
+-----------------------------------
+КВИТАНЦИЯ:
+«КИВИ Банк» (ЗАО)
+ИНН 3123011520 БИК 044585416
+К/с 30101810200000000416&_receipt_Терминал=%termid%&_receipt_Код операции=%operation_code%&_receipt_Дата=%date%&_receipt_Плательщик=%name%&_receipt_Получатель=%to_name_f%
+ИНН: %inn% КПП: %kpp%
+ОКАТО: %okato%
+КБК: %kbk%
+БИК: %rec_bik%
+р/с %cre%&_receipt_Вид платежа=%extraction_kind%
+&_receipt_Сумма=%price%
+Копию платежного поручения можно распечатать в
+Visa QIWI Wallet w.qiwi.com
+-----------------------------------
+]]>
+			</value>
+		</constructor-arg>
+	</object>
+</objects>

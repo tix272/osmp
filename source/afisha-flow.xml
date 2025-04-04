@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects
+	xmlns:util="http://www.springactionscript.org/schema/util">
+	
+	<object 
+		id="flowCfg"
+		class="ru.mobw.coreas3.app.config.FlowConfig">
+		<property name="bindingsRootPackage" value="${utility.path}"/>
+	</object>
+	
+	<object 
+		id="flow"
+		class="ru.mobw.coreas3.app.flow.mcflow.MCFlowBase"
+		depends-on="flowCfg">
+		<constructor-arg ref="flowCfg">
+		</constructor-arg>
+		<property name="routeData" ref="route"/>
+		<property name="elementsMap">
+			<dictionary>
+				<entry>
+					<key>exit</key>
+					<value><ref>exit</ref></value>
+				</entry>
+				<entry>
+					<key>index</key>
+					<value><ref>index</ref></value>
+				</entry>
+				<entry>
+					<key>citySelect</key>
+					<value><ref>citySelect</ref></value>
+				</entry>
+				<entry>
+					<key>movieSelect</key>
+					<value><ref>movieSelect</ref></value>
+				</entry>
+				<entry>
+					<key>timeSelectCinema</key>
+					<value><ref>timeSelectCinema</ref></value>
+				</entry>
+				<entry>
+					<key>timeSelectMovie</key>
+					<value><ref>timeSelectMovie</ref></value>
+				</entry>
+				<entry>
+					<key>seatsSelect</key>
+					<value><ref>seatsSelect</ref></value>
+				</entry>
+				<entry>
+					<key>phoneInput</key>
+					<value><ref>phoneInput</ref></value>
+				</entry>
+				<entry>
+					<key>changeSelect</key>
+					<value><ref>changeSelect</ref></value>
+				</entry>
+				<entry>
+					<key>orderApprove</key>
+					<value><ref>orderApprove</ref></value>
+				</entry>
+				<entry>
+					<key>cashPayment</key>
+					<value><ref>cashPayment</ref></value>
+				</entry>
+				<entry>
+					<key>paymentEnd</key>
+					<value><ref>paymentEnd</ref></value>
+				</entry>
+				<entry>
+					<key>oferta</key>
+					<value><ref>oferta</ref></value>
+				</entry>
+			</dictionary>
+		</property>
+		<!--property name="interceptorsMap">
+			<dictionary>
+				<entry>
+					<key>_->companySelect</key>
+					<value>
+						<object class="com.leetwin.insurance.flow.interceptors.StartParamInterceptor"/>
+					</value>
+				</entry>
+			</dictionary>
+		</property-->
+	</object>
+	
+	<object
+		id="exit"
+		class="ru.mobw.afisha.flow.elements.AfishaExitElement"
+		>
+		<constructor-arg value="exit"/>
+	</object>
+	
+	<object
+		id="index"
+		class="ru.mobw.afisha.flow.elements.IndexElement"
+		>
+		<constructor-arg value="index"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="id" value="1"/>
+		<property name="bindings">
+			<array>
+				<value>
+					<object template="navOutcome">
+						<param name="outcome" value="oferta"/>
+						<param name="target" value="ofertaButton"/>
+					</object>
+				</value>
+				<value>
+					<object template="navOutcome">
+						<param name="outcome" value="allMovies"/>
+						<param name="target" value="allMoviesButton"/>
+					</object>
+				</value>
+				<value>
+					<object template="navOutcome">
+						<param name="outcome" value="cityButtonClick"/>
+						<param name="target" value="viewMC._appInfo.anotherCityButton"/>
+					</object>
+				</value>
+			</array>
+		</property>
+		<property name="registrationCandidates">
+			<array>
+				<value>scheduleService,execute,S:schedule</value>
+				<value>scheduleService,fail,E:schedule</value>
+				<value>printerCheckService,execute,S:printer</value>
+				<value>printerCheckService,fail,E:printer</value>		
+				<value>walletCheckService,execute,S:walletCheck</value>
+				<value>walletCheckService,fail,E:walletCheck</value>							
+				<value>afishaProviderCheckService,execute,S:prvCheck</value>
+				<value>afishaProviderCheckService,fail,E:prvCheck</value>
+			</array>
+		</property>
+		<property name="timeout" value="120000"/>
+	</object>
+	
+	<object
+		id="cinemaSelect"
+		class="ru.mobw.coreas3.app.flow.mcflow.CommonFlowElement"
+		>
+		<constructor-arg value="cinemaSelect"/>
+		<constructor-arg ref="mainInstance"/>
+	</object>
+	
+	<object
+		id="citySelect"
+		class="ru.mobw.afisha.flow.elements.CitySelectionElement"
+		>
+		<constructor-arg value="citySelect"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="id" value="2"/>
+		<property name="dataName" value="currentCity"/>
+		<property name="columns" value="4"/>
+		<property name="rows" value="4"/>
+		<property name="tableX" value="62"/>
+		<property name="tableY" value="235"/>
+		<property name="tableW" value="1155"/>
+		<property name="tableH" value="586"/>
+		<property name="providerSessionName" value="cities"/>
+		<property name="rendererClassName" value="ru.mobw.afisha.ui.itemRenderers.CityItemRenderer"/>
+		<!--property name="registrationCandidates">
+			<array>
+				<value>grid,itemClick,SELECT</value>
+				<value>grid,scroll,SCROLL</value>
+			</array>
+		</property-->
+	</object>	
+	
+	<object
+		id="movieSelect"
+		class="ru.mobw.afisha.flow.elements.MovieSelectionElement"
+		>
+		<constructor-arg value="movieSelect"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="id" value="3"/>
+		<property name="dataName" value="currentMovie"/>
+		<property name="columns" value="5"/>
+		<property name="rows" value="2"/>
+		<property name="tableX" value="64"/>
+		<property name="tableY" value="205"/>
+		<property name="tableW" value="1150"/>
+		<property name="tableH" value="633"/>
+		<property name="providerSessionName" value="movies"/>
+		<property name="rendererClassName" value="ru.mobw.afisha.ui.itemRenderers.RawMovieItemRenderer"/>
+		<property name="timeout" value="120000"/>
+		<property name="bindings">
+			<array>
+				<value>
+					<object template="navOutcome">
+						<param name="outcome" value="cityButtonClick"/>
+						<param name="target" value="viewMC._appInfo.anotherCityButton"/>
+					</object>
+				</value>
+			</array>
+		</property>
+		<property name="registrationCandidates">
+			<array>
+				<value>service,execute,S:schedule</value>
+				<value>service,fail,E:schedule</value>
+				<!--value>grid,itemClick,SELECT</value>
+				<value>grid,scroll,SCROLL</value-->
+			</array>
+		</property>
+	</object>	
+	
+	<object
+		id="timeSelectCinema"
+		class="ru.mobw.afisha.flow.elements.ScheduleElement"
+		>
+		<constructor-arg value="timeSelectCinema"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="id" value="4"/>
+		<property name="listX" value="61"/>
+		<property name="listY" value="332"/>
+		<property name="listW" value="1157"/>
+		<property name="listH" value="401"/>
+		<property name="sortField" value="movieID"/>
+		<property name="sortedAs" value="session.appData.currentCity.allMovies"/>
+		<property name="itemRendererClassName" value="ru.mobw.afisha.ui.itemRenderers.CinemaScheduleItemRenderer"/>
+		<property name="sessionDataName" value="currentCinema"/>
+		<property name="timeout" value="120000"/>
+		<property name="scrollButtonTemplate" value="Ещё %count% %entity%"/>
+		<property name="type" value="cinema"/>
+		<property name="toStartLabel" value="К началу"/>
+		<property name="bindings">
+			<array>
+				<value>
+					<object template="navOutcome">
+						<param name="outcome" value="cityButtonClick"/>
+						<param name="target" value="viewMC._appInfo.anotherCityButton"/>
+					</object>
+				</value>
+			</array>
+		</property>
+		<property name="registrationCandidates">
+			<array>
+				<!--value>list,scroll,SCROLL</value>
+				<value>list,itemClick,SELECT</value-->
+				<value>service,execute,S:order</value>
+				<value>service,fail,E:order</value>
+				<!--value>dayButtons,itemClick,SELECT</value>
+				<value>dateButtons,itemClick,SELECT</value-->
+			</array>
+		</property>
+	</object>	
+	
+	<object
+		id="timeSelectMovie"
+		class="ru.mobw.afisha.flow.elements.ScheduleElement"
+		>
+		<constructor-arg value="timeSelectMovie"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="id" value="5"/>
+		<property name="listX" value="61"/>
+		<property name="listY" value="316"/>
+		<property name="listW" value="1157"/>
+		<property name="listH" value="417"/>
+		<property name="sortField" value="cinemaID"/>
+		<property name="sortedAs" value="session.appData.currentCity.movieTheaters"/>
+		<property name="itemRendererClassName" value="ru.mobw.afisha.ui.itemRenderers.MovieScheduleItemRenderer"/>
+		<property name="sessionDataName" value="currentMovie"/>
+		<property name="timeout" value="120000"/>
+		<property name="scrollButtonTemplate" value="Ещё %count% %entity% с этим фильмом"/>
+		<property name="type" value="movie"/>
+		<property name="toStartLabel" value="К началу"/>
+		<property name="bindings">
+			<array>
+				<value>
+					<object template="navOutcome">
+						<param name="outcome" value="cityButtonClick"/>
+						<param name="target" value="viewMC._appInfo.anotherCityButton"/>
+					</object>
+				</value>
+			</array>
+		</property>
+		<property name="registrationCandidates">
+			<array>
+				<!--value>list,scroll,SCROLL</value>
+				<value>list,itemClick,SELECT</value-->
+				<value>service,execute,S:order</value>
+				<value>service,fail,E:order</value>
+				<!--value>dayButtons,itemClick,SELECT</value>
+				<value>dateButtons,itemClick,SELECT</value-->
+			</array>
+		</property>
+	</object>	
+	
+	<object
+		id="seatsSelect"
+		class="ru.mobw.afisha.flow.elements.SeatsSelectionElement"
+		>
+		<constructor-arg value="seatsSelect"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="id" value="6"/>
+		<property name="defaultSeatsCount" value="${seats.count.default}"/>
+		<property name="movieLabelBaseline" value="434"/>
+		<property name="bindings">
+			<array>
+				<value>
+					<object template="navOutcome">
+						<param name="outcome" value="cityButtonClick"/>
+						<param name="target" value="viewMC._appInfo.anotherCityButton"/>
+					</object>
+				</value>
+			</array>
+		</property>
+		<!--property name="registrationCandidates">
+			<array>
+				<value>seatsButtons,itemClick,SELECT</value>
+				<value>viewMC._selectSeats,click,CLICK</value>
+				<value>seatsSelectionPopup,submit,APPLY</value>
+				<value>seatsSelectionPopup,change,CHANGE</value>
+				<value>seatsSelectionPopup,close,CLOSE</value>
+				<value>seatsSelectionPopup,show,SHOW</value>
+			</array>
+		</property-->		
+	</object>	
+	
+	<object
+		id="phoneInput"
+		class="ru.mobw.afisha.flow.elements.PhoneEnterElement"
+		>
+		<constructor-arg value="phoneInput"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="id" value="7"/>
+		<property name="timeout" value="40000"/>
+		<property name="validator" ref="phoneValidator" />
+		<property name="dataName" value="phone"/>
+		<property name="bindings">
+			<array>
+				<value>binder.text=$phone.value</value>
+			</array>
+		</property>
+		<property name="registrationCandidates">
+			<array>
+				<!--value>viewMC._backspace,click,CLICK</value>
+				<value>viewMC._clear,click,CLICK</value>
+				<value>binder,textChange,CHANGE</value>
+				<value>page,dataInvalid,DATA_VALIDATION_FAIL</value-->
+				<value>moviesListService,execute,S:moviesList</value>
+				<value>moviesListService,fail,E:moviesList</value>
+			</array>
+		</property>				
+	</object>	
+	
+	<object
+		id="changeSelect"
+		class="ru.mobw.afisha.flow.elements.ChangeSelectionElement"
+		>
+		<constructor-arg value="changeSelect"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="id" value="8"/>
+		<!--property name="registrationCandidates">
+			<array>
+				<value>phoneButton,click,CLICK</value>
+				<value>walletButton,click,CLICK</value>
+			</array>
+		</property-->		
+	</object>	
+	
+	<object
+		id="orderApprove"
+		class="ru.mobw.afisha.flow.elements.OrderApproveElement"
+		>
+		<constructor-arg value="orderApprove"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="id" value="9"/>
+		<property name="bindings">
+			<array>
+				<value>viewMC._movieName.text=$currentMovie.name</value>
+				<value>viewMC._movieDate.text=$currentScheduleItem.humanReadableDate</value>
+				<value>viewMC._cinemaName.text=$currentCinema.name</value>
+				<value>viewMC._row.text=$currentOrder.row</value>
+				<value>viewMC._seats.text=$currentOrder.seatPlaces</value>
+				<value>viewMC._seats.text=$currentOrder.seatPlaces</value>
+				<value>
+					<object template="navOutcome">
+						<param name="outcome" value="cityButtonClick"/>
+						<param name="target" value="viewMC._appInfo.anotherCityButton"/>
+					</object>
+				</value>
+			</array>
+		</property>
+		<property name="registrationCandidates">
+			<array>
+				<value>service,execute,S:booking</value>
+				<value>service,fail,E:booking</value>
+			</array>
+		</property>		
+	</object>	
+	
+	<object
+		id="cashPayment"
+		class="ru.mobw.afisha.flow.elements.PaymentElement"
+		>
+		<constructor-arg value="cashPayment"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="id" value="10"/>
+		<property name="receiptTemplate">
+			<value>
+			<![CDATA[_receipt_Ваш+заказ= &_receipt_Город=%appData.currentCity.name%&_receipt_Фильм=%currentMovie.name%&_receipt_Кинотеатр=%currentCinema.name%&_receipt_Сеанс=%currentScheduleItem.humanReadableDate%&_receipt_Количество+билетов=%currentOrder.seatsCount%&_receipt_Ряд=%currentOrder.seats.0.row%&_receipt_Место=%currentOrder.seatPlaces%&_receipt_Номер+заказа=%currentBooking.id%<br><br>]]>
+			</value>
+		</property>
+		<property name="timeout" value="240000"/>
+		<property name="receiptSuccess" value="Код билетов ожидайте по sms. Используйте его для получения билетов."/>
+		<property name="receiptFail" value="Сумма недостаточна. Обратитесь в справочную службу QIWI(см. внизу чека)"/>
+		<property name="infoLabel" value="Вносимая сумма должна быть не меньше %min% руб. и не больше 14999 руб. (Сервисный сбор %tax% руб. включен в стоимость)"/>
+		<property name="changeInfoLabel" value="Сумма будет полностью зачислена %to% %acc%"/>
+		<property name="commentStringTpl" value="Покупка билетов в кино: [%version%]"/>
+		<!--property name="registrationCandidates">
+			<array>
+				<value>page,cashOk,CASH_OK</value>
+				<value>page,cashInsert,CASH_INSERT</value>
+				<value>page,cashNotEnough,CASH_NOT_ENOUGH</value>
+			</array>
+		</property-->			
+	</object>	
+
+	<object
+		id="oferta"
+		class="ru.mobw.afisha.flow.elements.OfertaElement"
+		>
+		<constructor-arg value="oferta"/>
+		<constructor-arg ref="mainInstance"/>
+	</object>	
+	
+	<object
+		id="paymentEnd"
+		class="ru.mobw.afisha.flow.elements.LastPageElement"
+		>
+		<constructor-arg value="paymentEnd"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="id" value="11"/>
+		<property name="changeInfoTPL" value="Сдача в %currentPaymentState.paySumm2% руб. зачислена %changeTypeLabel%."/>
+		<property name="registrationCandidates">
+			<array>
+				<value>service,execute,S:moviesList</value>
+				<value>service,fail,E:moviesList</value>
+			</array>
+		</property>		
+	</object>
+	
+	<object 
+		id="phoneValidator"
+		class="com.leetwin.flow.validation.Validator">
+		<property name="constraintsMap">
+			<dictionary>
+				<entry>
+					<key>value</key>
+					<value>
+						<array>
+							<object class="com.leetwin.flow.validation.constraints.NotNull"/>
+							<object class="com.leetwin.flow.validation.constraints.InRange">
+								<property name="min" value="10"/>
+								<property name="max" value="10"/>
+							</object>
+							<object class="ru.mobw.coreas3.app.validation.constraints.HasPhoneCapacity"/>
+						</array>
+					</value>
+				</entry>
+			</dictionary>
+		</property>
+	</object>
+	
+	<!--object 
+		id="sumValidator"
+		class="com.leetwin.flow.validation.Validator">
+		<property name="constraintsMap">
+			<dictionary>
+				<entry>
+					<key>value</key>
+					<value>
+						<array>
+							<object class="com.leetwin.flow.validation.constraints.NotNull"/>
+							<object class="com.leetwin.flow.validation.constraints.NotEmpty"/>
+							<object class="com.leetwin.flow.validation.constraints.InRange">
+								<property name="min" value="${config.minCashLimit}"/>
+								<property name="max" value="${num.maxCash}"/>
+								<property name="asNumber" value="true"/>
+								<property name="errorString" value="${err.cashRange}"/>
+							</object>
+							<object class="com.leetwin.flow.validation.constraints.NotZero"/>
+						</array>
+					</value>
+				</entry>
+			</dictionary>
+		</property>
+	</object-->
+	<!-- end validators -->
+		
+	<!-- helpers -->
+	<object id="phoneFormatter" class="ru.mobw.coreas3.formatters.PhoneFormatter" />
+	
+	<template id="navOutcome">
+		<object class="ru.mobw.coreas3.app.bind.BindingRecord">
+			<property name="type">
+				<util:constant static-field="ru.mobw.coreas3.app.bind.BindingRecordType.LITERAL"/>
+			</property>
+			<property name="propName" value="dispatchJumpToEvent()"/>
+			<property name="param" value="${outcome}"/>
+			<property name="triggerType" value="event"/>
+			<property name="triggerEventName" value="${target}.click"/>
+		</object>
+	</template>
+	<!-- end_helpers -->
+</objects>

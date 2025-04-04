@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objects>
+	<object id="route"
+			class="ru.mobw.coreas3.app.flow.navigation.route.RouteData">
+		<property name="navData">
+			<value>
+				<![CDATA[
+				
+					@default = (checkStatus, @titleBranch, @phoneBranch, @selectCurrencyBranch, @inputSummBranch, @paymentTypeBranch, end);
+					
+					@titleBranch = (title, %titleSwitch);
+					
+					%titleSwitch = 
+					(
+						enterCardNumber=>@enterCardNumberBranch,
+						enterFio=>@enterFioBranch,
+						calculator=>calculator,
+						repay=>@repayBranch,
+						savedData=>@savedDataBranch
+					);
+					
+					@savedDataBranch = (t:actionSavedData, %actionSavedDataSwitch);
+					
+					%actionSavedDataSwitch =
+					(
+						selectPayment=>@gotoSelectPaymentBranch,
+						pay=>@payFromSavedDataBranch,
+						editCard=>@changeByCardNumberBranch,
+						editFio=>@changeByFioBranch
+					);
+					
+					@gotoSelectPaymentBranch = (@selectPaymentBranch, @selectCurrencyBranch, @inputSummBranch, @paymentTypeBranch, end);
+					
+					@payFromSavedDataBranch = (@selectCurrencyBranch, @inputSummBranch, @paymentTypeBranch, end);
+					
+					@repayBranch = (@phoneBranch, @selectPaymentBranch, @selectCurrencyBranch, @inputSummBranch, @paymentTypeBranch, end);
+
+					
+					@selectPaymentBranch = (selectPayment, %selectPaymentSwitch);
+					
+					%selectPaymentSwitch = 
+					(
+						title=>@titleBranch,
+						changeByCardNumber=>@changeByCardNumberBranch,
+						changeByFio=>@changeByFioBranch
+					);
+					
+					@changeByCardNumberBranch = (@enterCardNumberBranch, enterComment, save>>@selectPaymentBranch);
+					@changeByFioBranch = (@enterFioBranch, enterComment, save>>@selectPaymentBranch);
+					
+					@enterCardNumberBranch = (inputCardNumber, @recipientsBranch);
+					
+					@recipientsBranch = (selectRecipient, %selectRecipientSwitch);
+					
+					%selectRecipientSwitch = 
+					(
+						newRecipient=>@newRecipientBranch
+					);
+					
+					@newRecipientBranch = (selectCountry, countryInfo, inputRecipientFio);
+					
+					@enterFioBranch = (selectCountry, countryInfo, inputSenderFio, inputRecipientFio);
+					
+					@selectCurrencyBranch = (t:checkSelectCurrency, %selectCurrencySwitch);
+					
+					%selectCurrencySwitch = 
+					(
+						selectCurrency=>selectCurrency
+					);
+					
+					@phoneBranch = (inputPhone, %inputPhoneSwitch);
+					
+					%inputPhoneSwitch = 
+					(
+						oferta=>oferta,
+						inputPin=>@pinBranch
+					);
+					@pinBranch = (t:inputPin);
+					
+					@inputSummBranch = (inputSumm, %inputSummSwitch);
+					
+					%inputSummSwitch = 
+					(
+						agreement=>bankOferta,
+						calculator=>calculator
+					);
+					
+					@paymentTypeBranch = (paymentType, %paymentTypeSwitch);
+					
+					%paymentTypeSwitch = 
+					(
+						cashPayment=>@cashPaymentBranch,
+						balancePayment=>@balancePaymentBranch
+					);
+					
+					@cashPaymentBranch = (confirm, t:sendPaymentRequest, cash);
+					
+					@balancePaymentBranch = (confirm, balancePayment);
+				]]>
+			</value>
+		</property>
+	</object>
+</objects>

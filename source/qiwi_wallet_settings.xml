@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<root>          
+	<settings>
+		<oferta_path>QK_oferta_full.xml</oferta_path>
+		<oferta_bank_path>QK_oferta_bank.xml</oferta_bank_path>
+		<version>4.18.85</version>
+		<banner_qvp_url>
+			<url>./adv/qvpbank/params.html</url>
+			<url>./adv/qvprest/params.html</url>
+		</banner_qvp_url>
+		<providers_path>qiwi_wallet_providers.xml</providers_path>
+		<add_balance_prv_id>7406</add_balance_prv_id>
+		<trans_comm_prv_id>7952</trans_comm_prv_id>
+		<mgt_project_number>30011</mgt_project_number>
+		<mgt_id>323</mgt_id>
+		<mgt_return_page>return_qw.html</mgt_return_page>
+		<max_payment_sum>14999</max_payment_sum>
+		<connection_points>
+			<point sec="http://w.qiwi.ru/crossdomain.xml"
+				   url="https://w.qiwi.ru/term2/xmlcp.jsp" />
+			<point sec="http://www.osmp.ru/crossdomain.xml"
+				   url="https://service1.osmp.ru/mylk/xmlcp.jsp" />
+			<point sec="http://www.osmp.ru/crossdomain.xml"
+				   url="https://service2.osmp.ru/mylk/xmlcp.jsp" />
+		</connection_points>
+		<exit_url>index.html</exit_url>
+		<receipt_prt_top_reklama>Больше возможностей на сайте: WWW.QIWI.RU</receipt_prt_top_reklama>
+		<receipt_prt_bottom_reklama>Телефоны поддержки QIWI Кошелька: 8(800)555-74-94, 8(495)771-74-94</receipt_prt_bottom_reklama>
+	</settings>
+</root>

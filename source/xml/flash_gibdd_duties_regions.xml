@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns:util="http://www.springactionscript.org/schema/util">
+	
+	<object id="regions" class="XMLList">
+		<constructor-arg>
+			<value>
+			<!-- 
+				<region addrId="105" regName="Байконур" addrLevel="3" idForRequest="99">
+					<gosRegions>
+						<gosRegion>99</gosRegion>
+					</gosRegions>
+				</region>
+			-->
+			<![CDATA[
+				<regions>
+					<region addrId="39" regName="Республика Адыгея" addrLevel="3" idForRequest="01">
+						<gosRegions>
+							<gosRegion>1</gosRegion>
+							<gosRegion>01</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="52" regName="Республика Башкортостан" addrLevel="3" idForRequest="02">
+						<gosRegions>
+							<gosRegion>2</gosRegion>
+							<gosRegion>02</gosRegion>
+							<gosRegion>102</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="76" regName="Республика Бурятия" addrLevel="3" idForRequest="03">
+						<gosRegions>
+							<gosRegion>3</gosRegion>
+							<gosRegion>03</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="77" regName="Республика Алтай" addrLevel="3" idForRequest="04">
+						<gosRegions>
+							<gosRegion>4</gosRegion>
+							<gosRegion>04</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="40" regName="Республика Дагестан" addrLevel="3" idForRequest="05">
+						<gosRegions>
+							<gosRegion>5</gosRegion>
+							<gosRegion>05</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="41" regName="Республика Ингушетия" addrLevel="3" idForRequest="06">
+						<gosRegions>
+							<gosRegion>6</gosRegion>
+							<gosRegion>06</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="42" regName="Кабардино-Балкарская республика" addrLevel="3" idForRequest="07">
+						<gosRegions>
+							<gosRegion>7</gosRegion>
+							<gosRegion>07</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="43" regName="Республика Калмыкия" addrLevel="3" idForRequest="08">
+						<gosRegions>
+							<gosRegion>8</gosRegion>
+							<gosRegion>08</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="44" regName="Карачаево-Черкесская республика" addrLevel="3" idForRequest="09">
+						<gosRegions>
+							<gosRegion>9</gosRegion>
+							<gosRegion>09</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="27" regName="Республика Карелия" addrLevel="3" idForRequest="10">
+						<gosRegions>
+							<gosRegion>10</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="28" regName="Республика Коми" addrLevel="3" idForRequest="11">
+						<gosRegions>
+							<gosRegion>11</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="53" regName="Республика Марий-Эл" addrLevel="3" idForRequest="12">
+						<gosRegions>
+							<gosRegion>12</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="54" regName="Республика Мордовия" addrLevel="3" idForRequest="13">
+						<gosRegions>
+							<gosRegion>13</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="94" regName="Республика Саха (Якутия)" addrLevel="3" idForRequest="14">
+						<gosRegions>
+							<gosRegion>14</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="45" regName="Республика Северная Осетия" addrLevel="3" idForRequest="15">
+						<gosRegions>
+							<gosRegion>15</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="55" regName="Республика Татарстан" addrLevel="3" idForRequest="16">
+						<gosRegions>
+							<gosRegion>16</gosRegion>
+							<gosRegion>116</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="78" regName="Республика Тыва" addrLevel="3" idForRequest="17">
+						<gosRegions>
+							<gosRegion>17</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="56" regName="Удмуртская республика" addrLevel="3" idForRequest="18">
+						<gosRegions>
+							<gosRegion>18</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="79" regName="Республика Хакасия" addrLevel="3" idForRequest="19">
+						<gosRegions>
+							<gosRegion>19</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="46" regName="Чеченская республика" addrLevel="3" idForRequest="95">
+						<gosRegions>
+							<gosRegion>20</gosRegion>
+							<gosRegion>95</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="57" regName="Чувашская республика" addrLevel="3" idForRequest="21">
+						<gosRegions>
+							<gosRegion>21</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="80" regName="Алтайский край" addrLevel="3" idForRequest="22">
+						<gosRegions>
+							<gosRegion>22</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="47" regName="Краснодарский край" addrLevel="3" idForRequest="23">
+						<gosRegions>
+							<gosRegion>23</gosRegion>
+							<gosRegion>93</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="81" regName="Красноярский край" addrLevel="3" idForRequest="24">
+						<gosRegions>
+							<gosRegion>24</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="95" regName="Приморский край" addrLevel="3" idForRequest="25">
+						<gosRegions>
+							<gosRegion>25</gosRegion>
+							<gosRegion>125</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="48" regName="Ставропольский край" addrLevel="3" idForRequest="26">
+						<gosRegions>
+							<gosRegion>26</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="96" regName="Хабаровский край" addrLevel="3" idForRequest="27">
+						<gosRegions>
+							<gosRegion>27</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="97" regName="Амурская область" addrLevel="3" idForRequest="28">
+						<gosRegions>
+							<gosRegion>28</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="29" regName="Архангельская область" addrLevel="3" idForRequest="29">
+						<gosRegions>
+							<gosRegion>29</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="49" regName="Астраханская область" addrLevel="3" idForRequest="30">
+						<gosRegions>
+							<gosRegion>30</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="9" regName="Белгородская область" addrLevel="3" idForRequest="31">
+						<gosRegions>
+							<gosRegion>31</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="10" regName="Брянская область" addrLevel="3" idForRequest="32">
+						<gosRegions>
+							<gosRegion>32</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="11" regName="Владимирская область" addrLevel="3" idForRequest="33">
+						<gosRegions>
+							<gosRegion>33</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="50" regName="Волгоградская область" addrLevel="3" idForRequest="34">
+						<gosRegions>
+							<gosRegion>34</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="30" regName="Вологодская область" addrLevel="3" idForRequest="35">
+						<gosRegions>
+							<gosRegion>35</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="12" regName="Воронежская область" addrLevel="3" idForRequest="36">
+						<gosRegions>
+							<gosRegion>36</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="13" regName="Ивановская область" addrLevel="3" idForRequest="37">
+						<gosRegions>
+							<gosRegion>37</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="82" regName="Иркутская область" addrLevel="3" idForRequest="38">
+						<gosRegions>
+							<gosRegion>38</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="92" regName="Иркутская обл Усть-Ордынский Бурятский округ" addrLevel="3" idForRequest="38">
+						<gosRegions>
+							<gosRegion>85</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="31" regName="Калининградская" addrLevel="3" idForRequest="39">
+						<gosRegions>
+							<gosRegion>39</gosRegion>
+							<gosRegion>91</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="14" regName="Калужская область" addrLevel="3" idForRequest="40">
+						<gosRegions>
+							<gosRegion>40</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="99" regName="Камчатский край" addrLevel="3" idForRequest="41">
+						<gosRegions>
+							<gosRegion>41</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="83" regName="Кемеровская область" addrLevel="3" idForRequest="42">
+						<gosRegions>
+							<gosRegion>42</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="58" regName="Кировская область" addrLevel="3" idForRequest="43">
+						<gosRegions>
+							<gosRegion>43</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="15" regName="Костромская область" addrLevel="3" idForRequest="44">
+						<gosRegions>
+							<gosRegion>44</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="69" regName="Курганская область" addrLevel="3" idForRequest="45">
+						<gosRegions>
+							<gosRegion>45</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="16" regName="Курская область" addrLevel="3" idForRequest="46">
+						<gosRegions>
+							<gosRegion>46</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="32" regName="Ленинградская область" addrLevel="3" idForRequest="47">
+						<gosRegions>
+							<gosRegion>47</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="17" regName="Липецкая область" addrLevel="3" idForRequest="48">
+						<gosRegions>
+							<gosRegion>48</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="100" regName="Магаданская область" addrLevel="3" idForRequest="49">
+						<gosRegions>
+							<gosRegion>49</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="18" regName="Московская" addrLevel="3" idForRequest="50">
+						<gosRegions>
+							<gosRegion>50</gosRegion>
+							<gosRegion>90</gosRegion>
+							<gosRegion>150</gosRegion>
+							<gosRegion>190</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="33" regName="Мурманская область" addrLevel="3" idForRequest="51">
+						<gosRegions>
+							<gosRegion>51</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="60" regName="Нижегородская область" addrLevel="3" idForRequest="52">
+						<gosRegions>
+							<gosRegion>52</gosRegion>
+							<gosRegion>152</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="34" regName="Новгородская область" addrLevel="3" idForRequest="53">
+						<gosRegions>
+							<gosRegion>53</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="84" regName="Новосибирская область" addrLevel="3" idForRequest="54">
+						<gosRegions>
+							<gosRegion>54</gosRegion>
+							<gosRegion>154</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="85" regName="Омская область" addrLevel="3" idForRequest="55">
+						<gosRegions>
+							<gosRegion>55</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="61" regName="Оренбургская область" addrLevel="3" idForRequest="56">
+						<gosRegions>
+							<gosRegion>56</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="19" regName="Орловская область" addrLevel="3" idForRequest="57">
+						<gosRegions>
+							<gosRegion>57</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="62" regName="Пензенская область" addrLevel="3" idForRequest="58">
+						<gosRegions>
+							<gosRegion>58</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="64" regName="Пермский край" addrLevel="3" idForRequest="59">
+						<gosRegions>
+							<gosRegion>59</gosRegion>
+							<gosRegion>81</gosRegion>
+							<gosRegion>159</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="35" regName="Псковская область" addrLevel="3" idForRequest="60">
+						<gosRegions>
+							<gosRegion>60</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="51" regName="Ростовская область" addrLevel="3" idForRequest="61">
+						<gosRegions>
+							<gosRegion>61</gosRegion>
+							<gosRegion>161</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="20" regName="Рязанская область" addrLevel="3" idForRequest="62">
+						<gosRegions>
+							<gosRegion>62</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="65" regName="Самарская область" addrLevel="3" idForRequest="63">
+						<gosRegions>
+							<gosRegion>63</gosRegion>
+							<gosRegion>163</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="66" regName="Саратовская область" addrLevel="3" idForRequest="64">
+						<gosRegions>
+							<gosRegion>64</gosRegion>
+							<gosRegion>164</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="101" regName="Сахалинская область" addrLevel="3" idForRequest="65">
+						<gosRegions>
+							<gosRegion>65</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="70" regName="Свердловская область" addrLevel="3" idForRequest="66">
+						<gosRegions>
+							<gosRegion>66</gosRegion>
+							<gosRegion>96</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="21" regName="Смоленская область" addrLevel="3" idForRequest="67">
+						<gosRegions>
+							<gosRegion>67</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="22" regName="Тамбовская область" addrLevel="3" idForRequest="68">
+						<gosRegions>
+							<gosRegion>68</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="23" regName="Тверская область" addrLevel="3" idForRequest="69">
+						<gosRegions>
+							<gosRegion>69</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="86" regName="Томская область" addrLevel="3" idForRequest="70">
+						<gosRegions>
+							<gosRegion>70</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="24" regName="Тульская область" addrLevel="3" idForRequest="71">
+						<gosRegions>
+							<gosRegion>71</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="71" regName="Тюменская область" addrLevel="3" idForRequest="72">
+						<gosRegions>
+							<gosRegion>72</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="67" regName="Ульяновская область" addrLevel="3" idForRequest="73">
+						<gosRegions>
+							<gosRegion>73</gosRegion>
+							<gosRegion>173</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="72" regName="Челябинская область" addrLevel="3" idForRequest="74">
+						<gosRegions>
+							<gosRegion>74</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="88" regName="Забайкальский край " addrLevel="3" idForRequest="75">
+						<gosRegions>
+							<gosRegion>75</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="90" regName="Забайкальский край Агинский Бурятский округ" addrLevel="3" idForRequest="75">
+						<gosRegions>
+							<gosRegion>80</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="25" regName="Ярославская область" addrLevel="3" idForRequest="76">
+						<gosRegions>
+							<gosRegion>76</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="26" regName="г. Москва" addrLevel="3" idForRequest="77">
+						<gosRegions>
+							<gosRegion>77</gosRegion>
+							<gosRegion>97</gosRegion>
+							<gosRegion>99</gosRegion>
+							<gosRegion>177</gosRegion>
+							<gosRegion>197</gosRegion>
+							<gosRegion>199</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="37" regName="г. Санкт-Петербург" addrLevel="3" idForRequest="78">
+						<gosRegions>
+							<gosRegion>78</gosRegion>
+							<gosRegion>98</gosRegion>
+							<gosRegion>178</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="102" regName="Еврейская авт. область" addrLevel="3" idForRequest="79">
+						<gosRegions>
+							<gosRegion>79</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="38" regName="Ненецкий АО" addrLevel="3" idForRequest="83">
+						<gosRegions>
+							<gosRegion>83</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="74" regName="Ханты-Мансийский Автономный округ - Югра" addrLevel="3" idForRequest="86">
+						<gosRegions>
+							<gosRegion>86</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="104" regName="Чукотский" addrLevel="3" idForRequest="87">
+						<gosRegions>
+							<gosRegion>87</gosRegion>
+						</gosRegions>
+					</region>
+					<region addrId="75" regName="Ямало-Ненецкий" addrLevel="3" idForRequest="89">
+						<gosRegions>
+							<gosRegion>89</gosRegion>
+						</gosRegions>
+					</region>
+				</regions>
+			]]>
+			</value>
+		</constructor-arg>
+	</object>
+	
+</objects>

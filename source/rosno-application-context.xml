@@ -1,0 +1,148 @@
+
+<?xml version="1.0" encoding="utf-8" ?>
+<objects
+	xmlns:util="http://www.springactionscript.org/schema/util"
+	>
+	<property file="rosno-config.properties"/>
+		
+	<object 
+		id="mainInstance"
+		class="com.leetwin.insurance.Main"
+		factory-method="getInstance"
+		/>
+	
+	<object
+		id="appConfig"
+		class="ru.mobw.coreas3.app.config.Config">
+		<property name="debugMode" value="${config.debugMode}"/>
+		<property name="testMode" value="${config.testMode}"/>
+		<property name="exitURL" value="${config.exitURL}"/>
+		<property name="phonesListURL" value="${config.phonesListURL}"/>
+		<property name="phonesListFallbackURL" value="${config.phonesListFallbackURL}"/>
+		<property name="noPrinterAlertString" value="${err.noPrinter}"/>		
+		<property name="version" value="${config.version}"/>
+		
+		<property name="lkDisabledAlertString" value="${err.lkDisabled}"/>
+		<property name="prvDisabledAlertString" value="${err.prvDenied}"/>
+		<property name="serverErrorString" value="${err.serviceCallError}"/>
+		<property name="serverTimeoutString" value="${err.timeout}"/>
+		<property name="insufficientCashAlertString" value="${msg.insufficientCash}"/>
+		<property name="maxCashExceeded" value="${err.overSum}"/>
+		<property name="insufficientBalance" value="${msg.insufficientBalance}"/>
+		<property name="paymentTitle" value="${payment.title}"/>
+		<property name="topAdv" value="${check.topAdv}"/>
+		<property name="bottomAdv" value="${check.bottomAdv}"/>
+		<property name="walletPrvId" value="${config.walletPrvId}"/>
+		<property name="maxCash" value="${num.maxCash}"/>
+		
+		<!--property name="comissionProfile">
+			<value>
+				<object class="ru.mobw.coreas3.vo.ComissionProfile">
+					<property name="percent" value="${comission.percent}" />
+					<property name="min" value="${comission.min}" />
+				</object>
+			</value>
+		</property-->
+		
+		<property name="comissionProfiles">
+			<dictionary>
+				<entry>
+					<key><util:constant static-field="com.leetwin.insurance.enums.InsuranceCompanies.RENAISSANCE" /></key>
+					<value>
+						<object class="ru.mobw.coreas3.vo.ComissionProfile">
+							<property name="percent" value="${comission.renaissancepercent}" />
+							<property name="min" value="${comission.min}" />
+						</object>
+					</value>
+				</entry>
+				<entry>
+					<key><util:constant static-field="com.leetwin.insurance.enums.InsuranceCompanies.CREDIT_EUROPE" /></key>
+					<value>
+						<object class="ru.mobw.coreas3.vo.ComissionProfile">
+							<property name="percent" value="${comission.crediteuropepercent}" />
+							<property name="min" value="${comission.min}" />
+						</object>
+					</value>
+				</entry>
+				<entry>
+					<key><util:constant static-field="com.leetwin.insurance.enums.InsuranceCompanies.ROSNO"/></key>
+					<value>
+						<object class="ru.mobw.coreas3.vo.ComissionProfile">
+							<property name="percent" value="${comission.rosnopercent}" />
+							<property name="min" value="${comission.min}" />
+						</object>
+					</value>
+				</entry>
+			</dictionary>
+		</property>
+		
+		<property name="providerIDsOSMP">
+			<value>
+				<dictionary>
+					<entry value="4850">
+						<key><util:constant static-field="com.leetwin.insurance.enums.InsuranceCompanies.CREDIT_EUROPE" /></key>
+					</entry>
+					<entry value="4847">
+						<key><util:constant static-field="com.leetwin.insurance.enums.InsuranceCompanies.RENAISSANCE" /></key>
+					</entry>
+					<entry value="5859">
+						<key><util:constant static-field="com.leetwin.insurance.enums.InsuranceCompanies.ROSNO" /></key>
+					</entry>
+				</dictionary>
+			</value>
+		</property>
+		<property name="providerIDs">
+			<value>
+				<dictionary>
+					<!--entry value="20640"-->
+					<entry value="20640">
+						<key><util:constant static-field="com.leetwin.insurance.enums.InsuranceCompanies.CREDIT_EUROPE" /></key>
+					</entry>
+					<entry value="20639">
+						<key><util:constant static-field="com.leetwin.insurance.enums.InsuranceCompanies.RENAISSANCE" /></key>
+					</entry>
+					<!--entry value="20639">
+						<key><util:constant static-field="com.leetwin.insurance.enums.InsuranceCompanies.ROSNO" /></key>
+					</entry-->
+					<entry value="22534">
+						<key><util:constant static-field="com.leetwin.insurance.enums.InsuranceCompanies.ROSNO" /></key>
+					</entry>
+				</dictionary>
+			</value>
+		</property>
+		<property name="providerNames">
+			<value>
+				<dictionary>
+					<entry value="Кредит Европа лайф">
+						<key><util:constant static-field="com.leetwin.insurance.enums.InsuranceCompanies.CREDIT_EUROPE" /></key>
+					</entry>
+					<entry value="Ренессанс жизнь">
+						<key><util:constant static-field="com.leetwin.insurance.enums.InsuranceCompanies.RENAISSANCE" /></key>
+					</entry>
+					<entry value="Allianz Росно">
+						<key><util:constant static-field="com.leetwin.insurance.enums.InsuranceCompanies.ROSNO" /></key>
+					</entry>
+				</dictionary>
+			</value>
+		</property>
+	</object>
+	
+	<object 
+		id="application" 
+		class="ru.mobw.coreas3.app.QiwiApplication"
+		init-method="onAppCreated">
+		<property name="view" ref="mainInstance" />
+		<property name="config" ref="appConfig" />
+		<!-- navigation is described in flow.xml -->
+		<property name="flow" ref="flow"/>
+		<property name="disabler" ref="loading" />
+		<property name="waitingScreen" ref="loading" />
+		<property name="alertWindow">
+			<value>
+				<object class="ModalAlert" />
+			</value>
+		</property>
+	</object>
+	
+	<object class="LoadingWindow" id="loading" />
+</objects>

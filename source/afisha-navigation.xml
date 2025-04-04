@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects>
+	<object 
+		id="route" 
+		class="ru.mobw.coreas3.app.flow.navigation.route.RouteData"
+		>
+		<property name="navData">
+			<value>
+				<![CDATA[
+					@default = (@base);
+					
+					@base = (index, %indexSelect, @rest);
+					
+					@rest = (seatsSelect, %citySwitch, orderApprove, %citySwitch, phoneInput, changeSelect, cashPayment, paymentEnd);
+					
+					%citySwitch = (
+						cityButtonClick=>@citySelectBranch
+					);
+					
+					%indexSelect = (
+						oferta=>oferta,
+						allMovies=>@movieSelectBranch,
+						movieClick=>@timeSelectMovie,
+						cinemaClick=>@timeSelectCinema,
+						cityButtonClick=>@citySelectBranch
+					);
+					
+					@timeSelectMovie = (timeSelectMovie, @rest);
+					@timeSelectCinema = (timeSelectCinema, @rest);
+					@citySelectBranch = (citySelect, ok>>@base);
+					@movieSelectBranch = (movieSelect, @timeSelectMovie);
+				]]>
+			</value>
+		</property>
+	</object>
+</objects>

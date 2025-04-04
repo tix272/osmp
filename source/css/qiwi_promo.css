@@ -1,0 +1,64 @@
+﻿@import url("base.css");
+
+.advert
+{
+    width: 300px; 
+	height: 114px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+#advert_1
+{
+    width: 1090px;
+    height: 180px;
+    float: right;
+}
+
+#qiwi_logo
+{
+    width: 86px;
+    height: 140px;
+    float: left;
+    margin-top: 24px;
+}
+
+#work_place
+{
+    margin: 20px 0 0;
+    width: 1240px;
+    height: 654px;
+    position: relative;
+    left: 20px;
+}
+
+#bottom_menu
+{
+    width: 1260px;
+    padding: 0px 20px 15px;
+    margin-top: 18px;
+}
+
+#container1
+{
+    width: 1209px;
+    height: 180px;
+    margin: 0 18px 0px 51px;
+    padding-top: 18px;
+}
+
+.section-title
+{
+	width: 470px; 
+	height: auto;
+	margin-top:43px;
+	float: left; 
+	color: white; 
+	font-size: 30px; 
+	font-weight: 600; 
+	overflow: hidden; 
+	text-transform: uppercase;
+}
+
+
+

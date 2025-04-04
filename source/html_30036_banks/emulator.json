@@ -1,0 +1,40 @@
+{
+	"answers": {
+		"PrvId": [
+			"PrvAllow=true",
+			"TermID=8993422",
+			"StartParam=23738;1;11000",
+			"TermInfo=<info><max-pay-amount>9000</max-pay-amount></info>",
+			"PrtStatus=OK",
+			"CommProf="
+		],
+		"GetCommisByPrvSumm": ["CommisByPrvSumm={ \"isError\" : false, \"result\" : 0.0}"],
+		"GetMinCash": ["MinCashResult=70"]
+	},
+	"events": {
+		"83": [
+			"PrvAllow=true",
+			"TermID=8993422",
+			"StartParam=13243;1;11000",
+			"TermInfo=<info><max-pay-amount>9000</max-pay-amount></info>",
+			"PrtStatus=OK"
+		],
+		"81": [
+			"ValOn=true"
+		],
+		"87": [
+			"ValOff=true"
+		],
+		"69": [
+			"ValTimeout=true"
+		],
+		"82": [
+			"CashSumm=50",
+			"PaySumm=15",
+			"CommisSumm=0",
+			"PaySumm2=30",
+			"CommisSumm2=5",
+			"CommProfileLine=1"
+		]
+	}
+}

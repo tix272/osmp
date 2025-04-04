@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<script>
+	<config totalTime="600" defaultIdleTime="60" version="1.1" >
+	
+		<statistic defaultProfile="bad">
+            <add>
+                <good>
+                    <var name="_extra_MGT_phone" value="getAccountNumber" />
+                </good>
+            </add>
+			<object>
+				<variable name="prv_id" value="323" />
+				<variable name="prv_name" value="Magitel" />
+				<variable name="_extra_MGT_project_number" value="1180" />
+				<variable name="_extra_no_print_check" value="true" />
+				<variable name="_extra_fake_provider" value="true" />
+				<variable name="_extra_result_int_page" value="return.html" />
+                <variable name="komissiya" value="1" />
+				<variable name="getAccountNumber" value="0000000000" />
+			</object>
+			<good vars="getAccountNumber,_extra_MGT_date,_extra_MGT_time,_extra_MGT_path" post="./return.html"/>
+			<bad vars="_extra_MGT_date,_extra_MGT_time,_extra_MGT_path" post="./return.html"/>
+		</statistic>
+		
+		<defaultBackground type="0" name="bg_0" />
+
+		<pages>
+            <page name="checkStatus">
+                <content type="2" name="checkStatus">
+                    <componentEvents>
+						<event name="fail" page="fail_terminal_page"/>
+                        <event name="success" page="poster"/>
+					</componentEvents>
+                </content>
+			</page>
+			<page name="poster">
+                <content type="0" name="bg_1" />
+                <content type="2" name="selectAction">
+                    <componentEvents>
+                        <event name="pay299_action" page="phone_page"/>
+                        <event name="pay499_action" page="phone_page"/>
+                        <event name="pay1199_action" page="phone_page"/>
+					</componentEvents>
+                </content>
+                <content type="1" name="btn_exit" pos="50,855" />
+                <content type="1" name="btn_oferta" pos="400,855" page="oferta_page" />
+            </page>
+
+            <page name="oferta_page">
+                <content type="2" name="oferta"/>
+                <content type="1" name="btn_back" page="poster" pos="50,855" />
+            </page>
+
+            <page name="phone_page">
+				<content type="2" name="inputPhone">
+					<componentEvents>
+						<event name="next_action" page="money_page"/>
+					</componentEvents>
+				</content>
+				<content type="1" name="btn_back" page="poster" pos="50,855" />
+			</page>
+            <page name="money_page" idleTime="180">
+				<content type="2" name="inputMoney" specialTimeout="true">
+					<componentEvents>
+						<event name="pay_success" page="success_pay_page"/>
+                        <event name="pay_fail" page="fail_pay_page"/>
+                        <event name="prev_action" page="phone_page"/>
+                        <event name="terminal_fail" page="fail_terminal_page"/>
+					</componentEvents>
+				</content>
+			</page>
+            <page name="fail_terminal_page" idleTime="15" stat="good" >
+				<content type="0" name="bg_6" />
+				<content type="1" name="btn_exit" pos="50,855" />
+			</page>
+			<page name="fail_pay_page" idleTime="15" stat="good" >
+				<content type="0" name="bg_5" />
+				<content type="1" name="btn_exit" pos="50,855" />
+			</page>
+            <page name="success_pay_page" idleTime="15" stat="good" >
+				<content type="0" name="bg_4" />
+				<content type="1" name="btn_exit" pos="50,855" />
+			</page>
+		</pages>
+	
+	</config>
+</script>
+

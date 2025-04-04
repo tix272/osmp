@@ -1,0 +1,61 @@
+﻿<config>
+   <exchange_rate filter="TJS" value="rate_1pb"/>
+   <prv_id>7472</prv_id>
+   <langs default_lang="tj">
+       <lang>ru</lang>
+       <lang>tj</lang>
+   </langs>
+   <caption_QK>Введите свой российский номер мобильного телефона</caption_QK>
+   <providers>
+      <prv prvid="21819" mask="(\d{2})\d{3}-\d{2}-\d{2}" osmp_id="6594" maxLength="9" name="Мегафон Таджикистан" />
+      <prv prvid="21817" mask="(\d{2})\d{3}-\d{2}-\d{2}" osmp_id="6595" maxLength="9" name="Babilon-M" >
+         <mask value="(\d{2})\d{3}-\d{2}-\d{2}">98XXXXXXX</mask>
+         <mask value="(\d{3})\d{2}-\d{2}-\d{2}">918XXXXXX</mask>
+      </prv>
+      <prv prvid="21820" mask="(\d{2})\d{3}-\d{2}-\d{2}" osmp_id="6596" maxLength="9" name="TK-Mobile" />
+      <prv prvid="21825" mask="(\d{2})\d{3}-\d{2}-\d{2}" osmp_id="7415" maxLength="9" default_name="Tcell"
+           name="Tcell - Индиго Сомонком" >
+         <mask value="(\d{2})\d{3}-\d{2}-\d{2}">92XXXXXXX</mask>
+         <mask value="(\d{2})\d{3}-\d{2}-\d{2}">505XXXXXX</mask>
+         <mask value="(\d{2})\d{3}-\d{2}-\d{2}">506XXXXXX</mask>
+         <mask value="(\d{2})\d{3}-\d{2}-\d{2}">507XXXXXX</mask>
+         <mask value="(\d{2})\d{3}-\d{2}-\d{2}">508XXXXXX</mask>
+         <mask value="(\d{2})\d{3}-\d{2}-\d{2}">509XXXXXX</mask>
+     </prv>
+     <prv prvid="21818" mask="(\d{2})\d{3}-\d{2}-\d{2}" osmp_id="7415" maxLength="9" default_name="Tcell" name="Tcell - Индиго Таджикистан" >
+         <mask value="(\d{2})\d{3}-\d{2}-\d{2}">93XXXXXXX</mask>
+         <mask value="(\d{2})\d{3}-\d{2}-\d{2}">500XXXXXX</mask>
+         <mask value="(\d{2})\d{3}-\d{2}-\d{2}">501XXXXXX</mask>
+         <mask value="(\d{2})\d{3}-\d{2}-\d{2}">502XXXXXX</mask>
+         <mask value="(\d{2})\d{3}-\d{2}-\d{2}">503XXXXXX</mask>
+         <mask value="(\d{2})\d{3}-\d{2}-\d{2}">504XXXXXX</mask>
+     </prv>
+	 <prv prvid="21821" mask="\d{2}-\d{3}-\d{2}-\d{2}" osmp_id="7552" maxLength="9" name="Вавилон-Т NGN">
+		<mask value="\d{2}-\d{3}-\d{2}-\d{2}">44XXXXXXX</mask>
+	 </prv>	
+	 <prv prvid="21831" mask="\d+" maxLength="5" osmp_id="7553" name="Вавилон-Т Интернет" />
+	 <prv prvid="21822" mask="\d{2}-\d{3}-\d{2}-\d{2}" osmp_id="7554" maxLength="9" name="Интерком NGN">
+		<mask value="\d{2}-\d{3}-\d{2}-\d{2}">42XXXXXXX</mask>
+	 </prv>	
+	 <prv prvid="21823" mask="\d{2}-\d{3}-\d{2}-\d{2}" osmp_id="7555" maxLength="9" name="Истера NGN">
+		<mask value="\d{2}-\d{3}-\d{2}-\d{2}">43XXXXXXX</mask>
+	 </prv>	
+	 <prv prvid="21830" mask="\d+" maxLength="20" osmp_id="7556" name="Истэра Интернет" />
+	 <prv prvid="21816" mask="\d{2}-\d{3}-\d{2}-\d{2}" osmp_id="7559" maxLength="9" name="Beeline Таджикистан">
+		<mask value="\d{2}-\d{3}-\d{2}-\d{2}">91XXXXXXX</mask>
+	 </prv>
+	 <prv prvid="21826" mask="(\d{2})\d{3}-\d{2}-\d{2}" osmp_id="7561" maxLength="9" name="TJ Мобайл" >
+         <mask value="(\d{2})\d{3}-\d{2}-\d{2}">378XXXXXX</mask>
+         <mask value="(\d{2})\d{3}-\d{2}-\d{2}">318XXXXXX</mask>
+         <mask value="(\d{2})\d{3}-\d{2}-\d{2}">379XXXXXX</mask>
+         <mask value="(\d{2})\d{3}-\d{2}-\d{2}">99XXXXXXX</mask>
+     </prv>
+	 <prv prvid="21827" mask="\d{2}-\d{3}-\d{2}-\d{2}" osmp_id="7562" maxLength="9" name="Телеком Технолоджи NGN">
+		<mask value="\d{2}-\d{3}-\d{2}-\d{2}">48XXXXXXX</mask>
+	 </prv>
+	 <prv prvid="21836" mask="\w+" maxLength="25" osmp_id="7564" name="Saturn-Online Интернет" />
+	 <prv prvid="21824" mask="\d{2}-\d{3}-\d{2}-\d{2}" osmp_id="7565" maxLength="9" name="Таджик Телеком">
+	 	<mask value="\d{2}-\d{3}-\d{2}-\d{2}">372XXXXXX</mask>
+	 </prv>
+   </providers>
+</config>

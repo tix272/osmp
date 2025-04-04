@@ -1,0 +1,125 @@
+<html>
+
+<head>
+	<title>provider / 180</title>
+	<meta http-equiv="content-type" content="text/html; charset=windows-1251" />
+	<meta http-equiv="refresh" content="180; URL=./index.html" />
+	<link rel="stylesheet" href="./css/df.css" type="text/css" />
+	<script type="text/javascript" src="./js/engine/utils.js"></script>
+	<script type="text/javascript" src="./js/engine/storage.js"></script>
+	<script type="text/javascript" src="./js/engine/base.js"></script>
+
+<script type="text/javascript">
+
+var ROWS_COUNT = 14;
+var nPageNum = -1;
+
+function init()
+{   
+    attachPropertyChangeListener('AllProvData', displayData);
+    attachPropertyChangeListener('HtmlProvData', displayTable);
+
+    $('back_btn').style.display = 'block';
+    $('menu_btn').style.display = 'block';
+    $('forward_btn').style.display = 'none';
+    
+    var sPage = storage.get("prv_data_page");
+    if (sPage == null || sPage == "null") sPage = "-1";
+    nPageNum = parseInt(sPage);
+}
+
+function submitRequest(nPage, nStart, nEnd) {
+    storage.put("prv_data_page", nPage.toString(10));
+    $("ProvListStartRange").value = nStart.toString(10);
+    $("ProvListEndRange").value = nEnd.toString(10);
+    $("ProvData").submit();
+}
+
+function displayData() {
+    if (isAll()) {
+        $('forward_btn').style.display = 'none';
+    }
+    else {
+        $('forward_btn').style.display = 'block';
+    }
+}
+
+function displayTable() {
+    var s = "";
+    s =
+        '<table border="1" width="100%" style="border: 1px solid #c2c2c2">' +
+        '  <tr>' +
+        '    <td width="25%" height="80" align="center" valign="middle" style="background: url(\'./img/ui/gb.gif\') repeat-x; color: #004b88;">Сокращенное название поставщика</td>' +
+        '    <td width="25%" align="center" valign="middle" style="background: url(\'./img/ui/gb.gif\') repeat-x; color: #004b88;">Наименование юридического лица поставщика</td>' +
+        '    <td width="25%" align="center" valign="middle" style="background: url(\'./img/ui/gb.gif\') repeat-x; color: #004b88;">Реквизиты договора между поставщиком и платежным агентом</td>' +
+        '    <td width="25%" align="center" valign="middle" style="background: url(\'./img/ui/gb.gif\') repeat-x; color: #004b88;">Номер контактного телефона поставщика</td>' +
+        '  </tr>';
+    s += $("HtmlProvData").value;
+    s +=
+        '</table>';
+
+    $("content_table").innerHTML = s;    
+}
+
+function isAll() {
+    if ($("AllProvData").value == "1") return true;
+    return false;
+}
+
+function backward() {
+    new CInnerShadow('back_btn');
+    setTimeout(function () {
+        storage.put("prv_data_page", (--nPageNum).toString(10));
+        if (nPageNum < 0) {
+            document.location.href = "./info.html";
+        }
+        else {
+            submitRequest(nPageNum, nPageNum * ROWS_COUNT, (nPageNum * ROWS_COUNT) + ROWS_COUNT - 1);
+        }
+    }, 100);
+}
+
+function forward() {
+    new CInnerShadow('forward_btn');
+    setTimeout(function () {
+        submitRequest(++nPageNum, nPageNum * ROWS_COUNT, (nPageNum * ROWS_COUNT) + ROWS_COUNT - 1);
+    }, 100);
+}
+
+
+function menu() {
+    new CInnerShadow('menu_btn');
+    setTimeout(function () {
+        parent.location = "./index.html";
+    }, 100);
+}
+
+</script>
+
+</head>
+
+<body topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0" heightmargin="0">
+<form id="ProvData" name="ProvData" method="post" action="prov_list_130fz.html">
+    <input id="ProvListStartRange" name="ProvListStartRange" type="hidden" value="" />
+    <input id="ProvListEndRange" name="ProvListEndRange" type="hidden" value="" />
+    <input id="AllProvData" name="AllProvData" type="hidden" value="" />
+    <input id="HtmlProvData" name="HtmlProvData" type="hidden" value="" />
+    <div style="margin: 10px;">
+    	<div style="width: 100%">
+	    <table cellpadding="0" cellspacing="0" border="0" style="width: 100%" height="51">
+		    <tr>
+			<td background="./img/ui/title/l_inf.gif" width="18"></td>
+			<td background="./img/ui/title/bg_inf.gif" align="center" valign="middle"><span style="color: #ffffff; font-size: 24px;">РЕКВИЗИТЫ ПОСТАВЩИКОВ</span></td>
+			<td background="./img/ui/title/r_inf.gif" width="18"></td>
+		    </tr>
+	    </table>
+	    <div id="content_table" style="padding: 10px 0"></div>
+	</div>
+    </div>
+</form>
+<div id="back_btn" class="bottom-button-left" onclick="backward()"><img src="./img/ui/navigation/back.gif" /></div>
+<div id="menu_btn" class="bottom-button-center" onclick="menu()"><img src="./img/ui/navigation/menu.gif" /></div>
+<div id="forward_btn" class="bottom-button-right" onclick="forward()"><img src="./img/ui/navigation/forward.gif" /></div>
+<script type="text/javascript">init();</script>
+</body>
+</html>

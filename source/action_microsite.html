@@ -1,0 +1,29 @@
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=windows-1251">
+	<meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="refresh" content="120; URL=./index.html">
+    <script type="text/javascript" src="./cfg/index_config.js"></script>
+	<script type="text/javascript" src="./js/engine/utils.js"></script>
+<script type="text/javascript" src="./js/engine/storage.js"></script>
+    <script type="text/javascript">
+
+        function init() {
+            if (nNoCommission > 1 && nNoCommission < 6) {
+                document.getElementById("mini").src = "./img/ui/action/" + nNoCommission + ".jpg";
+                storage.put("last_page", "./index.html");
+	        }
+            else
+                document.location = "./index.html";
+        }
+    
+    </script>
+</head>
+
+<body bgcolor="#999999" style="border:0;margin:0" onload="init();">
+    <img id="mini" src="./img/ui/null.gif" />
+    <div style=" position: absolute; top: 880px; left: 500px; width: 300px; height: 130px; background: url('./img/ui/null.gif');" onclick="document.location = './index.html'"></div>
+    <div style=" position: absolute; top: 880px; left: 850px; width: 400px; height: 130px; background: url('./img/ui/null.gif');" onclick="document.location = './cellular.html'"></div>
+</body>
+</html>
+

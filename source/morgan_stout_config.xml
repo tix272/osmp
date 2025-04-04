@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<providers>
+	<provider>
+		<id>1894</id>
+		<name>Morgan and Stout</name>
+		<stateName>enterContractStateMorgan</stateName>
+		<mask>\\d{11}</mask>
+		<maxLength>11</maxLength>
+		<comissionProf>
+			<commission>
+			<profiles id="1894">
+				<def>0</def>
+			</profiles>
+			</commission>
+		</comissionProf>
+	</provider>
+	<provider>
+		<id>20657</id>
+		<name>РДК</name>
+		<stateName>enterContractStateRdk</stateName>
+		<mask>\\d{23}</mask>
+		<maxLength>23</maxLength>
+		<comissionProf>
+			<commission>
+			<profiles id="20657">
+				<def>0</def>
+			</profiles>
+			</commission>
+		</comissionProf>
+	</provider>
+	<provider>
+		<id>22352</id>
+		<name>ЭОС</name>
+		<stateName>enterContractStateEos</stateName>
+		<mask>\\d+</mask>
+		<maxLength>10</maxLength>
+		<comissionProf>
+			<commission>
+			<profiles id="22352">
+				<def>0</def>
+			</profiles>
+			</commission>
+		</comissionProf>
+	</provider>
+	<provider>
+		<id>22545</id>
+		<name>Кредит Коллекшен Груп</name>
+		<stateName>enterContractStateCCG</stateName>
+		<mask>\\d{7}</mask>
+		<maxLength>7</maxLength>
+		<comissionProf>
+			<commission>
+			<profiles id="22545">
+				<def>1</def>
+			</profiles>
+			</commission>
+		</comissionProf>
+	</provider>
+	<provider>
+		<id>22546</id>
+		<name>КредитЭкспресс-Р</name>
+		<stateName>enterContractStateCE</stateName>
+		<mask>\\d+</mask>
+		<maxLength>10</maxLength>
+		<comissionProf>
+			<commission>
+			<profiles id="22546">
+				<def>2.5</def>
+			</profiles>
+			</commission>
+		</comissionProf>
+	</provider>
+	<provider>
+		<id>22909;22944</id>
+		<name>Агентство по сбору долгов</name>
+		<stateName>enterContractStateASD</stateName>
+		<mask>\\d+</mask>
+		<maxLength>19</maxLength>
+		<comissionProf>
+		  <commission>
+			<profiles id="22909">
+				<def>2.5</def>
+			</profiles>
+		  </commission>
+		  <commission>	
+			<profiles id="22944">
+				<def>0</def>
+			</profiles>
+		  </commission>
+		</comissionProf>
+	</provider>
+	<provider>
+		<id>23143</id>
+		<name>Нано-Финанс</name>
+		<stateName>enterContractStateNANO</stateName>
+		<mask>\\d+</mask>
+		<maxLength>9</maxLength>
+		<comissionProf>
+			<commission>
+			<profiles id="23143">
+				<def>0</def>
+			</profiles>
+			</commission>
+		</comissionProf>
+	</provider>
+	<provider>
+		<id>23144</id>
+		<name>ДА-ЦКБ</name>
+		<stateName>enterContractStateCKB</stateName>
+		<mask>\\d+</mask>
+		<maxLength>8</maxLength>
+		<comissionProf>
+			<commission>
+			<profiles id="23144">
+				<def>0</def>
+			</profiles>
+			</commission>
+		</comissionProf>
+	</provider>
+	<provider>
+		<id>23328</id>
+		<name>Первое коллекторское бюро</name>
+		<stateName>enterContractStatePKB</stateName>
+		<mask>\\d+</mask>
+		<maxLength>8</maxLength>
+		<comissionProf>
+			<commission>
+			<profiles id="23328">
+				<def>1</def>
+			</profiles>
+			</commission>
+		</comissionProf>
+	</provider>
+	<provider>
+		<id>628</id>
+		<name>ООО «Домашние деньги»</name>
+		<stateName>enterContractStateHM</stateName>
+		<mask>\\d+</mask>
+		<maxLength>8</maxLength>
+		<comissionProf>
+			<commission>
+			<profiles id="628">
+				<def>0</def>
+			</profiles>
+			</commission>
+		</comissionProf>
+	</provider>
+</providers>

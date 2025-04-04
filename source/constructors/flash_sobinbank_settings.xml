@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	<settings>
+		<speed>0.4</speed>
+	</settings>
+	<LoaderMax name="resources" load="true">
+		<SWFLoader name="fonts" url="swf/flash_sobinbank_fonts.swf" />
+		<SWFLoader name="graphics" url="swf/flash_sobinbank_graphics.swf" />
+		<CSSLoader name="styles" url="css/flash_sobinbank_qiwi.css" />
+	</LoaderMax>
+</data>

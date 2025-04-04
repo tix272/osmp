@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects>
+	<object id="route" class="ru.mobw.coreas3.app.flow.navigation.route.RouteData">
+		<property name="navData">
+			<value>
+				<![CDATA[
+					
+					@default = (init, start, %startSwitch, account, select, %selectSwitch, phone, %phoneSwitch, cash, final, exit);
+					
+					%startSwitch = (
+						info => info,
+						offertus => offertus
+					);
+					
+					%selectSwitch = (
+						counter => counter,
+						date => date
+					);
+					
+					%phoneSwitch = (
+						pin => pin
+					);
+					
+				]]>
+			</value>
+		</property>
+	</object>
+</objects>

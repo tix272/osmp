@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns:util="http://www.springactionscript.org/schema/util">
+	
+	<object id="startHeaderText" class="String">
+		<constructor-arg>
+			<value>
+<![CDATA[Налоговые платежи по индексу документа]]>
+			</value>
+		</constructor-arg>
+	</object>
+	<object id="startText" class="String">
+		<constructor-arg>
+			<value>
+<![CDATA[Плата за организацию и осуществление расчетов с использованием предоплаченной карты составляет 2%]]>
+			</value>
+		</constructor-arg>
+	</object>
+	
+</objects>

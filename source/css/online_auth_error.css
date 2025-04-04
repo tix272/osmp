@@ -1,0 +1,34 @@
+﻿@import url("base.css");
+
+.inp
+{
+    border-style: none;
+    border-color: inherit;
+    border-width: 0px;
+    background: ;
+    font-weight: bold;
+        font-size: 24px;
+        color: #d00;
+        text-decoration: none;
+}
+
+#img
+{
+    width: 785px;
+    height: 468px;
+    background: url('../img/ui/warning.png') no-repeat;
+    margin-left: 247px;
+}
+
+#msg
+{
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+#content
+{
+    width: 1280px;
+    height: 1024px;
+}

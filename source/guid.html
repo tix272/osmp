@@ -1,0 +1,73 @@
+<html>
+<head>
+
+	<title>provider / 180</title>
+	<meta http-equiv="content-type" content="text/html; charset=windows-1251" />
+	<meta http-equiv="pragma" content="no-cache" />
+	<!--<meta http-equiv="refresh" content="180; URL=./index.html" />-->
+	<link rel="stylesheet" href="./css/base.css" type="text/css" />
+    <script type="text/javascript" src="./js/engine/utils.js"></script>
+    <script type="text/javascript" src="./js/engine/storage.js"></script>
+    <script type="text/javascript" src="./js/engine/base.js"></script>
+
+    <script type="text/javascript">
+
+        function init() {
+            // log start
+            to(180);
+            _log('<p v="g">');
+            // log stop
+        }
+
+        function menu() {
+            new CInnerShadow('menu_btn');
+            // log start
+            _log('<et t="m"></et>');
+            _log('</p>');
+            // log stop
+            setTimeout(function () {
+                document.location = "./index.html";
+            }, 100);
+        }
+
+        function backward() {
+            new CInnerShadow('back_btn');
+            // log start
+            _log('<et t="b"></et>');
+            _log('</p>');
+            // log stop
+            setTimeout(function () {
+                document.location = "./epa.html";
+            }, 100);
+        }
+
+    </script>
+
+</head>
+
+<body bgcolor="#E6E6E6" topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0" heightmargin="0" onload="init();">
+    <div style="display: none;">
+        <object id="Maratl" classid="clsid:025D39DC-87F3-468B-B553-5BCE1B085952" VIEWASTEXT></object>
+        <script language="jscript">
+            function Maratl::OnResponse(sName, sVal) {
+                getData(sName, sVal);
+            }
+        </script>
+    </div>
+    <center>
+        <table cellpadding="10" cellspacing="0" border="0" width="1260" height="100%" bgcolor="#e6e6e6">
+            <tr>
+	            <td align="center" valign="middle" style="width: 100%; height: 880px;">
+                    <embed width="800" height="600" wmode="transparent" src="./swf/guid.swf"></embed>
+	            </td>
+	        </tr>
+            <tr>
+                <td>
+                    <div id="back_btn" class="bottom-button-left" onclick="backward()"><img src="./img/ui/navigation/back.gif" /></div>
+                    <div id="menu_btn" class="bottom-button-center" onclick="menu()"><img src="./img/ui/navigation/menu.gif" /></div>
+                </td>
+            </tr>   
+        </table>
+    </center>
+</body>
+</html>

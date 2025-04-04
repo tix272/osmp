@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data xmlns:b="com.styleru.bool" xmlns:n="com.styleru.number" xmlns:s="com.styleru.string">
+	<settings
+		n:width="1280"
+		n:height="1024"
+		b:test_mode="true"
+		s:constructor_context="xml/flash_gibdd_duties_context.xml"
+		s:constructor_flow="xml/flash_gibdd_duties_flow.xml"
+		s:prvname="QIWI Кошелёк"
+		s:prvid="5781"
+		s:prvid2="7406"
+		s:qw_prvid="441"
+		n:speed="0.4"
+		n:statisticsId="30021"
+		>
+	</settings>
+	<LoaderMax name="resources" load="true">
+		<SWFLoader name="fonts" url="swf/flash_gibdd_duties_fonts.swf" />
+		<SWFLoader name="graphics" url="swf/flash_gibdd_duties_graphics.swf" />
+	</LoaderMax>
+</data>

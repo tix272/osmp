@@ -1,0 +1,182 @@
+<html>
+<head>
+	<title>Validate_Confirm</title>
+	<meta http-equiv="content-type" content="text/html; charset=windows-1251" />
+	<meta http-equiv="pragma" content="no-cache" />
+	<meta http-equiv="refresh" content="180; URL=./index.html" />
+	<link rel="stylesheet" href="./css/validate_confirm.css" type="text/css" />
+	<script type="text/javascript" src="./js/engine/utils.js"></script>
+	<script type="text/javascript" src="./js/engine/base.js"></script>
+	<script type="text/javascript" src="./js/engine/storage.js"></script>
+	<script type="text/javascript" src="./js/engine/advert.js"></script>
+	<script type="text/javascript" src="./js/engine/advert.js"></script>
+	<script type="text/javascript" src="./js/engine/hyphen.js"></script>
+	<script type="text/javascript">
+
+        var g_sPrvType = '',
+            logo;
+
+        function init() {
+            var oPayInfo = Object.deserialize(storage.get("pay_info"));
+            logo = $("logo");
+            logo.img = logo.getElementsByTagName('div')[0];
+            logo.alt = logo.getElementsByTagName('p')[0];
+
+            if($isNoU(oPayInfo))
+            {
+                document.location.href = "./index.html";
+            }
+            displayPayInfo(oPayInfo);
+            storage.put("pay_info", oPayInfo.serialize());
+            startAdvert("Validate_Confirm");
+
+		new CInnerShadow($('btn_left').getElementsByTagName('img')[0], { color: 30 });
+		new CInnerShadow($('btn_center').getElementsByTagName('img')[0], { saturation: 1, brightness: 200 });
+		new CInnerShadow($('btn_right').getElementsByTagName('img')[0], { color: 30 });
+        }
+
+        function displayPayInfo(oInfo) {
+            var aInnPhone = [];
+            if (isCorrect(oInfo.account)) {
+                if (isCorrect(oInfo.isCellular)) {
+                    if (oInfo.isCellular == "true") {
+                        g_sPrvType = oInfo.isCharity ? 'CHARITY' : 'CELLULAR';
+
+                        if(g_sPrvType == 'CHARITY' && oInfo.account == '0000000000')
+                        {
+                        	onMenuBtnClick('FORWARD');
+                        	return;
+                        }
+
+                        oInfo.account =
+                            "8(" + oInfo.account.substr(0, 3) + ")" +
+                            oInfo.account.substr(3, 3) + "-" +
+                            oInfo.account.substr(6, 2) + "-" +
+                            oInfo.account.substr(8, 2);
+                    }
+                    else if (oInfo.isCellular == "false") {
+                        g_sPrvType = "OTHER";
+                    }
+                }
+                $("field_inp").value = oInfo.account;    
+            }
+            else {
+                document.location.href = "./index.html";    
+            }
+            
+            if (isCorrect(oInfo.prvLogo) && oInfo.prvLogo != "null.gif") {
+                logo.img.style.backgroundImage = "url('./img/ui_item/" + getFileName(oInfo.prvLogo) + "')";
+                if (isCorrect(oInfo.prvName)) {
+                    logo.alt.innerHTML = autohyphen.hyphenizeText(oInfo.prvName);
+                }
+            }
+            else if (g_sPrvType == "CELLULAR") {
+                logo.img.style.backgroundImage = "url('./img/ui/cellular.gif')";
+            }
+            else if (isCorrect(oInfo.prvName)) {
+                var oLogoDiv = $("logo_bg");
+                oLogoDiv.innerHTML = 
+                    '<table width="100%" height="100%">' +
+                    '  <tr><td align="center" valign="middle">' + oInfo.prvName + '</td></tr>' +
+                    '</table>';
+            }
+            logo.alt.style.marginTop = (logo.alt.parentNode.clientHeight - logo.alt.clientHeight) / 2 + 'px';
+        }
+
+        function displayAlertMsg(sInfo) {
+            if (isCorrect(sInfo)) {
+                var sAlertContent =
+                    '<div class="alert" style="left: ' + (screen.width - 801) / 2 + 'px; top: ' + (screen.height - 482) / 2 + 'px;">' +
+                    '  <div class="alert_header">Внимание</div>' +
+                    '  <div class="alert_msg">' + sInfo + '</div>' +
+                    '  <div class="alert_footer">Если Вы согласны, нажмите «ВПЕРЕД» для оплаты<br />или нажмите «НА ГЛАВНУЮ» для отмены операции</div>' +
+                    '</div>';
+                document.body.innerHTML += sAlertContent;    
+            }
+        } 
+
+        function isCorrect(s) {
+            return (!$isNoU(s) && s.is(String) && s.length > 0);
+        }
+
+        function onMenuBtnClick(sBtn) {
+            var sAlertMsg = $("payment_info").value;
+            switch (sBtn) {
+                case "BACKWARD":
+                    if (g_sPrvType == "CHARITY") {
+                    	document.location.href = "./charity.html";
+                    }
+                    else if (g_sPrvType == "CELLULAR") {
+                        storage.put("provider", "null");
+                        document.location.href = "./cellular.html";
+                    }
+                    else if (g_sPrvType == "OTHER") {
+                        document.location.href = "./provider.html";
+                    }
+                    else {
+                        document.location.href = "./main.html";
+                    }
+                    storage.put("pay_info", "null");
+                    break;
+                case "MENU":
+                    document.location.href = "./index.html";
+                    storage.put("pay_info", "null");
+                    break;
+                case "FORWARD":
+                    if (sAlertMsg.length > 0) {
+                        $("payment_info").value = "";
+                        displayAlertMsg(sAlertMsg);
+                    }
+                    else {
+                        document.location.href = "./enter_summ.html";
+                    }
+                    break;
+            }
+            
+        }
+
+	</script>
+</head>
+<body onload="init();">
+<bgsound src="./sound/validate.wav" loop="1"></bgsound>
+<div id="content">
+    <div id="container1">
+        <div id="qiwi_logo"><img alt="" src="./img/ui/qiwicel.gif" /></div>
+        <div id="advert_1"></div>
+    </div>
+    <div id="work_place">
+        <div  id="container2" align="center">
+		<div id="container3">
+	        	<h3>Подтвердите правильность введённых данных</h3>
+			<div id="field_txt"><input id="field_inp" name="field_inp" value="" /></div>
+			<!--div id="logo_bg" align="center"><img id="logo" alt="" src="./img/ui/null.gif" /></div-->
+			<div class="provider-button" id="logo">
+				<div></div><p></p>
+                       </div>
+		</div>
+        </div>
+        <div id="sys_info">
+            <form id="ff" name="ff" method="post" action="#">
+                <input id="payment_info" name="payment_info" type="hidden" value="" />
+                <!--<input id="alert" name="alert" class="msg" type="text" value="0" />-->
+                <input id="ahtung_printer1" name="ahtung_printer1" class="msg" type="text" value="" />
+                <input id="ahtung_printer2" name="ahtung_printer2" class="msg" type="text" value="" />
+                <input id="ahtung_printer3" name="ahtung_printer3" class="msg" type="text" value="" />
+            </form>
+        </div>
+        <div id="advert_2"></div>
+    </div>
+    <div id="bottom_menu">
+        <div id="btn_left" class="bottom-button-left">
+            <img alt="" src="./img/ui/navigation/back.gif" onclick="onMenuBtnClick('BACKWARD');" />
+        </div>
+        <div id="btn_center" class="bottom-button-center">
+            <img alt="" src="./img/ui/navigation/menu.gif" onclick="onMenuBtnClick('MENU');" />
+        </div>
+        <div id="btn_right" class="bottom-button-right">
+            <img alt="" src="./img/ui/navigation/forward.gif" onclick="onMenuBtnClick('FORWARD');" />
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,376 @@
+<html>
+<head>
+	<title>Pay_Status</title>
+	<meta http-equiv="content-type" content="text/html; charset=windows-1251" />
+	<meta http-equiv="pragma" content="no-cache" />
+	<meta http-equiv="refresh" content="180; URL=./index.html" />
+	<link rel="stylesheet" href="./css/pay_status.css" type="text/css" />
+	<script type="text/javascript" src="./js/engine/utils.js"></script>
+	<script type="text/javascript" src="./js/engine/storage.js"></script>
+	<script type="text/javascript" src="./js/engine/base.js"></script>
+    <script type="text/javascript" src="./js/engine/date.js"></script>
+    <script type="text/javascript" src="./js/engine/keyboards.js"></script>
+	<script type="text/javascript">
+
+        var oDate = new Date(),
+            day = oDate.getDate().toString(),
+            s = ((day.length  < 2) ? '0' + day : day) + '.' + (oDate.getMonth() + 1)+ '.' + oDate.getFullYear(),
+            sSearchType = '',
+            oKeyboard = null,
+            oNumber = null,
+            bflag = true,
+            bbuble = true,
+            bbuble2 = true;
+            
+        function searchType(type) {
+            $("keyboard").style.display = "none";
+            $("keyboard_al").style.display = "none";
+            $("div1").style.display = "none";
+            $("info_img").style.display = "none";
+            $("button1").style.display = "block";
+            $("button2").style.display = "block";
+            $("button3").style.display = "block";
+            switch (type) {
+                case 'Cellular':
+                    $("button3").style.display = "none";
+                    $("buble1").style.display = "block";
+                    $("title").innerHTML ="Введите номер телефона";
+                    $("type_text").innerHTML = "Поиск платежа<br />за сотовую связь";
+                    $("keyboard").style.display = "block";
+                    oNumber.style.fontSize = "50pt";
+                    oNumber.value ="8";
+                    if (sSearchType == 'Other')
+                        clearShadov("ALKEYBOARD");   
+                    break;
+                case 'Other':
+                    $("button2").style.display = "none";
+                    $("buble1").style.display = "none";
+                    $("buble1").innerHTML = "";
+                    $("title").innerHTML ="Введите аккаунт";
+                    $("type_text").innerHTML = "Поиск платежа<br />по номеру счета";
+                    oNumber.value ="";
+                    $("keyboard_al").style.display = "block";
+                    oNumber.style.fontSize = "41pt";
+                    clearShadov("DGKEYBOARD");
+                    oKeyboard = new CALKeyboard(CALKeyboard, null, "keyboard_al");
+                    oKeyboard.attachListener("onKeyPress", function(sender, eargs) {pressKey(eargs.key);});
+                    oKeyboard.create();
+                    oKeyboard.render();
+                    break;
+                case 'Cod':
+                    $("button1").style.display = "none";
+                    $("buble1").style.display = "block";
+                    $("title").innerHTML ="Введите код операции";
+                    $("type_text").innerHTML = "Поиск платежа<br />по коду операции";
+                    $("info_img").style.display = "block";
+                    oNumber.value ="";
+                    $("keyboard").style.display = "block";
+                    oNumber.style.fontSize = "47pt";
+                    if (sSearchType == 'Other')
+                        clearShadov("ALKEYBOARD");
+                    break;
+            }
+            
+            $("btn_forward").style.display = "none";
+            sSearchType = type;
+        }
+
+        function init() {
+            // log start
+            to(180);
+            _log('<p v="pss">');
+            // log stop
+            oNumber = $("number");
+            searchType('Cellular');
+            initDate();
+        }
+        
+        function initDate() {
+            $("p_date").innerHTML = s;
+        }
+
+        function backward() {
+            new CInnerShadow('btn_back');
+            // log start
+            _log('<et t="ea"></et>');
+            _log('</p>');
+            // log stop
+            setTimeout(function () {
+                document.location.href = "./epa.html";
+            }, 100);
+        }
+        
+        function formatDate(value) {
+            var str = value.toString();
+            if (str.length == 1)
+                str = '0' + str;
+            return str;
+        }
+
+        function forward() {
+            new CInnerShadow('btn_forward');
+            // log start
+            _log('<et t="f"></et>');
+            _log('</p>');
+            // log stop
+            setTimeout(function () {
+                var aDate = $("p_date").innerHTML.split('.'),
+                sDate = parseInt(aDate[1], 10) + '/' + parseInt(aDate[0], 10) + '/' + aDate[2],
+                dBeginDate = new Date(Date.parse(sDate)),
+                dEndDate = new Date(Date.parse(sDate));
+
+                dBeginDate.setDate(parseInt(dBeginDate.getDate(), 10) - 2);
+                dEndDate.setDate(parseInt(dEndDate.getDate(), 10));
+
+                if (dEndDate > oDate) {
+                    dEndDate = oDate;
+                }
+
+                $("PayStatAcc").value = "";
+                $("PayStatTrnNum").value = "";
+
+                switch (sSearchType) {
+                    case "Cellular":
+                        $("PayStatAcc").value = oNumber.value.substr(1).replace(new RegExp("[ -]", "g"), "");
+                        break;
+                    case "Other":
+                        $("PayStatAcc").value = oNumber.value;
+                        break;
+                    case "Cod":
+                        $("PayStatTrnNum").value = oNumber.value;
+                        break;
+                }
+
+                $("Date").value = aDate[0] + '.' + formatDate(aDate[1]) + '.' + aDate[2];
+                $("PayStatFromDate").value = formatDate(dBeginDate.getDate()) + '.' + formatDate((dBeginDate.getMonth() + 1)) + '.' + dBeginDate.getFullYear() + ' 00:00:01';
+                $("PayStatToDate").value = formatDate(dEndDate.getDate()) + '.' + formatDate((dEndDate.getMonth() + 1)) + '.' + dEndDate.getFullYear() + ' 23:59:59';
+                $("ff").submit();
+            }, 100);
+        }
+
+        function dateClick() {
+            new CInnerShadow('date_btn');
+            setTimeout(function () {
+                s = $("p_date").innerHTML;
+                var o = new CDate(CDate, null, null, s);
+                o.attachListener("onClick",
+                            function (sender, eargs) {
+                                $("p_date").innerHTML = ((eargs.day.length < 2) ? '0' + eargs.day : eargs.day) + '.' + (parseInt(eargs.month, 10) + 1) + '.' + eargs.year;
+                                if (bbuble2) {
+                                    buble(2);
+                                }
+                            });
+                o.render();
+            }, 100);
+        }
+
+        function pressKey(key) {
+            if (sSearchType == "Cod") {
+                if (key == "BACKSPACE") {
+                    new CInnerShadow('del_btn');
+                }
+                else {
+                    if (key == "0") {
+                        new CInnerShadow('btn_0', 22, true);
+                    }
+                    else {
+                        new CInnerShadow('btn_' + key);
+                    }
+                }
+            }
+            switch (key) {
+                case "TAB":
+                    break;
+                case "BACKSPACE":
+                    oNumber.value = oNumber.value.substr(0, oNumber.value.length-1);
+                    break;
+                case "CLEAR":
+                    oNumber.value = "";
+                    break;
+                default:
+                    if (oNumber.value.length < 15)
+                        oNumber.value += key;
+                    break;
+            }
+            if (oNumber.value.length > 0) {
+                $("btn_forward").style.display = "block";
+                if (sSearchType == "Cod")
+                    buble(1);
+            }
+            else
+                $("btn_forward").style.display = "none";   
+        }
+        
+        function buble(id) {
+            if (id == 1 && bbuble && bbuble2) {
+                $("buble1").innerHTML = getFlashDef("./swf/helper1.swf", true);
+                bbuble = false;
+            }
+            if (id == 2 && bbuble2) {
+                $("buble1").style.display = "block";
+                $("buble1").innerHTML = getFlashDef("./swf/helper2.swf", true);
+                setTimeout(function() {$("buble1").style.display = "none";}, 5000);
+                bbuble2 = false;
+            }
+        }
+
+        function format(str) {
+            var s = '',
+                nStr = str.length;
+            if (/4|5|6/.test(nStr))
+                s = '8  ' + str.substr(0,3) + '  ' +  str.substr(3,3);
+            if (/7|8/.test(nStr))
+                s = '8  ' + str.substr(0,3) + '  ' +  str.substr(3,3) + '-' + str.substr(6,2);
+            if (/9|10/.test(nStr))
+                s = '8  ' + str.substr(0,3) + '  ' +  str.substr(3,3) + '-' + str.substr(6,2) + '-' + str.substr(8,2);
+            if (/^[^456789]$|^0$$/.test(nStr))
+                s = '8  ' + str;
+            return s;
+        }
+
+        function pressCel(digit) {
+            if (sSearchType != "Cellular") {
+                pressKey(digit);
+                return;
+            }
+            var s = oNumber.value.replace(new RegExp("[ -]", "g"), ""),
+                nS = s.length,
+                str = "";
+
+            if (digit == "BACKSPACE" && nS > 1) {
+                new CInnerShadow('del_btn');
+                if (nS == 11)
+                    bflag = true;
+                nS -= 1;
+                if (nS == 1)
+                    $("div1").style.display = "none";
+                oNumber.value = format(s.substr(1, nS-1));
+            }
+            if (nS < 11 && digit != "BACKSPACE") {
+                if (digit == "0") {
+                    new CInnerShadow('btn_0', 22, true);
+                }
+                else {
+                    new CInnerShadow('btn_' + digit);
+                }
+                if (nS == 1 && bbuble && bbuble2) {
+                    buble(1);
+                }
+                nS += 1;
+                str = s + digit;
+                oNumber.value = format(str.substr(1));
+                if (str.length > 1)
+                    $("div1").style.display = "block";
+            }
+            if (nS == 11) {
+                $("btn_forward").style.display = "block";
+                if (bflag) {
+                    if (bbuble2) {
+                        buble(2);
+                    }
+                    bflag = false;
+                }
+            }
+            else 
+                $("btn_forward").style.display = "none";
+        }
+    </script>
+</head>
+<body onload="init();">
+<div style="display: none;">
+    <object id="Maratl" classid="clsid:025D39DC-87F3-468B-B553-5BCE1B085952" VIEWASTEXT></object>
+    <script language="jscript">
+        function Maratl::OnResponse(sName, sVal) {
+            getData(sName, sVal);
+        }
+    </script>
+</div>
+<div id="content">
+    <form id="ff" name="ff" method="post" action="./check_pay.html">
+    <input id="PayStatAcc" name="PayStatAcc"  type="hidden" value="" />
+    <input id="PayStatTrnNum" name="PayStatTrnNum" type="hidden" value="" />
+    <input id="Date" name="Date" type="hidden" value="" />
+    <input id="PayStatFromDate" name="PayStatFromDate" type="hidden" value="" />
+    <input id="PayStatToDate" name="PayStatToDate" type="hidden" value="" />
+    <input id="_extra_check_pay" name="_extra_check_pay" type="hidden" value="check_pay.html" />
+    <input id="_extra_auth_success" name="_extra_auth_success" type="hidden" value="p_pay_status_info.html" />
+    <input id="_extra_auth_fail" name="_extra_auth_fail" type="hidden" value="check_pay_err.html" />
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" height="100%">
+        <tr>
+            <td align="left" valign="middle" style="height: 220px;">
+                <div id="qiwi_logo"></div>
+                <p id="type_text"></p>
+                <div class="button" id="button1" onclick="new CInnerShadow('button1', 25); setTimeout(function() { searchType('Cod'); }, 150);"></div>
+                <div class="button" id="button3" onclick="new CInnerShadow('button3', 25); setTimeout(function() { searchType('Cellular'); }, 150);"></div>
+                <div class="button" id="button2" onclick="new CInnerShadow('button2', 25); setTimeout(function() { searchType('Other'); }, 150);"></div>
+            </td>
+        </tr>
+        <tr>
+            <td align="center" valign="middle" style="height: 804px;">
+                <table cellpadding="0" cellspacing="0" border="0" width="100%" height="100%">
+                    <tr>
+                        <td style="height: 122px;">
+                            <table cellpadding="0" cellspacing="0" border="0" width="100%" height="100%">
+                                <tr align="center">
+                                    <td class="td_b"><div id="date_btn" class="btn" onclick="dateClick();"><p id="p_date"></p></div></td>
+                                    <td style="width: 48%;">
+                                        <div id="pole">
+                                            <div id="p_l"></div>
+                                            <div id="p_c">
+                                                <div id="div1">(&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp)</div>
+                                                <input id="number" type="text" value="" style="text-align: left;" />
+                                                <p id="title"></p>
+                                            </div>
+                                            <div id="p_r"></div>
+                                        </div>
+                                    </td>
+                                    <td class="td_b"><div id="del_btn" class="btn"><img src="./img/ui/pay_status/del.gif" onclick="pressCel('BACKSPACE');" /></div></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="key_contener" align="center" valign="top">
+                            <div id="keyboard_al"></div>
+                            <div id="keyboard">
+                                <table cellpadding="0" cellspacing="0" border="0" width="100%" height="100%" align="center">
+	                                <tr align="center" valign="middle">
+		                                <td>
+			                                <table cellpadding="0" cellspacing="0" border="0" width="100%" height="100%" align="center">
+				                                <tr align="center" valign="top">
+					                                <td><img id="btn_1" src="./img/ui/keyboard/digital/newbtn_on1.gif" onclick="pressCel('1')" /></td>
+					                                <td><img id="btn_2" src="./img/ui/keyboard/digital/newbtn_on2.gif" onclick="pressCel('2')" /></td>
+					                                <td><img id="btn_3" src="./img/ui/keyboard/digital/newbtn_on3.gif" onclick="pressCel('3')" /></td>
+				                                </tr>
+				                                <tr align="center" valign="top">
+					                                <td><img id="btn_4" src="./img/ui/keyboard/digital/newbtn_on4.gif" onclick="pressCel('4')" /></td>
+					                                <td><img id="btn_5" src="./img/ui/keyboard/digital/newbtn_on5.gif" onclick="pressCel('5')" /></td>
+					                                <td><img id="btn_6" src="./img/ui/keyboard/digital/newbtn_on6.gif" onclick="pressCel('6')" /></td>
+				                                </tr>
+				                                <tr align="center" valign="top">
+					                                <td><img id="btn_7" src="./img/ui/keyboard/digital/newbtn_on7.gif" onclick="pressCel('7')" /></td>
+					                                <td><img id="btn_8" src="./img/ui/keyboard/digital/newbtn_on8.gif" onclick="pressCel('8')" /></td>
+					                                <td><img id="btn_9" src="./img/ui/keyboard/digital/newbtn_on9.gif" onclick="pressCel('9')" /></td>
+				                                </tr>
+			                                </table>
+		                                </td>
+	                                </tr>
+	                                <tr align="center" valign="top">
+		                                <td><img id="btn_0" src="./img/ui/keyboard/digital/newbtn_0_on.gif" onclick="pressCel('0')" style="width: 468px; height: 132px" /></td>
+	                                </tr>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    </form>
+    <div id="btn_back"><img src="./img/ui/navigation/back.gif" onclick="backward();" /></div>
+	<div id="btn_forward" style="display: none;"><img src="./img/ui/pay_status/search.gif" onclick='forward();' /></div>
+	<div id="info_img" style=" position: absolute; width: 300px; height: 250px; left: 18px; top: 470px; background: url('./img/ui/pay_status/info.gif') no-repeat;"></div>
+    <div id="buble1" style=" position: absolute; width: 301px; height: 195px; left: 13px; top: 341px;"></div>
+</div>
+</body>
+</html>

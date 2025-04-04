@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects
+	xmlns:util="http://www.springactionscript.org/schema/util">
+
+  <!-- elements -->
+
+  <object 
+		id="flowCfg"
+		class="ru.mobw.coreas3.app.config.FlowConfig">
+		<property name="bindingsRootPackage" value="${utility.path}"/>
+	</object>
+
+  <object
+		id="flow"
+		class="ru.mobw.coreas3.app.flow.mcflow.MCFlowBase"
+		depends-on="flowCfg">
+    <constructor-arg ref="flowCfg">
+    </constructor-arg>
+    <property name="routeData" ref="route"/>
+    <property name="elementsMap">
+      <dictionary>
+        <entry>
+          <key>start</key>
+          <value>
+            <ref>start</ref>
+          </value>
+        </entry>
+        <entry>
+          <key>howToPay</key>
+          <value>
+            <ref>howToPay</ref>
+          </value>
+        </entry>
+        <entry>
+          <key>selectPayType</key>
+          <value>
+            <ref>selectPayType</ref>
+          </value>
+        </entry>
+        <entry>
+          <key>enterAccount</key>
+          <value>
+            <ref>enterAccount</ref>
+          </value>
+        </entry>
+         <entry>
+          <key>changePeriod</key>
+          <value>
+            <ref>changePeriod</ref>
+          </value>
+        </entry>
+        <entry>
+          <key>enterSumm</key>
+          <value>
+            <ref>enterSumm</ref>
+          </value>
+        </entry>
+        <entry>
+          <key>enterSmallCode</key>
+          <value>
+            <ref>enterSmallCode</ref>
+          </value>
+        </entry>
+         <entry>
+          <key>enterCounter</key>
+          <value>
+            <ref>enterCounter</ref>
+          </value>
+        </entry>
+        <entry>
+          <key>enterTelephone</key>
+          <value>
+            <ref>enterTelephone</ref>
+          </value>
+        </entry>
+        <entry>
+          <key>changeTypeSelect</key>
+          <value>
+            <ref>changeTypeSelect</ref>
+          </value>
+        </entry>
+        <entry>
+          <key>changeToWallet</key>
+          <value>
+            <ref>changeToWallet</ref>
+          </value>
+        </entry>
+        <entry>
+          <key>changeToMobile</key>
+          <value>
+            <ref>changeToMobile</ref>
+          </value>
+        </entry>  
+        <entry>
+          <key>toQuickPay</key>
+          <value>
+            <ref>toQuickPay</ref>
+          </value>
+        </entry>        
+        <entry>
+          <key>paymentEnd</key>
+          <value>
+            <ref>paymentEnd</ref>
+          </value>
+        </entry>
+         <entry>
+          <key>exit</key>
+          <value>
+            <ref>exit</ref>
+          </value>
+        </entry>    
+      </dictionary>
+    </property>
+  </object>
+
+  <object
+		id="start"
+		class="elements.mosenergo.StartElement"
+		>
+	<property name="id" value="1"/>	
+	<constructor-arg value="start"/>
+	<constructor-arg ref="mainInstance"/> 
+	<property name="mosComm" value="${payment.mosComm}"/>
+	<property name="moComm" value="${payment.moComm}"/> 
+	<property name="mosDetails" value="${payment.mosDetails}"/>
+	<property name="moDetails" value="${payment.moDetails}"/>  
+  </object>
+  
+  <object
+		id="howToPay"
+		class="ru.mobw.coreas3.app.flow.mcflow.CommonFlowElement"
+		>
+	<property name="id" value="2"/>	
+	<constructor-arg value="howToPay"/>
+	<constructor-arg ref="mainInstance"/> 
+  </object>
+  
+  <object
+		id="selectPayType"
+		class="elements.mosenergo.SelectPayTypeElement"
+		>
+	<property name="id" value="3"/>	
+	<constructor-arg value="selectPayType"/>
+	<constructor-arg ref="mainInstance"/>
+	<property name="registrationCandidates">
+			<array>
+				<value>viewMC.quickTypeButton,click,A:quickType</value>
+				<value>viewMC.longTypeButton,click,A:longType</value>
+			</array>
+		</property>
+  </object>
+  
+  <object
+		id="enterAccount"
+		class="elements.mosenergo.EnterAccountElement"
+		>
+	<property name="id" value="4"/>	
+    <constructor-arg value="enterAccount"/>
+    <constructor-arg ref="mainInstance"/> 
+    <property name="maxTextLength" value="10"/>
+    <property name="lattersLimits" value="5,3,2"/>
+    <property name="timeout" value="400000"/>
+    <property name="bindings">
+    	<array>
+    		<value>binder.text=$account</value>
+    	</array>
+    </property>
+	<property name="registrationCandidates">
+			<array>
+				<value>onlineAccountCheckService,AccountExists,S:onlineAccountCheckService</value>
+				<value>onlineAccountCheckService,AccountNoExists,E:onlineAccountCheckServiceNotExist</value>
+				<value>onlineAccountCheckService,OnlineError,E:onlineAccountCheckServiceFail</value>
+			</array>
+		</property>
+  </object>
+  
+  <object
+	  	id="changePeriod"
+	  	class="elements.mosenergo.ChangePeriodElement"
+	  	>
+	<property name="id" value="5"/>	
+    <constructor-arg value="changePeriod"/>
+    <constructor-arg ref="mainInstance"/>
+    <property name="timeout" value="150000"/>
+	
+	
+  </object>
+  
+  <object
+		id="enterSumm"
+		class="elements.mosenergo.EnterSummElement"
+		>
+	<property name="id" value="6"/>	
+	<constructor-arg value="enterSumm"/>
+	<constructor-arg ref="mainInstance"/>
+	<property name="maxTextLength" value="8"/>
+	<property name="minCash" value="${config.minCashLimit}"/>
+	<property name="maxCash" value="${num.maxCash}"/>
+	<property name="alert" value="${err.cashRange}"/>
+	<property name="bindings">
+    	<array>
+    		<value>binder.text=$summ</value>
+    	</array>
+    </property>
+  </object>
+  
+  <object
+		id="enterSmallCode"
+		class="elements.mosenergo.EnterSmallCodeElement"
+		>
+	<property name="id" value="7"/>	
+	<constructor-arg value="enterSmallCode"/>
+	<constructor-arg ref="mainInstance"/>
+	<property name="maxTextLength" value="2"/>
+	<property name="bindings">
+    	<array>
+    		<value>binder.text=$smallCode</value>
+    	</array>
+    </property>
+  </object>
+  
+  <object
+		id="enterCounter"
+		class="elements.mosenergo.EnterCounterElement"
+		>
+	<property name="id" value="8"/>	
+	<constructor-arg value="enterCounter"/>
+	<constructor-arg ref="mainInstance"/>
+	<property name="maxTextLength" value="5"/>
+  </object>
+  
+  <object
+		id="changeTypeSelect"
+		class="elements.ChangeTypeSelectionElement"
+		>
+	<property name="id" value="9"/>	
+    <constructor-arg value="changeTypeSelect"/>
+    <constructor-arg ref="mainInstance"/>
+  </object>
+  
+  <object
+		id="enterTelephone"
+		class="elements.EnterTelephoneElement"
+		>
+		<property name="id" value="10"/>
+		<constructor-arg value="enterTelephone"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="bindings">
+			<array>
+				<value>binder.text=$phone</value>
+			</array>
+		</property>
+		<property name="formatter" ref="phoneFormatter" />
+		<property name="maxTextLength" value="${config.phoneLength}"/>
+		<property name="validationAlert" value="${err.phoneError}"/>
+		<property name="validator" ref="phoneValidator" />
+	</object>  
+  
+  <object
+		id="changeToWallet"
+		class="elements.mosenergo.WalletChangePaymentElement"
+		>
+		<property name="id" value="11"/>
+		<constructor-arg value="changeToWallet"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="timeout" value="240000"/>
+	</object>
+	
+	<object
+		id="changeToMobile"
+		class="elements.mosenergo.MobileChangePaymentElement"
+		>
+		<property name="id" value="12"/>
+		<constructor-arg value="changeToMobile"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="timeout" value="240000"/>
+	</object>
+	
+	<object
+		id="toQuickPay"
+		class="elements.mosenergo.QuickPaymentElement"
+		>
+		<property name="id" value="13"/>
+		<constructor-arg value="toQuickPay"/>
+		<constructor-arg ref="mainInstance"/>
+		<property name="timeout" value="240000"/>
+	</object>
+	
+	<object
+	  	id="paymentEnd"
+	  	class="elements.EndPaymentElement"
+	  	>
+		<property name="id" value="14"/>
+      <constructor-arg value="paymentEnd"/>
+      <constructor-arg ref="mainInstance"/>
+  </object>
+  
+   
+  <object
+		id="exit"
+		class="elements.ZKUExitElement"
+		>
+		<constructor-arg value="exit"/>
+  </object>
+
+	 <!-- end elements -->
+	
+	
+	
+	
+  
+	<!-- validators -->
+	
+	<object 
+		id="phoneValidator"
+		class="com.leetwin.flow.validation.Validator">
+		<property name="constraintsMap">
+			<dictionary>
+				<entry>
+					<key>value</key>
+					<value>
+						<array>
+							<object class="com.leetwin.flow.validation.constraints.NotNull"/>
+							<object class="com.leetwin.flow.validation.constraints.InRange">
+								<property name="min" value="10"/>
+								<property name="max" value="10"/>
+							</object>
+							<object class="ru.mobw.coreas3.app.validation.constraints.HasPhoneCapacity"/>
+						</array>
+					</value>
+				</entry>
+			</dictionary>
+		</property>
+	</object>
+	
+	<!-- end validators -->
+		
+		
+		
+		
+  
+	<!-- helpers -->
+	<object id="phoneFormatter" class="ru.mobw.coreas3.formatters.PhoneFormatter" />
+	<!-- end_helpers -->
+  
+</objects>

@@ -1,0 +1,2165 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<data>
+	<!--
+		Список категорий
+	-->
+	<categories>
+		<category id="03" name="Газеты" desc="Московский Комсомолец; КОММЕРСАНТ; РБК daily; ВЕДОМОСТИ" />
+		<category id="19" name="Электронные версии журналов, газет и книг" desc="Бюллетень кинопрокатчика;"/> 
+		<category id="01" name="Авто-Мото, средства передвижения" desc="QUATTRORUOTE; КЛАКСОН; ЗА РУЛЁМ" />
+		<category id="09" name="ТВ и КИНО, Музыка и Развлечения" desc="Total DVD; TimeOut;МК-БУЛЬВАР" />
+		<category id="16" name="Компьютерные технологии. Игры. Связь" desc="Хакер; MOBILE MAGAZINE; Computer Bild" />
+		<category id="08" name="Издания для Мужчин" desc="TOTAL FOOTBOLL; MEN'S HEALTH; PLAYBOY" />
+		<category id="07" name="Издания для Женщин" desc="COSMOPOLITAN; MARIE CLAIRE; ЛИЗА" />
+		<category id="14" name="Путешествия. Отдых. Охота и рыбалка" desc="ОХОТА И РЫБАЛКА XXI  ВЕК; ВОКРУГ СВЕТА" />
+		<category id="18" name="Увлечения и Хобби" desc="Digital Photo; ВЫШИВАЮ КРЕСТИКОМ; ЛИЗА КРОСВОРДЫ" />
+		<category id="05" name="Детские и молодежные издания" desc="YES; Мир реалити-шоу ДОМ-2; ELLE GIRL; ХУЛИГАН" />
+		<category id="02" name="Архитектура. Интерьер. Дизайн. Строительство" desc="КРАСИВЫЕ КВАРТИРЫ; КАМИНЫ И ОТОПЛЕНИЕ; ЛИЗА. МОЙ УЮТНЫЙ ДОМ" />
+		<category id="04" name="Экономика и финансы" desc="FORBES; ЭКСПЕРТ; СВОЙ БИЗНЕС" />
+		<category id="12" name="Научно-Технические издания" desc="DISCOVERY; ПОПУЛЯРНАЯ МЕХАНИКА / POPULAR MECHANICS" />
+		<category id="11" name="Спорт. Здоровье. Красота. Медицина" desc="YOGA JOURNAL; Красота и здоровье" />
+		<category id="10" name="Образование. Культура. Искусство" desc="Обучение и карьера; ЗНАНИЕ СИЛА" />
+		<category id="06" name="Зарубежные издания" /> 
+		<category id="13" name="Общественно-политические издания" desc="СОВЕРШЕННО СЕКРЕТНО; КОММЕРСАНТЪ ВЛАСТЬ; THE NEW TIMES" />
+		<category id="15" name="Природа. Экология. Земледелие. Животные" desc="Экология и жизнь; В МИРЕ РАСТЕНИЙ; В МИРЕ ЖИВОТНЫХ" />
+		<category id="17" name="Государство. Право. Закон" />
+		<category id="20" name="Книги" desc="Романы, Путеводители, Каталоги"/> 
+	</categories>
+	<!--
+		Список групп
+	-->
+	<groups>
+		<group id="2" name="ООО &quot;К.А. СЛЭНГ ПРОДАКШНС&quot;" alt-name="SLANG PRODAKSHNS" phone="(495)213-04-27" e-mail="info@kino-slang.ru" url="www.jurnaloff.net" inn="7714789143" />
+	</groups>
+	<!--
+		Список журналов
+	-->
+	<publications>
+		<publication cat-id="16" grp-id="2" name="Железо" thumb="p1">
+			<description>
+				<![CDATA[
+					 - Журнал о компьютерах и компьютерном железе. Новости и анонсы железа, тесты и обзоры новинок железа, советы и решения по сбору и обслуживанию ПК.
+				]]>
+			</description>
+			<options>
+				<option uid="GL001" period="6" price="1200" />
+				<option uid="GL002" period="12" price="2400" />
+			</options>
+		</publication>
+		<publication cat-id="16" grp-id="2" name="PC игры" thumb="p2">
+			<description>
+				<![CDATA[
+					 - Правильный журнал о компьютерных играх! Комплектуется двумя двухслойными DVD дисками (более 17Gb информации!), постером и наклейками. Если ты геймер – ты не пропустишь! 
+				]]>
+			</description>
+			<options>
+				<option uid="GL005" period="6" price="1300" />
+				<option uid="GL006" period="12" price="2600" />
+			</options>
+		</publication>
+		<publication cat-id="16" grp-id="2" name="Страна игр" thumb="p3">
+			<description>
+				<![CDATA[
+					 - Журнал о лучших играх для PC и всех современных приставок. Новости, анонсы, обзоры, прохождения, репортажи, интервью, а также два двухслойных DVD (17  Гбайт) с демоверсиями игр, софтом и видео, которое можно просматривать на приставках и DVD-плеерах. 
+				]]>
+			</description>
+			<options>
+				<option uid="GL007" period="6" price="1300" />
+				<option uid="GL008" period="12" price="2600" />
+			</options>
+		</publication>
+		<publication cat-id="09" grp-id="2" name="Total DVD" thumb="p4">
+			<description>
+				<![CDATA[
+					 - Журнал для тех, кто любит кино и хочет знать о нем больше. В каждом номере – статьи о хитах проката, более пятидесяти подробных обзоров DVD-дисков. На прилагаемом диске - лучшие фильмы последних лет.
+				]]>
+			</description>
+			<options>
+				<option uid="GL009" period="6" price="1300" />
+				<option uid="GL010" period="12" price="2600" />
+			</options>
+		</publication>
+		<publication cat-id="16" grp-id="2" name="Хакер" thumb="p5">
+			<description>
+				<![CDATA[
+					 - Самый честный компьютерный журнал. Сетевые взломы, хакеры, полезные компьютерные секреты, безопасность, программирование, интернет, железо, софт, люди и технологии, которые меняют мир.
+				]]>
+			</description>
+			<options>
+				<option uid="GL011" period="6" price="1300" />
+				<option uid="GL012" period="12" price="2600" />
+			</options>
+		</publication>
+		<publication cat-id="08" grp-id="2" name="TOTAL FOOTBOLL + DVD/Тотальный футбол" thumb="p6">
+			<description>
+				<![CDATA[
+					 - ФУТБОЛ КАК СТРАСТЬ - это суть журнала и его отличие от других футбольных изданий. Интервью со звездами, статистика и яркие фото. В каждом номере постер и DVD-диск с лучшими матчами и голами европейских и Российских чемпионатов.
+				]]>
+			</description>
+			<options>
+				<option uid="GL013" period="6" price="900" />
+				<option uid="GL014" period="12" price="1600" />
+			</options>
+		</publication>
+		<publication cat-id="18" grp-id="2" name="Вышиваю крестиком" thumb="p7">
+			<description>
+				<![CDATA[
+					 - Это  первый глянцевый журнал в России, посвященный вышивке крестиком, который одновременно является и клубом любителей этого вида рукоделия. В каждом номере издания читатель получает доступ к современным вышивальным дизайнам (более 30 схем в каждом номере). В приложении большая схема - постер для вышивания.
+				]]>
+			</description>
+			<options>
+				<option uid="GL015" period="6" price="600" />
+				<option uid="GL016" period="12" price="1200" />
+			</options>
+		</publication>
+		<publication cat-id="18" grp-id="2" name="Фотомастерская + CD" thumb="p8">
+			<description>
+				<![CDATA[
+					- Журнал-путеводитель по обработке цифровой фотографии для тех, кто еще не стал асом в этой области. Как, используя последние технологии, самостоятельно сделать качественный пейзаж или портрет, открытку на Хэлоуин и Рождество - теперь все секреты фотоискусства доступны даже начинающему фотографу. В приложении CD.
+				]]>
+			</description>
+			<options>
+				<option uid="GL017" period="6" price="800" />
+				<option uid="GL018" period="12" price="1600" />
+			</options>
+		</publication>
+		<publication cat-id="01" grp-id="2" name="Тюнинг Автомобилей" thumb="p9">
+			<description>
+				<![CDATA[
+					- Яркие, дерзкие, незаурядные, сильные и свободные духом! Именно так хочется обратиться к читателям лучшего в России журнала об автомобильном тюнинге.  Тюнинг для нас - это своего рода декларация независимости от стандартов, серости и обыденности! В приложении двухсторонний постер.
+				]]>
+			</description>
+			<options>
+				<option uid="GL019" period="6" price="900" />
+				<option uid="GL020" period="12" price="1600" />
+			</options>
+		</publication>
+		<publication cat-id="18" grp-id="2" name="Digital Photo + DVD" thumb="p10">
+			<description>
+				<![CDATA[
+					- Журнал помогает читателям грамотно выбрать цифровую технику и научиться ей пользоваться.  Подробные тесты и обзоры цифровой фототехники сочетаются в журнале с возможностью буквально "пощупать" аппаратуру своими руками, не покупая ее. Сделать это позволяют мультимедийные DVD в каждом номере.
+				]]>
+			</description>
+			<options>
+				<option uid="GL021" period="6" price="1200" />
+				<option uid="GL022" period="12" price="2200" />
+			</options>
+		</publication>
+		<publication cat-id="18" grp-id="2" name="High Definition" thumb="p11">
+			<description>
+				<![CDATA[
+					- Самое авторитетное издание о домашнем кинотеатре и Hi-Fi. Сравнительные тесты и советы по построению собственной аудио-видеосистемы. Выбирайте технику на свой вкус и кошелек!
+				]]>
+			</description>
+			<options>
+				<option uid="GL023" period="6" price="1200" />
+				<option uid="GL024" period="12" price="2200" />
+			</options>
+		</publication>
+		<publication cat-id="04" grp-id="2" name="Свой бизнес" thumb="p12">
+			<description>
+				<![CDATA[
+					- Журнал для предпринимателей: перспективные проекты, рынки, франшизы, идеи и решения для развития бизнеса.
+				]]>
+			</description>
+			<options>
+				<option uid="GL025" period="6" price="1100" />
+				<option uid="GL026" period="12" price="2200" />
+			</options>
+		</publication>
+		<publication cat-id="05" grp-id="2" name="Хулиган" thumb="p13">
+			<description>
+				<![CDATA[
+					- Журнал об актуальных тенденциях в современной урбанистической культуре (мода, дизайн, музыка, клубная культура, современное искусство).
+				]]>
+			</description>
+			<options>
+				<option uid="GL027" period="6" price="1000" />
+				<option uid="GL028" period="12" price="1900" />
+			</options>
+		</publication>
+		<publication cat-id="16" grp-id="2" name="T3. Техника третьего тысячелетия + DVD" thumb="p16">
+			<description>
+				<![CDATA[
+					- Ведущее европейское издание, ориентирующее потребителя в мире последних достижений в области аудио/видео техники, компьютеров и Интернета, мобильной связи, фотографии, техники для отдыха и развлечений. Находящийся на стыке Lifestyle и техно-сегментов, журнал ориентирован на успешных людей, которые стремятся всегда быть на острие прогресса.
+				]]>
+			</description>
+			<options>
+				<option uid="GL033" period="6" price="1100" />
+				<option uid="GL034" period="12" price="1900" />
+			</options>
+		</publication>
+		<publication cat-id="07" grp-id="2" name="BURDA/БУРДА" thumb="p23">
+			<description>
+				<![CDATA[
+					 - BURDA –Журнал Burda — это европейская мода высокого класса. На страницах журнала Burda — самые последние тенденции мировой моды, новости с европейских подиумов, советы по стилю и модные торговые марки. 
+				]]>
+			</description>
+			<options>
+				<option uid="BU001" period="6" price="810" />
+				<option uid="BU002" period="12" price="1620" />
+			</options>
+		</publication>
+		<publication cat-id="07" grp-id="2" name="ЛИЗА. МОЙ РЕБЕНОК" thumb="p24">
+			<description>
+				<![CDATA[
+					 -ЛИЗА. МОЙ РЕБЕНОК. Журнал для мамы и папы. Самая важная и полная информация для молодых родителей. Беременность и роды. Все о малышах. Семейная психология. Рекомендации детских диетологов. 
+				]]>
+			</description>
+			<options>
+				<option uid="BU003" period="6" price="570" />
+				<option uid="BU004" period="12" price="1140" />
+			</options>
+		</publication>
+		<publication cat-id="07" grp-id="2" name="ЛИЗА. ДОБРЫЕ СОВЕТЫ" thumb="p25">
+			<description>
+				<![CDATA[
+					 -ЛИЗА. ДОБРЫЕ СОВЕТЫ. Журнал о доме и семье. Интервью со звездой. Рекомендации стилиста. Советы косметолога. Гид покупателя. Семейный адвокат. Домашний доктор. Меню здоровья и рецепты красоты. 
+				]]>
+			</description>
+			<options>
+				<option uid="BU005" period="6" price="460" />
+				<option uid="BU006" period="12" price="920" />
+			</options>
+		</publication>
+		<publication cat-id="18" grp-id="2" name="ДОБРЫЕ СОВЕТЫ.ЛЮБЛЮ ГОТОВИТЬ" thumb="p26">
+			<description>
+				<![CDATA[
+					 -ДОБРЫЕ СОВЕТЫ.ЛЮБЛЮ ГОТОВИТЬ. Кулинарное издание мини-формата. Лучшие рецепты от читателей - на все случаи жизни. Рекомендации по приготовлению блюд. Премии авторам опубликованных рецептов и фотографий. 
+				]]>
+			</description>
+			<options>
+				<option uid="BU007" period="6" price="250" />
+				<option uid="BU008" period="12" price="500" />
+			</options>
+		</publication>
+		<publication cat-id="11" grp-id="2" name="ДОБРЫЕ СОВЕТЫ. ДОМАШНИЙ ДОКТОР" thumb="p27">
+			<description>
+				<![CDATA[
+					 -ДОБРЫЕ СОВЕТЫ. ДОМАШНИЙ ДОКТОР. Интерактивная платформа для обмена знаниями и мнениями по теме здоровья. Советы экспертов, а также рецепты от читателей журнала
+- Успех концепции журнала основан на доверии читателей опыту других читателей и компетентным экспертам.
+				]]>
+			</description>
+			<options>
+				<option uid="BU009" period="6" price="250" />
+				<option uid="BU010" period="12" price="500" />
+			</options>
+		</publication>
+		<publication cat-id="07" grp-id="2" name="МОЙ РЕБЕНОК. МАМОЧКИНА ШКОЛА" thumb="p28">
+			<description>
+				<![CDATA[
+					 -МОЙ РЕБЕНОК. МАМОЧКИНА ШКОЛА. ежемесячный журнал для родителей и тех, кто хочет ими стать. Мамы и папы делятся советами и личным опытом, получают на страницах журнала рекомендации экспертов. 
+				]]>
+			</description>
+			<options>
+				<option uid="BU011" period="6" price="250" />
+				<option uid="BU012" period="12" price="500" />
+			</options>
+		</publication>
+		<publication cat-id="02" grp-id="2" name="ДОБРЫЕ СОВЕТЫ. ДОМ В САДУ" thumb="p29">
+			<description>
+				<![CDATA[
+					 -ДОБРЫЕ СОВЕТЫ. ДОМ В САДУ. Народный журнал садовых и дачных советов. Обмен опытом для тех, у кого есть собственный дом с садом, дачный участок. Денежное вознаграждение авторам опубликованных писем. 
+				]]>
+			</description>
+			<options>
+				<option uid="BU013" period="6" price="250" />
+				<option uid="BU014" period="12" price="500" />
+			</options>
+		</publication>
+		<publication cat-id="07" grp-id="2" name="ЛИЗА. ПРИЯТНОГО АППЕТИТА" thumb="p30">
+			<description>
+				<![CDATA[
+					 -ЛИЗА. ПРИЯТНОГО АППЕТИТА. журнал для тех, кто любит готовить, печь и радовать близких кулинарными сюрпризами. Издание предлагает яркий аппетитный мир всем, для кого готовить — радость, а есть — огромное удовольствие. Этот журнал, целиком посвященный только одной теме — домашней кулинарии. На страницах издания — лучшие рецепты русской кухни и самое вкусное со всего света, советы по приготовлению традиционных и экзотических блюд. 
+				]]>
+			</description>
+			<options>
+				<option uid="BU015" period="6" price="380" />
+				<option uid="BU016" period="12" price="760" />
+			</options>
+		</publication>
+		<publication cat-id="02" grp-id="2" name="ЛИЗА. МОЙ УЮТНЫЙ ДОМ" thumb="p31">
+			<description>
+				<![CDATA[
+					 -ЛИЗА. МОЙ УЮТНЫЙ ДОМ. Современные направления в дизайне интерьера. Оформление и обустройство дома и квартиры. Свежие идеи. Полезные советы. Товары для дома на российском рынке. Адреса магазинов. 
+				]]>
+			</description>
+			<options>
+				<option uid="BU017" period="6" price="430" />
+				<option uid="BU018" period="12" price="860" />
+			</options>
+		</publication>
+		<publication cat-id="02" grp-id="2" name="ЛИЗА. МОЙ ПРЕКРАСНЫЙ САД" thumb="p32">
+			<description>
+				<![CDATA[
+					 -ЛИЗА. МОЙ ПРЕКРАСНЫЙ САД. русское издание самого популярного в Европе журнала по декоративному садоводству. Журнал предназначен для садоводов-любителей, владельцев загородных домов, дач и вилл. Его центральные темы — планировка и оформление сада, оптимальный выбор растений и уход за ними, сезонные практические советы садоводам. Немало внимания уделяется и комнатным растениям, которые подходят для декоративного оформления зимних садов, террас и балконов.  
+				]]>
+			</description>
+			<options>
+				<option uid="BU019" period="6" price="430" />
+				<option uid="BU020" period="12" price="860" />
+			</options>
+		</publication>
+		<publication cat-id="05" grp-id="2" name="OOPS!/Упс!" thumb="p33">
+			<description>
+				<![CDATA[
+					 - OOPS!/Упс! Блестящий журнал для стильных девушек. Все самое важное: истории, звезды, музыка, стиль, красота, юмор, отношения. Эффектная мода. Советы стилистов. Блицинтервью. Конкурсы. выходит 12 в год.
+				]]>
+			</description>
+			<options>
+				<option uid="BU021" period="6" price="420" />
+				<option uid="BU022" period="12" price="840" />
+			</options>
+		</publication>
+		<publication cat-id="05" grp-id="2" name="GIRL/Гёл" thumb="p34">
+			<description>
+				<![CDATA[
+					 - GIRL/Гёл Журнал для модных девушек. Стильные молодежные наряды. Красота и косметика. Кумиры и VIP-персоны. Лучшие парни. Истории любви и дружбы. Письма и конкурсы. Тесты и приколы. 
+				]]>
+			</description>
+			<options>
+				<option uid="BU023" period="6" price="340" />
+				<option uid="BU024" period="12" price="680" />
+			</options>
+		</publication>
+		<publication cat-id="16" grp-id="2" name="CHIP + DVD / ЧИП (С DVD)" thumb="p35">
+			<description>
+				<![CDATA[
+					 - CHIP. Журнал о компьютерной технике для профессионалов и опытных пользователей. Hardware. Software. Internet. Communications. Приложение на DVD: программы, драйверы, утилиты. Выходит 12 в год; 
+				]]>
+			</description>
+			<options>
+				<option uid="BU025" period="6" price="990" />
+				<option uid="BU026" period="12" price="1980" />
+			</options>
+		</publication>
+		<publication cat-id="09" grp-id="2" name="ОТДОХНИ! ИМЕНА" thumb="p36">
+			<description>
+				<![CDATA[
+					 -ОТДОХНИ! ИМЕНА. Эффектной особенностью нового журнала являются уникальные снимки из личных архивов знаменитостей, фотоистории громких событий прошлого и настоящего. Каждый номер журнала «Отдохни! Имена» — это звездная аллея из 12 биографий российских и мировых знаменитостей, чьи великие имена и яркие судьбы интересны и близки миллионам читателей. 
+				]]>
+			</description>
+			<options>
+				<option uid="BU027" period="6" price="420" />
+				<option uid="BU028" period="12" price="840" />
+			</options>
+		</publication>
+		<publication cat-id="07" grp-id="2" name="ЛИЗА" thumb="p37">
+			<description>
+				<![CDATA[
+					 -ЛИЗА. Журнал для молодых  энергичных женщин. Стильные идеи. Секреты успеха. Профессия и карьера. Школа красоты и здоровья. Путешествия и знаменитости. Модные кулинарные фантазии. 
+				]]>
+			</description>
+			<options>
+				<option uid="BU029" period="6" price="1290" />
+				<option uid="BU030" period="12" price="2560" />
+			</options>
+		</publication>
+		<publication cat-id="09" grp-id="2" name="ОТДОХНИ!" thumb="p38">
+			<description>
+				<![CDATA[
+					 -ОТДОХНИ! Эффектной особенностью нового журнала являются уникальные снимки из личных архивов знаменитостей, фотоистории громких событий прошлого и настоящего. Каждый номер журнала «Отдохни! Имена» — это звездная аллея из 12 биографий российских и мировых знаменитостей, чьи великие имена и яркие судьбы интересны и близки миллионам читателей. 
+				]]>
+			</description>
+			<options>
+				<option uid="BU031" period="6" price="1290" />
+				<option uid="BU032" period="12" price="2560" />
+			</options>
+		</publication>
+		<publication cat-id="01" grp-id="2" name="АВТОМИР" thumb="p39">
+			<description>
+				<![CDATA[
+					 -АВТОМИР! единственный в России еженедельный автомобильный журнал. Самые свежие новости из мира автомобилей. Сравнительные тест-драйвы автомобилей-одноклассников. В каждом номере представляем: автомобиль недели — лидер российских продаж. 
+				]]>
+			</description>
+			<options>
+				<option uid="BU033" period="6" price="1300" />
+				<option uid="BU034" period="12" price="2600" />
+			</options>
+		</publication>
+		<publication cat-id="07" grp-id="2" name="ЛИЗА. КРОСВОРДЫ" thumb="p40">
+			<description>
+				<![CDATA[
+					 -ЛИЗА.КРОСВОРДЫ. Полноцветный журнал кроссвордов для женщин, которые любят легкий и полезный досуг. Это сканворды-гиганты, хитроумные ребусы, увлекательные кейворды и сенсационно популярные головоломки судоку. 
+				]]>
+			</description>
+			<options>
+				<option uid="BU035" period="6" price="270" />
+				<option uid="BU036" period="12" price="540" />
+			</options>
+		</publication>
+		<publication cat-id="07" grp-id="2" name="BURDA SPECIAL. МОДА ДЛЯ ПОЛНЫХ" thumb="p41">
+			<description>
+				<![CDATA[
+					 -BURDA SPECIAL. МОДА ДЛЯ ПОЛНЫХ. Специальный выпуск журнала Burda. "Мода для полных" - находка для тех женщин, кому не всегда удается найти красивые наряды своего размера в магазине. А благодаря журналу можно сшить их самостоятельно или у портных.
+				]]>
+			</description>
+			<options>
+				<option uid="BU037" period="6" price="120" />
+				<option uid="BU038" period="12" price="240" />
+			</options>
+		</publication>
+		<publication cat-id="07" grp-id="2" name="BURDA SPECIAL. ШИТЬ ЛЕГКО И БЫСТРО" thumb="p42">
+			<description>
+				<![CDATA[
+					 -BURDA SPECIAL. ШИТЬ ЛЕГКО И БЫСТРО. Специальный журнал для тех, кто любит шить, но не может уделить любимому занятию много времени. Поэтому модели, представленные в журнале, шьются буквально за пару часов!				
+				]]>
+			</description>
+			<options>
+				<option uid="BU039" period="6" price="120" />
+				<option uid="BU040" period="12" price="240" />
+			</options>
+		</publication>
+		<publication cat-id="07" grp-id="2" name="MINI" thumb="p43">
+			<description>
+				<![CDATA[
+					 -MINI — это глянцевый журнал маленького формата для женщин 25—35 лет, которые живут по максимуму. Читательницы MINI постоянно совершенствуются. Выбирают стильную одежду, стремятся к гармоничным отношениям с партнером, делают успешную карьеру. Они всегда и во всем первые. В курсе всех новостей в мире моды и красоты.				
+				]]>
+			</description>
+			<options>
+				<option uid="BU041" period="6" price="460" />
+				<option uid="BU042" period="12" price="920" />
+			</options>
+		</publication>
+		<publication cat-id="07" grp-id="2" name="Joy (Джой)" thumb="p44">
+			<description>
+				<![CDATA[
+					 -Joy (Джой) — развлекательный глянцевый женский журнал о трендах. Joy — журнал маленького формата, создающий отличное настроение! Читательницы Joy — жизнерадостные модницы в возрасте 20—30 лет.				
+				]]>
+			</description>
+			<options>
+				<option uid="BU043" period="6" price="420" />
+				<option uid="BU044" period="12" price="840" />
+			</options>
+		</publication>
+		<publication cat-id="01" grp-id="2" name="QUATTRORUOTE (КВАТТРОРУТЕ)" thumb="p45">
+			<description>
+				<![CDATA[
+					 - QUATTRORUOTE (КВАТТРОРУТЕ) Великолепно изданный автомобильный журнал. Его главная цель — дать читателям самую объективную и исчерпывающую информацию обо всех автомобилях мира, представленных на российском рынке. Журнал Quattroruote имеет собственный автополигон, который находится в Италии. Полигон Quattroruote располагает отлично оборудованной скоростной трассой и великолепными условиями для высокотехнологичных исследований. Тесты автомобилей проводятся по самым высоким стандартам качества и выявляют все достоинства и недостатки каждой машины. Большое внимание журнал уделяет автокаталогу с техническими характеристиками и актуальными ценами на 3500 новых автомобилей и машин с пробегом. Каталог пользуется большой популярностью как у автолюбителей, так и у водителей-профессионалов. 
+				]]>
+			</description>
+			<options>
+				<option uid="BU045" period="6" price="580" />
+				<option uid="BU046" period="12" price="1160" />
+			</options>
+		</publication>
+		<publication cat-id="08" grp-id="2" name="Playboy" thumb="p46">
+			<description>
+				<![CDATA[
+					 - "Playboy" Фотографии звезд, девушек месяца. Интервью со знаменитостями, репортажи, рассказы, вечеринки и др.	
+				]]>
+			</description>
+			<options>
+				<option uid="BU047" period="6" price="750" />
+				<option uid="BU048" period="12" price="1500" />
+			</options>
+		</publication>
+		<publication cat-id="07" grp-id="2" name="ЛИЗА. ГОРОСКОП" thumb="p47">
+			<description>
+				<![CDATA[
+					 -ЛИЗА. ГОРОСКОП. Глянцевый ежемесячный журнал семейства «Лиза» о знаменитостях и не только — для женщин, которые сверяют свою жизнь со звездами и любят получать положительные эмоции. Где найти большую любовь? 
+				]]>
+			</description>
+			<options>
+				<option uid="BU049" period="6" price="390" />
+				<option uid="BU050" period="12" price="780" />
+			</options>
+		</publication>
+		<publication cat-id="05,09" grp-id="2" name="Мир реалити - шоу ДОМ-2" thumb="p50">
+			<description>
+				<![CDATA[
+					 -Журнал "Мир реалити-шоу ДОМ-2" - ежемесячный журнал об участниках популярного реалити-шоу "ДОМ-2", которое идет на канале ТНТ. 100 страниц про "жителей" проекта –личные рубрики героев, постеры, расследования, интервью с родителями, а также статьи про бывших "хомяков". Шеф-редактор издания - ведущая Ольга Бузова.
+				]]>
+			</description>
+			<options>
+				<option uid="SS001" period="6" price="480" />
+				<option uid="SS002" period="12" price="960" />
+			</options>
+		</publication>
+		<publication cat-id="08" grp-id="2" name="FHM" thumb="p52">
+			<description>
+				<![CDATA[
+					 - FHM (For Him Magazine) – самый известный журнал для мужчин в мире. Ежемесячно выходит в 33 странах, на 5 континентах, за исключением Антарктиды. Издается в России с 2001 года.
+				]]>
+			</description>
+			<options>
+				<option uid="RV001" period="6" price="900" />
+				<option uid="RV002" period="12" price="1650" />
+			</options>
+		</publication>
+		<publication cat-id="04" grp-id="2" name="Профиль" thumb="p53">
+			<description>
+				<![CDATA[
+					 - "Профиль" - ведущий деловой еженедельник в России издается с 1996 г. Актуальная и эксклюзивная информация, аналитические материалы, обзоры и рейтинги в области политики и общества, экономики и бизнеса, финансов и инвестиций.  Выходит 1 раз в неделю по понедельникам.
+				]]>
+			</description>
+			<options>
+				<option uid="RV003" period="6" price="1260" />
+				<option uid="RV004" period="12" price="2520" />
+			</options>
+		</publication>
+		<publication cat-id="04" grp-id="2" name="Компания" thumb="p54">
+			<description>
+				<![CDATA[
+					 - "Компания" – один из самых известных деловых еженедельников в России, издается с 1997 г.  Выходит 1 раз в неделю по понедельникам.
+				]]>
+			</description>
+			<options>
+				<option uid="RV005" period="6" price="1260" />
+				<option uid="RV006" period="12" price="2520" />
+			</options>
+		</publication>
+		<publication cat-id="08" grp-id="2" name="XXL" thumb="p55">
+			<description>
+				<![CDATA[
+					 - XXL – Журнал мужского рода.  Переодичность - ежемесячно.
+				]]>
+			</description>
+			<options>
+				<option uid="RV007" period="6" price="900" />
+				<option uid="RV008" period="12" price="1650" />
+			</options>
+		</publication>
+		<publication cat-id="07" grp-id="2" name="Крестьянка" thumb="p56">
+			<description>
+				<![CDATA[
+					 - Журнал "Крестьянка" издается с 1922 года. "Крестьянка" входит в пятерку ведущих глянцевых журналов для женщин. "Крестьянка" традиционно является журналом «долговременного чтения», согласно нашим исследованиям, свыше 50% подписчиков хранят номера журнала за несколько лет. Аудитория журнала лояльна, интерактивна и находится в живом контакте с изданием – ежедневно редакция получает до 100 писем со всей России.
+				]]>
+			</description>
+			<options>
+				<option uid="RV009" period="6" price="840" />
+				<option uid="RV010" period="12" price="1540" />
+			</options>
+		</publication>
+		<publication cat-id="05" grp-id="2" name="Мой маленький" thumb="p57">
+			<description>
+				<![CDATA[
+					 - "Мой маленький" - это полезный журнал для родителей. Выходит с января 2007 года. Тираж 75 тысяч экземпляров. Аудитория журнала - женщины в возрасте 25-44 лет, домохозяйки, молодые мамы.
+				]]>
+			</description>
+			<options>
+				<option uid="RV011" period="6" price="480" />
+				<option uid="RV012" period="12" price="880" />
+			</options>
+		</publication>
+		<publication cat-id="02" grp-id="2" name="Наша усадьба" thumb="p58">
+			<description>
+				<![CDATA[
+					 - Усадьба В каждом номере - обо всех тонкостях загородной жизни: обзоры новых сортов растений для дизайна сада, материалов  и  аксессуаров для устройства  стильных  беседок, занятия спортом, устройство водоемов, клумб, газонов, освещения участка. Практические советы по уходу за домашними животными в городе и на даче.
+				]]>
+			</description>
+			<options>
+				<option uid="RV013" period="6" price="240" />
+				<option uid="RV014" period="12" price="440" />
+			</options>
+		</publication>
+		<publication cat-id="05" grp-id="2" name="Пятнашки" thumb="p59">
+			<description>
+				<![CDATA[
+					 - Уникальный журнал для детей и их родителей. «Пятнашки».
+				]]>
+			</description>
+			<options>
+				<option uid="RV015" period="6" price="240" />
+				<option uid="RV016" period="12" price="440" />
+			</options>
+		</publication>
+		<publication cat-id="09" grp-id="2" name="ТВ7 (ТОЛЬКО для ПОДПИСЧИКОВ МОСКВЫ)" thumb="p60">
+			<description>
+				<![CDATA[
+					 - ТВ7 - (ТОЛЬКО для ПОДПИСЧИКОВ МОСКВЫ) еженедельный развлекательный журнал с  телевизионной  программой. Выход – еженедельно по средам.
+				]]>
+			</description>
+			<options>
+				<option uid="RV017" period="6" price="900" />
+				<option uid="RV018" period="12" price="1800" />
+			</options>
+		</publication>
+		<publication cat-id="01" grp-id="2" name="ЗА РУЛЕМ" thumb="p61">
+			<description>
+				<![CDATA[
+					 -ЗА РУЛЕМ. Жуpнал объёмом до 400 страниц обо всем, что происходит в автомобильном мире. Испытания автомобилей, новинки техники, экспертиза деталей и компонентов, обзор рынка, цены и комментарии к ним, вопросы безопасности, право, спорт, путешествия, тех. помощь. 
+				]]>
+			</description>
+			<options>
+				<option uid="ZR001" period="6" price="550" />
+				<option uid="ZR002" period="12" price="1100" />
+			</options>
+		</publication>
+		<publication cat-id="01" grp-id="2" name="МОТО" thumb="p62">
+			<description>
+				<![CDATA[
+					 -МОТО. Этот журнал – не только для тех, кто ездит на двух колесах или хочет больше узнать о мире мотоциклов. Он – для всех, кто ценит свободу передвижения, ищет новые ощущения и любит технику. Для тех, кто всегда в движении. На страницах МОТО – первого и старейшего российского мотоциклетного журнала – обо всем, что происходит в мотоциклетном мире.
+				]]>
+			</description>
+			<options>
+				<option uid="ZR003" period="6" price="350" />
+				<option uid="ZR004" period="12" price="700" />
+			</options>
+		</publication>
+		<publication cat-id="01" grp-id="2" name="КЛАКСОН" thumb="p63">
+			<description>
+				<![CDATA[
+					 -КЛАКСОН. В газете "Клаксон" публикуются автомобильные новости, тест-драйвы автомобилей ведущих мировых производителей, обзоры по новинкам автомобильного рынка.
+				]]>
+			</description>
+			<options>
+				<option uid="KN001" period="6" price="930" />
+				<option uid="KN002" period="12" price="1860" />
+			</options>
+		</publication>
+		<publication cat-id="04" grp-id="2" name="ЭКСПЕРТ" thumb="p64">
+			<description>
+				<![CDATA[
+					 -ЭКСПЕРТ. Общенациональный еженедельный деловой журнал Эксперт Одно из самых влиятельных еженедельных деловых аналитических изданий Росии. Издаёт коллектив прфессиональных экономистов и журналистов, имеющих многолетний опыт работы в ведущих исследовательских центров.
+				]]>
+			</description>
+			<options>
+				<option uid="EX001" period="6" price="2000" />
+				<option uid="EX002" period="12" price="4000" />
+			</options>
+		</publication>
+		<publication cat-id="04" grp-id="2" name=" D' (D - ШТРИХ)" thumb="p65">
+			<description>
+				<![CDATA[
+					 - Журнал "Д - Штрих" (D') - журнал о личных финансах. Журнал ориентирован на представителей среднего класса России: менеджеров, специалистов и предпринимателей. Журнал предоставляет необходимую информацию и аналитику для принятия грамотного решения по использованию денежных средств. Миссия журнала - формирование финансовой культуры читателей. выходит 24 в год;  
+				]]>
+			</description>
+			<options>
+				<option uid="EX003" period="6" price="1000" />
+				<option uid="EX004" period="12" price="2000" />
+			</options>
+		</publication>
+		<publication cat-id="04" grp-id="2" name="РУССКИЙ РЕПОРТЕР" thumb="p66">
+			<description>
+				<![CDATA[
+					 - РУССКИЙ РЕПОРТЕР. Проект ведущего российского делового журнала "Эксперт". Новости, анализ, прогнозы в сфере деловой жизни, политики, культуры.
+				]]>
+			</description>
+			<options>
+				<option uid="EX005" period="6" price="1500" />
+				<option uid="EX006" period="12" price="3000" />
+			</options>
+		</publication>
+		<publication cat-id="07" grp-id="2" name="COSMOPOLITAN/КОСМОПОЛИТЕН" thumb="p67">
+			<description>
+				<![CDATA[
+					 - COSMOPOLITAN/КОСМОПОЛИТЕН. Журнал номер один для молодых женщин во всем мире. "Девушка в стиле Cosmo" молода, независима и энергична. Она сама выбирает свой путь и пытается стать лучше, красивее, а главное - счастливее, в чем ей помогает ее любимый журнал. Присоединяйтесь! 
+				]]>
+			</description>
+			<options>
+				<option uid="NP001" period="6" price="930" />
+				<option uid="NP002" period="12" price="1800" />
+			</options>
+		</publication>
+		<publication cat-id="07" grp-id="2" name="COSMOPOLITAN  MINI/КОСМОПОЛИТЕН МИНИ" thumb="p68">
+			<description>
+				<![CDATA[
+					 - COSMOPOLITAN  MINI/КОСМОПОЛИТЕН МИНИ Журнал "Космополитен" мини-формата, А-5; 
+				]]>
+			</description>
+			<options>
+				<option uid="NP003" period="6" price="850" />
+				<option uid="NP004" period="12" price="1600" />
+			</options>
+		</publication>
+		<publication cat-id="07" grp-id="2" name="COSMO МАГИЯ" thumb="p69">
+			<description>
+				<![CDATA[
+					 - COSMO МАГИЯ журнал, хорошо известный и любимый читателями: ведь он издается уже 5 лет. Это самостоятельное издание в семье COSMOPOLITAN, которое вышло на рынок первым среди дочерних проектов. Журнал всегда был ориентиром для образованных, успешных девушек, стремящихся понять себя и обрести внутреннюю гармонию. 
+				]]>
+			</description>
+			<options>
+				<option uid="NP005" period="6" price="400" />
+				<option uid="NP006" period="12" price="800" />
+			</options>
+		</publication>
+		<publication cat-id="07" grp-id="2" name="COSMO Beauty" thumb="p70">
+			<description>
+				<![CDATA[
+					 - COSMO Beauty. В журнале, можно узнать последние тенденции моды, получить полезные советы стилистов, визажистов, узнать как Российские и зарубежные звезды ухаживают за собой. Мы хотим чтобы наша каждая читательница почувствовала себя самой красивой! 
+				]]>
+			</description>
+			<options>
+				<option uid="NP007" period="6" price="250" />
+				<option uid="NP008" period="12" price="500" />
+			</options>
+		</publication>
+		<publication cat-id="02" grp-id="2" name="ДОМАШНИЙ ОЧАГ" thumb="p71">
+			<description>
+				<![CDATA[
+					 -ДОМАШНИЙ ОЧАГ. Как сделать свой дом добрым и гостеприимным? Как справиться с семейными проблемами? Как оставаться красивой и желанной? На страницах Домашнего Очага Вы найдете ответы на эти и многие другие вопросы. Домашний Очаг - это добрый и профессиональный советчик. 
+				]]>
+			</description>
+			<options>
+				<option uid="NP009" period="6" price="720" />
+				<option uid="NP010" period="12" price="1440" />
+			</options>
+		</publication>
+		<publication cat-id="02" grp-id="2" name="ДОМАШНИЙ ОЧАГ МИНИ ФОРМАТ" thumb="p72">
+			<description>
+				<![CDATA[
+					 -ДОМАШНИЙ ОЧАГ МИНИ ФОРМАТ. Как сделать свой дом добрым и гостеприимным? Как справиться с семейными проблемами? Как оставаться красивой и желанной? На страницах Домашнего Очага Вы найдете ответы на эти и многие другие вопросы. Домашний Очаг - это добрый и профессиональный советчик. 
+				]]>
+			</description>
+			<options>
+				<option uid="NP011" period="6" price="500" />
+				<option uid="NP012" period="12" price="1000" />
+			</options>
+		</publication>
+		<publication cat-id="02" grp-id="2" name="ДОМАШНИЙ ОЧАГ ВКУСНО И ПОЛЕЗНО" thumb="p73">
+			<description>
+				<![CDATA[
+					 -ДОМАШНИЙ ОЧАГ ВКУСНО И ПОЛЕЗНО. Специальное кулинарное приложение журнала «Домашний Очаг» выходит 4 раза в год. «Вкусно и полезно» – это не только коллекция лучших рецептов, собранных за всю историю журнала «Домашний Очаг», но и много интересных дополнений и статей на тему питания. 
+				]]>
+			</description>
+			<options>
+				<option uid="NP013" period="6" price="150" />
+				<option uid="NP014" period="12" price="300" />
+			</options>
+		</publication>
+		<publication cat-id="07" grp-id="2" name="HARPER'S BAZAAR/БАЗАР ХАРПЕРА" thumb="p74">
+			<description>
+				<![CDATA[
+					 - HARPER'S BAZAAR / БАЗАР ХАРПЕРА Журнал отвечает разнообразным интересам современной женщины, для которой важен компетентный источник информации о последних коллекциях мировых модельеров, о жизни и культуре высшего общества, о тенденциях моды. Читайте и наслаждайтесь высоким стилем Harper`s Bazaar! выходит 12 в год; 
+				]]>
+			</description>
+			<options>
+				<option uid="NP015" period="6" price="1020" />
+				<option uid="NP016" period="12" price="1900" />
+			</options>
+		</publication>
+		<publication cat-id="12" grp-id="2" name="ПОПУЛЯРНАЯ МЕХАНИКА / POPULAR MECHANICS" thumb="p75">
+			<description>
+				<![CDATA[
+					 -ПОПУЛЯРНАЯ МЕХАНИКА / POPULAR MECHANICS. Один из самых читаемых иллюстрированных журналов для интересующихся развитием науки, техники в теоретическом и практическом аспектах. В США выходит с 1902 г. 
+				]]>
+			</description>
+			<options>
+				<option uid="NP017" period="6" price="850" />
+				<option uid="NP018" period="12" price="1600" />
+			</options>
+		</publication>
+		<publication cat-id="07" grp-id="2" name="COSMO SHOPPING" thumb="p76">
+			<description>
+				<![CDATA[
+					 - COSMO SHOPPING. Твой гид по стильным покупкам! 
+				]]>
+			</description>
+			<options>
+				<option uid="NP019" period="6" price="500" />
+				<option uid="NP020" period="12" price="1000" />
+			</options>
+		</publication>
+		<publication cat-id="07" grp-id="2" name="Esquire" thumb="p77">
+			<description>
+				<![CDATA[
+					 - Esquire (рус. «эсквайр») — ежемесячный мужской журнал, основанный в 1933 году в США. Основные темы: культура и искусство, мода и стиль, бизнес и политика, технологии и автомобили, еда и здоровье, персонажи и интервью.
+				]]>
+			</description>
+			<options>
+				<option uid="NP021" period="6" price="930" />
+				<option uid="NP022" period="12" price="1800" />
+			</options>
+		</publication>
+		<publication cat-id="07" grp-id="2" name="Men’s Health" thumb="p78">
+			<description>
+				<![CDATA[
+					 - Men’s Health – главный мужской журнал во всем мире. Ежедневные новости и статьи, советы экспертов и блоги, конкурсы и подарки. Основные темы: мужское здоровье и спортивная форма; физические упражнения и видео-энциклопедия фитнеса; секс и психология отношений; правильное питание и профилактика заболеваний; еда и рецепты; домашняя кулинария и высокая кухня; куда поехать, где отдохнуть; мужская мода, одежда и стиль для мужчин: костюмы, галстуки, сумки, часы и другие аксессуары; обзоры информационных технологий и достижений науки; лучшие автомобили и гаджеты, тесты и видео онлайн. Всё про жизнь для современного мужчины на беспрецедентно суровой территории сайта журнала Men’s Health (Менс хелс)!
+				]]>
+			</description>
+			<options>
+				<option uid="NP023" period="6" price="990" />
+				<option uid="NP024" period="12" price="1960" />
+			</options>
+		</publication>
+		<publication cat-id="07" grp-id="2" name="Men’s Health MINI" thumb="p79">
+			<description>
+				<![CDATA[
+					 - Men’s Health MINI – главный мужской журнал во всем мире. Ежедневные новости и статьи, советы экспертов и блоги, конкурсы и подарки. Основные темы: мужское здоровье и спортивная форма; физические упражнения и видео-энциклопедия фитнеса; секс и психология отношений; правильное питание и профилактика заболеваний; еда и рецепты; домашняя кулинария и высокая кухня; куда поехать, где отдохнуть; мужская мода, одежда и стиль для мужчин: костюмы, галстуки, сумки, часы и другие аксессуары; обзоры информационных технологий и достижений науки; лучшие автомобили и гаджеты, тесты и видео онлайн. Всё про жизнь для современного мужчины на беспрецедентно суровой территории сайта журнала Men’s Health (Менс хелс)!
+				]]>
+			</description>
+			<options>
+				<option uid="NP025" period="6" price="790" />
+				<option uid="NP026" period="12" price="1490" />
+			</options>
+		</publication>
+		<publication cat-id="14" grp-id="2" name="Seasons" thumb="p81">
+			<description>
+				<![CDATA[
+					 - Журнал Seasons - для тех, кто умеет ценить маленькие радости жизни. Для тех, кому важно, из какой чашки будет выпит утренний кофе, какой букет поставить на праздничный стол, каким блюдом удивить гостей, собравшихся на вечеринку. Куда поехать отдохнуть, чтобы привезти из поездки не только загар, но и впечатления, потрясающие фотографии и изящные вещицы для дома. 
+				]]>
+			</description>
+			<options>
+				<option uid="NP029" period="6" price="400" />
+				<option uid="NP030" period="12" price="800" />
+			</options>
+		</publication>
+		<publication cat-id="11" grp-id="2" name="Yoga Journal" thumb="p82">
+			<description>
+				<![CDATA[
+					 - Yoga Journal – самый авторитетный и успешный журнал о йоге, существующий в Америке более 30 лет. На протяжении всего этого времени Yoga Journal помогает читателям всего мира адаптировать древние традиции к реалиям современной жизни.
+				]]>
+			</description>
+			<options>
+				<option uid="NP031" period="6" price="1130" />
+				<option uid="NP032" period="12" price="2260" />
+			</options>
+		</publication>
+		<publication cat-id="05" grp-id="2" name="YES!/ ЗВЕЗДЫ" thumb="p83">
+			<description>
+				<![CDATA[
+					 - YES!/ ЗВЕЗДЫ. Все самое интересное о популярных артистах! Постеры, интервью, репортажи, фотороманы, романтические истории из жизни твоих кумиров! Плюс оригинальные материалы о любви, моде и захватывающие конкурсы со множеством призов!
+				]]>
+			</description>
+			<options>
+				<option uid="NP033" period="6" price="600" />
+				<option uid="NP034" period="12" price="1100" />
+			</options>
+		</publication>
+		<publication cat-id="14" grp-id="2" name="NATIONAL GEOGRAPHIC РОССИЯ" thumb="p84">
+			<description>
+				<![CDATA[
+					 - National Geographic отличают высочайшего уровня профессиональная фотожурналистика и эксклюзивная, из первых рук, информация о крупнейших и наиболее значимых открытиях, достижениях и исследованиях в области естествознания, географии, истории, археологии,этнографии и сопутствующих науках - все, что собственно и составляет путь развития человеческой цивиции.
+				]]>
+			</description>
+			<options>
+				<option uid="NP035" period="6" price="500" />
+				<option uid="NP036" period="12" price="980" />
+			</options>
+		</publication>
+		<publication cat-id="14" grp-id="2" name="NATIONAL GEOGRAPHIC TRAVELER" thumb="p85">
+			<description>
+				<![CDATA[
+					 - National Geographic TRAVELER ежемесячное печатное издание, посвященное путешествиям, основное внимание в котором уделяется как подробному разбору популярных среди туристов стран, так и советы по посещению экзотических стран.
+				]]>
+			</description>
+			<options>
+				<option uid="NP037" period="6" price="510" />
+				<option uid="NP038" period="12" price="1000" />
+			</options>
+		</publication>
+		<publication cat-id="07" grp-id="2" name="GRAZIA/ГРАЦИЯ" thumb="p86">
+			<description>
+				<![CDATA[
+					 - GRAZIA / ГРАЦИЯ Первый модный еженедельник для требовательных женщин, которые хотят получать актуальную информацию. Формула GRAZIA - новости модной индустрии, актуальные истории из реальной жизни, откровенные интервью со звездами, горячие новинки красоты, рекомендации известных визажистов, стилистов, дизайнеров, модные съемки с участием лучших моделей и фотографов, шопинг-гиды, репортажи с громких вечеринок. выходит 48 в год; 
+				]]>
+			</description>
+			<options>
+				<option uid="NP039" period="6" price="1430" />
+				<option uid="NP040" period="12" price="2860" />
+			</options>
+		</publication>
+		<publication cat-id="07" grp-id="2" name="WEDDING (СВАДЬБА) ЖУРНАЛ СТИЛЬНЫХ НЕВЕСТ" thumb="p87">
+			<description>
+				<![CDATA[
+					 - WEDDING (СВАДЬБА) ЖУРНАЛ СТИЛЬНЫХ НЕВЕСТ Журнал о новинках свадебных нарядах от самых простых до самых эксклюзивных. Где найти и приобрести поможет это издание.
+				]]>
+			</description>
+			<options>
+				<option uid="NP041" period="6" price="530" />
+				<option uid="NP042" period="12" price="1000" />
+			</options>
+		</publication>
+		<publication cat-id="02" grp-id="2" name="Homes Overseas ( Зарубежная недвижимость)" thumb="p88">
+			<description>
+				<![CDATA[
+					 - Homes Overseas — российская версия ведущего европейского издания о зарубежной недвижимости, основанного в 1965 году и распространяющегося в 17 странах мира. Редакционная структура журнала базируется на четырех основных мотивах покупки и аренды недвижимости за рубежом: проживание, отдых, инвестиции и бизнес. Удобный, систематизированный каталог объектов помогает без труда выбрать подходящее предложение.
+				]]>
+			</description>
+			<options>
+				<option uid="NP043" period="6" price="1000" />
+				<option uid="NP044" period="12" price="2000" />
+			</options>
+		</publication>
+		<publication cat-id="07" grp-id="2" name="COLLEZIONI РОССИЯ" thumb="p89">
+			<description>
+				<![CDATA[
+					 - COLLEZIONI Журнал о тенденциях моды. 
+				]]>
+			</description>
+			<options>
+				<option uid="NP045" period="6" price="1300" />
+				<option uid="NP046" period="12" price="2600" />
+			</options>
+		</publication>
+		<publication cat-id="07,08" grp-id="2" name="Mamas Papas" thumb="p90">
+			<description>
+				<![CDATA[
+					 - Mamas&Papas – единственный глянцевый lifestyle-журнал для современных родителей, у которых есть дети в возрасте от 1 года до 8 лет. Это первый журнал, адресованный не только мамам, но и папам. 
+				]]>
+			</description>
+			<options>
+				<option uid="NP047" period="6" price="600" />
+				<option uid="NP048" period="12" price="1200" />
+			</options>
+		</publication>
+		<publication cat-id="07" grp-id="2" name="ELLE/Эль" thumb="p91">
+			<description>
+				<![CDATA[
+					 - ELLE / Эль Лидер среди глянцевых изданий о моде и стиле в России. Последние тенденции моды, красоты и стиля жизни, эксклюзивные интервью, самые интересные новости и репортажи, психология и астрология, здоровье и секреты красоты, интерьеры и кулинарные рецепты. 
+				]]>
+			</description>
+			<options>
+				<option uid="IM001" period="6" price="1100" />
+				<option uid="IM002" period="12" price="2100" />
+			</options>
+		</publication>
+		<publication cat-id="05" grp-id="2" name="ELLE GIRL/Эль Герл" thumb="p92">
+			<description>
+				<![CDATA[
+					 - ELLE GIRL /Эль Герл Первый глянцевый журнал о моде и стиле для девушек. Эксклюзивные фотографии, психология, увлекательные материалы о звездах и не только, гороскоп, сонник, тесты и масса реальных возможностей найти свой индивидуальный стиль и добиться в жизни успеха. выходит 12 в год; 
+				]]>
+			</description>
+			<options>
+				<option uid="IM003" period="6" price="670" />
+				<option uid="IM004" period="12" price="1290" />
+			</options>
+		</publication>
+		<publication cat-id="02" grp-id="2" name="ELLE DECORACION/Эль Декорейшн" thumb="p93">
+			<description>
+				<![CDATA[
+					 - ELLE Декор издается в 24 странах и является признанным авторитетом в мире интерьерного дизайна. В каждом номере – архитектурные новости, знакомство со звездами дизайна, практические советы и подробные репортажи о проектах признанных мастеров. Этот журнал интересен не только профессионалам, но и тем, кто только начинает задумываться о строительстве и обустройстве своего дома. 
+				]]>
+			</description>
+			<options>
+				<option uid="IM005" period="6" price="1000" />
+				<option uid="IM006" period="12" price="2000" />
+			</options>
+		</publication>
+		<publication cat-id="08" grp-id="2" name="MAXIM/Максим" thumb="p94">
+			<description>
+				<![CDATA[
+					 - MAXIM / Максим В круге интересов MAXIM - секс и отношения, кино и музыка, мода и стиль, спорт и вредные привычки. Отличительные черты MAXIM - множество материалов, полных искрометного юмора и тонкой иронии, оригинальные суждения и завораживающие фотосъемки. выходит 12 в год; 
+				]]>
+			</description>
+			<options>
+				<option uid="IM007" period="6" price="930" />
+				<option uid="IM008" period="12" price="1790" />
+			</options>
+		</publication>
+		<publication cat-id="11" grp-id="2" name="PSYCHOLOGIES / ПСИХОЛОГИЯ" thumb="p95">
+			<description>
+				<![CDATA[
+					 - PSYCHOLOGIES / ПСИХОЛОГИЯ Новый журнал о психологии. Издание адресовано тем, кто стремится к самопознанию и самосовершенствованию. Журнал рассказывает об отношениях, ощущениях и поведении, помогая читателям жить в гармонии с собой и окружающим миром. Рассчитан на широкую аудиторию. 
+				]]>
+			</description>
+			<options>
+				<option uid="IM009" period="6" price="780" />
+				<option uid="IM010" period="12" price="1500" />
+			</options>
+		</publication>
+		<publication cat-id="07" grp-id="2" name="СЧАСТЛИВЫЕ РОДИТЕЛИ. PARENTS" thumb="p96">
+			<description>
+				<![CDATA[
+					 -СЧАСТЛИВЫЕ РОДИТЕЛИ. PARENTS. Журнал с актуальной и практичной информацией для будущих мам и родителей с ребенком до 4 лет: последние достижения акушерства, педиатрии и психологии, рекомендации врачей-специалистов, советы по обустройству дома, по покупкам для малышей и мам. 
+				]]>
+			</description>
+			<options>
+				<option uid="IM011" period="6" price="590" />
+				<option uid="IM012" period="12" price="1090" />
+			</options>
+		</publication>
+		<publication cat-id="07" grp-id="2" name="MARIE CLAIRE/Мари Клэр" thumb="p97">
+			<description>
+				<![CDATA[
+					 - MARIE CLAIRE / Мари Клэр "Модный по всем статьям" журнал для чтения. Читательница Marie Claire чувствует себя в центре самых интересных событий и последних тенденций. Красочный, развлекательный, информативный и практичный - журнал для ярких и успешных женщин!
+				]]>
+			</description>
+			<options>
+				<option uid="IM013" period="6" price="840" />
+				<option uid="IM014" period="12" price="1690" />
+			</options>
+		</publication>
+		<publication cat-id="02" grp-id="2" name="ДОМОЙ. Интерьеры плюс идеи" thumb="p98">
+			<description>
+				<![CDATA[
+					 - это новый интерьерный проект, который выводит на российский рынок печатной продукции Издательский дом Haсhette Filipacchi Shkulev. Задача журнала «ДОМОЙ» состоит в том, чтобы дать читателю конкретные ответы на многие сложные вопросы, возникающие при обустройстве и ремонте жилья.
+				]]>
+			</description>
+			<options>
+				<option uid="IM015" period="6" price="700" />
+				<option uid="IM016" period="12" price="1400" />
+			</options>
+		</publication>
+		<publication cat-id="04" grp-id="2" name="FORBES/ФОРБС(RUS)" thumb="p99">
+			<description>
+				<![CDATA[
+					 - FORBES / ФОРБС (RUS) Самый влиятельный деловой журнал в мире. Истории успеха, новые тенденции в экономике, точный и непредвзятый анализ событий, идеи для бизнеса. Эксклюзивные рейтинги: 100 богатейших бизнесменов России, 200 частных компаний, 50 самых ярких звезд и единственный в России рейтинг непубличных компаний. выходит 12 в год; 
+				]]>
+			</description>
+			<options>
+				<option uid="AX001" period="6" price="900" />
+				<option uid="AX002" period="12" price="1800" />
+			</options>
+		</publication>
+		<publication cat-id="04" grp-id="2" name="РУССКИЙ NEWSWEEK / РУССКИЙ НЬЮСВИК" thumb="p100">
+			<description>
+				<![CDATA[
+					 -РУССКИЙ NEWSWEEK / РУССКИЙ НЬЮСВИК. Русская версия самого читаемого еженедельника в мире. Каждую неделю журнал достоверно и полно информирует своих читателей о наиболее важных событиях и проблемах в России и мире. Наша цель - создать у читателя эффект присутствия и понимания. 
+				]]>
+			</description>
+			<options>
+				<option uid="AX003" period="6" price="1300" />
+				<option uid="AX004" period="12" price="2600" />
+			</options>
+		</publication>
+		<publication cat-id="09" grp-id="2" name="ОК!" thumb="p101">
+			<description>
+				<![CDATA[
+					 -ОК! - это самые свежие новости и интересные факты из жизни российских и мировых знаменитостей. Секреты красоты, стиля и хорошего самочувствия, кулинарные пристрастия и любимые уголки мира. ОК! - это мировой супер-бренд.
+				]]>
+			</description>
+			<options>
+				<option uid="AX005" period="6" price="1500" />
+				<option uid="AX006" period="12" price="3000" />
+			</options>
+		</publication>
+		<publication cat-id="16" grp-id="2" name="COMPUTER BILD" thumb="p102">
+			<description>
+				<![CDATA[
+					 - Крупнейший в Европе журнал о компьютерах. Hard, soft, игры, Интернет, коммуникации, аудио/ видео/ фото. Объективные тесты популярных устройств и программ, мнения экспертов. Простота изложения материала делает журнал полезным и интересным каждому пользователю ПК. 
+				]]>
+			</description>
+			<options>
+				<option uid="AX007" period="6" price="1750" />
+				<option uid="AX008" period="12" price="3500" />
+			</options>
+		</publication>
+		<publication cat-id="09" grp-id="2" name="АТМОСФЕРА" thumb="p103">
+			<description>
+				<![CDATA[
+					 - Ежемесячный глянцевый журнал. Издание пишет об искусстве жить: как добиться успеха, о превратностях любви, об уроках прошлого и семейных ценностях. Герои "Атмосферы" – люди с уникальной судьбой, и каждая из них могла бы стать сюжетом для фильма. В каждом номере – неожиданные перевоплощения, эксклюзивные съемки моды, свежие идеи дизайнеров, новинки косметики. Концепция издания – учиться искусству жить и чувствовать вкус к жизни. 
+				]]>
+			</description>
+			<options>
+				<option uid="MK001" period="6" price="490" />
+				<option uid="MK002" period="12" price="970" />
+			</options>
+		</publication>
+		<publication cat-id="11" grp-id="2" name="АТМОСФЕРА КРАСОТЫ" thumb="p104">
+			<description>
+				<![CDATA[
+					 - "Атмосфера Красоты: советуют профессионалы" - журнал удобного формата A5 - занимает новую нишу седи глянцевых изданий. В каждом номере профессионалы эстетической медицины доступным языком рассказывают читателям о самых интересных новинках и эффективных процедурах в косметологии.
+				]]>
+			</description>
+			<options>
+				<option uid="MK003" period="6" price="250" />
+				<option uid="MK004" period="12" price="500" />
+			</options>
+		</publication>
+		<publication cat-id="09" grp-id="2" name="МК-БУЛЬВАР" thumb="p105">
+			<description>
+				<![CDATA[
+					 - Журнал хорошего настроения для всей семьи: новости из мира моды и шоу-бизнеса, все о жизни звезд, теленовости и полная ТВ-программа на неделю с анонсами, а также рубрики о моде и красоте. В каждом номере розыгрыш призов!
+				]]>
+			</description>
+			<options>
+				<option uid="MK005" period="6" price="1000" />
+				<option uid="MK006" period="12" price="2000" />
+			</options>
+		</publication>
+		<publication cat-id="01" grp-id="2" name="МК-МОБИЛЬ" thumb="p106">
+			<description>
+				<![CDATA[
+					 - Общероссийская автомобильная газета. Обзоры новинок автомобильного рынка, тест-драйвы, тюнинг и дизайн, цены от производителей и автосалонов, практические советы юристов, новости и тонкости рынка страховых и банковских услуг, выставки и многое другое.
+				]]>
+			</description>
+			<options>
+				<option uid="MK007" period="6" price="600" />
+				<option uid="MK008" period="12" price="1200" />
+			</options>
+		</publication>
+		<publication cat-id="14" grp-id="2" name="ОХОТА И РЫБАЛКА - XXI ВЕК" thumb="p107">
+			<description>
+				<![CDATA[
+					 -ОХОТА И РЫБАЛКА - XXI ВЕК. Журнал объединяет в себе три известных Вам издания: Природа и охота, Охотничьи собаки, Магнум - Новый оружейный журнал. Теперь всю интересующую Вас информацию об охоте, рыбалке и оружии Вы можете найти в одном издании! 
+				]]>
+			</description>
+			<options>
+				<option uid="MK009" period="6" price="600" />
+				<option uid="MK010" period="12" price="1200" />
+			</options>
+		</publication>
+		<publication cat-id="14" grp-id="2" name="Российская охотничья газета" thumb="p108">
+			<description>
+				<![CDATA[
+					 -Еженедельная охотничья газета. "РОГ" продолжает русские охотничьи традиции, являясь достойным преемником журнала “Природа и охота”, основанного Л. П. Сабанеевым более века назад. Сегодня в России существует единственный редакционный коллектив, который в целях пропаганды правильной охоты издаёт еженедельную газету, посвящённую этому удивительному увлечению человека. Использование в качестве иллюстраций редких старинных гравюр, рисунков ведущих анималистов России придают изданию неповторимую индивидуальность.
+				]]>
+			</description>
+			<options>
+				<option uid="MK011" period="6" price="950" />
+				<option uid="MK012" period="12" price="1900" />
+			</options>
+		</publication>
+		<publication cat-id="16" grp-id="2" name="MOBILE MAGAZINE" thumb="p109">
+			<description>
+				<![CDATA[
+					 - самый популярный и авторитетный в России ежемесячный журнал, посвященный цифровой технике. Журнал входит в десятку самых продаваемых ежемесячных журналов и в течение многих лет является абсолютным лидером продаж среди российских изданий о технике (по данным крупнейших агентств о распространению печатной продукции). 
+				]]>
+			</description>
+			<options>
+				<option uid="RS001" period="6" price="550" />
+				<option uid="RS002" period="12" price="1100" />
+			</options>
+		</publication>
+		<publication cat-id="16" grp-id="2" name="MOBILE MAGAZINE + DVD" thumb="p110">
+			<description>
+				<![CDATA[
+					 - самый популярный и авторитетный в России ежемесячный журнал, посвященный цифровой технике. Журнал входит в десятку самых продаваемых ежемесячных журналов и в течение многих лет является абсолютным лидером продаж среди российских изданий о технике (по данным крупнейших агентств о распространению печатной продукции). В каждом номере DVD.
+				]]>
+			</description>
+			<options>
+				<option uid="RS003" period="6" price="870" />
+				<option uid="RS004" period="12" price="1750" />
+			</options>
+		</publication>
+		<publication cat-id="08,09" grp-id="2" name="ROLLING STONE / Русская редакция" thumb="p111">
+			<description>
+				<![CDATA[
+					 - ROLLING STONE / Русская редакция Ежемесячный журнал, на страницах которого представлена культурная и общественная жизнь во всех ее проявлениях: кино, литературе, телевидении, музыке - от мейнстрима до авангарда и андеграунда.
+				]]>
+			</description>
+			<options>
+				<option uid="RS005" period="6" price="570" />
+				<option uid="RS006" period="12" price="1140" />
+			</options>
+		</publication>
+		<publication cat-id="01" grp-id="2" name="5 КОЛЕСО" thumb="p112">
+			<description>
+				<![CDATA[
+					 - один из самых популярных автомобильных журналов в России, имеющий многолетнюю успешную историю развития. Это единственное на рынке интерактивное автомобильное издание, которое создается вместе с читателями.
+				]]>
+			</description>
+			<options>
+				<option uid="RS007" period="6" price="590" />
+				<option uid="RS008" period="12" price="1180" />
+			</options>
+		</publication>
+		<publication cat-id="02" grp-id="2" name="КРАСИВЫЕ ДОМА" thumb="p113">
+			<description>
+				<![CDATA[
+					 -КРАСИВЫЕ ДОМА. ведущий журнал Издательского Дома с 1997 года. «Красивые дома» – прекрасный выбор и для профессионалов, и для любителей, давно уже стал незаменимой частью работы и свободного времяпрепровождения для огромного числа строителей, архитекторов и дизайнеров, своеобразной необходимостью их профессиональной деятельности. Журнал является помощником для специалистов – дизайнеров, ищущих оригинальные идеи, и для частного застройщика с собственным вкусом, стремящегося придать своему дому неповторимый облик. На страницах журнала «Красивые дома» вы найдете красочно иллюстрированные, информационно насыщенные материалы о классических, традиционных и современных загородных домах, их планировке, строительстве, отделке, украшении интерьера, технологиях и материалах, аксессуарах. В каждом номере – 25 действительно красивых домов, – реализованные проекты со всего мира, с планами, экстерьером, фасадами и интерьером.
+				]]>
+			</description>
+			<options>
+				<option uid="KP001" period="6" price="800" />
+				<option uid="KP002" period="12" price="1600" />
+			</options>
+		</publication>
+		<publication cat-id="02" grp-id="2" name="КРАСИВЫЕ КВАРТИРЫ" thumb="p114">
+			<description>
+				<![CDATA[
+					 -КРАСИВЫЕ КВАРТИРЫ. В журнале «Красивые квартиры» Вы найдете: - все необходимое для ремонта и обустройства квартиры в соответствии с самым взыскательным вкусом, - самую свежую информацию о ремонте, перепланировке, реконструкции жилища, оформлении интерьера, традиционном и современном дизайне, применении для этих целей самых оптимальных материалов и технологий.
+В качестве авторов и консультантов выступают признанные специалисты в этой области, профессионалы-практики России и стран Европы. Подробное и красочное иллюстрирование статей, а также ясный стиль изложения делают журнал интересным для широкого круга читателей.
+				]]>
+			</description>
+			<options>
+				<option uid="KP003" period="6" price="800" />
+				<option uid="KP004" period="12" price="1600" />
+			</options>
+		</publication>
+		<publication cat-id="02" grp-id="2" name="КАМИНЫ И ОТОПЛЕНИЕ" thumb="p115">
+			<description>
+				<![CDATA[
+					 -КАМИНЫ И ОТОПЛЕНИЕ. Наиболее авторитетное издание, отражающее самую актуальную информацию в каминной индустрии, является гидом для профессионалов и любителей. В журнале вы найдете варианты архитектурно-планировочных и конструктивных решений каминов и печей, реализованные проекты от признанных авторах в данной области, дизайнерские камины, различные дизайнерские разработки и новые технические достижения в системах отопления жилья, советы профессионалов. В каждом номере публикуются рекомендации по кладке печей и каминов, а также порядовки.  Также представлены материалы об энергосберегающих системах домашнего отопления и источниках альтернативной энергии.
+				]]>
+			</description>
+			<options>
+				<option uid="KP005" period="6" price="600" />
+				<option uid="KP006" period="12" price="1200" />
+			</options>
+		</publication>
+		<publication cat-id="02" grp-id="2" name="ДОМ И САД" thumb="p116">
+			<description>
+				<![CDATA[
+					 -ДОМ И САД. Полноцветное периодическое издание, в котором представлены профессиональные советы и практические рекомендации по планировке сада и уходу за ним, благоустройству и озеленению приусадебного участка, выбору растений для ландшафтного дизайна, а также по использованию инструментов и оборудования для ухода за садом. Много внимания уделяется "водной" теме – прудам, фонтанам и водопадам, а также зимним садам и устройству зеленых уголков в интерьере.
+Постоянный раздел – садово-парковая мебель, светильники, скульптура, а также строительные и отделочные материалы для любых фантазий дизайнеров.
+				]]>
+			</description>
+			<options>
+				<option uid="KP007" period="6" price="600" />
+				<option uid="KP008" period="12" price="1200" />
+			</options>
+		</publication>
+		<publication cat-id="02" grp-id="2" name="ДЕРЕВЯННЫЕ ДОМА" thumb="p117">
+			<description>
+				<![CDATA[
+					 -ДЕРЕВЯННЫЕ ДОМА. Выходит с 1999 г. и представляет материалы по коттеджному строительству европейских стран (Германии, Венгрии, Финляндии), Канады и России. Журнал содержит информацию о технологиях и материалах, используемых в строительстве деревянных домов, освещает современные тенденции архитектурного и строительного рынков, а также наиболее удачные реализованные проекты архитекторов России, стран Европы и Америки.
+				]]>
+			</description>
+			<options>
+				<option uid="KP009" period="6" price="600" />
+				<option uid="KP010" period="12" price="1200" />
+			</options>
+		</publication>
+		<publication cat-id="19" grp-id="2" name="БЮЛЛЕТЕНЬ КИНОПРОКАТЧИКА «Электронная версия»" thumb="p118">
+			<description>
+				<![CDATA[
+					 - "БЮЛЛЕТЕНЬ КИНОПРОКАТЧИКА" - выходит еженедельно с ноября 2003 года. Содержание рассылки – касса последнего уик-енда России, Украины и США, анализ и мониторинг местного кинорынка, прогнозы его развития, мнения экспертов по всем актуальным проблемам кинопроката и кинопроизводства, оценка коммерческого потенциала проката фильмов в России, обзоры рекламных кампаний фильмов. Еженедельно обновляется информация о планируемых релизах Российских компаний на 2 года вперед.
+				]]>
+			</description>
+			<options>
+				<option uid="SL001" period="1" price="1600" />
+				<option uid="SL002" period="3" price="4700" />
+			</options>
+		</publication>
+		<publication cat-id="14" grp-id="2" name="DISCOVERY/ДИСКАВЕРИ" thumb="p120">
+			<description>
+				<![CDATA[
+					 - DISCOVERY/ДИСКАВЕРИ Любое открытие - это новое достижение, совершаемое в процессе эволюции, придающее принципиально новые направления развитию общества. Журнал Discovery- это открытия! Научные сенсации и значимые события в мире науки и техники, мир непознанного и загадочного, все тайны планеты? Уникальные материалы научно-исследовательских экспедиций, редкие фотографии и эксклюзивные журналистские расследования.  
+				]]>
+			</description>
+			<options>
+				<option uid="DY001" period="6" price="600" />
+				<option uid="DY002" period="12" price="1200" />
+			</options>
+		</publication>
+		<publication cat-id="14" grp-id="2" name="ВОКРУГ СВЕТА" thumb="p121">
+			<description>
+				<![CDATA[
+					 - ВОКРУГ СВЕТА. Один из самых популярных российских журналов, публикующий материалы о захватывающих путешествиях, загадках истории, новых научных открытиях и технических достижениях, а также рассказы о знаменитых людях. 
+				]]>
+			</description>
+			<options>
+				<option uid="VS001" period="6" price="600" />
+				<option uid="VS002" period="12" price="1200" />
+			</options>
+		</publication>
+		<publication cat-id="14" grp-id="2" name="Альманах «Полдень. XXI век»" thumb="p122">
+			<description>
+				<![CDATA[
+					 - Первый номер журнала «Полдень. XXI век» вышел в мае 2002 года. Главный редактор и основатель «Полдня» Борис Стругацкий изначально задумывал его как «толстый» литературный журнал, целиком посвященный отечественной фантастике. 
+				]]>
+			</description>
+			<options>
+				<option uid="VS003" period="6" price="300" />
+				<option uid="VS004" period="12" price="600" />
+			</options>
+		</publication>
+		<publication cat-id="14" grp-id="2" name="КОМПЛЕКТ (ВОКРУГ СВЕТА + Альманах «Полдень. XXI век»)" thumb="p123">
+			<description>
+				<![CDATA[
+					 - КОМПЛЕКТ (ВОКРУГ СВЕТА + Альманах "Полдень. XXI век")
+				]]>
+			</description>
+			<options>
+				<option uid="VS005" period="6" price="900" />
+				<option uid="VS006" period="12" price="1800" />
+			</options>
+		</publication>
+		<publication cat-id="12" grp-id="2" name="Техника молодежи" thumb="p124">
+			<description>
+				<![CDATA[
+					 Журнал «Техника – молодёжи» был основан в 1933 г. и отметил в 2008 г. 75-летний юбилей. Но, несмотря на почтенный возраст, «ТМ» был и остаётся одним из ведущих научно-популярных ежемесячных изданий России – живой легендой. А легенды – не умирают!
+				]]>
+			</description>
+			<options>
+				<option uid="VS007" period="6" price="600" />
+				<option uid="VS008" period="12" price="1200" />
+			</options>
+		</publication>
+		<publication cat-id="05" grp-id="2" name="Спокойной ночи малыши" thumb="p125">
+			<description>
+				<![CDATA[
+					 «Спокойной ночи, малыши!» — уникальный проект! Семейная детская телепередача, не имеющая аналогов в мире по продолжительности существования в эфире.
+				]]>
+			</description>
+			<options>
+				<option uid="VS009" period="6" price="420" />
+				<option uid="VS010" period="12" price="840" />
+			</options>
+		</publication>
+		<publication cat-id="14" grp-id="2" name="Мастер ружье" thumb="p126">
+			<description>
+				<![CDATA[
+					Журнал об оружии и охоте
+				]]>
+			</description>
+			<options>
+				<option uid="VS011" period="6" price="780" />
+				<option uid="VS012" period="12" price="1560" />
+			</options>
+		</publication>
+		<publication cat-id="14" grp-id="2" name="ОХОТА" thumb="p127">
+			<description>
+				<![CDATA[
+					Журнал рассказывает об охоте и проблемах российского охотничьего хозяйства
+				]]>
+			</description>
+			<options>
+				<option uid="VS013" period="6" price="540" />
+				<option uid="VS014" period="12" price="1080" />
+			</options>
+		</publication>
+		<publication cat-id="14" grp-id="2" name="ОРУЖИЕ" thumb="p128">
+			<description>
+				<![CDATA[
+					Журнал об оружии
+				]]>
+			</description>
+			<options>
+				<option uid="VS015" period="6" price="780" />
+				<option uid="VS016" period="12" price="1560" />
+			</options>
+		</publication>
+		<publication cat-id="11" grp-id="2" name="PROСПОРТ" thumb="p129">
+			<description>
+				<![CDATA[
+					PROспорт – первый интересный журнал о спорте. PROспорт - это важнейшие спортивные события, великолепные фотографии, уникальные интервью, самое интересное о футболе, хоккее, боксе, "Формуле-1", теннисе и экстремальным видам спорта.
+				]]>
+			</description>
+			<options>
+				<option uid="VS017" period="6" price="960" />
+				<option uid="VS018" period="12" price="1920" />
+			</options>
+		</publication>
+		<publication cat-id="01" grp-id="2" name="ОФФ-РОУД Драйв" thumb="p130">
+			<description>
+				<![CDATA[
+					OFF-ROAD DRIVE Просто, в большинстве случаев должна быть и романтическая альтернатива… Мир с высоты дорожного просвета.
+				]]>
+			</description>
+			<options>
+				<option uid="VS019" period="6" price="840" />
+				<option uid="VS020" period="12" price="1680" />
+			</options>
+		</publication>
+		<publication cat-id="07" grp-id="2" name="Женское здоровье" thumb="p131">
+			<description>
+				<![CDATA[
+					Красочный, популярный, практичный журнал о различных аспектах здоровья современной женщины.
+				]]>
+			</description>
+			<options>
+				<option uid="VS021" period="6" price="840" />
+				<option uid="VS022" period="12" price="1680" />
+			</options>
+		</publication>
+		<publication cat-id="04" grp-id="2" name="Коммерсант ВЛАСТЬ" thumb="p138">
+			<description>
+				<![CDATA[
+					 "Коммерсант ВЛАСТЬ" - аналитический еженедельник 
+				]]>
+			</description>
+			<options>
+				<option uid="KM001" period="6" price="1800" />
+				<option uid="KM002" period="12" price="3600" />
+			</options>
+		</publication>
+		<publication cat-id="04" grp-id="2" name="Коммерсант ДЕНЬГИ" thumb="p139">
+			<description>
+				<![CDATA[
+					 "Коммерсант ДЕНЬГИ" - экономический еженедельник 
+				]]>
+			</description>
+			<options>
+				<option uid="KM003" period="6" price="2000" />
+				<option uid="KM004" period="12" price="4000" />
+			</options>
+		</publication>
+		<publication cat-id="04" grp-id="2" name="ОГОНЕК" thumb="p140">
+			<description>
+				<![CDATA[
+					 "ОГОНЕК" - ежемесячный деловой журнал 
+				]]>
+			</description>
+			<options>
+				<option uid="KM005" period="6" price="1700" />
+				<option uid="KM006" period="12" price="3400" />
+			</options>
+		</publication>
+		<publication cat-id="04" grp-id="2" name="Секрет Фирмы" thumb="p141">
+			<description>
+				<![CDATA[
+					 "Секрет Фирмы" - ежемесячный деловой журнал. 
+				]]>
+			</description>
+			<options>
+				<option uid="KM007" period="6" price="600" />
+				<option uid="KM008" period="12" price="1200" />
+			</options>
+		</publication>
+		<publication cat-id="01" grp-id="2" name="Коммерсант АВТОПИЛОТ" thumb="p142">
+			<description>
+				<![CDATA[
+					 "Коммерсант АВТОПИЛОТ" - ежемесячный автомобильный обозреватель. 
+				]]>
+			</description>
+			<options>
+				<option uid="KM009" period="6" price="800" />
+				<option uid="KM010" period="12" price="1600" />
+			</options>
+		</publication>
+		<publication cat-id="10" grp-id="2" name="ФОМА" thumb="p144">
+			<description>
+				<![CDATA[
+					 "ФОМА" - Православный журнал для сомневающихся.
+				]]>
+			</description>
+			<options>
+				<option uid="FM001" period="6" price="1050" />
+				<option uid="FM002" period="12" price="2100" />
+			</options>
+		</publication>
+		<publication cat-id="10" grp-id="2" name="Здоровье школьника" thumb="p145">
+			<description>
+				<![CDATA[
+					 "Здоровье школьника" - Журнал заботливых родителей.
+				]]>
+			</description>
+			<options>
+				<option uid="MC001" period="6" price="950" />
+				<option uid="MC002" period="12" price="1900" />
+			</options>
+		</publication>
+		<publication cat-id="11" grp-id="2" name="Nailure" thumb="p155">
+			<description>
+				<![CDATA[
+					 "Nailure" - КУЛЬТОВЫЙ ЖУРНАЛ НОГТЕВОЙ ИНДУСТРИИ.
+				]]>
+			</description>
+			<options>
+				<option uid="NA001" period="6" price="1500" />
+				<option uid="NA002" period="12" price="3000" />
+			</options>
+		</publication>
+		<publication cat-id="11" grp-id="2" name="Каталог Nail Fashion" thumb="p156">
+			<description>
+				<![CDATA[
+					 "Каталог Nail Fashion" 
+				]]>
+			</description>
+			<options>
+				<option uid="NA003" period="6" price="300" />
+				<option uid="NA004" period="12" price="500" />
+			</options>
+		</publication>
+		<publication cat-id="07" grp-id="2" name="Vogue/ВОГ" thumb="p157">
+			<description>
+				<![CDATA[
+					 "Vogue/ВОГ" - Модный женский журнал. 
+				]]>
+			</description>
+			<options>
+				<option uid="KD001" period="6" price="1600" />
+				<option uid="KD002" period="12" price="3200" />
+			</options>
+		</publication>
+		<publication cat-id="08" grp-id="2" name="GQ/GQ Россия" thumb="p158">
+			<description>
+				<![CDATA[
+					 "GQ/GQ Россия " - Модный мужской журнал. 
+				]]>
+			</description>
+			<options>
+				<option uid="KD003" period="6" price="1100" />
+				<option uid="KD004" period="12" price="2200" />
+			</options>
+		</publication>
+		<publication cat-id="02" grp-id="2" name="AD/Architectural Digest" thumb="p159">
+			<description>
+				<![CDATA[
+					 "AD/Architectural Digest" - это журнал об архитектуре и дизайне интерьеров, расчитанный на самых образованных, искушенных и состоятельных читателей. 
+				]]>
+			</description>
+			<options>
+				<option uid="KD005" period="6" price="1100" />
+				<option uid="KD006" period="12" price="2200" />
+			</options>
+		</publication>
+		<publication cat-id="07" grp-id="2" name="Glamour/Гламур" thumb="p160">
+			<description>
+				<![CDATA[
+					 "Glamour/Гламур" - Легендарный журнал о моде и светской жизни.
+				]]>
+			</description>
+			<options>
+				<option uid="KD007" period="6" price="800" />
+				<option uid="KD008" period="12" price="1600" />
+			</options>
+		</publication>
+		<publication cat-id="07" grp-id="2" name="TATLER/ТАТЛЕР" thumb="p161">
+			<description>
+				<![CDATA[
+					 "TATLER/ТАТЛЕР" - Модный женский журнал.
+				]]>
+			</description>
+			<options>
+				<option uid="KD009" period="6" price="1000" />
+				<option uid="KD010" period="12" price="2000" />
+			</options>
+		</publication>
+		<publication cat-id="11" grp-id="2" name="Все для семьи" thumb="p162">
+			<description>
+				<![CDATA[
+					 "Все для семьи" - «Добрые советы. Всё для семьи» — это новый интерактивный журнал о семейных ценностях и обо всем, что интересно и полезно для дома и близких.
+				]]>
+			</description>
+			<options>
+				<option uid="BU051" period="6" price="360" />
+				<option uid="BU052" period="12" price="720" />
+			</options>
+		</publication>
+		<publication cat-id="18" grp-id="2" name="Люблю готовить. Спецвыпуск" thumb="p163">
+			<description>
+				<![CDATA[
+					 "Люблю готовить. Спецвыпуск" - «Добрые советы. Люблю готовить!» — это журнал о вкусной и полезной пище, уникальный и непохожий на другие кулинарные издания. Все рецепты, которые в нем публикуются, присылают в редакцию читатели.
+				]]>
+			</description>
+			<options>
+				<option uid="BU053" period="6" price="420" />
+				<option uid="BU054" period="12" price="840" />
+			</options>
+		</publication>
+		<publication cat-id="02" grp-id="2" name="Цветы в доме" thumb="p164">
+			<description>
+				<![CDATA[
+					 "Цветы в доме" - «Добрые советы. Цветы в доме» — ежемесячный интерактивный журнал для всех, кто увлекается комнатными растениями, любит ухаживать за ними и создавать в своем доме оазисы живой природы.
+				]]>
+			</description>
+			<options>
+				<option uid="BU055" period="6" price="420" />
+				<option uid="BU056" period="12" price="840" />
+			</options>
+		</publication>
+		<publication cat-id="02" grp-id="2" name="VERENA/Верена" thumb="p165">
+			<description>
+				<![CDATA[
+					 "VERENA/Верена" - Журналы по рукоделию и вязанию.
+				]]>
+			</description>
+			<options>
+				<option uid="BU057" period="6" price="500" />
+				<option uid="BU058" period="12" price="1000" />
+			</options>
+		</publication>
+		<publication cat-id="01" grp-id="2" name="Top Gear Русская версия" thumb="p166">
+			<description>
+				<![CDATA[
+					 "Top Gear" Русская версия" - «Top Gear. Русское издание» - русская версия одного из самых известных автомобильных журналов Великобритании. Тест-драйвы, материалы о новых моделях, все самое интересное об автомобилях со всего мира.
+				]]>
+			</description>
+			<options>
+				<option uid="SL003" period="6" price="1000" />
+				<option uid="SL004" period="12" price="2000" />
+			</options>
+		</publication>
+		<publication cat-id="12" grp-id="2" name="GEO" thumb="p167">
+			<description>
+				<![CDATA[
+					 "GEO" - Ежемесячное научно-популярное ярко иллюстрированное издание, содержание которого охватывает самый широкий круг тем: от репортажей о путешествиях по странам и континентам, до познавательных статей о достижениях в сфере науки и технике
+				]]>
+			</description>
+			<options>
+				<option uid="SL005" period="6" price="1000" />
+				<option uid="SL006" period="12" price="2000" />
+			</options>
+		</publication>
+		<publication cat-id="11" grp-id="2" name="Худеем правильно" thumb="p168">
+			<description>
+				<![CDATA[
+					 "Худеем правильно" - Журнал "Худеем правильно" предлагает уникальную систему импульсногопохудения и управления весом. Эксклюзивные рецепты вкусных блюд для похудения; советы ведущих диетологов, психологов; анализ самых современных методик снижения веса и коррекции фигуры.
+				]]>
+			</description>
+			<options>
+				<option uid="SL007" period="6" price="1000" />
+				<option uid="SL008" period="12" price="2000" />
+			</options>
+		</publication>
+		<publication cat-id="11" grp-id="2" name="Здоровье" thumb="p169">
+			<description>
+				<![CDATA[
+					 "Здоровье" - «Все новое, актуальное и интересное о правильном питании, красоте, антиэйдж-практиках, беременности и детском здоровье, современной медицине и психологии. Мнения экспертов, личный опыт знаменитостей и обычных читателей, практичные советы.» 
+				]]>
+			</description>
+			<options>
+				<option uid="SL009" period="6" price="1000" />
+				<option uid="SL010" period="12" price="2000" />
+			</options>
+		</publication>
+		<publication cat-id="18" grp-id="2" name="Гастрономъ" thumb="p170">
+			<description>
+				<![CDATA[
+					 "Гастрономъ" - Давайте вместе убедимся в том, что жарить говядину ненамного сложнее, чем свинину или курицу. Что на свадьбу необязательно готовить тонны калорийных салатов и мясо под майонезом – гостей можно накормить элегантно, так, что они и сыты останутся, и танцевать смогут. Что детский праздник без торта – это реальность, ведь есть множество других блюд: быстрых, полезных и симпатичных. Что из арбуза и дыни можно приготовить не только десерт, но и отличные закуски. Поле для экспериментов бескрайнее. Присоединяйтесь!
+				]]>
+			</description>
+			<options>
+				<option uid="SL011" period="6" price="1000" />
+				<option uid="SL012" period="12" price="2000" />
+			</options>
+		</publication>
+		<publication cat-id="18" grp-id="2" name="Школа гастронома" thumb="p171">
+			<description>
+				<![CDATA[
+					 "Школа гастронома" - Журнал для тех, кто любит готовить. В каждом номере журнала - кулинарные рецепты с пошаговыми иллюстрациями.
+				]]>
+			</description>
+			<options>
+				<option uid="SL013" period="6" price="600" />
+				<option uid="SL014" period="12" price="1200" />
+			</options>
+		</publication>
+		<publication cat-id="18" grp-id="2" name="Коллекция рецептов" thumb="p172">
+			<description>
+				<![CDATA[
+					 "Коллекция рецептов" - "Коллекция рецептов" - специальный проект журнала "Школа гастронома"
+				]]>
+			</description>
+			<options>
+				<option uid="SL015" period="6" price="600" />
+				<option uid="SL016" period="12" price="1200" />
+			</options>
+		</publication>
+		<publication cat-id="02" grp-id="2" name="Садовник" thumb="p173">
+			<description>
+				<![CDATA[
+					 "Садовник" - журнал для тех, кому нравятся красивый сад, оригинальный огород и уютный дом.
+				]]>
+			</description>
+			<options>
+				<option uid="SL017" period="6" price="800" />
+				<option uid="SL018" period="12" price="1600" />
+			</options>
+		</publication>
+		<publication cat-id="02" grp-id="2" name="Коллекция садовника" thumb="p174">
+			<description>
+				<![CDATA[
+					 "Коллекция садовника" - это мини-энциклопедия о наиболее популярных растениях, успешных садах и современных огородах.
+				]]>
+			</description>
+			<options>
+				<option uid="SL019" period="6" price="800" />
+				<option uid="SL020" period="12" price="1600" />
+			</options>
+		</publication>
+		<publication cat-id="12" grp-id="2" name="SCIENCE ILLUSTRATED/ИЛЛЮСТРИРОВАННАЯ НАУКА" thumb="p175">
+			<description>
+				<![CDATA[
+					 "SCIENCE ILLUSTRATED/ИЛЛЮСТРИРОВАННАЯ НАУКА" - Журнал Science Illustrated выходит в странах Европы, Скандинавии и США более 25 лет. С сентября 2010 года ИД Бонниер Пабликейшенз начинает издавать этот журнал в России. 
+				]]>
+			</description>
+			<options>
+				<option uid="SL021" period="6" price="800" />
+				<option uid="SL022" period="12" price="1600" />
+			</options>
+		</publication>
+		<publication cat-id="09" grp-id="2" name="7дней" thumb="p176">
+			<description>
+				<![CDATA[
+					 "7дней" - Журнал "Семь Дней ТВ-Программа" - полноцветный развлекательный иллюстрированный еженедельник для семейного чтения, содержащий аннотированную телепрограмму. 
+				]]>
+			</description>
+			<options>
+				<option uid="SL023" period="6" price="1700" />
+				<option uid="SL024" period="12" price="3500" />
+			</options>
+		</publication>
+		<publication cat-id="13" grp-id="2" name="Итоги" thumb="p177">
+			<description>
+				<![CDATA[
+					 "Итоги" - еженедельный общественно-политический журнал. 
+				]]>
+			</description>
+			<options>
+				<option uid="SL025" period="6" price="1700" />
+				<option uid="SL026" period="12" price="3500" />
+			</options>
+		</publication>
+		<publication cat-id="07" grp-id="2" name="Коллекция Караван историй" thumb="p178">
+			<description>
+				<![CDATA[
+					 "Коллекция Караван историй" - Мини-формат. В него входят самые громкие материалы из архива "КАРАВАНА историй" и лучшие проекты фотохудожника Екатерины Рождественской. В каждом номере "Коллекции" читателей ждут 10 интереснейших историй, которые потрясли мир: самые знаменитые романы, самые громкие скандалы, самые загадочные катастрофы.
+				]]>
+			</description>
+			<options>
+				<option uid="SL027" period="6" price="600" />
+				<option uid="SL028" period="12" price="1200" />
+			</options>
+		</publication>
+		<publication cat-id="07" grp-id="2" name="Караван историй" thumb="p179">
+			<description>
+				<![CDATA[
+					 "Караван историй" - Ежемесячный журнал "Караван историй" - красочное издание, в котором публикуются материалы о ярких личностях, захватывающих приключениях и самых неординарных событиях века.
+				]]>
+			</description>
+			<options>
+				<option uid="SL029" period="6" price="1000" />
+				<option uid="SL030" period="12" price="2000" />
+			</options>
+		</publication>
+		<publication cat-id="01" grp-id="2" name="Клуб 4х4" thumb="p180">
+			<description>
+				<![CDATA[
+					 "Клуб 4х4" - Каждый месяц в свежем номере журнала "4х4 Club" вы можете найти результаты испытаний новейших моделей полноприводников.
+				]]>
+			</description>
+			<options>
+				<option uid="SL031" period="6" price="1000" />
+				<option uid="SL032" period="12" price="2000" />
+			</options>
+		</publication>
+		<publication cat-id="01" grp-id="2" name=" Автопанорама" thumb="p181">
+			<description>
+				<![CDATA[
+					 "Автопанорама" - Полноцветное издание, освещающее перспективы развития и новинки мирового автомобилестроения, состояние и важнейшие события мирового авторынка.
+				]]>
+			</description>
+			<options>
+				<option uid="SL033" period="6" price="1000" />
+				<option uid="SL034" period="12" price="2000" />
+			</options>
+		</publication>
+		<publication cat-id="01" grp-id="2" name="Автозвук" thumb="p182">
+			<description>
+				<![CDATA[
+					 "Автозвук" - Популярный ежемесячный журнал об автомобильной электронике, средствах охраны автомобиля и системах автомобильной навигации.
+				]]>
+			</description>
+			<options>
+				<option uid="SL035" period="6" price="1000" />
+				<option uid="SL036" period="12" price="2000" />
+			</options>
+		</publication>
+		<publication cat-id="01" grp-id="2" name="Авторевью" thumb="p183">
+			<description>
+				<![CDATA[
+					 Журнал "Авторевю" — Специализированная цветная автомобильная газета для профессионалов и автолюбителей.
+				]]>
+			</description>
+			<options>
+				<option uid="SL037" period="6" price="600" />
+				<option uid="SL038" period="12" price="1200" />
+			</options>
+		</publication>
+		<publication cat-id="02" grp-id="2" name="ИНТЕРЬЕР + ДИЗАЙН" thumb="p184">
+			<description>
+				<![CDATA[
+					"ИНТЕРЬЕР + ДИЗАЙН" — Журнал «ИНТЕРЬЕР + ДИЗАЙН» – это журнал, с которым вы станете экспертом в области тенденций. Он отражает глобальные изменения в мире вещей, культуры жилья, культуры потребления.
+				]]>
+			</description>
+			<options>
+				<option uid="SL039" period="6" price="1500" />
+				<option uid="SL040" period="12" price="3000" />
+			</options>
+		</publication>
+		<publication cat-id="02" grp-id="2" name="Идеи вашего дома" thumb="p185">
+			<description>
+				<![CDATA[
+					"Идеи вашего дома" — ведущее российское издание по вопросам ремонта и обустройства интерьера - выходит с 1997 года.
+				]]>
+			</description>
+			<options>
+				<option uid="SL041" period="6" price="1300" />
+				<option uid="SL042" period="12" price="2600" />
+			</options>
+		</publication>
+		<publication cat-id="02" grp-id="2" name="ДОМОВОЙ. ВЫСОКОЕ КАЧЕСТВО ЖИЗНИ" thumb="p186">
+			<description>
+				<![CDATA[
+					"ДОМОВОЙ. ВЫСОКОЕ КАЧЕСТВО ЖИЗНИ" — Истории о знаменитостях, статьи о модных тенденциях, путешествиях, воспитании детей, о здоровье и красоте. Советы по обустройству стильного дома. Журнал о тонких чувствах и красивых вещах.
+				]]>
+			</description>
+			<options>
+				<option uid="SL043" period="6" price="1000" />
+				<option uid="SL044" period="12" price="2000" />
+			</options>
+		</publication>
+		<publication cat-id="13" grp-id="2" name="СОВЕРШЕННО СЕКРЕТНО" thumb="p187">
+			<description>
+				<![CDATA[
+					"СОВЕРШЕННО СЕКРЕТНО" — Международный ежемесячник, основанный Юлианом Семеновым в 1989 году, а в 90-е годы возглавлявшийся известным журналистом-расследователем Артемом Боровиком. Специализируется на политических, экономических, исторических расследованиях, материалах о деятельности спецслужб. 
+				]]>
+			</description>
+			<options>
+				<option uid="SL045" period="6" price="500" />
+				<option uid="SL046" period="12" price="1000" />
+			</options>
+		</publication>
+		<publication cat-id="07" grp-id="2" name="Beauty" thumb="p188">
+			<description>
+				<![CDATA[
+					"Beauty" — мир красоты для Вас! "BEAUTY" - стильный женский журнал о красоте.  
+				]]>
+			</description>
+			<options>
+				<option uid="SL047" period="6" price="800" />
+				<option uid="SL048" period="12" price="1600" />
+			</options>
+		</publication>
+		<publication cat-id="18" grp-id="2" name="Ирэн" thumb="p189">
+			<description>
+				<![CDATA[
+					"Ирэн" — Первый в России журнал, посвященный французской вязаной моде. 
+				]]>
+			</description>
+			<options>
+				<option uid="SL049" period="6" price="800" />
+				<option uid="SL050" period="12" price="1600" />
+			</options>
+		</publication>
+		<publication cat-id="08" grp-id="2" name="Медведь" thumb="p190">
+			<description>
+				<![CDATA[
+					"Медведь" — русский по духу и европейский по исполнению. Это редкий мужской журнал, который приятно не только полистать, но и почитать. 
+				]]>
+			</description>
+			<options>
+				<option uid="SL051" period="6" price="800" />
+				<option uid="SL052" period="12" price="1600" />
+			</options>
+		</publication>
+		<publication cat-id="07" grp-id="2" name="9 месяцев" thumb="p192">
+			<description>
+				<![CDATA[
+					"9 месяцев" — Журнал «9 месяцев» посвящен и адресован беременным женщинам и молодым мамам. Однако не только им. Несомненно, его стоит почитать будущим и “новоиспеченным” папам, бабушкам и дедушкам и вообще всем. 
+				]]>
+			</description>
+			<options>
+				<option uid="SL054" period="6" price="500" />
+				<option uid="SL055" period="12" price="1000" />
+			</options>
+		</publication>
+		<publication cat-id="07" grp-id="2" name="Роды.ru" thumb="p193">
+			<description>
+				<![CDATA[
+					"Роды.ru" — Журнал о беременности родах и малышей. 
+				]]>
+			</description>
+			<options>
+				<option uid="SL056" period="6" price="500" />
+				<option uid="SL057" period="12" price="1000" />
+			</options>
+		</publication>
+		<publication cat-id="07" grp-id="2" name="Мама и малыш" thumb="p194">
+			<description>
+				<![CDATA[
+					"Мама и малыш" — Журнал о беременности, родах, развитии, воспитании. 
+				]]>
+			</description>
+			<options>
+				<option uid="SL058" period="6" price="500" />
+				<option uid="SL059" period="12" price="1000" />
+			</options>
+		</publication>
+		<publication cat-id="02" grp-id="2" name="Сад своими руками" thumb="p195">
+			<description>
+				<![CDATA[
+					"Сад своими руками" — предназначен для садоводов-любителей, для владельцев коттеджей и небольших участков. 
+				]]>
+			</description>
+			<options>
+				<option uid="SL060" period="6" price="700" />
+				<option uid="SL061" period="12" price="1400" />
+			</options>
+		</publication>
+		<publication cat-id="08" grp-id="2" name="Smoke" thumb="p196">
+			<description>
+				<![CDATA[
+					«Smoke» — Smoke Russia - путеводитель в изысканном и богатом мире сигар и табака, предназначенный как для афисианадо (наиболее взыскательных и искушенных курильщиков), так и для начинающих любителей сигары. 
+				]]>
+			</description>
+			<options>
+				<option uid="GL035" period="6" price="1000" />
+				<option uid="GL036" period="12" price="2000" />
+			</options>
+		</publication>
+		<publication cat-id="11" grp-id="2" name="Healthy &amp; lifestyle" thumb="p212">
+			<description>
+				<![CDATA[
+					"Healthy & lifestyle" - первое международное издание об искусстве получать радость от жизни. Позитивная реальность. Рецепты счастья от известных персон. Актуальные тренды здорового образа жизни. Секреты долголетия, отличного самочувствия и хорошего настроения под одной обложкой!
+				]]>
+			</description>
+			<options>
+				<option uid="SL076" period="6" price="330" />
+				<option uid="SL077" period="12" price="660" />
+			</options>
+		</publication>
+		<publication cat-id="07" grp-id="2" name="Даша" thumb="p213">
+			<description>
+				<![CDATA[
+					«Даша» — это новый еженедельник для современных женщин с полезными советами на все случаи жизни и рекомендациями специалистов из разных сфер.
+				]]>
+			</description>
+			<options>
+				<option uid="BU059" period="6" price="300" />
+				<option uid="BU060" period="12" price="600" />
+			</options>
+		</publication>
+		<publication cat-id="15" grp-id="2" name="Добрые советы. Моя любимая собака" thumb="p214">
+			<description>
+				<![CDATA[
+					«Добрые советы. Моя любимая собака» — ежемесячный интерактивный журнал для всех, у кого в доме есть лохматый питомец, кто дружит с ним, воспитывает и дрессирует, для кого пушистый друг стал полноправным и любимым членом семьи.
+
+				]]>
+			</description>
+			<options>
+				<option uid="BU061" period="6" price="300" />
+				<option uid="BU062" period="12" price="600" />
+			</options>
+		</publication>
+		<publication cat-id="14" grp-id="2" name="БУГЕЛЬ SKI EXPERT" thumb="p215">
+			<description>
+				<![CDATA[
+					«БугельSKI Expert: Италия» («БSE») — первая книга серии путеводителей по горнолыжным Альпам, адресованная тем, кто отправляется в горы именно для того, чтобы кататься. Лично и не единожды протестированные автором Юрием БУГЕЛЬСКИМ районы катания, подъемно-трассовая инфраструктура, возможности для ски-сафари и фрирайда описаны в «БSE» максимально подробно и достоверно.
+
+				]]>
+			</description>
+			<options>
+				<option uid="DY003" period="1" price="490" />
+			</options>
+		</publication>
+		<publication cat-id="03" grp-id="2" name="газета Московский Комсомолец пн.-сбт. (Москва/Московская область)" thumb="p216">
+			<description>
+				<![CDATA[
+					"Московский комсомолец" - одна из старейших (выходит с 11 декабря 1919 года) и популярнейших ежедневных российских газет. Изданию многие годы удается органично сочетать социальные и политические материалы, экономические обзоры, городские новости, светскую и спортивную хронику, развлекательную информацию.
+
+				]]>
+			</description>
+			<options>
+				<option uid="MK013" period="6" price="600" />
+				<option uid="MK014" period="12" price="1200" />
+			</options>
+		</publication>
+		<publication cat-id="03" grp-id="2" name="газета «КОММЕРСАНТЪ» пн.-пт. (Москва/Московская область)" thumb="p217">
+			<description>
+				<![CDATA[
+					Ежедневная общенациональная деловая газета   «Коммерсантъ» — 16 полос качественной и оперативной информации о мировом и российском бизнесе, финансовые и деловые новости, политика и перестановки в органах власти, главные события в обществе, культуре и спорте. Точные прогнозы и глубокий анализ. Одно из самых авторитетных и влиятельных изданий России для людей, принимающих решения.
+
+				]]>
+			</description>
+			<options>
+				<option uid="KM013" period="6" price="2100" />
+				<option uid="KM014" period="12" price="3800" />
+			</options>
+		</publication>
+		<publication cat-id="03" grp-id="2" name="газета РБК daily пн.-пт. (Москва)" thumb="p218">
+			<description>
+				<![CDATA[
+					Газета «РБК daily»- новости российского и международного бизнеса. Важные события в политике и экономике.
+					]]>
+			</description>
+			<options>
+				<option uid="RK001" period="1" price="490" />
+				<option uid="RK002" period="6" price="2900" />
+			</options>
+		</publication>
+		 <publication cat-id="04" grp-id="2" name="журнал РБК" thumb="p219">
+			<description>
+				<![CDATA[
+					Журнал «РБК» посвящён экономике и бизнесу, а также работе и отдыху делового общества.
+				]]>
+			</description>
+			<options>
+				<option uid="RK003" period="6" price="660" />
+				<option uid="RK004" period="12" price="1320" />
+			</options>
+		</publication> 
+		<publication cat-id="03" grp-id="2" name="газета «Аргументы и факты» Еженедельная" thumb="p220">
+			<description>
+				<![CDATA[
+					Вся информация в одной газете: независимо, взвешенно, объективно. Актуальные интервью, комментарии, эксклюзивные подробности из коридоров власти. Важно каждому: пенсии, налоги, деньги. Глас народа. Ответы на самые злободневные и важные вопросы читателей. Культура, кумиры прошлого, история страны. Школа выживания, полезные советы. Семья, общество, религия. Молодежь, армия. Криминальная хроника и расследования. Здоровье: как лечиться и как не болеть. Полная и подробная программа ТВ. Кроссворды.  Региональные приложения-вкладки.
+				]]>
+			</description>
+			<options>
+				<option uid="AF001" period="3" price="300" />
+				<option uid="AF002" period="6" price="600" />
+			</options>
+		</publication>
+		<publication cat-id="03" grp-id="2" name="газета «АиФ. Здоровье» Еженедельная" thumb="p221">
+			<description>
+				<![CDATA[
+					Еженедельная газета для тех, кто хочет сохранить здоровье, энергию, бодрость и душевное равновесие. В каждом номере: материалы о новейших открытиях в области отечественной и зарубежной медицины, о профилактике и лечении, советы и комментарии ведущих врачей страны, лучшие рецепты  телепередач о здоровье, секреты народной медицины. На вопросы читателей отвечают врачи, юристы, звезды театра, кино, спорта.
+				]]>
+			</description>
+			<options>
+				<option uid="AF003" period="3" price="200" />
+				<option uid="AF004" period="6" price="400" />
+			</options>
+		</publication>
+		<publication cat-id="03" grp-id="2" name="«АиФ. На даче» Два раза в месяц" thumb="p222">
+			<description>
+				<![CDATA[
+					Новый взгляд на загородную жизни! Газета для владельцев дач, садоводов и огородников. Все о законодательстве, льготах и правах садоводов и дачников. Юридические консультации. Новости Союза садоводов России. Советы ученых-практиков, селекционеров, цветоводов, экологов,  ландшафтных дизайнеров, как вырастить богатый урожай и обустроить свой участок. Личный опыт читателей и рецепты от «звездных» дачников. Конкурсы и призы!
+				]]>
+			</description>
+			<options>
+				<option uid="AF005" period="3" price="90" />
+				<option uid="AF006" period="6" price="180" />
+			</options>
+		</publication>
+		<publication cat-id="03" grp-id="2" name="газета «Труд» три раза в неделю" thumb="p223">
+			<description>
+				<![CDATA[
+					Газета для людей, желающих быть в курсе главных событий в стране и мире, следящих за новостями и изменениями в области политики, экономики, науки, кинематографа, карьеры и инноваций. 
+
+				]]>
+			</description>
+			<options>
+				<option uid="AF007" period="3" price="480" />
+				<option uid="AF008" period="6" price="960" />
+			</options>
+		</publication>
+		<publication cat-id="03" grp-id="2" name="газета «Труд-7» (Еженедельный выпуск)" thumb="p224">
+			<description>
+				<![CDATA[
+					Еженедельная семейная газета. Самые интересные новости страны и мира, советы о здоровье, семейном бюджете, автомобилях и модных тенденциях. Эксклюзивные интервью мировых звезд. Новости спорта, культуры, кинематографа, конкурсы, викторины. 
+
+				]]>
+			</description>
+			<options>
+				<option uid="AF009" period="3" price="220" />
+				<option uid="AF010" period="6" price="430" />
+			</options>
+		</publication>
+		<publication cat-id="07" grp-id="2" name="АИФ ПРО" thumb="p225">
+			<description>
+				<![CDATA[
+					Журнал для женщин, уникальность которого в том, что это издание делает акцент на легкие и выполнимые советы, а также многочисленные экспертные мнения. Это журнал о том, что красота, душевный покой и здоровье женщины – едины. Это полноценный проводник в мире хорошего самочувствия и отличного внешнего вида. 
+				]]>
+			</description>
+			<options>
+				<option uid="AF011" period="3" price="180" />
+				<option uid="AF012" period="6" price="300" />
+			</options>
+		</publication>
+		<publication cat-id="18" grp-id="2" name="АиФ Про Кухню" thumb="p226">
+			<description>
+				<![CDATA[
+					Практический журнал о домашнем уюте. Вкусные и полезные рецепты от лучших шеф-поваров и наших читательниц; как выбирать продукты; что скрывает упаковка; кухонный интерьер и бытовая техника. Это и многое другое вы найдете на страницах «АиФ Про Кухню»
+				]]>
+			</description>
+			<options>
+				<option uid="AF013" period="3" price="180" />
+				<option uid="AF014" period="6" price="300" />
+			</options>
+		</publication>
+		<publication cat-id="09" grp-id="2" name="«ACTION!»" thumb="p227">
+			<description>
+				<![CDATA[
+					«Журнал о кино для тех, кто его делает «ACTION!» объединился с журналом «МЕНЕДЖЕР. КИНО» под брендом «ACTION!» Новое печатное издание будет распространяться на российском рынке с периодичностью 6 раз в год, объединив под своей обложкой только лучший опыт предыдущих лет. Наша задача – помогать руководителям киноотрасли ориентироваться в пространстве современного кинобизнеса. 
+				]]>
+			</description>
+			<options>
+				<option uid="SL078" period="1" price="530" />
+				<option uid="SL079" period="12" price="3180" />
+			</options>
+		</publication>
+		<publication cat-id="19" grp-id="2" name="«ACTION!» PDF версия" thumb="p227">
+			<description>
+				<![CDATA[
+					«Журнал о кино для тех, кто его делает «ACTION!» объединился с журналом «МЕНЕДЖЕР. КИНО» под брендом «ACTION!» Новое печатное издание будет распространяться на российском рынке с периодичностью 6 раз в год, объединив под своей обложкой только лучший опыт предыдущих лет. Наша задача – помогать руководителям киноотрасли ориентироваться в пространстве современного кинобизнеса.
+				]]>
+			</description>
+			<options>
+				<option uid="SL080" period="1" price="300" />
+				<option uid="SL081" period="12" price="1800" />
+			</options>
+		</publication>
+		<publication cat-id="09" grp-id="2" name="«КИНОМЕХАНИК СЕГОДНЯ»" thumb="p228">
+			<description>
+				<![CDATA[
+					Журнал «КИНОМЕХАНИК СЕГОДНЯ» - концептуальное техническое издание для кинотеатрального бизнеса. На страницах журнала Вы всегда найдете свежую статистику по цифровым инсталляциям, опыт профессионалов по установке и использованию современной кинотехники, бизнес-аспекты управления кинотеатрами, а также мнения российских и зарубежных кинотеатральных интеграторов и производителей. Актуальная техническая информация – основа современного кинотеатра.
+				]]>
+			</description>
+			<options>
+				<option uid="SL082" period="1" price="280" />
+				<option uid="SL083" period="12" price="1680" />
+			</options>
+		</publication>
+		<publication cat-id="19" grp-id="2" name="«КИНОМЕХАНИК СЕГОДНЯ» PDF версия" thumb="p228">
+			<description>
+				<![CDATA[
+					Журнал «КИНОМЕХАНИК СЕГОДНЯ» - концептуальное техническое издание для кинотеатрального бизнеса. На страницах журнала Вы всегда найдете свежую статистику по цифровым инсталляциям, опыт профессионалов по установке и использованию современной кинотехники, бизнес-аспекты управления кинотеатрами, а также мнения российских и зарубежных кинотеатральных интеграторов и производителей. Актуальная техническая информация – основа современного кинотеатра.
+				]]>
+			</description>
+			<options>
+				<option uid="SL084" period="1" price="150" />
+				<option uid="SL085" period="12" price="900" />
+			</options>
+		</publication>
+		
+		<publication cat-id="03" grp-id="2" name="«Комсомольская правда» - ежедневная газета пн.-сбт." thumb="p230">
+			<description>
+				<![CDATA[
+					«Комсомольская правда» - самая популярная ежедневная газета России.[paragraph]Служит своим читателям, защищает их интересы, дает полезные советы, консультации, публикует информацию о событиях в стране и мире, помогает принимать необходимые решения. 
+				]]>
+			</description>
+			<options>
+				<option uid="SL088" period="1" price="169" />
+				<option uid="SL089" period="3" price="507" />
+			</options>
+		</publication>
+		
+		<publication cat-id="03" grp-id="2" name="«Комсомольская правда» - еженедельник с «Телепрограммой»." thumb="p231">
+			<description>
+				<![CDATA[
+					«Комсомольская правда» - самая популярная еженедельная газета России.[paragraph]Служит своим читателям, защищает их интересы, дает полезные советы, консультации, публикует информацию о событиях в стране и мире, помогает принимать необходимые решения. 
+				]]>
+			</description>
+			<options>
+				<option uid="SL090" period="1" price="75" />
+				<option uid="SL091" period="3" price="225" />
+			</options>
+		</publication>
+		
+		<publication cat-id="03" grp-id="2" name="«Комсомольская правда» - ежедневная газета + еженедельник с «Телепрограммой». Комплект. пн.-сбт." thumb="p229">
+			<description>
+				<![CDATA[
+					«Комсомольская правда» - самая популярная газета России.[paragraph]Служит своим читателям, защищает их интересы, дает полезные советы, консультации, публикует информацию о событиях в стране и мире, помогает принимать необходимые решения. 
+				]]>
+			</description>
+			<options>
+				<option uid="SL086" period="1" price="219" />
+				<option uid="SL087" period="3" price="657" />
+			</options>
+		</publication>
+		
+		
+		<publication cat-id="03" grp-id="2" name="«Советский спорт» - ежедневная газета." thumb="p232">
+			<description>
+				<![CDATA[
+					Старейшее спортивное издание страны. Эксклюзивные интервью звезд мирового и российского спорта, оперативная информация обо всех значимых спортивных событиях, аналитика, исторические материалы. 
+				]]>
+			</description>
+			<options>
+				<option uid="SL092" period="1" price="399" />
+				<option uid="SL093" period="3" price="1197" />
+			</options>
+		</publication>
+		<publication cat-id="03" grp-id="2" name="«Советский спорт-Футбол» - еженедельная газета." thumb="p233">
+			<description>
+				<![CDATA[
+					Самое популярное футбольное издание России. Европейский формат. Цветная глянцевая печать. Все о футболе: российском (премьер-лига, первый и второй дивизионы), европейском и мировом. Постеры  звезд. Мнения экспертов. Конкурсы для болельщиков.
+				]]>
+			</description>
+			<options>
+				<option uid="SL094" period="1" price="119" />
+				<option uid="SL095" period="3" price="357" />
+			</options>
+		</publication>
+		<publication cat-id="03" grp-id="2" name="«Телепрограмма» - еженедельник." thumb="p234">
+			<description>
+				<![CDATA[
+					Ваш семейный телегид. Самая подробная, удобная телевизионная сетка. Секреты звезд телеэкрана, обсуждение телепремьер. Представлены все каналы ТВ.[paragraph]Подписка принимается для жителей: Москвы и Московской области, Санкт-Петербурга и Лен. области, краев: Красноярский, Пермский, Приморский; республик: Башкортостан, Татарстан, Тува, Хакассия; областей:Костромская,Нижегородская,Новосибирская, Ростовская, Самарская, Саратовская, Челябинская, Ярославская
+				]]>
+			</description>
+			<options>
+				<option uid="SL096" period="1" price="79" />
+				<option uid="SL097" period="3" price="237" />
+			</options>
+		</publication>
+		<publication cat-id="03" grp-id="2" name="«Экспресс газета» - еженедельник." thumb="p235">
+			<description>
+				<![CDATA[
+					Суперсенсации, сокровенные тайны звезд кино, шоу-бизнеса и политики, статьи о здоровье, любви, сексе, скандальные новости, криминальные расследования, клуб поклонников телесериалов, мода, спорт, веселые конкурсы, анекдоты, сканворды, гороскопы.
+				]]>
+			</description>
+			<options>
+				<option uid="SL098" period="1" price="99" />
+				<option uid="SL099" period="3" price="297" />
+			</options>
+		</publication>
+		</publications>
+</data>
+		

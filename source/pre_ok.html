@@ -1,0 +1,81 @@
+<html>
+
+<head>
+	<title>provider / 180</title>
+	<meta http-equiv="content-type" content="text/html; charset=windows-1251">
+	<meta http-equiv="pragma" content="no-cache">
+	<!--<meta http-equiv="refresh" content="240; URL=./index.html">-->
+	<script type="text/javascript" src="./js/engine/utils.js"></script>
+    <script type="text/javascript" src="./js/engine/storage.js"></script>
+	<script type="text/javascript" src="./js/engine/base.js"></script>
+	<script type="text/javascript">
+
+	    function start() {
+        // log start
+	        to(240);
+	        _log('<p v="pk">');
+            // log stop
+	        iMaratl.attachListener("PaySuccess", fr);
+	        iMaratl.attachListener("FiscalReceipt", fr);
+	        iMaratl.setData("CreatePay");
+	    }
+
+	    function fr(oParent, eventArgs) {
+	        if (eventArgs.hasOwnProperty("name") && eventArgs.hasOwnProperty("value")) {
+	            switch (eventArgs.name) {
+	                case "PaySuccess":
+	                    if (eventArgs.value == "true") {
+                            // log start
+	                        _log('<et t="p"></et>');
+	                        _log('</p>');
+                            // log stop
+	                        document.location.href = "./new_ok.html";
+	                    }
+	                    break;
+	                case "FiscalReceipt":
+	                    switch (eventArgs.value) {
+	                        case "Wait":
+	                            $("fr").style.display = "block";
+	                            break;
+	                        case "false":
+	                            storage.put("FiscalReceipt", "false");
+	                            break;
+	                        case "true":
+	                            storage.put("FiscalReceipt", "true");
+	                            break;
+	                    }
+	                    break;
+	            }
+	        }
+	        else {
+                // log start
+	            _log('<e t="8"></e>');
+	            _log('</p>');
+                // log stop
+	            document.location.href = "./new_ok.html";
+	        }
+	    }
+    
+    </script>
+</head>
+
+<body style="border:0; margin:0;" onload="start();">
+    <div style="display: none;">
+        <object id="Maratl" classid="clsid:025D39DC-87F3-468B-B553-5BCE1B085952" VIEWASTEXT></object>
+        <script language="jscript">
+            function Maratl::OnResponse(sName, sVal) {
+                getData(sName, sVal);
+            }
+        </script>
+    </div>
+    <table cellpadding="0" cellspacing="0" border="0" style="width:100%; height:100%;">
+        <tr>
+            <td align="center" valign="middle">
+                <div id="fr" style="width:1280px; height:1024px; display:none;">
+                    <embed src="./swf/fiscalloading.swf" width="100%" height="100%"></embed>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

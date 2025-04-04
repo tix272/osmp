@@ -1,0 +1,46 @@
+<html>
+<head>
+	<title>EPA</title>
+	<meta http-equiv="content-type" content="text/html; charset=windows-1251" />
+	<meta http-equiv="pragma" content="no-cache" />
+	<meta http-equiv="refresh" content="180; URL=./index.html" />
+	<link rel="stylesheet" href="./css/qiwi_promo.css" type="text/css" />
+	<script type="text/javascript" src="./js/engine/utils.js"></script>
+	<script type="text/javascript" src="./js/engine/base.js"></script>
+	<script type="text/javascript" src="./js/engine/storage.js"></script>
+	<script type="text/javascript">
+
+        function init() {
+            $('flash').innerHTML = getFlashDef("./swf/comm_help.swf");
+        }
+
+        function onBackBtnClick() {
+            new CInnerShadow('btn_left');
+            setTimeout(function () {
+                window.history.back(-1);
+            }, 100);
+        }
+
+        function onMenuBtnClick() {
+            new CInnerShadow('btn_center');
+            setTimeout(function () {
+                document.location.href = "./index.html";
+            }, 100);
+        }
+
+    </script>
+</head>
+<body>
+<div id="content">
+    <div id="flash" style="width: 800px; height: 640px; margin: 130px 0 0 240px; overflow: hidden;"></div>
+	<div id="btn_left" class="bottom-button-left" onclick="onBackBtnClick();">
+	    <img src="./img/ui/navigation/back.gif" />
+	</div>
+	<div id="btn_center" class="bottom-button-center" onclick="onMenuBtnClick();">
+	    <img src="./img/ui/navigation/menu.gif" />
+	</div>
+	<div id="btn_right" class="bottom-button-right"></div>
+</div>
+    <script type="text/javascript">init()</script>
+</body>
+</html>

@@ -1,0 +1,280 @@
+<html>
+
+<head>
+
+	<title>global_index / no refresh</title>
+	<meta http-equiv="content-type" content="text/html; charset=windows-1251">
+	<meta http-equiv="refresh" content="180; URL=./ok.html">
+
+</head>
+
+<script src="./func/ui/objects.js"></script>
+
+<script src="./func/engine/pars_cookie.js"></script>
+
+<script src="./advert.js"></script>
+
+<script src="./advert_content.js"></script>
+
+<script>
+
+function backward() {
+
+	parent.location = "./validate_confirm.html";
+
+}
+
+
+function forward() {
+
+	enter_summ();
+}
+
+function enter_summ(){
+
+	document.cookie="Sum=" + ff.getAmount.value;
+	
+	ff.submit();
+}
+
+function bdef(){
+
+	backward_yes.style.display='none';
+
+	backward_no.style.display='';
+
+	forward_yes.style.display='none';
+
+	forward_no.style.display='none';
+
+	pay.style.display='';
+
+	menu_yes.style.display='none';
+
+	menu_no.style.display='';
+
+	var curent_page = document.location.href;
+
+	document.cookie='last_page=' + curent_page;
+}
+
+</script>
+
+
+<link rel="stylesheet" href="./css/df.css" type="text/css">
+
+<body onload="bdef();" bgcolor="#a0a0a0" topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0" heightmargin="0">
+
+<bgsound src="./sound/enter_summ.wav" loop="1">
+
+<center>
+
+<table cellpadding="0" cellspacing="0" border="0" width="100%" height="100%" bgcolor="#e6e6e6">
+
+<tr>
+
+<td align="center" valign="top">
+
+	<table cellpadding="0" cellspacing="0" border="0" width="100%">
+
+	<tr>
+
+	<td align="center" valign="top">
+
+	
+		<table cellpadding="10" cellspacing="10" border="0" width="70%">
+
+		<tr>
+
+		<td align="center" bgcolor="#dedede">
+		
+			<table cellpadding="0" cellspacing="0" border="0" width="100%">
+
+			<tr>
+
+			<td width="11" background="./img/ui/title_left.gif"></td>
+
+			<td class="on_page_title" background="./img/ui/title_bg.gif"><img border="0" src="./img/ui/title_enter_summ.gif"></td>
+
+			<td width="11" background="./img/ui/title_right.gif"></td>
+
+			</tr>
+
+			</table>
+
+		</td>
+
+		</tr>
+
+		</table>
+
+        </td>
+
+	</tr>
+
+
+	<tr>
+
+	<td align="center" valign="middle">
+
+	<form name="ff" action="ok_gcards.html" method="post">
+
+		<table cellpadding="10" cellspacing="10" border="0" width="70%">
+
+		<tr>
+
+		<td align="center" bgcolor="#dedede">
+
+			<table cellpadding="0" cellspacing="0" border="0" width="100%">
+
+			<tr>
+
+			<td><img border="0" src="./img/ui/summ_standart.gif"></td>
+
+			<td width="150"><input type="text" name="min_summ" class="inp" style="width:150px; text-align: right;" value=""></td>
+
+			<td><img border="0" src="./img/ui/summ_standart_rub.gif"></td>
+
+			</tr>
+
+			</table>
+
+		</td>
+
+		</tr>
+
+		</table>
+
+		<table cellpadding="10" cellspacing="10" border="0" width="70%">
+
+		<tr>
+
+		<td align="center" bgcolor="#dedede">
+
+			<table cellpadding="5" cellspacing="0" border="0" width="100%">
+
+			<tr>
+
+			<td><img border="0" src="./img/ui/summ_summ.gif"></td>
+
+			<td width="150" height="100"><input type="text" name="getAmount" style="width:370px; height:80; text-align: right;" class="last_inp" value=""></td>
+
+			<td><img border="0" src="./img/ui/summ_rub.gif"></td>
+
+			</tr>
+
+			</table>
+
+
+		</td></tr>
+
+		<tr><td>
+       	
+
+			<table cellpadding="10" cellspacing="10" border="0" width="100%">
+
+			<tr>
+
+			<td>
+
+				<table cellpadding="0" cellspacing="0" border="0" width="100%">
+
+				<td align="center"><input type="text" name="komisswarn" class="last_inp2" style="width:700px; text-align: left;" value="Комиссия ........................................................................................................................................................................................................"><input type="text" name="komiss" class="inp2" style="width:50px;" value=""><input type="text" name="komissprop" class="last_inp2" style="width:40px; text-align:right;" value="%"></td>
+
+				</tr>
+
+				<tr>
+
+				<td align="center"><input type="text" id="komm_warn" name="komissprofile" class="last_inp2" style="width:790px; text-align: left;" value=""></td>
+
+				</tr>
+
+				<tr>
+
+				<td class="last_page" align="center"><strong>К зачислению на счет абонента .......................................................................</strong><input type="text" name="really_summ" class="inp2" style="width:153px;" value=""><strong>руб.</strong></td>
+
+				</table>
+
+			</td>
+
+			</tr>
+
+			</table>
+       	
+		</td>
+
+		</tr>
+
+		</table>
+
+
+
+		<table cellpadding="10" cellspacing="10" border="0" width="70%">
+
+		<tr>
+
+		<td align="center" bgcolor="#dedede">
+
+			<table cellpadding="0" cellspacing="0" border="0" width="100%">
+
+			<tr><td colspan="3" align="center"><img border="0" src="./img/ui/summ_anonce.gif"><br><br></td></tr>
+
+			<tr>
+
+			<td width="21"  background="./img/ui/alert_big_left.gif"></td>
+
+			<td background="./img/ui/alert_big_bg.gif" align="center"><img border="0" src="./img/ui/alert_summ_no_money_gk.gif"></td>
+
+			<td width="21" background="./img/ui/alert_big_right.gif"></td>
+
+			</tr>
+
+			</table>
+
+		</td>
+
+		</tr>
+
+		</table>
+
+	</form>
+
+	</td>
+
+	</tr>
+
+	<form name="alert">
+
+	<tr>
+
+	<td align="center" valign="middle">
+
+		<input name="alert1" type="text" class="inp" style="width:800; height:80;" value="">
+		
+																  
+	</td>
+
+	</tr>
+
+	</form>
+
+	</table>
+	
+
+</td>
+
+</tr>
+
+<script>bottom_menu();</script>
+
+</table>
+
+</body>
+
+</html>
+
+
+
+
+
+

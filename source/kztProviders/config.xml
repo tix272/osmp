@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<script>
+	<config totalTime="600" defaultIdleTime="60" version="1.1">
+
+		<session>
+			<var key="extras.whereToGoFromOfertaPage" value="welcomePage"/>
+			<var key="payments.PrvId" value="441"/>
+			<var key="check_status.PrvId" value="441"/>
+			<var key="check_status.TermId" value="true"/>
+            <var key="check_status.StartParam" value="true"/>
+			<var key="settings.local_phones" value="false"/>
+			<var key="settings.project_name" value="flash_rus_kz_providers_adv_engine"/>
+            <var key="settings.oferta_path" value="QK_oferta_balance.xml"/>
+            <var key="settings.logos_path" value="./img/ui_item/"/>
+            <var key="settings.config_js_path" value="./config/"/>
+			<var key="settings.max_cash" value="15000"/>
+            <var key="settings.oferta_name" value="qiwi"/>
+            <var key="settings.path_kz" value="providers_kz.xml"/>
+            <var key="settings.path_tj" value="providers_tj.xml"/>
+            <var key="settings.phones_path" value="phones.txt"/>
+            <var key="settings.phones_er_path" value="phones_er.txt"/>
+			<var key="settings.project_version" value="QK_KZ_TJ_RU v2.08"/>
+            <var key="settings.top_advert" value="Больше возможностей на сайте: W.QIWI.RU"/>
+            <var key="settings.bottom_advert" value="Телефон поддержки QIWI Кошелька: 8(800)333-00-59"/>
+		</session>
+
+		<statistic defaultProfile="bad">
+			<add>
+				<bad>
+					<var name="_extra_MGT_country" value="user_info.country"/>
+					<var name="_extra_MGT_phone" value="user_info.phone"/>
+					<var name="_extra_MGT_account" value="user_info.account"/>
+				</bad>
+				<good>
+					<var name="_extra_MGT_country" value="user_info.country"/>
+					<var name="_extra_MGT_phone" value="user_info.phone"/>
+					<var name="_extra_MGT_account" value="user_info.account"/>
+					<var name="_extra_MGT_sum" value="extras.sum"/>
+				</good>
+			</add>
+			<object>
+				<variable name="prv_id" value="323"/>
+				<variable name="prv_name" value="Magitel"/>
+				<variable name="_extra_MGT_project_number" value="30006"/>
+				<variable name="_extra_no_print_check" value="true"/>
+				<variable name="_extra_fake_provider" value="true"/>
+				<variable name="_extra_result_int_page" value="return.html"/>
+				<variable name="_extra_MGT_exit" value="return.html"/>
+				<variable name="_extra_MGT_ver" value="settings.project_version"/>
+				<variable name="getAccountNumber" value="0000000000"/>
+			</object>
+			<bad vars="_extra_MGT_project_number,_extra_MGT_exit,_extra_MGT_date,_extra_MGT_time,_extra_MGT_path, _extra_MGT_ver, getAccountNumber"
+				 post="./kztProviders/return.html"/>
+			<good vars="_extra_MGT_project_number,_extra_MGT_exit,_extra_MGT_date,_extra_MGT_time,_extra_MGT_path, _extra_MGT_ver, getAccountNumber"
+				  post="./kztProviders/return.html"/>
+        </statistic>
+
+
+        <locales start="ru">
+                    <locale code="ru"/>
+                    <locale code="kz"/>
+                    <locale code="tj"/>
+                </locales>
+
+		<defaultBackground type="0" name="bg_0"/>
+
+		<pages>
+            <page name="checkStatusPage">
+				<content type="2" name="custompages.checkStatus.CheckStatusWrapper">
+					<componentEvents>
+						<event name="successSelectLang" page="welcomePage"/>
+						<event name="successWithoutSelectLang" page="inputAccountWithoutSelectLangPage"/>
+						<event name="fail" page="failPage"/>
+					</componentEvents>
+				</content>
+			</page>
+			<page name="welcomePage" >
+                <content type="1" name="exitButton" pos="490,884" label="exitLabel"/>
+                <content type="1" name="infoButton" pos="20,884" page="infoPage"/>
+                <content type="1" name="ofertaButton" pos="478,620" page="ofertaPageWelcome"/>
+                <content type="2" name="custompages.selectLang.SelectLangPage" pos="217,77">
+                    <componentEvents>
+						<event name="lang_submitted" page="inputAccountPage"/>
+					</componentEvents>
+				</content>
+                <content type="2" name="custompages.icon.IconWrapper" pos="1106,33"/>
+				<content type="2" name="custompages.version.VersionWrapper" pos="1180,5"/>
+			</page>
+           
+			<page name="infoPage" index="1">
+               <content type="0" name="bg_info"/>
+                <content type="1" name="backButton" pos="20,884" page="welcomePage"/>
+                 <content type="2" name="custompages.icon.IconWrapper" pos="1106,33"/>
+			</page>
+            
+			<page name="ofertaPageWelcome" index="2">
+               <content type="2" name="custompages.oferta.OfertaPage" pos="100,0"/>
+               <content type="2" name="custompages.icon.IconWrapper" pos="1106,33"/>
+               <content type="1" name="backButton" pos="20,884" page="welcomePage"/>
+			</page>
+			
+			<page name="ofertaPageAccount" index="2">
+               <content type="2" name="custompages.oferta.OfertaPage" pos="100,0"/>
+               <content type="2" name="custompages.icon.IconWrapper" pos="1106,33"/>
+               <content type="1" name="backButton" pos="20,884" page="inputAccountWithoutSelectLangPage"/>
+			</page>
+           
+			<page name="inputAccountWithoutSelectLangPage" index="3">
+               <content type="2" name="custompages.inputAccount.InputAccountPage" pos="69.75,77">
+                     <componentEvents>
+						<event name="account_submitted" page="inputPhoneWithoutSelectLangPage"/>
+					</componentEvents>
+				</content>
+				<content type="1" name="exitButton" pos="490,884" label="exitLabel"/>
+                <content type="1" name="pubOfertaButton" pos="20,884" page="ofertaPageAccount"/>
+				<content type="2" name="custompages.icon.IconWrapper" pos="1106,33"/>
+				<content type="2" name="custompages.version.VersionWrapper" pos="1180,5"/>
+			</page>
+            
+			<page name="inputAccountPage" index="2">
+               <content type="2" name="custompages.inputAccount.InputAccountPage" pos="69.75,77">
+                     <componentEvents>
+						<event name="account_submitted" page="inputPhonePage"/>
+					</componentEvents>
+				</content>
+				<content type="1" name="backButton" pos="20,884" page="welcomePage"/>
+				<content type="2" name="custompages.icon.IconWrapper" pos="1106,33"/>
+				<content type="2" name="custompages.version.VersionWrapper" pos="1180,5"/>
+			</page>
+			
+			<page name="inputPhoneWithoutSelectLangPage" index="4">
+                <content type="1" name="backButton" pos="20,884" page="inputAccountWithoutSelectLangPage"/>
+                <content type="2" name="custompages.icon.IconWrapper" pos="1106,33"/>
+                <content type="2" name="custompages.inputPhone.InputPhonePage" pos="226,71">
+                     <componentEvents>
+						<event name="phone_submitted" page="confirmWithoutSelectLangPage"/>
+    				</componentEvents>
+				</content>
+				<content type="2" name="custompages.version.VersionWrapper" pos="1180,5"/>
+			</page>
+			
+			
+			<page name="inputPhonePage" index="4">
+                <content type="1" name="backButton" pos="20,884" page="inputAccountPage"/>
+                <content type="2" name="custompages.icon.IconWrapper" pos="1106,33"/>
+                <content type="2" name="custompages.inputPhone.InputPhonePage" pos="226,71">
+                     <componentEvents>
+						<event name="phone_submitted" page="confirmPage"/>
+    				</componentEvents>
+				</content>
+				<content type="2" name="custompages.version.VersionWrapper" pos="1180,5"/>
+			</page>
+			
+            <page name="confirmWithoutSelectLangPage" index="5">
+                 <content type="2" name="custompages.confirm.ConfirmPage" pos="217,77">
+                     <componentEvents>
+						<event name="confirm_submitted" page="cashPage"/>
+					</componentEvents>
+				</content>
+                <content type="1" name="backButton" pos="20,884" page="inputPhoneWithoutSelectLangPage"/>
+                <content type="2" name="custompages.icon.IconWrapper" pos="1106,33"/>
+            </page>
+			
+			<page name="confirmPage" index="5">
+                 <content type="2" name="custompages.confirm.ConfirmPage" pos="217,77">
+                     <componentEvents>
+						<event name="confirm_submitted" page="cashPage"/>
+					</componentEvents>
+				</content>
+                <content type="1" name="backButton" pos="20,884" page="inputPhonePage"/>
+                <content type="2" name="custompages.icon.IconWrapper" pos="1106,33"/>
+            </page>
+			
+            <page name="cashPage" index="6" stat="good" idleTime="180">
+                 <content type="2" name="custompages.cash.CashPage" pos="311.15,123.55">
+                     <componentEvents>
+						<event name="cash_submitted" page="finishPayPage"/>
+                        <event name="cash_cancel" page="confirmPage"/>
+					</componentEvents>
+				</content>
+                <content type="2" name="custompages.icon.IconWrapper" pos="1106,33"/>
+				<content type="2" name="custompages.version.VersionWrapper" pos="1180,5"/>
+            </page>
+			
+            <page name="finishPayPage" index="7" stat="good">
+                 <content type="2" name="custompages.finishPay.FinishPayPage" pos="217,92">
+                     <componentEvents>
+                        <event name="exit"/>
+                     </componentEvents>
+                 </content>
+                <content type="1" name="exitButton" pos="490,884" label="exitLabel"/>
+                <content type="2" name="custompages.icon.IconWrapper" pos="1106,33"/>
+            </page>
+			
+            <page name="failPage" index="8">
+				<content type="0" name="bg_fail"/>
+				<content type="1" name="exitButton" pos="490,882"/>
+			</page>
+		</pages>
+	</config>
+</script>
+

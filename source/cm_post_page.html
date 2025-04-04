@@ -1,0 +1,37 @@
+<html>
+<head>
+  <title>Infpage</title>
+  <meta http-equiv="content-type" content="text/html; charset=windows-1251" />
+  <meta http-equiv="pragma" content="no-cache" />
+  <meta http-equiv="refresh" content="180; URL=./index.html" />
+    <script type="text/javascript">
+  
+        function GetDateTimeString() {
+            var dat = new Date();
+            var nMonth = 1 + dat.getMonth();
+            var strDate =  dat.getDate() + "." + nMonth + "." + dat.getFullYear() + "," + dat.getHours() + ":" + dat.getMinutes() + ":" + dat.getSeconds();
+            return strDate;
+        }
+
+        function start() {
+            document.getElementById("_extra_ev_date").value = GetDateTimeString();
+            document.getElementById("ff").submit();
+        }
+
+    </script>
+</head>
+
+<body onload="start();">
+  <form id="ff" name="ff" method="post" action="./cm_return.html">
+    <input type="hidden" id="prv_id" name="prv_id" value="31611" />
+    <input type="hidden" id="prv_name" name="prv_name" value="OTVPPROV-208" />
+    <input type="hidden" id="getAccountNumber" name="getAccountNumber" value="0000000000" />
+    <input type="hidden" id="_extra_no_print_check" name="_extra_no_print_check" value="true" />
+    <input type="hidden" id="_extra_fake_provider" name="_extra_fake_provider" value="true" />
+    <input type="hidden" id="_extra_result_int_page" name="_extra_result_int_page" value="cm_return.html" />
+    <input type="hidden" id="_extra_ev_date" name="_extra_ev_date" value="" />
+  </form>
+</body>
+</html>
+
+

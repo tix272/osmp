@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scripts>
+	<config totalTime="300" defaultIdleTime="60" version="2.0" log="false">
+
+		<session>
+			<var key="fake_pages.phoneDigitPopup.index" value="3"/>
+		
+			<var key="settings.MGT_path_format" value="page:time"/>
+			<var key="settings.MGT_date_format" value="yyyy-mm-dd hh:nn:ss"/>
+			<var key="settings.MGT_exit_last_page" value="true"/>
+			<var key="settings.exclude_zero_page" value="true"/>
+
+			<var key="settings.project_name" value="flash_1951_tricolor900"/>
+			<var key="settings.project_version" value="1.0.0"/>
+		</session>
+
+		<statistic defaultProfile="bad">
+			<add>
+				<good>
+					<var name="_extra_MGT_phone" value="user_info.phone"/>
+				</good>
+			</add>
+			<object>
+				<variable name="prv_id" value="323"/>
+				<variable name="prv_name" value="Magitel"/>
+				<variable name="_extra_MGT_project_number" value="1951"/>
+				<variable name="_extra_no_print_check" value="true"/>
+				<variable name="_extra_fake_provider" value="true"/>
+				<variable name="_extra_result_int_page" value="./return.html"/>
+				<variable name="_extra_MGT_exit" value="./return.html"/>
+				<variable name="getAccountNumber" value="0000000000"/>
+			</object>
+			<bad
+				vars="_extra_MGT_project_number,_extra_MGT_exit,_extra_MGT_date,_extra_MGT_time,_extra_MGT_path, getAccountNumber"
+				post="./return.html"/>
+			<good
+				vars="_extra_MGT_project_number,_extra_MGT_exit,_extra_MGT_date,_extra_MGT_time,_extra_MGT_path, getAccountNumber"
+				post="./return.html"/>
+		</statistic>
+
+		<defaultBackground type="0" name="bg_base"/>
+
+		<pages>
+
+			<page name="p1" index="1">
+				<content type="0" name="bg_1" />
+				<content type="1" name="exit2" pos="50,855"/>
+				<content type="1" name="connect" pos="316,382" page="phonePage"/>
+			</page>
+
+			<page name="phonePage" index="2">
+				<content type="1" name="back" pos="50,855" page="p1"/>
+				<content type="2" name="Phone">
+					<componentEvents>
+						<event name="submitted" page="okPage"/>
+					</componentEvents>
+				</content>
+			</page>
+			<!--...-->
+
+			<page name="okPage" idleTime="30" index="4" stat="good">
+				<content type="0" name="bg_6"/>
+				<content type="1" name="exit" pos="50,855"/>
+			</page>
+
+		</pages>
+	</config>
+</scripts>
+

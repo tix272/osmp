@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns:util="http://www.springactionscript.org/schema/util">
+	
+	<object id="flowCfg" class="ru.mobw.coreas3.app.config.FlowConfig">
+		<property name="bindingsRootPackage" value="${utility.path}" />
+	</object>
+	
+	<object id="flow" class="ru.mobw.coreas3.app.flow.mcflow.MCFlowBase" depends-on="flowCfg">
+		<constructor-arg ref="flowCfg" />
+		<property name="routeData" ref="route" />
+		<property name="elementsMap">
+            <dictionary>
+                <entry>
+                    <key>init</key>
+                    <value ref="init" />
+                </entry>
+                <entry>
+                    <key>start</key>
+                    <value ref="start" />
+                </entry>
+                <entry>
+                    <key>info</key>
+                    <value ref="info" />
+                </entry>
+                <entry>
+                    <key>offertus</key>
+                    <value ref="offertus" />
+                </entry>
+                <entry>
+                    <key>account</key>
+                    <value ref="account" />
+                </entry>
+                <entry>
+                    <key>select</key>
+                    <value ref="select" />
+                </entry>
+                <entry>
+                    <key>counter</key>
+                    <value ref="counter" />
+                </entry>
+                <entry>
+                    <key>date</key>
+                    <value ref="date" />
+                </entry>
+                <entry>
+                    <key>phone</key>
+                    <value ref="phone" />
+                </entry>
+                <entry>
+                    <key>pin</key>
+                    <value ref="pin" />
+                </entry>
+                <entry>
+                    <key>cash</key>
+                    <value ref="cash" />
+                </entry>
+                <entry>
+                    <key>final</key>
+                    <value ref="final" />
+                </entry>
+                <entry>
+                    <key>exit</key>
+                    <value ref="exit" />
+                </entry>
+            </dictionary>
+        </property>
+    </object>
+	
+	
+	
+    <object id="init" class="elements.InitElement">
+        <constructor-arg>
+			<array>
+				<value>
+					<object class="ru.mobw.coreas3.vo.ComissionProfile">
+					</object>
+				</value>
+			</array>
+		</constructor-arg>
+        <constructor-arg>
+			<object class="vo.BillVO">
+				<property name="cash" ref="billCash" />
+			</object>
+		</constructor-arg>
+        <constructor-arg class="XML" ref="regions" />
+    </object>
+	
+	
+	
+	
+    <object id="start" class="elements.StartElement" />
+    <object id="info" class="elements.InfoElement" />
+    <object id="offertus" class="elements.OffertusElement">
+        <constructor-arg ref="offertusText" />
+    </object>
+    <object id="account" class="elements.AccountElement" />
+    <object id="select" class="elements.SelectElement" />
+    <object id="counter" class="elements.CounterElement" />
+    <object id="date" class="elements.DateElement" />
+    <object id="phone" class="elements.PhoneInputElement" />
+    <object id="pin" class="elements.PinInputElement" />
+    <object id="final" class="elements.FinalElement" />
+    <object id="cash" class="elements.CashPaymentElement" />
+	<object id="exit" class="elements.ExitElement" />
+	
+	
+	
+	
+	
+	
+</objects>

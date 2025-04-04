@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns:util="http://www.springactionscript.org/schema/util">
+	
+	<object id="billText" class="String">
+		<constructor-arg>
+			<value>
+<![CDATA[_receipt_=------------------------------
+«КИВИ Банк» (ЗАО)<br>ИНН 3123011520 БИК 044585416   К/с 30101810200000000416<br>Лицензия No. 2241
+&_receipt_Вид операции=035&_receipt_Услуга=организация и осуществление расчетов с использованием предоплаченной карты&_receipt_Принятo=%total%&_receipt_Зачислено=%price%&_receipt_Кoмиссия=%commission%<br>
+-------------ЛИНИЯ ОТРЕЗА-------------
+&_receipt_КВИТАНЦИЯ=<br>«КИВИ Банк» (ЗАО)<br>ИНН 3123011520 БИК 044585416   К/с 30101810200000000416<br>Лицензия No. 2241&_receipt_Терминал=%termid%&_receipt_Код операции=%operation_code%
+&_receipt_Плательщик=%name%&_receipt_Адрес=%address%&_receipt_Получатель=%to_name_f%&_receipt_ИНН=%inn%&_receipt_КПП=%kpp%&_receipt_ОКАТО=%okato%&_receipt_КБК=%kbk%&_receipt_БИК=%rec_bik%&_receipt_Р/С=%cre%&_receipt_Банк получателя=%to_bank%
+&_receipt_Вид платежа=%description%&_receipt_Сумма=%price%
+&_receipt_Подпись плательщика=____________________<br>]]>
+			</value>
+		</constructor-arg>
+	</object>
+	
+</objects>

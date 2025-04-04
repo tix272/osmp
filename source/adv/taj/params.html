@@ -1,0 +1,55 @@
+<html>
+<head>
+  <title>Infpage</title>
+  <meta http-equiv="content-type" content="text/html; charset=windows-1251" />
+  <meta http-equiv="pragma" content="no-cache" />
+  <meta http-equiv="refresh" content="180; URL=../../site/index.html" />
+   
+<script>
+  
+function GetDateTimeString()
+{
+    var dat = new Date(),
+        sMonth = (1 + dat.getMonth()).toString(),
+        sDate = dat.getDate().toString(),
+        sHours = dat.getHours().toString(),
+        sMinutes = dat.getMinutes().toString(),
+        sSeconds = dat.getSeconds().toString();
+        
+        if (sMonth.length == 1) sMonth = '0' + sMonth;
+        if (sDate.length == 1) sDate = '0' + sDate;
+        if (sHours.length == 1) sHours = '0' + sHours;
+        if (sMinutes.length == 1) sMinutes = '0' + sMinutes;
+        if (sSeconds.length == 1) sSeconds = '0' + sSeconds;
+        
+    var strDate =  dat.getFullYear() + "-" + sMonth + "-" + sDate + " " + sHours + ":" + sMinutes + ":" + sSeconds;
+    return strDate;
+}
+
+function start() 
+{
+    
+    document.getElementById("_extra_MGT_date").value = GetDateTimeString();
+    document.getElementById("ff").submit();
+}
+
+  </script>
+</head>
+
+<body onload="start();">
+  <form id="ff" name="ff" method="post" action="./microsite.html">
+    <input type="hidden" id="prv_id" name="prv_id" value="323" />
+    <input type="hidden" id="prv_name" name="prv_name" value="Magitel" />
+    <input type="hidden" id="getAccountNumber" name="getAccountNumber" value="0000000000" />
+    <input type="hidden" id="_extra_MGT_project_number" name="_extra_MGT_project_number" value="1216" />
+    <input type="hidden" id="_extra_no_print_check" name="_extra_no_print_check" value="true" />
+    <input type="hidden" id="_extra_fake_provider" name="_extra_fake_provider" value="true" />
+    <input type="hidden" id="_extra_result_int_page" name="_extra_result_int_page" value="return.html" />
+    <input type="hidden" id="_extra_MGT_date" name="_extra_MGT_date" value="" />
+    
+    
+  </form>
+</body>
+</html>
+
+

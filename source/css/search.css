@@ -1,0 +1,94 @@
+﻿@import url("base.css");
+.btn_div
+{
+    height: 190px;
+    margin: 10px 0px 10px 0px;
+}
+.nav_btn
+{
+    width: 33%;
+    height: 124px;
+}
+.k_c_w
+{
+	color: White;
+}
+.k_c_b
+{
+	color: White;
+}
+.k_f
+{
+	font-size: 42px;
+	font-weight: normal;
+	font-family: Arial;
+	padding-top: 10px;
+}
+.k_v
+{
+	width: 70px;
+	height: 70px;
+	background: url('../img/ui/keyboard/search/blue_btn_on.gif') no-repeat;
+}
+.k_b
+{
+	width: 110px;
+	height: 70px;
+	background: url('../img/ui/keyboard/search/orange_btn_on.gif') no-repeat;
+}
+.k_s
+{
+	width: 310px;
+	height: 70px;
+	background: url('../img/ui/keyboard/search/space_on2.gif') no-repeat;
+}
+.f_b
+{
+	color: white;
+}
+.f_w
+{
+	color: white;
+}
+#body_tbl
+{
+    height: 824px;
+}
+#nav_menu
+{
+    height: 140px;
+}
+#workspace
+{
+}
+#btn_menu
+{
+    width: 34%;
+}
+#page_field
+{
+	width: 100%;
+	height: 66px;
+	text-align: left;
+	color: #2268c6;
+	font-size: 50px;
+	font-weight: normal;
+	margin-top: 15px;
+	text-transform: uppercase;
+	overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

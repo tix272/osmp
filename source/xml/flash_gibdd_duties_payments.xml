@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns:util="http://www.springactionscript.org/schema/util">
+	
+	<object id="payments" class="XMLList">
+		<constructor-arg>
+			<value>
+			<![CDATA[
+				<item type="reg" mesid="30417" prvid="23740" price="2000" description="Постановка автомобиля на учет" />
+				<item type="reg" mesid="30418" prvid="23741" price="300" description="Снятие с учета с выдачей рег. знаков 'Транзит' на бумажной основе" />
+				<item type="reg" mesid="30400" prvid="22394" price="1500" description="За выдачу регистрационных знаков на автомобили" />
+				<item type="reg" mesid="30401" prvid="22395" price="1000" description="За выдачу регистрационных знаков на мототранспортные средства, прицепы, тракторы" />
+				<item type="reg" mesid="30408" prvid="22402" price="100" description="За выдачу регистрационных знаков 'Транзит' на бумажной основе" />
+
+				<item type="reg" mesid="30407" prvid="22401" price="500" description="За выдачу регистрационных знаков 'Транзит' металлических на мототранспортные средства, прицепы, тракторы" />
+				<item type="reg" mesid="30406" prvid="22400" price="1000" description="За выдачу регистрационных знаков 'Транзит' металлических на автотранспортные средства" />
+				<item type="reg" mesid="30409" prvid="22403" price="200" description="За выдачу свидетельства на высвободившийся номерной агрегат" />
+				<item type="reg" mesid="30404" prvid="22398" price="200" description="За временную регистрацию ранее зарегистрированных транспортных средств по месту их пребывания" />
+				<item type="reg" mesid="30405" prvid="22399" price="200" description="За внесение изменений в выданный ранее паспорт транспортного средства" />
+				
+				<item type="reg" mesid="30410" prvid="22404" price="300" description="За выдачу талона о прохождении государственного технического осмотра" />
+				<item type="reg" mesid="30411" prvid="22405" price="300" description="За выдачу международного сертификата технического осмотра" />
+				<item type="reg" mesid="30416" prvid="22410" price="500" description="За выдачу свидетельства о соответствии конструкции ТС требованиям БДД" />
+				<item type="reg" mesid="30402" prvid="22396" price="500" description="За выдачу паспорта транспортного средства" />
+				<item type="reg" mesid="30403" prvid="22397" price="300" description="За выдачу свидетельства о регистрации транспортного средства" />
+				
+				<item type="exm" mesid="30412" prvid="22406" price="400" description="За выдачу водительского удостоверения на бумажной основе" />
+				<item type="exm" mesid="30413" prvid="22407" price="800" description="За выдачу водительского удостоверения на пластиковой основе" />
+				<item type="exm" mesid="30414" prvid="22408" price="1000" description="За выдачу международного водительского удостоверения" />
+				<item type="exm" mesid="30415" prvid="22409" price="500" description="За выдачу временного разрешения на право управления транспортными средствами" />
+			]]>
+			</value>
+		</constructor-arg>
+	</object>
+	
+</objects>

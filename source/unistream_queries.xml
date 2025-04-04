@@ -1,0 +1,103 @@
+<objects xmlns:util="http://www.springactionscript.org/schema/util">
+  <object id="queries" class="XMLList">
+    <constructor-arg>
+      <value><![CDATA[<queries>
+		  <template>
+			 <request>
+				<protocol-version>4.00</protocol-version>
+				<request-type>60</request-type>
+				<terminal-id>%terminal_id%</terminal-id>
+				<extra name ="mylk-pin">%mylk_pin%</extra>
+				<acc-l>
+					<acc>
+						<prv>%prv%</prv>
+						<a></a>
+						<sum></sum>
+						<extra name="uni-key">%uni_key%</extra>
+						<extra name="rem-sname">%rem_sname%</extra>
+						<extra name="rem-fname">%rem_fname%</extra>
+						<extra name="rem-pname">%rem_pname%</extra>
+						<extra name="rec-sname">%rec_sname%</extra>
+						<extra name="rec-fname">%rec_fname%</extra>
+						<extra name="rec-pname">%rec_pname%</extra>
+						<extra name="rem-id">%rem_id%</extra>
+						<extra name="rec-id">%rec_id%</extra>
+					</acc>
+				 </acc-l>
+				 <extra name="std">%std%</extra>
+			 </request>
+		  </template>
+		  <cash_payment>
+			 <request>
+				<protocol-version>4.00</protocol-version>
+				<request-type>39</request-type>
+				<extra name="mylk-pin">%mylk_pin%</extra>
+				<terminal-id>%terminal_id%</terminal-id>
+				<trm-id>%trm_id%</trm-id>
+				<extra name="client-software">%client_software%</extra>
+				<auth count="1" to-amount="%auth_to_amount%">
+					  <payment>
+							<transaction-number>%transaction_number%</transaction-number>
+							<from>
+							  <amount>%from_amount%</amount>
+							  <service-id>%from_service_id%</service-id>
+							</from>
+							<to>
+							  <amount>%to_amount%</amount>
+							  <service-id>%to_service_id%</service-id>
+							  <account-number>%to_account_number%</account-number>
+							</to>
+							<extra name="comment">%comment%</extra>
+							<extra name="uni-key">%uni_key%</extra>
+							<extra name="rem-sname">%rem_sname%</extra>
+							<extra name="rem-fname">%rem_fname%</extra>
+							<extra name="rem-pname">%rem_pname%</extra>
+							<extra name="rec-sname">%rec_sname%</extra>
+							<extra name="rec-fname">%rec_fname%</extra>
+							<extra name="rec-pname">%rec_pname%</extra>
+							<extra name="rem-id">%rem_id%</extra>
+							<extra name="rec-id">%rec_id%</extra>
+							<extra name="cur_id">%cur_id%</extra>
+							<extra name="pfp">%pfp%</extra>
+						</payment>
+						<extra name="p-id">%p_id%</extra>
+					</auth>
+					<extra name="std">%std%</extra>
+					<v>%v%</v>
+				</request>
+		  </cash_payment>
+		  <save_payment>
+			  <request>
+				  <protocol-version>4.00</protocol-version>
+				  <request-type>38</request-type>
+				  <extra name="mylk-pin">%mylk_pin%</extra>
+				  <terminal-id>%terminal_id%</terminal-id>
+				  <extra name="client-software">%client_software%</extra>
+				  <item-list>
+					  <item>
+						  <title>%comment%</title>
+						  <id>%id%</id>
+						  <prv>%prv_id%</prv>
+						  <account>%account%</account>
+						  <extra name="uni-key">%uni_key%</extra>
+						  <extra name="rem-sname">%rem_sname%</extra>
+						  <extra name="rem-fname">%rem_fname%</extra>
+						  <extra name="rem-pname">%rem_pname%</extra>
+						  <extra name="rec-sname">%rec_sname%</extra>
+						  <extra name="rec-fname">%rec_fname%</extra>
+						  <extra name="rec-pname">%rec_pname%</extra>
+						  <extra name="card">%card%</extra>
+						  <extra name="rem-id">%rem_id%</extra>
+						  <extra name="rec-id">%rec_id%</extra>
+					  </item>
+				  </item-list>
+				  <extra name="std">%std%</extra>
+				  <v>%v%</v>
+				</request>
+		   </save_payment>
+		  </queries>
+			]]>
+	   </value>
+    </constructor-arg>
+  </object>
+</objects>

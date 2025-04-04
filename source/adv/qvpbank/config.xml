@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<script>
+	<config totalTime="90" defaultIdleTime="90" >
+	
+		<statistic>
+			<add>
+				<var name="_extra_MGT_phone" value="getAccountNumber" statisticType="good" />
+			</add>
+			<object>
+				<variable name="prv_id" value="323" />
+				<variable name="prv_name" value="Magitel" />
+				<variable name="_extra_MGT_project_number" value="1339" />
+				<variable name="_extra_no_print_check" value="true" />
+				<variable name="_extra_fake_provider" value="true" />
+				<variable name="_extra_result_int_page" value="return.html" />
+				<variable name="getAccountNumber" value="0000000000" />
+			</object>
+			<good vars="_extra_MGT_date,_extra_MGT_time" post="./return.html"/>
+		</statistic>
+		
+		<defaultBackground type="0" name="page1" />
+		
+		<pages>
+			<page name="poster" finish="1" >
+				<content type="1" name="L_Btn_Exit" pos="55,855"/>
+			</page>
+		</pages>
+	
+	</config>
+</script>
+

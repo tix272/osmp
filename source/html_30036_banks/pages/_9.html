@@ -1,0 +1,32 @@
+<div id="CashPaymentView">
+	
+	<table>
+		<tr id="inserted">
+			<td class="main-key">Внесенная сумма</td>
+			<td class="value"></td>
+			<td class="label">руб.</td>
+		</tr>
+		<tr>
+			<td id="warning" class="hidden" colspan="2" data-template="Внесите еще <%=delta%> руб."></td>
+		</tr>
+
+		<tr id="to-account">
+			<td class="key">К зачислению на счет</td>
+			<td class="value"></td>
+			<td class="label">руб.</td>
+		</tr>
+		<tr>
+			<td id="to-account-description" class="description" colspan="2" data-template="Сумма будет зачислена на счёт <%=account%>"></td>
+		</tr>
+
+		<tr id="commission">
+			<td class="key">Комиссия</td>
+			<td class="value"></td>
+			<td class="label">руб.</td>
+		</tr>
+		<tr>
+			<td id="commission-description" class="description" colspan="2"></td>
+		</tr>
+	</table>
+
+</div>

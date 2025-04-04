@@ -1,0 +1,151 @@
+<html>
+<head>
+	<title>provider / 180</title>
+	<meta http-equiv="content-type" content="text/html; charset=windows-1251">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="refresh" content="180; URL=./index.html">
+	<style type="text/css">
+	.t_header {
+	    text-align: center;
+	}
+	.t_body {
+	}
+	</style>
+</head>
+
+<script>
+    var aDisps = [];
+    
+    function backward() {
+        //parent.location = "./pay_status.html";
+        window.history.go(-2);
+    }
+
+    function menu() {
+        parent.location = "./index.html";
+    }
+
+    function bdef() {
+        
+    }
+
+    function start() {
+        aDisps = getDisps();
+
+        if (!aDisps.length) {
+            $('content_td').innerHTML = 'Информация о платежах отсутствует';
+            return;
+        }
+
+        var sContent = '<table cellpadding="0" cellspacing="1" border="0">';
+
+        sContent += '<tr>';
+        sContent += '   <td align="center" valign="middle" class="t_header" width="232" height="51"><table cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="11" height="100%"><img src="./img/ui/title_left.gif" /></td><td align="center" background="./img/ui/title_bg.gif"><img src="./img/ui/ps_prov.gif" /></td><td width="11"><img src="./img/ui/title_bg.gif" /></td></tr></table></td>';
+        sContent += '   <td align="center" valign="middle" class="t_header" background="./img/ui/title_bg.gif" width="206"><img src="./img/ui/ps_n_ch_doc.gif" /></td>';
+        sContent += '   <td align="center" valign="middle" class="t_header" background="./img/ui/title_bg.gif" width="231"><img src="./img/ui/ps_date.gif" /></td>';
+        sContent += '   <td align="center" valign="middle" class="t_header" background="./img/ui/title_bg.gif" width="117"><img src="./img/ui/ps_summ.gif" /></td>';
+        sContent += '   <td align="center" valign="middle" class="t_header" background="./img/ui/title_bg.gif" width="138"><img src="./img/ui/ps_ch.gif" /></td>';
+        sContent += '   <td align="center" valign="middle" class="t_header" width="334"><table cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="11" height="100%"><img src="./img/ui/title_bg.gif" /></td><td align="center" background="./img/ui/title_bg.gif"><img src="./img/ui/ps_status.gif" /></td><td width="11"><img src="./img/ui/title_right.gif" /></td></tr></table></td>';
+        sContent += '</tr>';
+
+        for (var i = 0; i < aDisps.length; i++) {
+            sContent += '<tr style="font-family: FreeSans, Arial, Helvetica, Tahoma, sans-serif; font-weight:Bold; font-size:22px; color:#414141;" bgcolor="' + ((i % 2) ? '#ffffff' : '#d2d2d2') + '">';
+            sContent += '   <td align="center" valign="middle" class="t_body" width="232" height="60"><div style="width:232px;overflow:hidden;">' + aDisps[i].prvName + '</div></td>';
+            sContent += '   <td align="center" valign="middle" class="t_body" width="206"><div style="width:206px;overflow:hidden;">' + aDisps[i].acc + '</div></td>';
+            sContent += '   <td align="center" valign="middle" class="t_body" width="231"><div style="width:231px;overflow:hidden;">' + aDisps[i].dt + '</div></td>';
+            sContent += '   <td align="center" valign="middle" class="t_body" width="117"><div style="width:117px;overflow:hidden;">' + aDisps[i].cs + '</div></td>';
+            sContent += '   <td align="center" valign="middle" class="t_body" width="138"><div style="width:138px;overflow:hidden;">' + aDisps[i].cnum + '</div></td>';
+            sContent += '   <td valign="middle" class="t_body" width="334"><table cellspacing="0" cellpadding="0" border="0" width="100%"><tr><td align="' + ((aDisps[i].pStatus == '1') ? 'right' : 'center') + '" valign="middle">' + getStatusStr(aDisps[i].pStatus) + '</td>' + ((aDisps[i].pStatus == '1') ? '<td align="right"><img src="./img/ui/print.gif" style="margin-right: 10px;" onclick="print(' + i + ');" /></td>' : '') + '</tr></table></td>';
+            sContent += '</tr>';
+        }
+
+        sContent += '</table>';
+
+        $('content_td').innerHTML = sContent;
+    }
+
+    function getDisps() {
+        var aResult = [];
+        var aTemp = [];
+
+        for (var i = 1; i <= 10; i++) {
+            if ($('disp' + i).value.length) {
+                aTemp = $('disp' + i).value.split('\t');
+                if (aTemp.length == 9) {
+                    aResult.push({ prvId: aTemp[0], prvName: aTemp[1], acc: aTemp[2], dt: aTemp[3], cs: aTemp[4], ps: aTemp[5], cnum: aTemp[6], pStatus: aTemp[7], tn: aTemp[8] });
+                }
+            }
+        }
+
+        return aResult;
+    }
+
+    function getStatusStr(sCode) {
+        switch (sCode) {
+            case '0': return '<span style="color: #fa1e1e;">не проведен</span>';
+            case '1': return '<span style="color: #00961e;">проведен</span>';
+            case '2': return 'в стадии проведения';
+            case '3': return 'ожидает отправки на сервер';
+            default: return '';
+        }
+    }
+
+    function print(idx) {
+        $('DublCheckPrvId').value = aDisps[idx].prvId;
+        $('DublCheckAcc').value = aDisps[idx].acc;
+        $('DublCheckTrnNum').value = aDisps[idx].tn;
+        $('DublCheckFromAmo').value = aDisps[idx].cs;
+        $('DublCheckToAmo').value = aDisps[idx].ps;
+        $('DublCheckRcptNum').value = aDisps[idx].cnum;
+        $('DublCheckRcptDate').value = aDisps[idx].dt;
+        $('DublCheckPrvName').value = aDisps[idx].prvName;
+
+        ff.action = './print.html';
+        ff.submit();
+    }
+    
+    function $(elem) {
+        return document.getElementById(elem);
+    }
+</script>
+<link rel="stylesheet" href="./css/pay_status.css" type="text/css">
+
+<body onload="setTimeout('start()', 500);bdef();" bgcolor="#e6e6e6" topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0" heightmargin="0">
+    <form name="ff" method="post" action="#">
+        <input id="disp1" name="disp1" type="hidden" value="" />
+        <input id="disp2" name="disp2" type="hidden" value="" />
+        <input id="disp3" name="disp3" type="hidden" value="" />
+        <input id="disp4" name="disp4" type="hidden" value="" />
+        <input id="disp5" name="disp5" type="hidden" value="" />
+        <input id="disp6" name="disp6" type="hidden" value="" />
+        <input id="disp7" name="disp7" type="hidden" value="" />
+        <input id="disp8" name="disp8" type="hidden" value="" />
+        <input id="disp9" name="disp9" type="hidden" value="" />
+        <input id="disp10" name="disp10" type="hidden" value="" />
+        <input id="disp11" name="disp11" type="hidden" value="" />
+        <input id="DublCheckPrvId" name="DublCheckPrvId" type="hidden" value="" />
+        <input id="DublCheckAcc" name="DublCheckAcc" type="hidden" value="" />
+        <input id="DublCheckTrnNum" name="DublCheckTrnNum" type="hidden" value="" />
+        <input id="DublCheckFromAmo" name="DublCheckFromAmo" type="hidden" value="" />
+        <input id="DublCheckToAmo" name="DublCheckToAmo" type="hidden" value="" />
+        <input id="DublCheckRcptNum" name="DublCheckRcptNum" type="hidden" value="" />
+        <input id="DublCheckRcptDate" name="DublCheckRcptDate" type="hidden" value="" />
+        <input id="DublCheckPrvName" name="DublCheckPrvName" type="hidden" value="" />
+        <input id="_extra_dubl_check_page" name="_extra_dubl_check_page" type="hidden" value="print.html" />
+        <input id="_receipt_prt_top_msg" name="_receipt_prt_top_msg" type="hidden" value="Дубликат чека" />
+    </form>
+
+<div class="bottom-button-left"><img src="./img/ui/navigation/back.gif" onclick="backward();" /></div>
+<div class="bottom-button-center"><img src="./img/ui/navigation/menu.gif" onclick="menu();" /></div>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" height="100%">
+        <tr>
+            <td width="100%" height="200px" align="center" valign="middle"><img alt="logo" src="./img/ui/ps_info.gif" /></td>
+        </tr>
+        <tr>
+            <td id="content_td" align="center" valign="top" style="color:#a61d00; font-size:25px;"></td>
+        </tr>
+    </table>
+</body>
+
+</html>

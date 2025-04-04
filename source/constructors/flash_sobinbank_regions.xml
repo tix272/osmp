@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns:util="http://www.springactionscript.org/schema/util">
+	
+	<object id="regions" class="XML">
+		<constructor-arg>
+			<value>
+			<![CDATA[
+				<regions>
+					<region number="1" type="1" minminLength="10" maxLength="10" company="ООО «Газпром межрегионгаз Пятигорск»">
+						Дагестан, республика
+					</region>
+					<region number="2" type="1" minLength="10" maxLength="10" company="ООО «Газпром межрегионгаз Пятигорск»">
+						Ингушетия, республика
+					</region>
+					<region number="3" type="1" minLength="10" maxLength="10" company="ООО «Газпром межрегионгаз Пятигорск»">
+						Кабардино-Балкария, республика
+					</region>
+					<region number="4" type="1" minLength="10" maxLength="10" company="ООО «Газпром межрегионгаз Пятигорск»">
+						Карачаево-Черкесия, республика
+					</region>
+					<region number="5" type="1" minLength="10" maxLength="10" company="ООО «Газпром межрегионгаз Пятигорск»">
+						Северная Осетия – Алания, республика
+					</region>
+					<region number="7" type="3" minLength="10" maxLength="10" company="ООО «Газпром межрегионгаз Москва»">
+						Москва
+					</region>
+					<region number="8" type="4" minLength="9" maxLength="9" company="ЗАО «Газпром межрегионгаз Север»">
+						Тюменская область
+					</region>
+					<region number="43" type="4" minLength="9" maxLength="9" company="ЗАО «Газпром межрегионгаз Север»">
+						Ханты-Мансийский АО – Югра
+					</region>
+					<region number="44" type="4" minLength="9" maxLength="9" company="ЗАО «Газпром межрегионгаз Север»">
+						Ямало-Ненецкий АО
+					</region>
+					<region number="9" type="5" minLength="8" maxLength="8" company="ООО «Газпром межрегионгаз Пермь»">
+						Пермский край
+					</region>
+					<region number="10" type="6" minLength="9" maxLength="9" company="ООО «Газпром межрегионгаз Новосибирск»">
+						Алтайский край
+					</region>
+					<region number="13" type="10" minLength="8" maxLength="8" company="ООО «Газпром межрегионгаз Оренбург»">
+						Оренбургская область
+					</region>
+					<region number="14" type="11" minLength="9" maxLength="9" company="ООО «Газпром межрегионгаз Майкоп»">
+						Адыгея, республика
+					</region>
+					<region number="15" type="12" minLength="10" maxLength="10" company="ООО «Газпром межрегионгаз Ижевск»">
+						Удмуртия, республика
+					</region>
+					<region number="18" type="16" minLength="10" maxLength="10" company="ООО «Газпром межрегионгаз Ухта»">
+						Коми, республика
+					</region>
+					<region number="26" type="27" minLength="9" maxLength="9" company="ЗАО «Газпром межрегионгаз Санкт-Петербург»">
+						Санкт-Петербург
+					</region>
+					<region number="27" type="28" minLength="9" maxLength="9" company="ЗАО «Газпром межрегионгаз Санкт-Петербург»">
+						Ленинградская область
+					</region>
+					<region number="28" type="29" minLength="9" maxLength="9" company="ЗАО «Газпром межрегионгаз Санкт-Петербург»">
+						Карелия, республика
+					</region>
+					<region number="29" type="30" minLength="9" maxLength="9" company="ЗАО «Газпром межрегионгаз Санкт-Петербург»">
+						Калининградская область
+					</region>
+					<region number="30" type="31" minLength="7" maxLength="7" company="ООО «Газпром межрегионгаз Ярославль»">
+						Ярославская область
+					</region>
+					<region number="31" type="9" minLength="12" maxLength="12" company="ООО «Газпром межрегионгаз Краснодар»">
+						Краснодарский край
+					</region>
+					<region number="32" type="40" minLength="8" maxLength="8" company="ООО «Газпром межрегионгаз Тверь»">
+						Тверская область
+					</region>
+					<region number="33" type="26" minLength="8" maxLength="8" company="ООО «Газпром межрегионгаз Брянск»">
+						Брянская область
+					</region>
+					<region number="34" type="20" minLength="6" maxLength="6" company="ООО «Газпром межрегионгаз Великий Новгород»">
+						Новгородская область
+					</region>
+					<region number="35" type="42" minLength="6" maxLength="6" company="ООО «Газпром межрегионгаз Новосибирск»">
+						Томская область
+					</region>
+					<region number="36" type="36" minLength="10" maxLength="10" company="ООО «Газпром межрегионгаз Ставрополь»">
+						Ставропольский край
+					</region>
+					<region number="37" type="47" minLength="8" maxLength="8" company="ООО «Газпром межрегионгаз Смоленск»">
+						Смоленская область
+					</region>
+					<region number="38" type="39" minLength="10" maxLength="10" company="ООО «Газпром межрегионгаз Калуга»">
+						Калужская область
+					</region>
+					<region number="39" type="33" minLength="10" maxLength="10" company="ООО «Газпром межрегионгаз Кострома»">
+						Костромская область
+					</region>
+					<region number="40" type="35" minLength="1" maxLength="8" company="ЗАО «Газпром межрегионгаз Омск»">
+						Омская область
+					</region>
+					<region number="41" type="32" minLength="8" maxLength="8" company="ООО «Газпром межрегионгаз Рязань»">
+						Рязанская область
+					</region>
+					<region number="42" type="3" minLength="10" maxLength="10" company="ООО «Газпром межрегионгаз Москва»">
+						Московская область
+					</region>
+				</regions>
+			]]>
+			</value>
+		</constructor-arg>
+	</object>
+	
+</objects>

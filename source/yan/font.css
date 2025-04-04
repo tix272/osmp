@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'rain';
+    font-style: normal;
+    font-weight: 400;
+    src: local('rain'), local('rain-Regular'),
+        url(FuturaPTHeavy.ttf) format('truetype');
+}

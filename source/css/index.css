@@ -1,0 +1,219 @@
+﻿@import url("base.css");
+
+.banner
+{
+    overflow: hidden;
+}
+
+
+#content
+{
+    width: 1280px;
+    height: 1024px;
+    margin: 0 auto;
+}
+
+#panel
+{
+    width: 1280px; 
+    height: 107px; 
+    background: url('../img/ui/index/index_up.gif') no-repeat;
+}
+
+#c_l
+{
+    width: 1280px;
+    height: 524px;
+    margin-top: 159px;
+    padding-left: 338px;
+}
+
+#buttons
+{ 
+    float: left; 
+    width: 604px; 
+    height: 524px;
+}
+
+#advert_6
+{
+    position: absolute;
+    top: 34px;
+    left: 520px;
+    width: 240px;
+    height: 180px;
+}
+
+#qiwi_logo
+{
+	position: absolute;
+    top: 50px;
+    left: 533px;
+    width: 175px;
+    height: 200px;
+    overflow: hidden;
+}
+
+#advert_5
+{
+    position: absolute;
+    top: 305px;
+    left: 30px;
+    width: 240px; 
+    height: 450px;
+    z-index: 10;
+    display: none;
+}
+
+#advert_9
+{
+    position: absolute;
+    top: 305px;
+    left: 1010px;
+    width: 240px; 
+    height: 450px;
+    z-index: 10;
+    display: none;
+}
+
+#advert_3
+{
+    position: absolute;
+    top: 440px;
+    left: 30px;
+    width: 240px; 
+    height: 180px;
+    z-index: 10;
+}
+
+#advert_8
+{
+    position: absolute;
+    top: 116px;
+    left: 30px;
+    width: 240px;
+    height: 180px;
+    z-index: 10;
+}
+
+#advert_21
+{
+    width: 265px; 
+    height: 350px; 
+    float: left; 
+    margin-top: 170px; 
+    margin-left: 50px; 
+}
+
+#advert_1
+{
+    width: 500px; 
+    height: 200px; 
+    float: left;
+}
+
+#advert_4
+{
+    width: 500px; 
+    height: 200px; 
+    float: right;
+}
+
+#advert_7
+{
+    width: 500px; 
+    height: 200px; 
+    float: right;
+}
+
+#btn1_click
+{
+	position: absolute;
+	top: 266px;
+	left: 338px;
+	width: 604px;
+	height: 169px;
+}
+
+#btn_null
+{
+    width: 604px; 
+    height: 169px; 
+}
+
+#btn_1
+{
+	position: absolute;
+	top: 210px;
+	left: 338px;
+	width: 604px;
+	height: 225px;
+	/*background: url('../img/ui/action/btn_3.png');*/
+}
+
+#btn_2
+{
+    width: 604px; 
+    height: 154px;
+    margin-top: 15px;  
+    background: url('../img/ui/index/btn_lk.gif') no-repeat;
+}
+
+#advert_10
+{
+    width: 604px; 
+    height: 171px; 
+    margin-top: 15px;
+    /*background: url('../img/ui/index/btn_bank.png') no-repeat;*/
+}
+
+#btn_info
+{
+    width: 111px;
+    height: 97px;
+    float: left;
+    margin-left: 85px;
+    background: url('../img/ui/inf.gif') center no-repeat;
+}
+
+#clock
+{
+    width: 120px;
+    height: 60px;
+    font-size: 45px;
+    color: #666;
+    font-weight: normal;
+    position: absolute;
+    left: 50%;
+    top: 22px;
+    margin-left: -560px;
+}
+
+#date
+{
+    width: 262px;
+    height: 60px;
+    text-align: center;
+    font-size: 45px;
+    color: #666;
+    font-weight: normal;
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    margin-left: 375px;
+}
+
+#con
+{
+    width: 1280px; 
+    height: 200px; 
+    margin-top: 10px; 
+}
+
+#text_info
+{
+    width: 1280px; 
+    height: 24px; 
+    background: #bfbfbf;   
+}
+

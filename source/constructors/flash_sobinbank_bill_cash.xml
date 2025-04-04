@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns:util="http://www.springactionscript.org/schema/util">
+	
+	<object id="billCash" class="String">
+		<constructor-arg>
+			<value>
+<![CDATA[_receipt_=<br>ПЛАТЕЖНАЯ КАРТА:
+«КИВИ Банк» (ЗАО)
+Лицензия No. 2241&_receipt_Вид операции=033&_receipt_Номер=%pkp%&_receipt_Принятo=%inserted% руб.&_receipt_Кoмиссия=0 руб.&_receipt_Вид услуг=Обслуживание карты
+
+ВАШ ПЛАТЕЖ:&_receipt_Получатель средств=%company%&_receipt_Номер лицевого счёта=%account%&_receipt_Сумма=%inserted% руб.
+-----------------------------------
+
+
+]]>
+			</value>
+		</constructor-arg>
+	</object>
+</objects>

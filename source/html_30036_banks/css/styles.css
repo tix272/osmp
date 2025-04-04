@@ -1,0 +1,3686 @@
+/* line 17, ../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 20, ../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+}
+
+/* line 22, ../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 24, ../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 26, ../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 28, ../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 101, ../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 30, ../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 114, ../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../scss/_common.scss */
+body, input {
+  color: #2266bb;
+  font: 18px/27px Tahoma, Helvetica, sans-serif;
+  letter-spacing: -1px;
+}
+
+/* line 7, ../scss/_common.scss */
+body {
+  cursor: pointer;
+  background: #f5f5f5;
+  width: 1280px;
+  height: 1024px;
+  margin: 0;
+}
+
+/* line 15, ../scss/_common.scss */
+html {
+  background: #000000;
+}
+
+/* line 19, ../scss/_common.scss */
+strong {
+  font-weight: bold;
+}
+
+/* line 23, ../scss/_common.scss */
+#content-wrapper {
+  position: relative;
+  top: 240px;
+  width: 1280px;
+}
+
+/* line 29, ../scss/_common.scss */
+#path-header, #header, #comment {
+  width: 1000px;
+  margin-left: 140px;
+  text-align: center;
+  line-height: normal;
+  vertical-align: top;
+}
+
+/* line 39, ../scss/_common.scss */
+#path-header {
+  position: absolute;
+  top: 30px;
+  height: 65px;
+  font-size: 28px;
+  line-height: 32.5px;
+}
+
+/* line 47, ../scss/_common.scss */
+#header {
+  position: absolute;
+  top: 95px;
+  font-size: 44px;
+  height: 100px;
+  max-height: 100px;
+  line-height: normal;
+}
+
+/* line 56, ../scss/_common.scss */
+#comment {
+  position: absolute;
+  top: 193px;
+  font-size: 24px;
+  height: 35px;
+  color: #666666;
+}
+
+/* line 64, ../scss/_common.scss */
+#log {
+  position: absolute;
+  top: 200px;
+  left: 0;
+  display: none;
+  width: 1280px;
+  width: 300px;
+  height: 1024px;
+  color: red;
+  letter-spacing: 0;
+  font-size: 12px;
+  line-height: 1;
+}
+
+/* line 78, ../scss/_common.scss */
+.hidden {
+  display: none;
+}
+
+/* line 82, ../scss/_common.scss */
+.clear {
+  clear: both;
+}
+
+/* line 1, ../scss/_buttons.scss */
+#qiwi-logo {
+  position: absolute;
+  left: 36px;
+  top: 33px;
+}
+
+/* line 7, ../scss/_buttons.scss */
+#bank-logo {
+  position: absolute;
+  left: 1150px;
+  top: 52px;
+}
+
+/* line 13, ../scss/_buttons.scss */
+#version {
+  position: absolute;
+  left: 1050px;
+  letter-spacing: 1px;
+  top: 1000px;
+  width: 220px;
+  color: #666666;
+  font-size: 12px;
+  text-align: right;
+  font-weight: bold;
+}
+
+/* line 25, ../scss/_buttons.scss */
+#exit {
+  z-index: 100;
+  position: absolute;
+  left: 490px;
+  top: 885px;
+  width: 301px;
+  height: 121px;
+  background: url("../../img/ui/navigation/menu.gif") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+#exit.pressed {
+  background: url("../../img/ui/navigation/menu_press.gif") center center no-repeat;
+}
+
+/* line 35, ../scss/_buttons.scss */
+#prev {
+  z-index: 100;
+  position: absolute;
+  left: 20px;
+  top: 885px;
+  width: 301px;
+  height: 121px;
+  background: url("../../img/ui/navigation/back.gif") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+#prev.pressed {
+  background: url("../../img/ui/navigation/back_press.gif") center center no-repeat;
+}
+
+/* line 45, ../scss/_buttons.scss */
+#next {
+  z-index: 100;
+  position: absolute;
+  left: 955px;
+  top: 885px;
+  width: 301px;
+  height: 121px;
+  background: url("../../img/ui/navigation/forward.gif") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+#next.pressed {
+  background: url("../../img/ui/navigation/forward_press.gif") center center no-repeat;
+}
+
+/* line 55, ../scss/_buttons.scss */
+.white, #default-popup-close-button {
+  color: #2266bb;
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 1.9;
+  width: 325px;
+  height: 111px;
+  background: url("../../img/ui/corejs/popup/popup_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.white.pressed, #default-popup-close-button.pressed {
+  background: url("../../img/ui/corejs/popup/popup_button_pressed.jpg") center center no-repeat;
+}
+
+/* line 66, ../scss/_buttons.scss */
+#erase {
+  width: 82px;
+  height: 82px;
+  background: url("../../img/ui/corejs/input/erase_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+#erase.pressed {
+  background: url("../../img/ui/corejs/input/erase_button_pushed.jpg") center center no-repeat;
+}
+
+/* line 72, ../scss/_buttons.scss */
+.gray-button, #offertus-button, #contract-button, #calc-ok-button, #calculator-button, #favourites-button {
+  font-size: 30px;
+  text-align: center;
+  color: #2266bb;
+  width: 303px;
+  height: 113px;
+  background: url("../../img/ui/corejs/buttons/blank_gray.jpg") center center no-repeat;
+}
+/* line 44, ../scss/_mixins.scss */
+.gray-button .button-content, #offertus-button .button-content, #contract-button .button-content, #calc-ok-button .button-content, #calculator-button .button-content, #favourites-button .button-content {
+  line-height: 113px;
+}
+/* line 14, ../scss/_mixins.scss */
+.gray-button.pressed, #offertus-button.pressed, #contract-button.pressed, #calc-ok-button.pressed, #calculator-button.pressed, #favourites-button.pressed {
+  background: url("../../img/ui/corejs/buttons/blank_gray_pressed.jpg") center center no-repeat;
+}
+
+/* line 77, ../scss/_buttons.scss */
+.gray-button-small, #FavouritesView #change-button-1, #FavouritesView #change-button-2, #FavouritesView #change-button-3, #FavouritesView #change-button-4, #FavouritesView #change-button-5, #FavouritesView #change-button-6, #FavouritesView #change-button-7, #FavouritesView #change-button-8, #FavouritesView #change-button-9, #FavouritesView #change-button-10, #FavouritesView #change-button-11, #FavouritesView #change-button-12, #FavouritesView #change-button-13, #FavouritesView #change-button-14, #FavouritesView #change-button-15, #FavouritesView #change-button-16, #FavouritesView #change-button-17, #FavouritesView #change-button-18, #FavouritesView #change-button-19, #FavouritesView #change-button-20, #FavouritesView #change-button-21, #FavouritesView #change-button-22, #FavouritesView #change-button-23, #FavouritesView #change-button-24, #FavouritesView #change-button-25, #FavouritesView #change-button-26, #FavouritesView #change-button-27, #FavouritesView #change-button-28, #FavouritesView #change-button-29, #FavouritesView #change-button-30, #FavouritesView #change-button-31, #FavouritesView #change-button-32, #FavouritesView #change-button-33, #FavouritesView #change-button-34, #FavouritesView #change-button-35, #FavouritesView #change-button-36, #FavouritesView #change-button-37, #FavouritesView #change-button-38, #FavouritesView #change-button-39, #FavouritesView #change-button-40, #FavouritesView #change-button-41, #FavouritesView #change-button-42, #FavouritesView #change-button-43, #FavouritesView #change-button-44, #FavouritesView #change-button-45, #FavouritesView #change-button-46, #FavouritesView #change-button-47, #FavouritesView #change-button-48, #FavouritesView #change-button-49, #FavouritesView #change-button-50, #FavouritesView #change-button-51, #FavouritesView #change-button-52, #FavouritesView #change-button-53, #FavouritesView #change-button-54, #FavouritesView #change-button-55, #FavouritesView #change-button-56, #FavouritesView #change-button-57, #FavouritesView #change-button-58, #FavouritesView #change-button-59, #FavouritesView #change-button-60 {
+  font-size: 28px;
+  text-align: center;
+  color: #2266bb;
+  width: 246px;
+  height: 90px;
+  background: url("../../img/ui/corejs/buttons/blank_gray_small.jpg") center center no-repeat;
+}
+/* line 55, ../scss/_mixins.scss */
+.gray-button-small .button-content, #FavouritesView #change-button-1 .button-content, #FavouritesView #change-button-2 .button-content, #FavouritesView #change-button-3 .button-content, #FavouritesView #change-button-4 .button-content, #FavouritesView #change-button-5 .button-content, #FavouritesView #change-button-6 .button-content, #FavouritesView #change-button-7 .button-content, #FavouritesView #change-button-8 .button-content, #FavouritesView #change-button-9 .button-content, #FavouritesView #change-button-10 .button-content, #FavouritesView #change-button-11 .button-content, #FavouritesView #change-button-12 .button-content, #FavouritesView #change-button-13 .button-content, #FavouritesView #change-button-14 .button-content, #FavouritesView #change-button-15 .button-content, #FavouritesView #change-button-16 .button-content, #FavouritesView #change-button-17 .button-content, #FavouritesView #change-button-18 .button-content, #FavouritesView #change-button-19 .button-content, #FavouritesView #change-button-20 .button-content, #FavouritesView #change-button-21 .button-content, #FavouritesView #change-button-22 .button-content, #FavouritesView #change-button-23 .button-content, #FavouritesView #change-button-24 .button-content, #FavouritesView #change-button-25 .button-content, #FavouritesView #change-button-26 .button-content, #FavouritesView #change-button-27 .button-content, #FavouritesView #change-button-28 .button-content, #FavouritesView #change-button-29 .button-content, #FavouritesView #change-button-30 .button-content, #FavouritesView #change-button-31 .button-content, #FavouritesView #change-button-32 .button-content, #FavouritesView #change-button-33 .button-content, #FavouritesView #change-button-34 .button-content, #FavouritesView #change-button-35 .button-content, #FavouritesView #change-button-36 .button-content, #FavouritesView #change-button-37 .button-content, #FavouritesView #change-button-38 .button-content, #FavouritesView #change-button-39 .button-content, #FavouritesView #change-button-40 .button-content, #FavouritesView #change-button-41 .button-content, #FavouritesView #change-button-42 .button-content, #FavouritesView #change-button-43 .button-content, #FavouritesView #change-button-44 .button-content, #FavouritesView #change-button-45 .button-content, #FavouritesView #change-button-46 .button-content, #FavouritesView #change-button-47 .button-content, #FavouritesView #change-button-48 .button-content, #FavouritesView #change-button-49 .button-content, #FavouritesView #change-button-50 .button-content, #FavouritesView #change-button-51 .button-content, #FavouritesView #change-button-52 .button-content, #FavouritesView #change-button-53 .button-content, #FavouritesView #change-button-54 .button-content, #FavouritesView #change-button-55 .button-content, #FavouritesView #change-button-56 .button-content, #FavouritesView #change-button-57 .button-content, #FavouritesView #change-button-58 .button-content, #FavouritesView #change-button-59 .button-content, #FavouritesView #change-button-60 .button-content {
+  line-height: 90px;
+}
+/* line 14, ../scss/_mixins.scss */
+.gray-button-small.pressed, #FavouritesView .pressed#change-button-1, #FavouritesView .pressed#change-button-2, #FavouritesView .pressed#change-button-3, #FavouritesView .pressed#change-button-4, #FavouritesView .pressed#change-button-5, #FavouritesView .pressed#change-button-6, #FavouritesView .pressed#change-button-7, #FavouritesView .pressed#change-button-8, #FavouritesView .pressed#change-button-9, #FavouritesView .pressed#change-button-10, #FavouritesView .pressed#change-button-11, #FavouritesView .pressed#change-button-12, #FavouritesView .pressed#change-button-13, #FavouritesView .pressed#change-button-14, #FavouritesView .pressed#change-button-15, #FavouritesView .pressed#change-button-16, #FavouritesView .pressed#change-button-17, #FavouritesView .pressed#change-button-18, #FavouritesView .pressed#change-button-19, #FavouritesView .pressed#change-button-20, #FavouritesView .pressed#change-button-21, #FavouritesView .pressed#change-button-22, #FavouritesView .pressed#change-button-23, #FavouritesView .pressed#change-button-24, #FavouritesView .pressed#change-button-25, #FavouritesView .pressed#change-button-26, #FavouritesView .pressed#change-button-27, #FavouritesView .pressed#change-button-28, #FavouritesView .pressed#change-button-29, #FavouritesView .pressed#change-button-30, #FavouritesView .pressed#change-button-31, #FavouritesView .pressed#change-button-32, #FavouritesView .pressed#change-button-33, #FavouritesView .pressed#change-button-34, #FavouritesView .pressed#change-button-35, #FavouritesView .pressed#change-button-36, #FavouritesView .pressed#change-button-37, #FavouritesView .pressed#change-button-38, #FavouritesView .pressed#change-button-39, #FavouritesView .pressed#change-button-40, #FavouritesView .pressed#change-button-41, #FavouritesView .pressed#change-button-42, #FavouritesView .pressed#change-button-43, #FavouritesView .pressed#change-button-44, #FavouritesView .pressed#change-button-45, #FavouritesView .pressed#change-button-46, #FavouritesView .pressed#change-button-47, #FavouritesView .pressed#change-button-48, #FavouritesView .pressed#change-button-49, #FavouritesView .pressed#change-button-50, #FavouritesView .pressed#change-button-51, #FavouritesView .pressed#change-button-52, #FavouritesView .pressed#change-button-53, #FavouritesView .pressed#change-button-54, #FavouritesView .pressed#change-button-55, #FavouritesView .pressed#change-button-56, #FavouritesView .pressed#change-button-57, #FavouritesView .pressed#change-button-58, #FavouritesView .pressed#change-button-59, #FavouritesView .pressed#change-button-60 {
+  background: url("../../img/ui/corejs/buttons/blank_gray_small_pressed.jpg") center center no-repeat;
+}
+
+/* line 82, ../scss/_buttons.scss */
+.gray-button-big, #FavouritesView #acc-radio-1, #FavouritesView #acc-radio-2, #FavouritesView #acc-radio-3, #FavouritesView #acc-radio-4, #FavouritesView #acc-radio-5, #FavouritesView #acc-radio-6, #FavouritesView #acc-radio-7, #FavouritesView #acc-radio-8, #FavouritesView #acc-radio-9, #FavouritesView #acc-radio-10, #FavouritesView #acc-radio-11, #FavouritesView #acc-radio-12, #FavouritesView #acc-radio-13, #FavouritesView #acc-radio-14, #FavouritesView #acc-radio-15, #FavouritesView #acc-radio-16, #FavouritesView #acc-radio-17, #FavouritesView #acc-radio-18, #FavouritesView #acc-radio-19, #FavouritesView #acc-radio-20, #FavouritesView #acc-radio-21, #FavouritesView #acc-radio-22, #FavouritesView #acc-radio-23, #FavouritesView #acc-radio-24, #FavouritesView #acc-radio-25, #FavouritesView #acc-radio-26, #FavouritesView #acc-radio-27, #FavouritesView #acc-radio-28, #FavouritesView #acc-radio-29, #FavouritesView #acc-radio-30, #FavouritesView #acc-radio-31, #FavouritesView #acc-radio-32, #FavouritesView #acc-radio-33, #FavouritesView #acc-radio-34, #FavouritesView #acc-radio-35, #FavouritesView #acc-radio-36, #FavouritesView #acc-radio-37, #FavouritesView #acc-radio-38, #FavouritesView #acc-radio-39, #FavouritesView #acc-radio-40, #FavouritesView #acc-radio-41, #FavouritesView #acc-radio-42, #FavouritesView #acc-radio-43, #FavouritesView #acc-radio-44, #FavouritesView #acc-radio-45, #FavouritesView #acc-radio-46, #FavouritesView #acc-radio-47, #FavouritesView #acc-radio-48, #FavouritesView #acc-radio-49, #FavouritesView #acc-radio-50, #FavouritesView #acc-radio-51, #FavouritesView #acc-radio-52, #FavouritesView #acc-radio-53, #FavouritesView #acc-radio-54, #FavouritesView #acc-radio-55, #FavouritesView #acc-radio-56, #FavouritesView #acc-radio-57, #FavouritesView #acc-radio-58, #FavouritesView #acc-radio-59, #FavouritesView #acc-radio-60, #button-1, #button-2, #button-3, #cash-button, #balance-button {
+  font-weight: bold;
+  font-size: 36px;
+  text-align: center;
+  color: #2266bb;
+  width: 443px;
+  height: 146px;
+  background: url("../../img/ui/corejs/buttons/blank_gray_big.jpg") center center no-repeat;
+}
+/* line 55, ../scss/_mixins.scss */
+.gray-button-big .button-content, #FavouritesView #acc-radio-1 .button-content, #FavouritesView #acc-radio-2 .button-content, #FavouritesView #acc-radio-3 .button-content, #FavouritesView #acc-radio-4 .button-content, #FavouritesView #acc-radio-5 .button-content, #FavouritesView #acc-radio-6 .button-content, #FavouritesView #acc-radio-7 .button-content, #FavouritesView #acc-radio-8 .button-content, #FavouritesView #acc-radio-9 .button-content, #FavouritesView #acc-radio-10 .button-content, #FavouritesView #acc-radio-11 .button-content, #FavouritesView #acc-radio-12 .button-content, #FavouritesView #acc-radio-13 .button-content, #FavouritesView #acc-radio-14 .button-content, #FavouritesView #acc-radio-15 .button-content, #FavouritesView #acc-radio-16 .button-content, #FavouritesView #acc-radio-17 .button-content, #FavouritesView #acc-radio-18 .button-content, #FavouritesView #acc-radio-19 .button-content, #FavouritesView #acc-radio-20 .button-content, #FavouritesView #acc-radio-21 .button-content, #FavouritesView #acc-radio-22 .button-content, #FavouritesView #acc-radio-23 .button-content, #FavouritesView #acc-radio-24 .button-content, #FavouritesView #acc-radio-25 .button-content, #FavouritesView #acc-radio-26 .button-content, #FavouritesView #acc-radio-27 .button-content, #FavouritesView #acc-radio-28 .button-content, #FavouritesView #acc-radio-29 .button-content, #FavouritesView #acc-radio-30 .button-content, #FavouritesView #acc-radio-31 .button-content, #FavouritesView #acc-radio-32 .button-content, #FavouritesView #acc-radio-33 .button-content, #FavouritesView #acc-radio-34 .button-content, #FavouritesView #acc-radio-35 .button-content, #FavouritesView #acc-radio-36 .button-content, #FavouritesView #acc-radio-37 .button-content, #FavouritesView #acc-radio-38 .button-content, #FavouritesView #acc-radio-39 .button-content, #FavouritesView #acc-radio-40 .button-content, #FavouritesView #acc-radio-41 .button-content, #FavouritesView #acc-radio-42 .button-content, #FavouritesView #acc-radio-43 .button-content, #FavouritesView #acc-radio-44 .button-content, #FavouritesView #acc-radio-45 .button-content, #FavouritesView #acc-radio-46 .button-content, #FavouritesView #acc-radio-47 .button-content, #FavouritesView #acc-radio-48 .button-content, #FavouritesView #acc-radio-49 .button-content, #FavouritesView #acc-radio-50 .button-content, #FavouritesView #acc-radio-51 .button-content, #FavouritesView #acc-radio-52 .button-content, #FavouritesView #acc-radio-53 .button-content, #FavouritesView #acc-radio-54 .button-content, #FavouritesView #acc-radio-55 .button-content, #FavouritesView #acc-radio-56 .button-content, #FavouritesView #acc-radio-57 .button-content, #FavouritesView #acc-radio-58 .button-content, #FavouritesView #acc-radio-59 .button-content, #FavouritesView #acc-radio-60 .button-content, #button-1 .button-content, #button-2 .button-content, #button-3 .button-content, #cash-button .button-content, #balance-button .button-content {
+  line-height: 146px;
+}
+/* line 14, ../scss/_mixins.scss */
+.gray-button-big.pressed, #FavouritesView .pressed#acc-radio-1, #FavouritesView .pressed#acc-radio-2, #FavouritesView .pressed#acc-radio-3, #FavouritesView .pressed#acc-radio-4, #FavouritesView .pressed#acc-radio-5, #FavouritesView .pressed#acc-radio-6, #FavouritesView .pressed#acc-radio-7, #FavouritesView .pressed#acc-radio-8, #FavouritesView .pressed#acc-radio-9, #FavouritesView .pressed#acc-radio-10, #FavouritesView .pressed#acc-radio-11, #FavouritesView .pressed#acc-radio-12, #FavouritesView .pressed#acc-radio-13, #FavouritesView .pressed#acc-radio-14, #FavouritesView .pressed#acc-radio-15, #FavouritesView .pressed#acc-radio-16, #FavouritesView .pressed#acc-radio-17, #FavouritesView .pressed#acc-radio-18, #FavouritesView .pressed#acc-radio-19, #FavouritesView .pressed#acc-radio-20, #FavouritesView .pressed#acc-radio-21, #FavouritesView .pressed#acc-radio-22, #FavouritesView .pressed#acc-radio-23, #FavouritesView .pressed#acc-radio-24, #FavouritesView .pressed#acc-radio-25, #FavouritesView .pressed#acc-radio-26, #FavouritesView .pressed#acc-radio-27, #FavouritesView .pressed#acc-radio-28, #FavouritesView .pressed#acc-radio-29, #FavouritesView .pressed#acc-radio-30, #FavouritesView .pressed#acc-radio-31, #FavouritesView .pressed#acc-radio-32, #FavouritesView .pressed#acc-radio-33, #FavouritesView .pressed#acc-radio-34, #FavouritesView .pressed#acc-radio-35, #FavouritesView .pressed#acc-radio-36, #FavouritesView .pressed#acc-radio-37, #FavouritesView .pressed#acc-radio-38, #FavouritesView .pressed#acc-radio-39, #FavouritesView .pressed#acc-radio-40, #FavouritesView .pressed#acc-radio-41, #FavouritesView .pressed#acc-radio-42, #FavouritesView .pressed#acc-radio-43, #FavouritesView .pressed#acc-radio-44, #FavouritesView .pressed#acc-radio-45, #FavouritesView .pressed#acc-radio-46, #FavouritesView .pressed#acc-radio-47, #FavouritesView .pressed#acc-radio-48, #FavouritesView .pressed#acc-radio-49, #FavouritesView .pressed#acc-radio-50, #FavouritesView .pressed#acc-radio-51, #FavouritesView .pressed#acc-radio-52, #FavouritesView .pressed#acc-radio-53, #FavouritesView .pressed#acc-radio-54, #FavouritesView .pressed#acc-radio-55, #FavouritesView .pressed#acc-radio-56, #FavouritesView .pressed#acc-radio-57, #FavouritesView .pressed#acc-radio-58, #FavouritesView .pressed#acc-radio-59, #FavouritesView .pressed#acc-radio-60, #button-1.pressed, #button-2.pressed, #button-3.pressed, #cash-button.pressed, #balance-button.pressed {
+  background: url("../../img/ui/corejs/buttons/blank_gray_big_pressed.jpg") center center no-repeat;
+}
+
+/* line 88, ../scss/_buttons.scss */
+#left-button {
+  background: url("../../img/ui/corejs/offertus/arrow_prev.gif") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+#left-button.pressed {
+  background: url("../../img/ui/corejs/offertus/arrow_prev_pressed.gif") center center no-repeat;
+}
+/* line 18, ../scss/_mixins.scss */
+#left-button.disabled {
+  background: url("../../img/ui/corejs/offertus/arrow_prev_disabled.gif") center center no-repeat;
+}
+
+/* line 92, ../scss/_buttons.scss */
+#right-button {
+  background: url("../../img/ui/corejs/offertus/arrow_next.gif") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+#right-button.pressed {
+  background: url("../../img/ui/corejs/offertus/arrow_next_pressed.gif") center center no-repeat;
+}
+/* line 18, ../scss/_mixins.scss */
+#right-button.disabled {
+  background: url("../../img/ui/corejs/offertus/arrow_next_disabled.gif") center center no-repeat;
+}
+
+/* line 1, ../scss/_popups.scss */
+.popup {
+  z-index: 300;
+  position: absolute;
+  top: 200px;
+  left: 130px;
+  width: 1020px;
+  height: 440px;
+  background: url("../../img/ui/corejs/popup/popup.jpg") repeat;
+  color: white;
+  text-align: left;
+}
+/* line 12, ../scss/_popups.scss */
+.popup .title {
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-left: 285px;
+  line-height: 1;
+}
+/* line 19, ../scss/_popups.scss */
+.popup .message {
+  font-size: 34px;
+  margin-top: 5px;
+  margin-left: 285px;
+  line-height: normal;
+}
+/* line 25, ../scss/_popups.scss */
+.popup #default-popup-close-button {
+  position: absolute;
+  left: 350px;
+  top: 280px;
+}
+
+/* line 32, ../scss/_popups.scss */
+.info-popup {
+  z-index: 300;
+  position: absolute;
+  top: 300px;
+  left: 130px;
+  width: 1020px;
+  height: 440px;
+  background: url("../assets/backgr.png") no-repeat;
+  color: white;
+}
+/* line 42, ../scss/_popups.scss */
+.info-popup .header {
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: 65px;
+  width: 1020px;
+  text-align: center;
+  line-height: 1;
+}
+/* line 50, ../scss/_popups.scss */
+.info-popup .message {
+  font-size: 75px;
+  margin-top: 70px;
+  width: 1020px;
+  text-align: center;
+  line-height: normal;
+}
+
+/* Numpad */
+/* line 3, ../scss/_keyboards.scss */
+.numpad #key-0 {
+  width: 124px;
+  height: 123px;
+  padding: 7px;
+  text-align: center;
+  color: white;
+  font-size: 82px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/numpad_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.numpad #key-0.pressed {
+  background: url("../../img/ui/corejs/keyboards/numpad_button_pressed.jpg") center center no-repeat;
+}
+
+/* line 3, ../scss/_keyboards.scss */
+.numpad #key-1 {
+  width: 124px;
+  height: 123px;
+  padding: 7px;
+  text-align: center;
+  color: white;
+  font-size: 82px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/numpad_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.numpad #key-1.pressed {
+  background: url("../../img/ui/corejs/keyboards/numpad_button_pressed.jpg") center center no-repeat;
+}
+
+/* line 3, ../scss/_keyboards.scss */
+.numpad #key-2 {
+  width: 124px;
+  height: 123px;
+  padding: 7px;
+  text-align: center;
+  color: white;
+  font-size: 82px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/numpad_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.numpad #key-2.pressed {
+  background: url("../../img/ui/corejs/keyboards/numpad_button_pressed.jpg") center center no-repeat;
+}
+
+/* line 3, ../scss/_keyboards.scss */
+.numpad #key-3 {
+  width: 124px;
+  height: 123px;
+  padding: 7px;
+  text-align: center;
+  color: white;
+  font-size: 82px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/numpad_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.numpad #key-3.pressed {
+  background: url("../../img/ui/corejs/keyboards/numpad_button_pressed.jpg") center center no-repeat;
+}
+
+/* line 3, ../scss/_keyboards.scss */
+.numpad #key-4 {
+  width: 124px;
+  height: 123px;
+  padding: 7px;
+  text-align: center;
+  color: white;
+  font-size: 82px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/numpad_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.numpad #key-4.pressed {
+  background: url("../../img/ui/corejs/keyboards/numpad_button_pressed.jpg") center center no-repeat;
+}
+
+/* line 3, ../scss/_keyboards.scss */
+.numpad #key-5 {
+  width: 124px;
+  height: 123px;
+  padding: 7px;
+  text-align: center;
+  color: white;
+  font-size: 82px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/numpad_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.numpad #key-5.pressed {
+  background: url("../../img/ui/corejs/keyboards/numpad_button_pressed.jpg") center center no-repeat;
+}
+
+/* line 3, ../scss/_keyboards.scss */
+.numpad #key-6 {
+  width: 124px;
+  height: 123px;
+  padding: 7px;
+  text-align: center;
+  color: white;
+  font-size: 82px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/numpad_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.numpad #key-6.pressed {
+  background: url("../../img/ui/corejs/keyboards/numpad_button_pressed.jpg") center center no-repeat;
+}
+
+/* line 3, ../scss/_keyboards.scss */
+.numpad #key-7 {
+  width: 124px;
+  height: 123px;
+  padding: 7px;
+  text-align: center;
+  color: white;
+  font-size: 82px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/numpad_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.numpad #key-7.pressed {
+  background: url("../../img/ui/corejs/keyboards/numpad_button_pressed.jpg") center center no-repeat;
+}
+
+/* line 3, ../scss/_keyboards.scss */
+.numpad #key-8 {
+  width: 124px;
+  height: 123px;
+  padding: 7px;
+  text-align: center;
+  color: white;
+  font-size: 82px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/numpad_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.numpad #key-8.pressed {
+  background: url("../../img/ui/corejs/keyboards/numpad_button_pressed.jpg") center center no-repeat;
+}
+
+/* line 3, ../scss/_keyboards.scss */
+.numpad #key-9 {
+  width: 124px;
+  height: 123px;
+  padding: 7px;
+  text-align: center;
+  color: white;
+  font-size: 82px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/numpad_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.numpad #key-9.pressed {
+  background: url("../../img/ui/corejs/keyboards/numpad_button_pressed.jpg") center center no-repeat;
+}
+
+/* line 16, ../scss/_keyboards.scss */
+.numpad #key-0 {
+  width: 394px;
+  height: 112px;
+  background: url("../../img/ui/corejs/keyboards/numpad_button0.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.numpad #key-0.pressed {
+  background: url("../../img/ui/corejs/keyboards/numpad_button0_pressed.jpg") center center no-repeat;
+}
+
+/* line 22, ../scss/_keyboards.scss */
+.numpad {
+  width: 400px;
+  margin-left: 440px;
+  margin-right: 440px;
+  position: absolute;
+  top: 100px;
+}
+
+/* Textfield */
+/* Erase */
+/* line 46, ../scss/_keyboards.scss */
+#erase {
+  position: absolute;
+  top: 0px;
+}
+
+/* line 1, ../scss/_layouts.scss */
+#info-favourites {
+  position: absolute;
+  color: #666666;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: 0.4px;
+}
+
+/* line 11, ../scss/_layouts.scss */
+.account-layout #textfield, .expiration-date-layout #textfield, .full-date-layout #textfield {
+  white-space: nowrap;
+  width: 650px;
+  margin-left: 315px;
+  margin-right: 315px;
+  width: 650px;
+  height: 82px;
+  position: absolute;
+}
+/* line 67, ../scss/_mixins.scss */
+.account-layout #textfield .text-container, .expiration-date-layout #textfield .text-container, .full-date-layout #textfield .text-container {
+  position: absolute;
+  padding: 0;
+  width: 610px;
+  left: 20px;
+  line-height: 82px;
+}
+/* line 75, ../scss/_mixins.scss */
+.account-layout #textfield .tf-l, .expiration-date-layout #textfield .tf-l, .full-date-layout #textfield .tf-l {
+  width: 20px;
+  height: 82px;
+  left: 0px;
+  position: absolute;
+  background: url("../../img/ui/corejs/input/fieldData_l.jpg") 0px top no-repeat;
+}
+/* line 82, ../scss/_mixins.scss */
+.account-layout #textfield .tf-c, .expiration-date-layout #textfield .tf-c, .full-date-layout #textfield .tf-c {
+  width: 610px;
+  height: 82px;
+  position: absolute;
+  left: 20px;
+  background: url("../../img/ui/corejs/input/fieldData_c.jpg");
+}
+/* line 89, ../scss/_mixins.scss */
+.account-layout #textfield .tf-r, .expiration-date-layout #textfield .tf-r, .full-date-layout #textfield .tf-r {
+  width: 20px;
+  height: 82px;
+  position: absolute;
+  left: 630px;
+  background: url("../../img/ui/corejs/input/fieldData_r.jpg") 0px top no-repeat;
+}
+/* line 37, ../scss/_keyboards.scss */
+.account-layout #textfield .text-container, .expiration-date-layout #textfield .text-container, .full-date-layout #textfield .text-container {
+  color: #2266bb;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: left;
+  overflow: hidden;
+  max-width: 610px;
+}
+/* line 13, ../scss/_layouts.scss */
+.account-layout #textfield .text-container, .expiration-date-layout #textfield .text-container, .full-date-layout #textfield .text-container {
+  text-align: center;
+}
+/* line 18, ../scss/_layouts.scss */
+.account-layout #erase, .expiration-date-layout #erase, .full-date-layout #erase {
+  left: 980px;
+}
+/* line 22, ../scss/_layouts.scss */
+.account-layout #info-commission, .account-layout #info-limits, .account-layout #info-calculator, .expiration-date-layout #info-commission, .expiration-date-layout #info-limits, .expiration-date-layout #info-calculator, .full-date-layout #info-commission, .full-date-layout #info-limits, .full-date-layout #info-calculator {
+  position: absolute;
+  width: 300px;
+  color: #666666;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+}
+/* line 29, ../scss/_layouts.scss */
+.account-layout #info-commission, .expiration-date-layout #info-commission, .full-date-layout #info-commission {
+  left: 960px;
+  top: 240px;
+}
+/* line 33, ../scss/_layouts.scss */
+.account-layout #info-calculator, .expiration-date-layout #info-calculator, .full-date-layout #info-calculator {
+  left: 960px;
+  top: 470px;
+}
+/* line 37, ../scss/_layouts.scss */
+.account-layout #info-limits, .expiration-date-layout #info-limits, .full-date-layout #info-limits {
+  left: 20px;
+  top: 240px;
+}
+/* line 42, ../scss/_layouts.scss */
+.account-layout #calculator-button, .expiration-date-layout #calculator-button, .full-date-layout #calculator-button {
+  position: absolute;
+  left: 960px;
+  top: 590px;
+}
+/* line 47, ../scss/_layouts.scss */
+.account-layout #calculator-button .button-content, .expiration-date-layout #calculator-button .button-content, .full-date-layout #calculator-button .button-content {
+  padding-left: 25px;
+  padding-top: 20px;
+  width: 200px;
+  font-weight: bold;
+  line-height: normal;
+  text-align: left;
+  float: left;
+  display: inline;
+}
+/* line 58, ../scss/_layouts.scss */
+.account-layout #calculator-button .button-ico, .expiration-date-layout #calculator-button .button-ico, .full-date-layout #calculator-button .button-ico {
+  float: left;
+  display: inline;
+  margin-left: 20px;
+  margin-top: 35px;
+}
+/* line 66, ../scss/_layouts.scss */
+.account-layout #info-favourites, .expiration-date-layout #info-favourites, .full-date-layout #info-favourites {
+  left: 20px;
+  top: 105px;
+  width: 350px;
+}
+/* line 72, ../scss/_layouts.scss */
+.account-layout #favourites-button, .expiration-date-layout #favourites-button, .full-date-layout #favourites-button {
+  position: absolute;
+  left: 20px;
+  top: 115px;
+}
+/* line 77, ../scss/_layouts.scss */
+.account-layout #favourites-button .button-content, .expiration-date-layout #favourites-button .button-content, .full-date-layout #favourites-button .button-content {
+  padding-left: 10px;
+  width: 220px;
+  font-weight: bold;
+  text-align: left;
+  float: left;
+  display: inline;
+}
+/* line 86, ../scss/_layouts.scss */
+.account-layout #favourites-button .button-ico, .expiration-date-layout #favourites-button .button-ico, .full-date-layout #favourites-button .button-ico {
+  float: left;
+  display: inline;
+  margin-left: 20px;
+  margin-top: 35px;
+}
+
+/* line 98, ../scss/_layouts.scss */
+.expiration-date-layout #textfield {
+  white-space: nowrap;
+  width: 450px;
+  margin-left: 415px;
+  margin-right: 415px;
+  width: 450px;
+  height: 82px;
+  position: absolute;
+  white-space: nowrap;
+}
+/* line 67, ../scss/_mixins.scss */
+.expiration-date-layout #textfield .text-container {
+  position: absolute;
+  padding: 0;
+  width: 410px;
+  left: 20px;
+  line-height: 82px;
+}
+/* line 75, ../scss/_mixins.scss */
+.expiration-date-layout #textfield .tf-l {
+  width: 20px;
+  height: 82px;
+  left: 0px;
+  position: absolute;
+  background: url("../../img/ui/corejs/input/fieldData_l.jpg") 0px top no-repeat;
+}
+/* line 82, ../scss/_mixins.scss */
+.expiration-date-layout #textfield .tf-c {
+  width: 410px;
+  height: 82px;
+  position: absolute;
+  left: 20px;
+  background: url("../../img/ui/corejs/input/fieldData_c.jpg");
+}
+/* line 89, ../scss/_mixins.scss */
+.expiration-date-layout #textfield .tf-r {
+  width: 20px;
+  height: 82px;
+  position: absolute;
+  left: 430px;
+  background: url("../../img/ui/corejs/input/fieldData_r.jpg") 0px top no-repeat;
+}
+/* line 37, ../scss/_keyboards.scss */
+.expiration-date-layout #textfield .text-container {
+  color: #2266bb;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: left;
+  overflow: hidden;
+  max-width: 410px;
+}
+/* line 103, ../scss/_layouts.scss */
+.expiration-date-layout #textfield .text-container, .expiration-date-layout #textfield .text-container-2, .expiration-date-layout #textfield .slash, .expiration-date-layout #textfield .placeholder {
+  position: absolute;
+  line-height: 82px;
+  color: #2266bb;
+  font-size: 66px;
+  font-weight: bold;
+  text-align: center;
+}
+/* line 108, ../scss/_layouts.scss */
+.expiration-date-layout #textfield .slash, .expiration-date-layout #textfield .placeholder {
+  font-size: 60px;
+}
+/* line 111, ../scss/_layouts.scss */
+.expiration-date-layout #textfield .text-container, .expiration-date-layout #textfield .text-container-2 {
+  width: 225px;
+}
+/* line 114, ../scss/_layouts.scss */
+.expiration-date-layout #textfield .text-container {
+  left: 0;
+}
+/* line 117, ../scss/_layouts.scss */
+.expiration-date-layout #textfield .text-container-2 {
+  left: 225px;
+}
+/* line 120, ../scss/_layouts.scss */
+.expiration-date-layout #textfield .placeholder {
+  color: #cfe2ff;
+}
+/* line 125, ../scss/_layouts.scss */
+.expiration-date-layout #erase {
+  left: 870px;
+}
+
+/* line 131, ../scss/_layouts.scss */
+.full-date-layout #erase {
+  top: 0px;
+}
+/* line 134, ../scss/_layouts.scss */
+.full-date-layout #textfield {
+  white-space: nowrap;
+  width: 605px;
+  margin-left: 337.5px;
+  margin-right: 337.5px;
+  width: 605px;
+  height: 82px;
+  position: absolute;
+}
+/* line 67, ../scss/_mixins.scss */
+.full-date-layout #textfield .text-container {
+  position: absolute;
+  padding: 0;
+  width: 565px;
+  left: 20px;
+  line-height: 82px;
+}
+/* line 75, ../scss/_mixins.scss */
+.full-date-layout #textfield .tf-l {
+  width: 20px;
+  height: 82px;
+  left: 0px;
+  position: absolute;
+  background: url("../../img/ui/corejs/input/fieldData_l.jpg") 0px top no-repeat;
+}
+/* line 82, ../scss/_mixins.scss */
+.full-date-layout #textfield .tf-c {
+  width: 565px;
+  height: 82px;
+  position: absolute;
+  left: 20px;
+  background: url("../../img/ui/corejs/input/fieldData_c.jpg");
+}
+/* line 89, ../scss/_mixins.scss */
+.full-date-layout #textfield .tf-r {
+  width: 20px;
+  height: 82px;
+  position: absolute;
+  left: 585px;
+  background: url("../../img/ui/corejs/input/fieldData_r.jpg") 0px top no-repeat;
+}
+/* line 37, ../scss/_keyboards.scss */
+.full-date-layout #textfield .text-container {
+  color: #2266bb;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: left;
+  overflow: hidden;
+  max-width: 565px;
+}
+/* line 138, ../scss/_layouts.scss */
+.full-date-layout #textfield .text-container, .full-date-layout #textfield .text-container-2, .full-date-layout #textfield .text-container-3, .full-date-layout #textfield .slash, .full-date-layout #textfield .placeholder {
+  position: absolute;
+  line-height: 82px;
+  color: #2266bb;
+  font-size: 66px;
+  font-weight: bold;
+  text-align: center;
+}
+/* line 143, ../scss/_layouts.scss */
+.full-date-layout #textfield .slash, .full-date-layout #textfield .placeholder {
+  font-size: 60px;
+}
+/* line 146, ../scss/_layouts.scss */
+.full-date-layout #textfield .text-container, .full-date-layout #textfield .text-container-2, .full-date-layout #textfield .text-container-3 {
+  width: 201px;
+}
+/* line 149, ../scss/_layouts.scss */
+.full-date-layout #textfield .text-container {
+  left: 0;
+}
+/* line 152, ../scss/_layouts.scss */
+.full-date-layout #textfield .text-container-2 {
+  left: 201px;
+}
+/* line 155, ../scss/_layouts.scss */
+.full-date-layout #textfield .text-container-3 {
+  left: 403px;
+}
+/* line 158, ../scss/_layouts.scss */
+.full-date-layout #textfield .placeholder {
+  color: #cfe2ff;
+}
+
+/* line 164, ../scss/_layouts.scss */
+.buttons-layout {
+  width: 450px;
+  margin-left: 415px;
+  margin-right: 415px;
+  margin-top: 30px;
+}
+/* line 167, ../scss/_layouts.scss */
+.buttons-layout .gray-button-big, .buttons-layout #FavouritesView #acc-radio-1, #FavouritesView .buttons-layout #acc-radio-1, .buttons-layout #FavouritesView #acc-radio-2, #FavouritesView .buttons-layout #acc-radio-2, .buttons-layout #FavouritesView #acc-radio-3, #FavouritesView .buttons-layout #acc-radio-3, .buttons-layout #FavouritesView #acc-radio-4, #FavouritesView .buttons-layout #acc-radio-4, .buttons-layout #FavouritesView #acc-radio-5, #FavouritesView .buttons-layout #acc-radio-5, .buttons-layout #FavouritesView #acc-radio-6, #FavouritesView .buttons-layout #acc-radio-6, .buttons-layout #FavouritesView #acc-radio-7, #FavouritesView .buttons-layout #acc-radio-7, .buttons-layout #FavouritesView #acc-radio-8, #FavouritesView .buttons-layout #acc-radio-8, .buttons-layout #FavouritesView #acc-radio-9, #FavouritesView .buttons-layout #acc-radio-9, .buttons-layout #FavouritesView #acc-radio-10, #FavouritesView .buttons-layout #acc-radio-10, .buttons-layout #FavouritesView #acc-radio-11, #FavouritesView .buttons-layout #acc-radio-11, .buttons-layout #FavouritesView #acc-radio-12, #FavouritesView .buttons-layout #acc-radio-12, .buttons-layout #FavouritesView #acc-radio-13, #FavouritesView .buttons-layout #acc-radio-13, .buttons-layout #FavouritesView #acc-radio-14, #FavouritesView .buttons-layout #acc-radio-14, .buttons-layout #FavouritesView #acc-radio-15, #FavouritesView .buttons-layout #acc-radio-15, .buttons-layout #FavouritesView #acc-radio-16, #FavouritesView .buttons-layout #acc-radio-16, .buttons-layout #FavouritesView #acc-radio-17, #FavouritesView .buttons-layout #acc-radio-17, .buttons-layout #FavouritesView #acc-radio-18, #FavouritesView .buttons-layout #acc-radio-18, .buttons-layout #FavouritesView #acc-radio-19, #FavouritesView .buttons-layout #acc-radio-19, .buttons-layout #FavouritesView #acc-radio-20, #FavouritesView .buttons-layout #acc-radio-20, .buttons-layout #FavouritesView #acc-radio-21, #FavouritesView .buttons-layout #acc-radio-21, .buttons-layout #FavouritesView #acc-radio-22, #FavouritesView .buttons-layout #acc-radio-22, .buttons-layout #FavouritesView #acc-radio-23, #FavouritesView .buttons-layout #acc-radio-23, .buttons-layout #FavouritesView #acc-radio-24, #FavouritesView .buttons-layout #acc-radio-24, .buttons-layout #FavouritesView #acc-radio-25, #FavouritesView .buttons-layout #acc-radio-25, .buttons-layout #FavouritesView #acc-radio-26, #FavouritesView .buttons-layout #acc-radio-26, .buttons-layout #FavouritesView #acc-radio-27, #FavouritesView .buttons-layout #acc-radio-27, .buttons-layout #FavouritesView #acc-radio-28, #FavouritesView .buttons-layout #acc-radio-28, .buttons-layout #FavouritesView #acc-radio-29, #FavouritesView .buttons-layout #acc-radio-29, .buttons-layout #FavouritesView #acc-radio-30, #FavouritesView .buttons-layout #acc-radio-30, .buttons-layout #FavouritesView #acc-radio-31, #FavouritesView .buttons-layout #acc-radio-31, .buttons-layout #FavouritesView #acc-radio-32, #FavouritesView .buttons-layout #acc-radio-32, .buttons-layout #FavouritesView #acc-radio-33, #FavouritesView .buttons-layout #acc-radio-33, .buttons-layout #FavouritesView #acc-radio-34, #FavouritesView .buttons-layout #acc-radio-34, .buttons-layout #FavouritesView #acc-radio-35, #FavouritesView .buttons-layout #acc-radio-35, .buttons-layout #FavouritesView #acc-radio-36, #FavouritesView .buttons-layout #acc-radio-36, .buttons-layout #FavouritesView #acc-radio-37, #FavouritesView .buttons-layout #acc-radio-37, .buttons-layout #FavouritesView #acc-radio-38, #FavouritesView .buttons-layout #acc-radio-38, .buttons-layout #FavouritesView #acc-radio-39, #FavouritesView .buttons-layout #acc-radio-39, .buttons-layout #FavouritesView #acc-radio-40, #FavouritesView .buttons-layout #acc-radio-40, .buttons-layout #FavouritesView #acc-radio-41, #FavouritesView .buttons-layout #acc-radio-41, .buttons-layout #FavouritesView #acc-radio-42, #FavouritesView .buttons-layout #acc-radio-42, .buttons-layout #FavouritesView #acc-radio-43, #FavouritesView .buttons-layout #acc-radio-43, .buttons-layout #FavouritesView #acc-radio-44, #FavouritesView .buttons-layout #acc-radio-44, .buttons-layout #FavouritesView #acc-radio-45, #FavouritesView .buttons-layout #acc-radio-45, .buttons-layout #FavouritesView #acc-radio-46, #FavouritesView .buttons-layout #acc-radio-46, .buttons-layout #FavouritesView #acc-radio-47, #FavouritesView .buttons-layout #acc-radio-47, .buttons-layout #FavouritesView #acc-radio-48, #FavouritesView .buttons-layout #acc-radio-48, .buttons-layout #FavouritesView #acc-radio-49, #FavouritesView .buttons-layout #acc-radio-49, .buttons-layout #FavouritesView #acc-radio-50, #FavouritesView .buttons-layout #acc-radio-50, .buttons-layout #FavouritesView #acc-radio-51, #FavouritesView .buttons-layout #acc-radio-51, .buttons-layout #FavouritesView #acc-radio-52, #FavouritesView .buttons-layout #acc-radio-52, .buttons-layout #FavouritesView #acc-radio-53, #FavouritesView .buttons-layout #acc-radio-53, .buttons-layout #FavouritesView #acc-radio-54, #FavouritesView .buttons-layout #acc-radio-54, .buttons-layout #FavouritesView #acc-radio-55, #FavouritesView .buttons-layout #acc-radio-55, .buttons-layout #FavouritesView #acc-radio-56, #FavouritesView .buttons-layout #acc-radio-56, .buttons-layout #FavouritesView #acc-radio-57, #FavouritesView .buttons-layout #acc-radio-57, .buttons-layout #FavouritesView #acc-radio-58, #FavouritesView .buttons-layout #acc-radio-58, .buttons-layout #FavouritesView #acc-radio-59, #FavouritesView .buttons-layout #acc-radio-59, .buttons-layout #FavouritesView #acc-radio-60, #FavouritesView .buttons-layout #acc-radio-60 {
+  margin-bottom: 50px;
+}
+/* line 168, ../scss/_layouts.scss */
+.buttons-layout .gray-button-big .button-content, .buttons-layout #FavouritesView #acc-radio-1 .button-content, #FavouritesView .buttons-layout #acc-radio-1 .button-content, .buttons-layout #FavouritesView #acc-radio-2 .button-content, #FavouritesView .buttons-layout #acc-radio-2 .button-content, .buttons-layout #FavouritesView #acc-radio-3 .button-content, #FavouritesView .buttons-layout #acc-radio-3 .button-content, .buttons-layout #FavouritesView #acc-radio-4 .button-content, #FavouritesView .buttons-layout #acc-radio-4 .button-content, .buttons-layout #FavouritesView #acc-radio-5 .button-content, #FavouritesView .buttons-layout #acc-radio-5 .button-content, .buttons-layout #FavouritesView #acc-radio-6 .button-content, #FavouritesView .buttons-layout #acc-radio-6 .button-content, .buttons-layout #FavouritesView #acc-radio-7 .button-content, #FavouritesView .buttons-layout #acc-radio-7 .button-content, .buttons-layout #FavouritesView #acc-radio-8 .button-content, #FavouritesView .buttons-layout #acc-radio-8 .button-content, .buttons-layout #FavouritesView #acc-radio-9 .button-content, #FavouritesView .buttons-layout #acc-radio-9 .button-content, .buttons-layout #FavouritesView #acc-radio-10 .button-content, #FavouritesView .buttons-layout #acc-radio-10 .button-content, .buttons-layout #FavouritesView #acc-radio-11 .button-content, #FavouritesView .buttons-layout #acc-radio-11 .button-content, .buttons-layout #FavouritesView #acc-radio-12 .button-content, #FavouritesView .buttons-layout #acc-radio-12 .button-content, .buttons-layout #FavouritesView #acc-radio-13 .button-content, #FavouritesView .buttons-layout #acc-radio-13 .button-content, .buttons-layout #FavouritesView #acc-radio-14 .button-content, #FavouritesView .buttons-layout #acc-radio-14 .button-content, .buttons-layout #FavouritesView #acc-radio-15 .button-content, #FavouritesView .buttons-layout #acc-radio-15 .button-content, .buttons-layout #FavouritesView #acc-radio-16 .button-content, #FavouritesView .buttons-layout #acc-radio-16 .button-content, .buttons-layout #FavouritesView #acc-radio-17 .button-content, #FavouritesView .buttons-layout #acc-radio-17 .button-content, .buttons-layout #FavouritesView #acc-radio-18 .button-content, #FavouritesView .buttons-layout #acc-radio-18 .button-content, .buttons-layout #FavouritesView #acc-radio-19 .button-content, #FavouritesView .buttons-layout #acc-radio-19 .button-content, .buttons-layout #FavouritesView #acc-radio-20 .button-content, #FavouritesView .buttons-layout #acc-radio-20 .button-content, .buttons-layout #FavouritesView #acc-radio-21 .button-content, #FavouritesView .buttons-layout #acc-radio-21 .button-content, .buttons-layout #FavouritesView #acc-radio-22 .button-content, #FavouritesView .buttons-layout #acc-radio-22 .button-content, .buttons-layout #FavouritesView #acc-radio-23 .button-content, #FavouritesView .buttons-layout #acc-radio-23 .button-content, .buttons-layout #FavouritesView #acc-radio-24 .button-content, #FavouritesView .buttons-layout #acc-radio-24 .button-content, .buttons-layout #FavouritesView #acc-radio-25 .button-content, #FavouritesView .buttons-layout #acc-radio-25 .button-content, .buttons-layout #FavouritesView #acc-radio-26 .button-content, #FavouritesView .buttons-layout #acc-radio-26 .button-content, .buttons-layout #FavouritesView #acc-radio-27 .button-content, #FavouritesView .buttons-layout #acc-radio-27 .button-content, .buttons-layout #FavouritesView #acc-radio-28 .button-content, #FavouritesView .buttons-layout #acc-radio-28 .button-content, .buttons-layout #FavouritesView #acc-radio-29 .button-content, #FavouritesView .buttons-layout #acc-radio-29 .button-content, .buttons-layout #FavouritesView #acc-radio-30 .button-content, #FavouritesView .buttons-layout #acc-radio-30 .button-content, .buttons-layout #FavouritesView #acc-radio-31 .button-content, #FavouritesView .buttons-layout #acc-radio-31 .button-content, .buttons-layout #FavouritesView #acc-radio-32 .button-content, #FavouritesView .buttons-layout #acc-radio-32 .button-content, .buttons-layout #FavouritesView #acc-radio-33 .button-content, #FavouritesView .buttons-layout #acc-radio-33 .button-content, .buttons-layout #FavouritesView #acc-radio-34 .button-content, #FavouritesView .buttons-layout #acc-radio-34 .button-content, .buttons-layout #FavouritesView #acc-radio-35 .button-content, #FavouritesView .buttons-layout #acc-radio-35 .button-content, .buttons-layout #FavouritesView #acc-radio-36 .button-content, #FavouritesView .buttons-layout #acc-radio-36 .button-content, .buttons-layout #FavouritesView #acc-radio-37 .button-content, #FavouritesView .buttons-layout #acc-radio-37 .button-content, .buttons-layout #FavouritesView #acc-radio-38 .button-content, #FavouritesView .buttons-layout #acc-radio-38 .button-content, .buttons-layout #FavouritesView #acc-radio-39 .button-content, #FavouritesView .buttons-layout #acc-radio-39 .button-content, .buttons-layout #FavouritesView #acc-radio-40 .button-content, #FavouritesView .buttons-layout #acc-radio-40 .button-content, .buttons-layout #FavouritesView #acc-radio-41 .button-content, #FavouritesView .buttons-layout #acc-radio-41 .button-content, .buttons-layout #FavouritesView #acc-radio-42 .button-content, #FavouritesView .buttons-layout #acc-radio-42 .button-content, .buttons-layout #FavouritesView #acc-radio-43 .button-content, #FavouritesView .buttons-layout #acc-radio-43 .button-content, .buttons-layout #FavouritesView #acc-radio-44 .button-content, #FavouritesView .buttons-layout #acc-radio-44 .button-content, .buttons-layout #FavouritesView #acc-radio-45 .button-content, #FavouritesView .buttons-layout #acc-radio-45 .button-content, .buttons-layout #FavouritesView #acc-radio-46 .button-content, #FavouritesView .buttons-layout #acc-radio-46 .button-content, .buttons-layout #FavouritesView #acc-radio-47 .button-content, #FavouritesView .buttons-layout #acc-radio-47 .button-content, .buttons-layout #FavouritesView #acc-radio-48 .button-content, #FavouritesView .buttons-layout #acc-radio-48 .button-content, .buttons-layout #FavouritesView #acc-radio-49 .button-content, #FavouritesView .buttons-layout #acc-radio-49 .button-content, .buttons-layout #FavouritesView #acc-radio-50 .button-content, #FavouritesView .buttons-layout #acc-radio-50 .button-content, .buttons-layout #FavouritesView #acc-radio-51 .button-content, #FavouritesView .buttons-layout #acc-radio-51 .button-content, .buttons-layout #FavouritesView #acc-radio-52 .button-content, #FavouritesView .buttons-layout #acc-radio-52 .button-content, .buttons-layout #FavouritesView #acc-radio-53 .button-content, #FavouritesView .buttons-layout #acc-radio-53 .button-content, .buttons-layout #FavouritesView #acc-radio-54 .button-content, #FavouritesView .buttons-layout #acc-radio-54 .button-content, .buttons-layout #FavouritesView #acc-radio-55 .button-content, #FavouritesView .buttons-layout #acc-radio-55 .button-content, .buttons-layout #FavouritesView #acc-radio-56 .button-content, #FavouritesView .buttons-layout #acc-radio-56 .button-content, .buttons-layout #FavouritesView #acc-radio-57 .button-content, #FavouritesView .buttons-layout #acc-radio-57 .button-content, .buttons-layout #FavouritesView #acc-radio-58 .button-content, #FavouritesView .buttons-layout #acc-radio-58 .button-content, .buttons-layout #FavouritesView #acc-radio-59 .button-content, #FavouritesView .buttons-layout #acc-radio-59 .button-content, .buttons-layout #FavouritesView #acc-radio-60 .button-content, #FavouritesView .buttons-layout #acc-radio-60 .button-content {
+  font-size: 35px;
+  letter-spacing: -2px;
+}
+
+/* Keyboard */
+/* line 188, ../scss/_layouts.scss */
+.qwerty-layout #keyboard #key-0-0 {
+  width: 87px;
+  height: 87px;
+  padding: 4px;
+  text-align: center;
+  color: white;
+  font-size: 52px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/keyboard_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.qwerty-layout #keyboard #key-0-0.pressed {
+  background: url("../../img/ui/corejs/keyboards/keyboard_button_pressed.jpg") center center no-repeat;
+}
+/* line 188, ../scss/_layouts.scss */
+.qwerty-layout #keyboard #key-0-1 {
+  width: 87px;
+  height: 87px;
+  padding: 4px;
+  text-align: center;
+  color: white;
+  font-size: 52px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/keyboard_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.qwerty-layout #keyboard #key-0-1.pressed {
+  background: url("../../img/ui/corejs/keyboards/keyboard_button_pressed.jpg") center center no-repeat;
+}
+/* line 188, ../scss/_layouts.scss */
+.qwerty-layout #keyboard #key-0-2 {
+  width: 87px;
+  height: 87px;
+  padding: 4px;
+  text-align: center;
+  color: white;
+  font-size: 52px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/keyboard_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.qwerty-layout #keyboard #key-0-2.pressed {
+  background: url("../../img/ui/corejs/keyboards/keyboard_button_pressed.jpg") center center no-repeat;
+}
+/* line 188, ../scss/_layouts.scss */
+.qwerty-layout #keyboard #key-0-3 {
+  width: 87px;
+  height: 87px;
+  padding: 4px;
+  text-align: center;
+  color: white;
+  font-size: 52px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/keyboard_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.qwerty-layout #keyboard #key-0-3.pressed {
+  background: url("../../img/ui/corejs/keyboards/keyboard_button_pressed.jpg") center center no-repeat;
+}
+/* line 188, ../scss/_layouts.scss */
+.qwerty-layout #keyboard #key-0-4 {
+  width: 87px;
+  height: 87px;
+  padding: 4px;
+  text-align: center;
+  color: white;
+  font-size: 52px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/keyboard_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.qwerty-layout #keyboard #key-0-4.pressed {
+  background: url("../../img/ui/corejs/keyboards/keyboard_button_pressed.jpg") center center no-repeat;
+}
+/* line 188, ../scss/_layouts.scss */
+.qwerty-layout #keyboard #key-0-5 {
+  width: 87px;
+  height: 87px;
+  padding: 4px;
+  text-align: center;
+  color: white;
+  font-size: 52px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/keyboard_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.qwerty-layout #keyboard #key-0-5.pressed {
+  background: url("../../img/ui/corejs/keyboards/keyboard_button_pressed.jpg") center center no-repeat;
+}
+/* line 188, ../scss/_layouts.scss */
+.qwerty-layout #keyboard #key-0-6 {
+  width: 87px;
+  height: 87px;
+  padding: 4px;
+  text-align: center;
+  color: white;
+  font-size: 52px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/keyboard_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.qwerty-layout #keyboard #key-0-6.pressed {
+  background: url("../../img/ui/corejs/keyboards/keyboard_button_pressed.jpg") center center no-repeat;
+}
+/* line 188, ../scss/_layouts.scss */
+.qwerty-layout #keyboard #key-0-7 {
+  width: 87px;
+  height: 87px;
+  padding: 4px;
+  text-align: center;
+  color: white;
+  font-size: 52px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/keyboard_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.qwerty-layout #keyboard #key-0-7.pressed {
+  background: url("../../img/ui/corejs/keyboards/keyboard_button_pressed.jpg") center center no-repeat;
+}
+/* line 188, ../scss/_layouts.scss */
+.qwerty-layout #keyboard #key-0-8 {
+  width: 87px;
+  height: 87px;
+  padding: 4px;
+  text-align: center;
+  color: white;
+  font-size: 52px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/keyboard_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.qwerty-layout #keyboard #key-0-8.pressed {
+  background: url("../../img/ui/corejs/keyboards/keyboard_button_pressed.jpg") center center no-repeat;
+}
+/* line 188, ../scss/_layouts.scss */
+.qwerty-layout #keyboard #key-0-9 {
+  width: 87px;
+  height: 87px;
+  padding: 4px;
+  text-align: center;
+  color: white;
+  font-size: 52px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/keyboard_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.qwerty-layout #keyboard #key-0-9.pressed {
+  background: url("../../img/ui/corejs/keyboards/keyboard_button_pressed.jpg") center center no-repeat;
+}
+/* line 188, ../scss/_layouts.scss */
+.qwerty-layout #keyboard #key-0-10 {
+  width: 87px;
+  height: 87px;
+  padding: 4px;
+  text-align: center;
+  color: white;
+  font-size: 52px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/keyboard_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.qwerty-layout #keyboard #key-0-10.pressed {
+  background: url("../../img/ui/corejs/keyboards/keyboard_button_pressed.jpg") center center no-repeat;
+}
+/* line 188, ../scss/_layouts.scss */
+.qwerty-layout #keyboard #key-0-11 {
+  width: 87px;
+  height: 87px;
+  padding: 4px;
+  text-align: center;
+  color: white;
+  font-size: 52px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/keyboard_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.qwerty-layout #keyboard #key-0-11.pressed {
+  background: url("../../img/ui/corejs/keyboards/keyboard_button_pressed.jpg") center center no-repeat;
+}
+/* line 188, ../scss/_layouts.scss */
+.qwerty-layout #keyboard #key-1-0 {
+  width: 87px;
+  height: 87px;
+  padding: 4px;
+  text-align: center;
+  color: white;
+  font-size: 52px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/keyboard_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.qwerty-layout #keyboard #key-1-0.pressed {
+  background: url("../../img/ui/corejs/keyboards/keyboard_button_pressed.jpg") center center no-repeat;
+}
+/* line 188, ../scss/_layouts.scss */
+.qwerty-layout #keyboard #key-1-1 {
+  width: 87px;
+  height: 87px;
+  padding: 4px;
+  text-align: center;
+  color: white;
+  font-size: 52px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/keyboard_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.qwerty-layout #keyboard #key-1-1.pressed {
+  background: url("../../img/ui/corejs/keyboards/keyboard_button_pressed.jpg") center center no-repeat;
+}
+/* line 188, ../scss/_layouts.scss */
+.qwerty-layout #keyboard #key-1-2 {
+  width: 87px;
+  height: 87px;
+  padding: 4px;
+  text-align: center;
+  color: white;
+  font-size: 52px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/keyboard_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.qwerty-layout #keyboard #key-1-2.pressed {
+  background: url("../../img/ui/corejs/keyboards/keyboard_button_pressed.jpg") center center no-repeat;
+}
+/* line 188, ../scss/_layouts.scss */
+.qwerty-layout #keyboard #key-1-3 {
+  width: 87px;
+  height: 87px;
+  padding: 4px;
+  text-align: center;
+  color: white;
+  font-size: 52px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/keyboard_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.qwerty-layout #keyboard #key-1-3.pressed {
+  background: url("../../img/ui/corejs/keyboards/keyboard_button_pressed.jpg") center center no-repeat;
+}
+/* line 188, ../scss/_layouts.scss */
+.qwerty-layout #keyboard #key-1-4 {
+  width: 87px;
+  height: 87px;
+  padding: 4px;
+  text-align: center;
+  color: white;
+  font-size: 52px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/keyboard_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.qwerty-layout #keyboard #key-1-4.pressed {
+  background: url("../../img/ui/corejs/keyboards/keyboard_button_pressed.jpg") center center no-repeat;
+}
+/* line 188, ../scss/_layouts.scss */
+.qwerty-layout #keyboard #key-1-5 {
+  width: 87px;
+  height: 87px;
+  padding: 4px;
+  text-align: center;
+  color: white;
+  font-size: 52px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/keyboard_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.qwerty-layout #keyboard #key-1-5.pressed {
+  background: url("../../img/ui/corejs/keyboards/keyboard_button_pressed.jpg") center center no-repeat;
+}
+/* line 188, ../scss/_layouts.scss */
+.qwerty-layout #keyboard #key-1-6 {
+  width: 87px;
+  height: 87px;
+  padding: 4px;
+  text-align: center;
+  color: white;
+  font-size: 52px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/keyboard_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.qwerty-layout #keyboard #key-1-6.pressed {
+  background: url("../../img/ui/corejs/keyboards/keyboard_button_pressed.jpg") center center no-repeat;
+}
+/* line 188, ../scss/_layouts.scss */
+.qwerty-layout #keyboard #key-1-7 {
+  width: 87px;
+  height: 87px;
+  padding: 4px;
+  text-align: center;
+  color: white;
+  font-size: 52px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/keyboard_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.qwerty-layout #keyboard #key-1-7.pressed {
+  background: url("../../img/ui/corejs/keyboards/keyboard_button_pressed.jpg") center center no-repeat;
+}
+/* line 188, ../scss/_layouts.scss */
+.qwerty-layout #keyboard #key-1-8 {
+  width: 87px;
+  height: 87px;
+  padding: 4px;
+  text-align: center;
+  color: white;
+  font-size: 52px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/keyboard_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.qwerty-layout #keyboard #key-1-8.pressed {
+  background: url("../../img/ui/corejs/keyboards/keyboard_button_pressed.jpg") center center no-repeat;
+}
+/* line 188, ../scss/_layouts.scss */
+.qwerty-layout #keyboard #key-1-9 {
+  width: 87px;
+  height: 87px;
+  padding: 4px;
+  text-align: center;
+  color: white;
+  font-size: 52px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/keyboard_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.qwerty-layout #keyboard #key-1-9.pressed {
+  background: url("../../img/ui/corejs/keyboards/keyboard_button_pressed.jpg") center center no-repeat;
+}
+/* line 188, ../scss/_layouts.scss */
+.qwerty-layout #keyboard #key-1-10 {
+  width: 87px;
+  height: 87px;
+  padding: 4px;
+  text-align: center;
+  color: white;
+  font-size: 52px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/keyboard_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.qwerty-layout #keyboard #key-1-10.pressed {
+  background: url("../../img/ui/corejs/keyboards/keyboard_button_pressed.jpg") center center no-repeat;
+}
+/* line 188, ../scss/_layouts.scss */
+.qwerty-layout #keyboard #key-1-11 {
+  width: 87px;
+  height: 87px;
+  padding: 4px;
+  text-align: center;
+  color: white;
+  font-size: 52px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/keyboard_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.qwerty-layout #keyboard #key-1-11.pressed {
+  background: url("../../img/ui/corejs/keyboards/keyboard_button_pressed.jpg") center center no-repeat;
+}
+/* line 188, ../scss/_layouts.scss */
+.qwerty-layout #keyboard #key-2-0 {
+  width: 87px;
+  height: 87px;
+  padding: 4px;
+  text-align: center;
+  color: white;
+  font-size: 52px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/keyboard_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.qwerty-layout #keyboard #key-2-0.pressed {
+  background: url("../../img/ui/corejs/keyboards/keyboard_button_pressed.jpg") center center no-repeat;
+}
+/* line 188, ../scss/_layouts.scss */
+.qwerty-layout #keyboard #key-2-1 {
+  width: 87px;
+  height: 87px;
+  padding: 4px;
+  text-align: center;
+  color: white;
+  font-size: 52px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/keyboard_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.qwerty-layout #keyboard #key-2-1.pressed {
+  background: url("../../img/ui/corejs/keyboards/keyboard_button_pressed.jpg") center center no-repeat;
+}
+/* line 188, ../scss/_layouts.scss */
+.qwerty-layout #keyboard #key-2-2 {
+  width: 87px;
+  height: 87px;
+  padding: 4px;
+  text-align: center;
+  color: white;
+  font-size: 52px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/keyboard_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.qwerty-layout #keyboard #key-2-2.pressed {
+  background: url("../../img/ui/corejs/keyboards/keyboard_button_pressed.jpg") center center no-repeat;
+}
+/* line 188, ../scss/_layouts.scss */
+.qwerty-layout #keyboard #key-2-3 {
+  width: 87px;
+  height: 87px;
+  padding: 4px;
+  text-align: center;
+  color: white;
+  font-size: 52px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/keyboard_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.qwerty-layout #keyboard #key-2-3.pressed {
+  background: url("../../img/ui/corejs/keyboards/keyboard_button_pressed.jpg") center center no-repeat;
+}
+/* line 188, ../scss/_layouts.scss */
+.qwerty-layout #keyboard #key-2-4 {
+  width: 87px;
+  height: 87px;
+  padding: 4px;
+  text-align: center;
+  color: white;
+  font-size: 52px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/keyboard_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.qwerty-layout #keyboard #key-2-4.pressed {
+  background: url("../../img/ui/corejs/keyboards/keyboard_button_pressed.jpg") center center no-repeat;
+}
+/* line 188, ../scss/_layouts.scss */
+.qwerty-layout #keyboard #key-2-5 {
+  width: 87px;
+  height: 87px;
+  padding: 4px;
+  text-align: center;
+  color: white;
+  font-size: 52px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/keyboard_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.qwerty-layout #keyboard #key-2-5.pressed {
+  background: url("../../img/ui/corejs/keyboards/keyboard_button_pressed.jpg") center center no-repeat;
+}
+/* line 188, ../scss/_layouts.scss */
+.qwerty-layout #keyboard #key-2-6 {
+  width: 87px;
+  height: 87px;
+  padding: 4px;
+  text-align: center;
+  color: white;
+  font-size: 52px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/keyboard_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.qwerty-layout #keyboard #key-2-6.pressed {
+  background: url("../../img/ui/corejs/keyboards/keyboard_button_pressed.jpg") center center no-repeat;
+}
+/* line 188, ../scss/_layouts.scss */
+.qwerty-layout #keyboard #key-2-7 {
+  width: 87px;
+  height: 87px;
+  padding: 4px;
+  text-align: center;
+  color: white;
+  font-size: 52px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/keyboard_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.qwerty-layout #keyboard #key-2-7.pressed {
+  background: url("../../img/ui/corejs/keyboards/keyboard_button_pressed.jpg") center center no-repeat;
+}
+/* line 188, ../scss/_layouts.scss */
+.qwerty-layout #keyboard #key-2-8 {
+  width: 87px;
+  height: 87px;
+  padding: 4px;
+  text-align: center;
+  color: white;
+  font-size: 52px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/keyboard_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.qwerty-layout #keyboard #key-2-8.pressed {
+  background: url("../../img/ui/corejs/keyboards/keyboard_button_pressed.jpg") center center no-repeat;
+}
+/* line 188, ../scss/_layouts.scss */
+.qwerty-layout #keyboard #key-2-9 {
+  width: 87px;
+  height: 87px;
+  padding: 4px;
+  text-align: center;
+  color: white;
+  font-size: 52px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/keyboard_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.qwerty-layout #keyboard #key-2-9.pressed {
+  background: url("../../img/ui/corejs/keyboards/keyboard_button_pressed.jpg") center center no-repeat;
+}
+/* line 188, ../scss/_layouts.scss */
+.qwerty-layout #keyboard #key-2-10 {
+  width: 87px;
+  height: 87px;
+  padding: 4px;
+  text-align: center;
+  color: white;
+  font-size: 52px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/keyboard_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.qwerty-layout #keyboard #key-2-10.pressed {
+  background: url("../../img/ui/corejs/keyboards/keyboard_button_pressed.jpg") center center no-repeat;
+}
+/* line 188, ../scss/_layouts.scss */
+.qwerty-layout #keyboard #key-2-11 {
+  width: 87px;
+  height: 87px;
+  padding: 4px;
+  text-align: center;
+  color: white;
+  font-size: 52px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/keyboard_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.qwerty-layout #keyboard #key-2-11.pressed {
+  background: url("../../img/ui/corejs/keyboards/keyboard_button_pressed.jpg") center center no-repeat;
+}
+/* line 188, ../scss/_layouts.scss */
+.qwerty-layout #keyboard #key-3-0 {
+  width: 87px;
+  height: 87px;
+  padding: 4px;
+  text-align: center;
+  color: white;
+  font-size: 52px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/keyboard_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.qwerty-layout #keyboard #key-3-0.pressed {
+  background: url("../../img/ui/corejs/keyboards/keyboard_button_pressed.jpg") center center no-repeat;
+}
+/* line 188, ../scss/_layouts.scss */
+.qwerty-layout #keyboard #key-3-1 {
+  width: 87px;
+  height: 87px;
+  padding: 4px;
+  text-align: center;
+  color: white;
+  font-size: 52px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/keyboard_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.qwerty-layout #keyboard #key-3-1.pressed {
+  background: url("../../img/ui/corejs/keyboards/keyboard_button_pressed.jpg") center center no-repeat;
+}
+/* line 188, ../scss/_layouts.scss */
+.qwerty-layout #keyboard #key-3-2 {
+  width: 87px;
+  height: 87px;
+  padding: 4px;
+  text-align: center;
+  color: white;
+  font-size: 52px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/keyboard_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.qwerty-layout #keyboard #key-3-2.pressed {
+  background: url("../../img/ui/corejs/keyboards/keyboard_button_pressed.jpg") center center no-repeat;
+}
+/* line 188, ../scss/_layouts.scss */
+.qwerty-layout #keyboard #key-3-3 {
+  width: 87px;
+  height: 87px;
+  padding: 4px;
+  text-align: center;
+  color: white;
+  font-size: 52px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/keyboard_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.qwerty-layout #keyboard #key-3-3.pressed {
+  background: url("../../img/ui/corejs/keyboards/keyboard_button_pressed.jpg") center center no-repeat;
+}
+/* line 188, ../scss/_layouts.scss */
+.qwerty-layout #keyboard #key-3-4 {
+  width: 87px;
+  height: 87px;
+  padding: 4px;
+  text-align: center;
+  color: white;
+  font-size: 52px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/keyboard_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.qwerty-layout #keyboard #key-3-4.pressed {
+  background: url("../../img/ui/corejs/keyboards/keyboard_button_pressed.jpg") center center no-repeat;
+}
+/* line 188, ../scss/_layouts.scss */
+.qwerty-layout #keyboard #key-3-5 {
+  width: 87px;
+  height: 87px;
+  padding: 4px;
+  text-align: center;
+  color: white;
+  font-size: 52px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/keyboard_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.qwerty-layout #keyboard #key-3-5.pressed {
+  background: url("../../img/ui/corejs/keyboards/keyboard_button_pressed.jpg") center center no-repeat;
+}
+/* line 188, ../scss/_layouts.scss */
+.qwerty-layout #keyboard #key-3-6 {
+  width: 87px;
+  height: 87px;
+  padding: 4px;
+  text-align: center;
+  color: white;
+  font-size: 52px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/keyboard_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.qwerty-layout #keyboard #key-3-6.pressed {
+  background: url("../../img/ui/corejs/keyboards/keyboard_button_pressed.jpg") center center no-repeat;
+}
+/* line 188, ../scss/_layouts.scss */
+.qwerty-layout #keyboard #key-3-7 {
+  width: 87px;
+  height: 87px;
+  padding: 4px;
+  text-align: center;
+  color: white;
+  font-size: 52px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/keyboard_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.qwerty-layout #keyboard #key-3-7.pressed {
+  background: url("../../img/ui/corejs/keyboards/keyboard_button_pressed.jpg") center center no-repeat;
+}
+/* line 188, ../scss/_layouts.scss */
+.qwerty-layout #keyboard #key-3-8 {
+  width: 87px;
+  height: 87px;
+  padding: 4px;
+  text-align: center;
+  color: white;
+  font-size: 52px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/keyboard_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.qwerty-layout #keyboard #key-3-8.pressed {
+  background: url("../../img/ui/corejs/keyboards/keyboard_button_pressed.jpg") center center no-repeat;
+}
+/* line 188, ../scss/_layouts.scss */
+.qwerty-layout #keyboard #key-3-9 {
+  width: 87px;
+  height: 87px;
+  padding: 4px;
+  text-align: center;
+  color: white;
+  font-size: 52px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/keyboard_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.qwerty-layout #keyboard #key-3-9.pressed {
+  background: url("../../img/ui/corejs/keyboards/keyboard_button_pressed.jpg") center center no-repeat;
+}
+/* line 188, ../scss/_layouts.scss */
+.qwerty-layout #keyboard #key-3-10 {
+  width: 87px;
+  height: 87px;
+  padding: 4px;
+  text-align: center;
+  color: white;
+  font-size: 52px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/keyboard_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.qwerty-layout #keyboard #key-3-10.pressed {
+  background: url("../../img/ui/corejs/keyboards/keyboard_button_pressed.jpg") center center no-repeat;
+}
+/* line 188, ../scss/_layouts.scss */
+.qwerty-layout #keyboard #key-3-11 {
+  width: 87px;
+  height: 87px;
+  padding: 4px;
+  text-align: center;
+  color: white;
+  font-size: 52px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/keyboard_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.qwerty-layout #keyboard #key-3-11.pressed {
+  background: url("../../img/ui/corejs/keyboards/keyboard_button_pressed.jpg") center center no-repeat;
+}
+/* line 188, ../scss/_layouts.scss */
+.qwerty-layout #keyboard #key-4-0 {
+  width: 87px;
+  height: 87px;
+  padding: 4px;
+  text-align: center;
+  color: white;
+  font-size: 52px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/keyboard_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.qwerty-layout #keyboard #key-4-0.pressed {
+  background: url("../../img/ui/corejs/keyboards/keyboard_button_pressed.jpg") center center no-repeat;
+}
+/* line 188, ../scss/_layouts.scss */
+.qwerty-layout #keyboard #key-4-1 {
+  width: 87px;
+  height: 87px;
+  padding: 4px;
+  text-align: center;
+  color: white;
+  font-size: 52px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/keyboard_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.qwerty-layout #keyboard #key-4-1.pressed {
+  background: url("../../img/ui/corejs/keyboards/keyboard_button_pressed.jpg") center center no-repeat;
+}
+/* line 188, ../scss/_layouts.scss */
+.qwerty-layout #keyboard #key-4-2 {
+  width: 87px;
+  height: 87px;
+  padding: 4px;
+  text-align: center;
+  color: white;
+  font-size: 52px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/keyboard_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.qwerty-layout #keyboard #key-4-2.pressed {
+  background: url("../../img/ui/corejs/keyboards/keyboard_button_pressed.jpg") center center no-repeat;
+}
+/* line 188, ../scss/_layouts.scss */
+.qwerty-layout #keyboard #key-4-3 {
+  width: 87px;
+  height: 87px;
+  padding: 4px;
+  text-align: center;
+  color: white;
+  font-size: 52px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/keyboard_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.qwerty-layout #keyboard #key-4-3.pressed {
+  background: url("../../img/ui/corejs/keyboards/keyboard_button_pressed.jpg") center center no-repeat;
+}
+/* line 188, ../scss/_layouts.scss */
+.qwerty-layout #keyboard #key-4-4 {
+  width: 87px;
+  height: 87px;
+  padding: 4px;
+  text-align: center;
+  color: white;
+  font-size: 52px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/keyboard_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.qwerty-layout #keyboard #key-4-4.pressed {
+  background: url("../../img/ui/corejs/keyboards/keyboard_button_pressed.jpg") center center no-repeat;
+}
+/* line 188, ../scss/_layouts.scss */
+.qwerty-layout #keyboard #key-4-5 {
+  width: 87px;
+  height: 87px;
+  padding: 4px;
+  text-align: center;
+  color: white;
+  font-size: 52px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/keyboard_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.qwerty-layout #keyboard #key-4-5.pressed {
+  background: url("../../img/ui/corejs/keyboards/keyboard_button_pressed.jpg") center center no-repeat;
+}
+/* line 188, ../scss/_layouts.scss */
+.qwerty-layout #keyboard #key-4-6 {
+  width: 87px;
+  height: 87px;
+  padding: 4px;
+  text-align: center;
+  color: white;
+  font-size: 52px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/keyboard_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.qwerty-layout #keyboard #key-4-6.pressed {
+  background: url("../../img/ui/corejs/keyboards/keyboard_button_pressed.jpg") center center no-repeat;
+}
+/* line 188, ../scss/_layouts.scss */
+.qwerty-layout #keyboard #key-4-7 {
+  width: 87px;
+  height: 87px;
+  padding: 4px;
+  text-align: center;
+  color: white;
+  font-size: 52px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/keyboard_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.qwerty-layout #keyboard #key-4-7.pressed {
+  background: url("../../img/ui/corejs/keyboards/keyboard_button_pressed.jpg") center center no-repeat;
+}
+/* line 188, ../scss/_layouts.scss */
+.qwerty-layout #keyboard #key-4-8 {
+  width: 87px;
+  height: 87px;
+  padding: 4px;
+  text-align: center;
+  color: white;
+  font-size: 52px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/keyboard_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.qwerty-layout #keyboard #key-4-8.pressed {
+  background: url("../../img/ui/corejs/keyboards/keyboard_button_pressed.jpg") center center no-repeat;
+}
+/* line 188, ../scss/_layouts.scss */
+.qwerty-layout #keyboard #key-4-9 {
+  width: 87px;
+  height: 87px;
+  padding: 4px;
+  text-align: center;
+  color: white;
+  font-size: 52px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/keyboard_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.qwerty-layout #keyboard #key-4-9.pressed {
+  background: url("../../img/ui/corejs/keyboards/keyboard_button_pressed.jpg") center center no-repeat;
+}
+/* line 188, ../scss/_layouts.scss */
+.qwerty-layout #keyboard #key-4-10 {
+  width: 87px;
+  height: 87px;
+  padding: 4px;
+  text-align: center;
+  color: white;
+  font-size: 52px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/keyboard_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.qwerty-layout #keyboard #key-4-10.pressed {
+  background: url("../../img/ui/corejs/keyboards/keyboard_button_pressed.jpg") center center no-repeat;
+}
+/* line 188, ../scss/_layouts.scss */
+.qwerty-layout #keyboard #key-4-11 {
+  width: 87px;
+  height: 87px;
+  padding: 4px;
+  text-align: center;
+  color: white;
+  font-size: 52px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/keyboard_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.qwerty-layout #keyboard #key-4-11.pressed {
+  background: url("../../img/ui/corejs/keyboards/keyboard_button_pressed.jpg") center center no-repeat;
+}
+/* line 202, ../scss/_layouts.scss */
+.qwerty-layout #keyboard #key-space {
+  width: 370px;
+  height: 88px;
+  background: url("../../img/ui/corejs/keyboards/keyboard_space.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+.qwerty-layout #keyboard #key-space.pressed {
+  background: url("../../img/ui/corejs/keyboards/keyboard_space_pressed.jpg") center center no-repeat;
+}
+/* line 208, ../scss/_layouts.scss */
+.qwerty-layout #keyboard #key-shift, .qwerty-layout #keyboard #key-langswitch {
+  font-weight: bold;
+  line-height: normal;
+  font-size: 52px;
+  text-align: center;
+  color: white;
+  width: 184px;
+  height: 87px;
+  background: url("../../img/ui/keyboard/al/2btnorange_unpress.gif") center center no-repeat;
+}
+/* line 55, ../scss/_mixins.scss */
+.qwerty-layout #keyboard #key-shift .button-content, .qwerty-layout #keyboard #key-langswitch .button-content {
+  line-height: 87px;
+}
+/* line 14, ../scss/_mixins.scss */
+.qwerty-layout #keyboard #key-shift.pressed, .qwerty-layout #keyboard #key-langswitch.pressed {
+  background: url("../../img/ui/keyboard/al/2btnorange_press.gif") center center no-repeat;
+}
+/* line 215, ../scss/_layouts.scss */
+.qwerty-layout #keyboard #row-0 {
+  width: 942px;
+  margin-left: 169px;
+  margin-right: 169px;
+}
+/* line 218, ../scss/_layouts.scss */
+.qwerty-layout #keyboard #row-1 {
+  width: 1132px;
+  margin-left: 74px;
+  margin-right: 74px;
+}
+/* line 221, ../scss/_layouts.scss */
+.qwerty-layout #keyboard #row-2 {
+  width: 1037px;
+  margin-left: 121.5px;
+  margin-right: 121.5px;
+}
+/* line 224, ../scss/_layouts.scss */
+.qwerty-layout #keyboard #row-3 {
+  width: 942px;
+  margin-left: 169px;
+  margin-right: 169px;
+}
+/* line 227, ../scss/_layouts.scss */
+.qwerty-layout #keyboard #row-4 {
+  width: 942px;
+  margin-left: 169px;
+  margin-right: 169px;
+}
+/* line 230, ../scss/_layouts.scss */
+.qwerty-layout #keyboard {
+  position: absolute;
+  top: 155px;
+}
+/* line 234, ../scss/_layouts.scss */
+.qwerty-layout #textfield {
+  white-space: nowrap;
+  width: 1040px;
+  margin-left: 120px;
+  margin-right: 120px;
+  width: 1040px;
+  height: 82px;
+  position: absolute;
+  margin-left: 70px;
+  top: 55px;
+}
+/* line 67, ../scss/_mixins.scss */
+.qwerty-layout #textfield .text-container {
+  position: absolute;
+  padding: 0;
+  width: 1000px;
+  left: 20px;
+  line-height: 82px;
+}
+/* line 75, ../scss/_mixins.scss */
+.qwerty-layout #textfield .tf-l {
+  width: 20px;
+  height: 82px;
+  left: 0px;
+  position: absolute;
+  background: url("../../img/ui/corejs/input/fieldData_l.jpg") 0px top no-repeat;
+}
+/* line 82, ../scss/_mixins.scss */
+.qwerty-layout #textfield .tf-c {
+  width: 1000px;
+  height: 82px;
+  position: absolute;
+  left: 20px;
+  background: url("../../img/ui/corejs/input/fieldData_c.jpg");
+}
+/* line 89, ../scss/_mixins.scss */
+.qwerty-layout #textfield .tf-r {
+  width: 20px;
+  height: 82px;
+  position: absolute;
+  left: 1020px;
+  background: url("../../img/ui/corejs/input/fieldData_r.jpg") 0px top no-repeat;
+}
+/* line 37, ../scss/_keyboards.scss */
+.qwerty-layout #textfield .text-container {
+  color: #2266bb;
+  font-size: 44px;
+  font-weight: bold;
+  text-align: left;
+  overflow: hidden;
+  max-width: 1000px;
+}
+/* line 238, ../scss/_layouts.scss */
+.qwerty-layout #textfield .text-container {
+  text-align: center;
+  letter-spacing: -3px;
+}
+/* line 244, ../scss/_layouts.scss */
+.qwerty-layout #erase {
+  left: 1130px;
+  top: 55px;
+}
+/* line 249, ../scss/_layouts.scss */
+.qwerty-layout #info-favourites {
+  width: 815px;
+  margin-left: 232.5px;
+  margin-right: 232.5px;
+  left: 0px;
+  top: 0px;
+  text-align: center;
+}
+
+/* line 1, ../scss/_CheckStatusView.scss */
+.lightbox {
+  z-index: 200;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1280px;
+  height: 1024px;
+  background: url("../../img/ui/corejs/loader/overlay.jpg") repeat;
+  text-align: center;
+}
+
+/* line 12, ../scss/_CheckStatusView.scss */
+.preloader-text {
+  margin: 340px auto 0;
+  padding-left: 200px;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: left;
+  width: 500px;
+  line-height: 1.2;
+  color: #F7F7F7;
+}
+/* line 22, ../scss/_CheckStatusView.scss */
+.preloader-text.more_padded_preloader {
+  padding-left: 300px;
+}
+
+/* line 27, ../scss/_CheckStatusView.scss */
+.preloader-animation {
+  position: absolute;
+  top: 360px;
+  left: 380px;
+  width: 92px;
+  height: 92px;
+  background-repeat: no-repeat;
+}
+
+/* line 6, ../scss/_OffertusView.scss */
+#OffertusView #left-button, #OffertusView #right-button {
+  position: absolute;
+  width: 67px;
+  height: 122px;
+  top: 150px;
+}
+/* line 12, ../scss/_OffertusView.scss */
+#OffertusView #left-button {
+  left: 150px;
+}
+/* line 15, ../scss/_OffertusView.scss */
+#OffertusView #right-button {
+  right: 150px;
+}
+/* line 19, ../scss/_OffertusView.scss */
+#OffertusView #offertus-container {
+  position: absolute;
+  z-index: 4;
+  top: -260px;
+  width: 684px;
+  margin-left: 298px;
+  margin-right: 298px;
+  height: 1024px;
+  background: url("../../img/ui/corejs/offertus/bg_first.jpg") no-repeat;
+  padding-top: 95px;
+}
+/* line 29, ../scss/_OffertusView.scss */
+#OffertusView #offertus-container.nested {
+  background: url("../../img/ui/corejs/offertus/bg_other.jpg") left top no-repeat;
+}
+/* line 33, ../scss/_OffertusView.scss */
+#OffertusView #offertus-container #offertus-title {
+  text-align: left;
+  padding-left: 85px;
+  font-size: 21px;
+  color: #2266BB;
+}
+/* line 40, ../scss/_OffertusView.scss */
+#OffertusView #offertus-container #offertus-pagenumber {
+  float: right;
+  padding-right: 85px;
+  font-size: 19px;
+  color: #999999;
+}
+/* line 47, ../scss/_OffertusView.scss */
+#OffertusView #offertus-container #offertus-content {
+  height: 770px;
+  width: 532px;
+  margin-left: 76px;
+  margin-right: 76px;
+  position: relative;
+  margin-top: 30px;
+  font-family: Tahoma;
+  letter-spacing: normal;
+  font-size: 12px;
+  color: #666666;
+  line-height: normal;
+  overflow: hidden;
+}
+/* line 61, ../scss/_OffertusView.scss */
+#OffertusView #offertus-container b {
+  font-weight: bold;
+}
+
+/* line 3, ../scss/_PhoneEnterView.scss */
+#PhoneEnterView #textfield {
+  white-space: nowrap;
+  width: 600px;
+  margin-left: 340px;
+  margin-right: 340px;
+  width: 600px;
+  height: 82px;
+  position: absolute;
+}
+/* line 67, ../scss/_mixins.scss */
+#PhoneEnterView #textfield .text-container {
+  position: absolute;
+  padding: 0;
+  width: 560px;
+  left: 20px;
+  line-height: 82px;
+}
+/* line 75, ../scss/_mixins.scss */
+#PhoneEnterView #textfield .tf-l {
+  width: 20px;
+  height: 82px;
+  left: 0px;
+  position: absolute;
+  background: url("../../img/ui/corejs/input/fieldData_l.jpg") 0px top no-repeat;
+}
+/* line 82, ../scss/_mixins.scss */
+#PhoneEnterView #textfield .tf-c {
+  width: 560px;
+  height: 82px;
+  position: absolute;
+  left: 20px;
+  background: url("../../img/ui/corejs/input/fieldData_c.jpg");
+}
+/* line 89, ../scss/_mixins.scss */
+#PhoneEnterView #textfield .tf-r {
+  width: 20px;
+  height: 82px;
+  position: absolute;
+  left: 580px;
+  background: url("../../img/ui/corejs/input/fieldData_r.jpg") 0px top no-repeat;
+}
+/* line 37, ../scss/_keyboards.scss */
+#PhoneEnterView #textfield .text-container {
+  color: #2266bb;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: left;
+  overflow: hidden;
+  max-width: 560px;
+}
+/* line 7, ../scss/_PhoneEnterView.scss */
+#PhoneEnterView #erase {
+  left: 980px;
+}
+/* line 11, ../scss/_PhoneEnterView.scss */
+#PhoneEnterView #phone-icon, #PhoneEnterView #phone-description, #PhoneEnterView #phone-conditions1, #PhoneEnterView #phone-conditions2, #PhoneEnterView #offertus-button {
+  position: absolute;
+}
+/* line 15, ../scss/_PhoneEnterView.scss */
+#PhoneEnterView #phone-icon {
+  left: 285px;
+  top: 20px;
+  height: 50px;
+  width: 32px;
+}
+/* line 22, ../scss/_PhoneEnterView.scss */
+#PhoneEnterView #phone-description {
+  left: 20px;
+  top: 210px;
+  color: #666666;
+  font-size: 23px;
+  text-align: left;
+  line-height: 1.4;
+  letter-spacing: 0.6px;
+  width: 400px;
+}
+/* line 33, ../scss/_PhoneEnterView.scss */
+#PhoneEnterView #phone-conditions1, #PhoneEnterView #phone-conditions2 {
+  width: 304px;
+  left: 958px;
+  color: #666666;
+  font-size: 16px;
+  text-align: left;
+  letter-spacing: 0.3px;
+  line-height: 1.4;
+}
+/* line 42, ../scss/_PhoneEnterView.scss */
+#PhoneEnterView #phone-conditions1 {
+  top: 300px;
+}
+/* line 45, ../scss/_PhoneEnterView.scss */
+#PhoneEnterView #phone-conditions2 {
+  top: 515px;
+}
+/* line 48, ../scss/_PhoneEnterView.scss */
+#PhoneEnterView #offertus-button {
+  left: 958px;
+  top: 383px;
+}
+
+/* line 3, ../scss/_PinEnterView.scss */
+#PinEnterView #textfield {
+  white-space: nowrap;
+  width: 400px;
+  margin-left: 440px;
+  margin-right: 440px;
+  width: 400px;
+  height: 82px;
+  position: absolute;
+}
+/* line 67, ../scss/_mixins.scss */
+#PinEnterView #textfield .text-container {
+  position: absolute;
+  padding: 0;
+  width: 360px;
+  left: 20px;
+  line-height: 82px;
+}
+/* line 75, ../scss/_mixins.scss */
+#PinEnterView #textfield .tf-l {
+  width: 20px;
+  height: 82px;
+  left: 0px;
+  position: absolute;
+  background: url("../../img/ui/corejs/input/fieldData_l.jpg") 0px top no-repeat;
+}
+/* line 82, ../scss/_mixins.scss */
+#PinEnterView #textfield .tf-c {
+  width: 360px;
+  height: 82px;
+  position: absolute;
+  left: 20px;
+  background: url("../../img/ui/corejs/input/fieldData_c.jpg");
+}
+/* line 89, ../scss/_mixins.scss */
+#PinEnterView #textfield .tf-r {
+  width: 20px;
+  height: 82px;
+  position: absolute;
+  left: 380px;
+  background: url("../../img/ui/corejs/input/fieldData_r.jpg") 0px top no-repeat;
+}
+/* line 37, ../scss/_keyboards.scss */
+#PinEnterView #textfield .text-container {
+  color: #2266bb;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: left;
+  overflow: hidden;
+  max-width: 360px;
+}
+/* line 7, ../scss/_PinEnterView.scss */
+#PinEnterView #erase {
+  left: 850px;
+}
+/* line 11, ../scss/_PinEnterView.scss */
+#PinEnterView .pin-description {
+  position: absolute;
+  left: 20px;
+  top: 210px;
+  color: #666666;
+  font-size: 23px;
+  line-height: 1.4;
+  letter-spacing: 0.6px;
+  text-align: left;
+  width: 400px;
+}
+
+/* line 6, ../scss/_SummEnterView.scss */
+#SummEnterView #wallet-icon {
+  position: absolute;
+  left: 335px;
+  top: 22px;
+  height: 50px;
+  width: 100px;
+}
+/* line 13, ../scss/_SummEnterView.scss */
+#SummEnterView .placeholder {
+  position: absolute;
+  line-height: 82px;
+  color: #2266bb;
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+  color: #cfe2ff;
+}
+/* line 20, ../scss/_SummEnterView.scss */
+#SummEnterView #rub-textfield {
+  white-space: nowrap;
+  width: 265px;
+  margin-left: 507.5px;
+  margin-right: 507.5px;
+  width: 265px;
+  height: 82px;
+  position: absolute;
+  margin: 0;
+  left: 385px;
+}
+/* line 67, ../scss/_mixins.scss */
+#SummEnterView #rub-textfield .text-container {
+  position: absolute;
+  padding: 0;
+  width: 225px;
+  left: 20px;
+  line-height: 82px;
+}
+/* line 75, ../scss/_mixins.scss */
+#SummEnterView #rub-textfield .tf-l {
+  width: 20px;
+  height: 82px;
+  left: 0px;
+  position: absolute;
+  background: url("../../img/ui/corejs/input/fieldData_l.jpg") 0px top no-repeat;
+}
+/* line 82, ../scss/_mixins.scss */
+#SummEnterView #rub-textfield .tf-c {
+  width: 225px;
+  height: 82px;
+  position: absolute;
+  left: 20px;
+  background: url("../../img/ui/corejs/input/fieldData_c.jpg");
+}
+/* line 89, ../scss/_mixins.scss */
+#SummEnterView #rub-textfield .tf-r {
+  width: 20px;
+  height: 82px;
+  position: absolute;
+  left: 245px;
+  background: url("../../img/ui/corejs/input/fieldData_r.jpg") 0px top no-repeat;
+}
+/* line 37, ../scss/_keyboards.scss */
+#SummEnterView #rub-textfield .text-container {
+  color: #2266bb;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: left;
+  overflow: hidden;
+  max-width: 225px;
+}
+/* line 25, ../scss/_SummEnterView.scss */
+#SummEnterView #rub-textfield .text-container {
+  text-align: right;
+}
+/* line 28, ../scss/_SummEnterView.scss */
+#SummEnterView #rub-textfield.disabled {
+  width: 265px;
+  height: 82px;
+  position: absolute;
+}
+/* line 67, ../scss/_mixins.scss */
+#SummEnterView #rub-textfield.disabled .text-container {
+  position: absolute;
+  padding: 0;
+  width: 225px;
+  left: 20px;
+  line-height: 82px;
+}
+/* line 75, ../scss/_mixins.scss */
+#SummEnterView #rub-textfield.disabled .tf-l {
+  width: 20px;
+  height: 82px;
+  left: 0px;
+  position: absolute;
+  background: url("../../img/ui/corejs/input/fieldData_inactive_l.jpg") 0px top no-repeat;
+}
+/* line 82, ../scss/_mixins.scss */
+#SummEnterView #rub-textfield.disabled .tf-c {
+  width: 225px;
+  height: 82px;
+  position: absolute;
+  left: 20px;
+  background: url("../../img/ui/corejs/input/fieldData_inactive_c.jpg");
+}
+/* line 89, ../scss/_mixins.scss */
+#SummEnterView #rub-textfield.disabled .tf-r {
+  width: 20px;
+  height: 82px;
+  position: absolute;
+  left: 245px;
+  background: url("../../img/ui/corejs/input/fieldData_inactive_r.jpg") 0px top no-repeat;
+}
+/* line 31, ../scss/_SummEnterView.scss */
+#SummEnterView #rub-textfield .placeholder {
+  width: 265px;
+}
+/* line 36, ../scss/_SummEnterView.scss */
+#SummEnterView #kop-textfield {
+  white-space: nowrap;
+  width: 160px;
+  margin-left: 560px;
+  margin-right: 560px;
+  width: 160px;
+  height: 82px;
+  position: absolute;
+  margin: 0;
+  left: 673px;
+}
+/* line 67, ../scss/_mixins.scss */
+#SummEnterView #kop-textfield .text-container {
+  position: absolute;
+  padding: 0;
+  width: 120px;
+  left: 20px;
+  line-height: 82px;
+}
+/* line 75, ../scss/_mixins.scss */
+#SummEnterView #kop-textfield .tf-l {
+  width: 20px;
+  height: 82px;
+  left: 0px;
+  position: absolute;
+  background: url("../../img/ui/corejs/input/fieldData_l.jpg") 0px top no-repeat;
+}
+/* line 82, ../scss/_mixins.scss */
+#SummEnterView #kop-textfield .tf-c {
+  width: 120px;
+  height: 82px;
+  position: absolute;
+  left: 20px;
+  background: url("../../img/ui/corejs/input/fieldData_c.jpg");
+}
+/* line 89, ../scss/_mixins.scss */
+#SummEnterView #kop-textfield .tf-r {
+  width: 20px;
+  height: 82px;
+  position: absolute;
+  left: 140px;
+  background: url("../../img/ui/corejs/input/fieldData_r.jpg") 0px top no-repeat;
+}
+/* line 37, ../scss/_keyboards.scss */
+#SummEnterView #kop-textfield .text-container {
+  color: #2266bb;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: left;
+  overflow: hidden;
+  max-width: 120px;
+}
+/* line 41, ../scss/_SummEnterView.scss */
+#SummEnterView #kop-textfield.disabled {
+  width: 160px;
+  height: 82px;
+  position: absolute;
+}
+/* line 67, ../scss/_mixins.scss */
+#SummEnterView #kop-textfield.disabled .text-container {
+  position: absolute;
+  padding: 0;
+  width: 120px;
+  left: 20px;
+  line-height: 82px;
+}
+/* line 75, ../scss/_mixins.scss */
+#SummEnterView #kop-textfield.disabled .tf-l {
+  width: 20px;
+  height: 82px;
+  left: 0px;
+  position: absolute;
+  background: url("../../img/ui/corejs/input/fieldData_inactive_l.jpg") 0px top no-repeat;
+}
+/* line 82, ../scss/_mixins.scss */
+#SummEnterView #kop-textfield.disabled .tf-c {
+  width: 120px;
+  height: 82px;
+  position: absolute;
+  left: 20px;
+  background: url("../../img/ui/corejs/input/fieldData_inactive_c.jpg");
+}
+/* line 89, ../scss/_mixins.scss */
+#SummEnterView #kop-textfield.disabled .tf-r {
+  width: 20px;
+  height: 82px;
+  position: absolute;
+  left: 140px;
+  background: url("../../img/ui/corejs/input/fieldData_inactive_r.jpg") 0px top no-repeat;
+}
+/* line 44, ../scss/_SummEnterView.scss */
+#SummEnterView #kop-textfield .placeholder {
+  width: 160px;
+}
+/* line 49, ../scss/_SummEnterView.scss */
+#SummEnterView .label {
+  position: absolute;
+  left: 643px;
+  top: 0px;
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 82px;
+  padding-left: 8px;
+  color: #2266bb;
+}
+/* line 60, ../scss/_SummEnterView.scss */
+#SummEnterView #erase {
+  left: 850px;
+}
+/* line 64, ../scss/_SummEnterView.scss */
+#SummEnterView #contract-button {
+  position: absolute;
+  left: 20px;
+  top: 380px;
+}
+/* line 70, ../scss/_SummEnterView.scss */
+#SummEnterView .comment {
+  position: absolute;
+  top: 295px;
+  left: 20px;
+  width: 290px;
+  color: #666666;
+  font-size: 16px;
+  text-align: left;
+  letter-spacing: 0.3px;
+  line-height: 1.4;
+}
+/* line 82, ../scss/_SummEnterView.scss */
+#SummEnterView h1 {
+  position: absolute;
+  top: 236px;
+  right: 20px;
+  font-size: 40px;
+  line-height: normal;
+  font-weight: bold;
+  text-align: right;
+}
+/* line 92, ../scss/_SummEnterView.scss */
+#SummEnterView #price {
+  position: absolute;
+  top: 295px;
+  right: 20px;
+}
+/* line 98, ../scss/_SummEnterView.scss */
+#SummEnterView #price .summ {
+  width: 290px;
+  text-align: right;
+  line-height: normal;
+  float: left;
+  display: inline;
+  font-size: 50px;
+  font-weight: bold;
+  color: #000;
+}
+/* line 109, ../scss/_SummEnterView.scss */
+#SummEnterView #price .currency {
+  width: 80px;
+  margin-top: 15px;
+  margin-left: 10px;
+  text-align: left;
+  line-height: normal;
+  float: left;
+  display: inline;
+  font-size: 36px;
+  color: #000;
+}
+/* line 123, ../scss/_SummEnterView.scss */
+#SummEnterView #calculator-button {
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-left: 55px;
+  clear: both;
+  position: relative;
+  top: 50px;
+}
+/* line 132, ../scss/_SummEnterView.scss */
+#SummEnterView #calculator-button .button-content {
+  padding-left: 25px;
+  padding-top: 20px;
+  width: 200px;
+  font-weight: bold;
+  line-height: normal;
+  text-align: left;
+  float: left;
+  display: inline;
+}
+/* line 143, ../scss/_SummEnterView.scss */
+#SummEnterView #calculator-button .button-ico {
+  float: left;
+  display: inline;
+  margin-left: 20px;
+  margin-top: 35px;
+}
+
+/* line 3, ../scss/_ConfirmationView.scss */
+#ConfirmationView table {
+  width: 1024px;
+  width: 1024px;
+  margin-left: 128px;
+  margin-right: 128px;
+}
+/* line 7, ../scss/_ConfirmationView.scss */
+#ConfirmationView table tr {
+  min-height: 50px;
+}
+/* line 10, ../scss/_ConfirmationView.scss */
+#ConfirmationView table td {
+  padding: 10px 20px;
+  font-size: 25px;
+}
+/* line 16, ../scss/_ConfirmationView.scss */
+#ConfirmationView .key {
+  width: 450px;
+  color: #2266bb;
+  text-align: right;
+  line-height: normal;
+}
+/* line 23, ../scss/_ConfirmationView.scss */
+#ConfirmationView .value {
+  color: black;
+}
+
+/* line 6, ../scss/_PaymentMethodView.scss */
+#PaymentMethodView .center {
+  width: 1206px;
+  margin-left: 37px;
+  margin-right: 37px;
+  position: relative;
+  top: 200px;
+}
+/* line 11, ../scss/_PaymentMethodView.scss */
+#PaymentMethodView .center #cash-button, #PaymentMethodView .center #balance-button {
+  float: left;
+  display: inline;
+  margin: 0 80px;
+}
+/* line 16, ../scss/_PaymentMethodView.scss */
+#PaymentMethodView .center #cash-button .button-content, #PaymentMethodView .center #balance-button .button-content {
+  padding-left: 20px;
+  float: left;
+  display: inline;
+  font-size: 34px;
+}
+/* line 23, ../scss/_PaymentMethodView.scss */
+#PaymentMethodView .center #cash-button .button-ico, #PaymentMethodView .center #balance-button .button-ico {
+  float: left;
+  width: 112px;
+  height: 140px;
+  margin-top: 3px;
+  margin-left: 20px;
+  display: inline;
+}
+/* line 32, ../scss/_PaymentMethodView.scss */
+#PaymentMethodView .center #cash-button.disabled .button-content, #PaymentMethodView .center #balance-button.disabled .button-content {
+  color: #666666;
+}
+/* line 36, ../scss/_PaymentMethodView.scss */
+#PaymentMethodView .center #balance-button .button-content {
+  padding-left: 10px;
+  padding-top: 25px;
+  line-height: 1.3;
+  text-align: left;
+}
+/* line 43, ../scss/_PaymentMethodView.scss */
+#PaymentMethodView .center #cash-button .button-ico {
+  background: url("../../img/ui/corejs/icons/cash.jpg") center center no-repeat;
+}
+/* line 46, ../scss/_PaymentMethodView.scss */
+#PaymentMethodView .center #cash-button.pressed .button-ico {
+  background: url("../../img/ui/corejs/icons/cash_pressed.jpg") center center no-repeat;
+}
+/* line 51, ../scss/_PaymentMethodView.scss */
+#PaymentMethodView .center #balance-button .button-ico {
+  background: url("../../img/ui/corejs/icons/balance.jpg") center center no-repeat;
+}
+/* line 54, ../scss/_PaymentMethodView.scss */
+#PaymentMethodView .center #balance-button.pressed .button-ico {
+  background: url("../../img/ui/corejs/icons/balance_pressed.jpg") center center no-repeat;
+}
+
+/* line 1, ../scss/_CashPaymentView.scss */
+#CashPaymentView {
+  letter-spacing: normal;
+}
+/* line 7, ../scss/_CashPaymentView.scss */
+#CashPaymentView #cash-view {
+  top: -120px;
+  position: absolute;
+}
+/* line 12, ../scss/_CashPaymentView.scss */
+#CashPaymentView #cash-view .main-block, #CashPaymentView #cash-view .block {
+  width: 780px;
+  margin: 0px 250px;
+  clear: both;
+  line-height: normal;
+  overflow: hidden;
+}
+/* line 20, ../scss/_CashPaymentView.scss */
+#CashPaymentView #cash-view .label {
+  float: left;
+  font-size: 30px;
+}
+/* line 25, ../scss/_CashPaymentView.scss */
+#CashPaymentView #cash-view .value {
+  float: right;
+  display: inline;
+  font-size: 38px;
+  text-align: right;
+  color: black;
+}
+/* line 34, ../scss/_CashPaymentView.scss */
+#CashPaymentView #cash-view #top .label, #CashPaymentView #cash-view #change .label {
+  font-size: 46px;
+}
+/* line 37, ../scss/_CashPaymentView.scss */
+#CashPaymentView #cash-view #top .value span, #CashPaymentView #cash-view #change .value span {
+  font-size: 44px;
+}
+/* line 42, ../scss/_CashPaymentView.scss */
+#CashPaymentView #cash-view #more {
+  margin-top: 85px;
+}
+/* line 44, ../scss/_CashPaymentView.scss */
+#CashPaymentView #cash-view #more .label {
+  font-size: 46px;
+  font-weight: bold;
+}
+/* line 48, ../scss/_CashPaymentView.scss */
+#CashPaymentView #cash-view #more .value span {
+  font-size: 50px;
+  font-weight: bold;
+  padding-right: 10px;
+}
+/* line 55, ../scss/_CashPaymentView.scss */
+#CashPaymentView #cash-view #provider {
+  margin-top: 30px;
+  margin-bottom: 0px;
+  padding: 0px;
+  color: black;
+}
+/* line 61, ../scss/_CashPaymentView.scss */
+#CashPaymentView #cash-view #provider .label {
+  font-size: 33px;
+  line-height: 50px;
+}
+/* line 65, ../scss/_CashPaymentView.scss */
+#CashPaymentView #cash-view #provider .value span {
+  font-size: 45px;
+  line-height: 45px;
+}
+/* line 71, ../scss/_CashPaymentView.scss */
+#CashPaymentView #cash-view #bank-commission, #CashPaymentView #cash-view #terminal-commission {
+  margin-top: 15px;
+  color: #666666;
+}
+/* line 75, ../scss/_CashPaymentView.scss */
+#CashPaymentView #cash-view #bank-commission .label, #CashPaymentView #cash-view #terminal-commission .label {
+  font-size: 25px;
+  line-height: 50px;
+}
+/* line 79, ../scss/_CashPaymentView.scss */
+#CashPaymentView #cash-view #bank-commission .value, #CashPaymentView #cash-view #terminal-commission .value {
+  color: #666666;
+}
+/* line 81, ../scss/_CashPaymentView.scss */
+#CashPaymentView #cash-view #bank-commission .value span, #CashPaymentView #cash-view #terminal-commission .value span {
+  font-size: 35px;
+}
+/* line 87, ../scss/_CashPaymentView.scss */
+#CashPaymentView #cash-view #change {
+  margin-top: 20px;
+}
+/* line 91, ../scss/_CashPaymentView.scss */
+#CashPaymentView #cash-view .comment {
+  clear: both;
+  font-size: 17px;
+  color: #666666;
+  padding-left: 10px;
+}
+/* line 98, ../scss/_CashPaymentView.scss */
+#CashPaymentView #cash-view .cash-warning {
+  position: absolute;
+  top: 80px;
+  left: 0px;
+  width: 780px;
+  height: 60px;
+  margin: 0px 250px 0;
+  background-color: #FF9900;
+  clear: both;
+}
+/* line 108, ../scss/_CashPaymentView.scss */
+#CashPaymentView #cash-view .cash-warning .warning-text {
+  font-weight: bold;
+  color: white;
+  padding-left: 10px;
+}
+/* line 113, ../scss/_CashPaymentView.scss */
+#CashPaymentView #cash-view .cash-warning .warning-text.oneline {
+  font-size: 30px;
+  line-height: 60px;
+}
+/* line 117, ../scss/_CashPaymentView.scss */
+#CashPaymentView #cash-view .cash-warning .warning-text.twoline {
+  font-size: 19px;
+  padding-top: 2px;
+  line-height: 28px;
+}
+/* line 126, ../scss/_CashPaymentView.scss */
+#CashPaymentView #commission-info {
+  position: absolute;
+  top: 600px;
+  color: #666666;
+  font-weight: normal;
+}
+/* line 132, ../scss/_CashPaymentView.scss */
+#CashPaymentView #commission-info .label {
+  float: none;
+}
+/* line 135, ../scss/_CashPaymentView.scss */
+#CashPaymentView #commission-info .active-commission-profile {
+  color: black;
+  font-weight: bold;
+  background: #add8e6;
+}
+/* line 142, ../scss/_CashPaymentView.scss */
+#CashPaymentView #commission-info table th {
+  background: #dddddd;
+  color: #000000;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px;
+  padding-left: 30px;
+  border-bottom: 1px solid #666666;
+}
+/* line 151, ../scss/_CashPaymentView.scss */
+#CashPaymentView #commission-info table td {
+  padding: 10px;
+  min-width: 300px;
+  vertical-align: top;
+  border-bottom: 1px solid #666666;
+}
+
+/* line 4, ../scss/_BalancePaymentView.scss */
+#CashPaymentView #cash-view.balance-view #top .label {
+  font-size: 40px;
+  padding-top: 3px;
+}
+/* line 8, ../scss/_BalancePaymentView.scss */
+#CashPaymentView #cash-view.balance-view #more {
+  margin-top: 105px;
+}
+/* line 11, ../scss/_BalancePaymentView.scss */
+#CashPaymentView #cash-view.balance-view .value span {
+  padding-right: 10px;
+}
+/* line 14, ../scss/_BalancePaymentView.scss */
+#CashPaymentView #cash-view.balance-view #bank-commission {
+  margin-top: 50px;
+}
+
+/* line 8, ../scss/_CalculatorView.scss */
+#CalculatorView .plate-big-gray {
+  width: 1050px;
+  height: 881px;
+  position: relative;
+  position: absolute;
+  top: 60px;
+  left: 120px;
+}
+/* line 10, ../scss/_CalculatorView.scss */
+#CalculatorView .plate-big-gray td {
+  vertical-align: top;
+}
+/* line 67, ../scss/_mixins.scss */
+#CalculatorView .plate-big-gray .text-container {
+  position: absolute;
+  padding: 0;
+  width: 1012px;
+  left: 19px;
+  line-height: 881px;
+}
+/* line 75, ../scss/_mixins.scss */
+#CalculatorView .plate-big-gray .tf-l {
+  width: 19px;
+  height: 881px;
+  left: 0px;
+  position: absolute;
+  background: url("../../img/ui/corejs/plates/plate_big_gray_l.jpg") 0px top no-repeat;
+}
+/* line 82, ../scss/_mixins.scss */
+#CalculatorView .plate-big-gray .tf-c {
+  width: 1012px;
+  height: 881px;
+  position: absolute;
+  left: 19px;
+  background: url("../../img/ui/corejs/plates/plate_big_gray_c.jpg");
+}
+/* line 89, ../scss/_mixins.scss */
+#CalculatorView .plate-big-gray .tf-r {
+  width: 19px;
+  height: 881px;
+  position: absolute;
+  left: 1031px;
+  background: url("../../img/ui/corejs/plates/plate_big_gray_r.jpg") 0px top no-repeat;
+}
+/* line 20, ../scss/_CalculatorView.scss */
+#CalculatorView .plate-big-gray .text-container {
+  line-height: normal;
+  padding: 20px;
+}
+/* line 24, ../scss/_CalculatorView.scss */
+#CalculatorView .plate-big-gray h2 {
+  font-size: 27px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  text-align: left;
+  font-weight: bold;
+}
+/* line 31, ../scss/_CalculatorView.scss */
+#CalculatorView .plate-big-gray .numpad-container {
+  width: 550px;
+}
+/* line 34, ../scss/_CalculatorView.scss */
+#CalculatorView .plate-big-gray .numpad-container #rub-input {
+  margin-left: 50px;
+  margin-right: 10px;
+  float: left;
+  display: inline;
+  width: 200px;
+  height: 82px;
+  position: relative;
+}
+/* line 67, ../scss/_mixins.scss */
+#CalculatorView .plate-big-gray .numpad-container #rub-input .text-container {
+  position: absolute;
+  padding: 0;
+  width: 160px;
+  left: 20px;
+  line-height: 82px;
+}
+/* line 75, ../scss/_mixins.scss */
+#CalculatorView .plate-big-gray .numpad-container #rub-input .tf-l {
+  width: 20px;
+  height: 82px;
+  left: 0px;
+  position: absolute;
+  background: url("../../img/ui/corejs/input/fieldData_l.jpg") 0px top no-repeat;
+}
+/* line 82, ../scss/_mixins.scss */
+#CalculatorView .plate-big-gray .numpad-container #rub-input .tf-c {
+  width: 160px;
+  height: 82px;
+  position: absolute;
+  left: 20px;
+  background: url("../../img/ui/corejs/input/fieldData_c.jpg");
+}
+/* line 89, ../scss/_mixins.scss */
+#CalculatorView .plate-big-gray .numpad-container #rub-input .tf-r {
+  width: 20px;
+  height: 82px;
+  position: absolute;
+  left: 180px;
+  background: url("../../img/ui/corejs/input/fieldData_r.jpg") 0px top no-repeat;
+}
+/* line 40, ../scss/_CalculatorView.scss */
+#CalculatorView .plate-big-gray .numpad-container #rub-input .text-container {
+  color: #2266bb;
+  font-size: 45px;
+  font-weight: bold;
+  text-align: left;
+  text-align: center;
+}
+/* line 44, ../scss/_CalculatorView.scss */
+#CalculatorView .plate-big-gray .numpad-container #rub-input.disabled {
+  width: 200px;
+  height: 82px;
+  position: relative;
+}
+/* line 67, ../scss/_mixins.scss */
+#CalculatorView .plate-big-gray .numpad-container #rub-input.disabled .text-container {
+  position: absolute;
+  padding: 0;
+  width: 160px;
+  left: 20px;
+  line-height: 82px;
+}
+/* line 75, ../scss/_mixins.scss */
+#CalculatorView .plate-big-gray .numpad-container #rub-input.disabled .tf-l {
+  width: 20px;
+  height: 82px;
+  left: 0px;
+  position: absolute;
+  background: url("../../img/ui/corejs/input/fieldData_inactive_l.jpg") 0px top no-repeat;
+}
+/* line 82, ../scss/_mixins.scss */
+#CalculatorView .plate-big-gray .numpad-container #rub-input.disabled .tf-c {
+  width: 160px;
+  height: 82px;
+  position: absolute;
+  left: 20px;
+  background: url("../../img/ui/corejs/input/fieldData_inactive_c.jpg");
+}
+/* line 89, ../scss/_mixins.scss */
+#CalculatorView .plate-big-gray .numpad-container #rub-input.disabled .tf-r {
+  width: 20px;
+  height: 82px;
+  position: absolute;
+  left: 180px;
+  background: url("../../img/ui/corejs/input/fieldData_inactive_r.jpg") 0px top no-repeat;
+}
+/* line 48, ../scss/_CalculatorView.scss */
+#CalculatorView .plate-big-gray .numpad-container #kop-input {
+  margin: 0 10px;
+  height: 82px;
+  float: left;
+  display: inline;
+  width: 100px;
+  height: 82px;
+  position: relative;
+}
+/* line 67, ../scss/_mixins.scss */
+#CalculatorView .plate-big-gray .numpad-container #kop-input .text-container {
+  position: absolute;
+  padding: 0;
+  width: 60px;
+  left: 20px;
+  line-height: 82px;
+}
+/* line 75, ../scss/_mixins.scss */
+#CalculatorView .plate-big-gray .numpad-container #kop-input .tf-l {
+  width: 20px;
+  height: 82px;
+  left: 0px;
+  position: absolute;
+  background: url("../../img/ui/corejs/input/fieldData_l.jpg") 0px top no-repeat;
+}
+/* line 82, ../scss/_mixins.scss */
+#CalculatorView .plate-big-gray .numpad-container #kop-input .tf-c {
+  width: 60px;
+  height: 82px;
+  position: absolute;
+  left: 20px;
+  background: url("../../img/ui/corejs/input/fieldData_c.jpg");
+}
+/* line 89, ../scss/_mixins.scss */
+#CalculatorView .plate-big-gray .numpad-container #kop-input .tf-r {
+  width: 20px;
+  height: 82px;
+  position: absolute;
+  left: 80px;
+  background: url("../../img/ui/corejs/input/fieldData_r.jpg") 0px top no-repeat;
+}
+/* line 54, ../scss/_CalculatorView.scss */
+#CalculatorView .plate-big-gray .numpad-container #kop-input .text-container {
+  color: #2266bb;
+  font-size: 45px;
+  font-weight: bold;
+  text-align: left;
+  text-align: center;
+}
+/* line 58, ../scss/_CalculatorView.scss */
+#CalculatorView .plate-big-gray .numpad-container #kop-input.disabled {
+  width: 100px;
+  height: 82px;
+  position: relative;
+}
+/* line 67, ../scss/_mixins.scss */
+#CalculatorView .plate-big-gray .numpad-container #kop-input.disabled .text-container {
+  position: absolute;
+  padding: 0;
+  width: 60px;
+  left: 20px;
+  line-height: 82px;
+}
+/* line 75, ../scss/_mixins.scss */
+#CalculatorView .plate-big-gray .numpad-container #kop-input.disabled .tf-l {
+  width: 20px;
+  height: 82px;
+  left: 0px;
+  position: absolute;
+  background: url("../../img/ui/corejs/input/fieldData_inactive_l.jpg") 0px top no-repeat;
+}
+/* line 82, ../scss/_mixins.scss */
+#CalculatorView .plate-big-gray .numpad-container #kop-input.disabled .tf-c {
+  width: 60px;
+  height: 82px;
+  position: absolute;
+  left: 20px;
+  background: url("../../img/ui/corejs/input/fieldData_inactive_c.jpg");
+}
+/* line 89, ../scss/_mixins.scss */
+#CalculatorView .plate-big-gray .numpad-container #kop-input.disabled .tf-r {
+  width: 20px;
+  height: 82px;
+  position: absolute;
+  left: 80px;
+  background: url("../../img/ui/corejs/input/fieldData_inactive_r.jpg") 0px top no-repeat;
+}
+/* line 62, ../scss/_CalculatorView.scss */
+#CalculatorView .plate-big-gray .numpad-container .label {
+  font-size: 30px;
+  float: left;
+  display: inline;
+  width: 50px;
+  position: relative;
+  top: 40px;
+}
+/* line 70, ../scss/_CalculatorView.scss */
+#CalculatorView .plate-big-gray .numpad-container #calc-backspace {
+  width: 82px;
+  height: 82px;
+  float: left;
+  display: inline;
+  background: url("../../img/ui/corejs/input/erase_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+#CalculatorView .plate-big-gray .numpad-container #calc-backspace.pressed {
+  background: url("../../img/ui/corejs/input/erase_button_pushed.jpg") center center no-repeat;
+}
+/* line 79, ../scss/_CalculatorView.scss */
+#CalculatorView .plate-big-gray .numpad-container .numpad {
+  clear: both;
+  margin-top: 30px;
+  color: white;
+  font-weight: bold;
+  font: 95px Tahoma, sans-serif;
+  line-height: 1.3;
+  text-align: center;
+  width: 412px;
+  width: 412px;
+  margin-left: 69px;
+  margin-right: 69px;
+}
+/* line 91, ../scss/_CalculatorView.scss */
+#CalculatorView .plate-big-gray .numpad-container .numpad #key-0 {
+  width: 124px;
+  height: 123px;
+  padding: 7px;
+  text-align: center;
+  color: white;
+  font-size: 96px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/numpad_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+#CalculatorView .plate-big-gray .numpad-container .numpad #key-0.pressed {
+  background: url("../../img/ui/corejs/keyboards/numpad_button_pressed.jpg") center center no-repeat;
+}
+/* line 91, ../scss/_CalculatorView.scss */
+#CalculatorView .plate-big-gray .numpad-container .numpad #key-1 {
+  width: 124px;
+  height: 123px;
+  padding: 7px;
+  text-align: center;
+  color: white;
+  font-size: 96px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/numpad_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+#CalculatorView .plate-big-gray .numpad-container .numpad #key-1.pressed {
+  background: url("../../img/ui/corejs/keyboards/numpad_button_pressed.jpg") center center no-repeat;
+}
+/* line 91, ../scss/_CalculatorView.scss */
+#CalculatorView .plate-big-gray .numpad-container .numpad #key-2 {
+  width: 124px;
+  height: 123px;
+  padding: 7px;
+  text-align: center;
+  color: white;
+  font-size: 96px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/numpad_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+#CalculatorView .plate-big-gray .numpad-container .numpad #key-2.pressed {
+  background: url("../../img/ui/corejs/keyboards/numpad_button_pressed.jpg") center center no-repeat;
+}
+/* line 91, ../scss/_CalculatorView.scss */
+#CalculatorView .plate-big-gray .numpad-container .numpad #key-3 {
+  width: 124px;
+  height: 123px;
+  padding: 7px;
+  text-align: center;
+  color: white;
+  font-size: 96px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/numpad_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+#CalculatorView .plate-big-gray .numpad-container .numpad #key-3.pressed {
+  background: url("../../img/ui/corejs/keyboards/numpad_button_pressed.jpg") center center no-repeat;
+}
+/* line 91, ../scss/_CalculatorView.scss */
+#CalculatorView .plate-big-gray .numpad-container .numpad #key-4 {
+  width: 124px;
+  height: 123px;
+  padding: 7px;
+  text-align: center;
+  color: white;
+  font-size: 96px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/numpad_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+#CalculatorView .plate-big-gray .numpad-container .numpad #key-4.pressed {
+  background: url("../../img/ui/corejs/keyboards/numpad_button_pressed.jpg") center center no-repeat;
+}
+/* line 91, ../scss/_CalculatorView.scss */
+#CalculatorView .plate-big-gray .numpad-container .numpad #key-5 {
+  width: 124px;
+  height: 123px;
+  padding: 7px;
+  text-align: center;
+  color: white;
+  font-size: 96px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/numpad_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+#CalculatorView .plate-big-gray .numpad-container .numpad #key-5.pressed {
+  background: url("../../img/ui/corejs/keyboards/numpad_button_pressed.jpg") center center no-repeat;
+}
+/* line 91, ../scss/_CalculatorView.scss */
+#CalculatorView .plate-big-gray .numpad-container .numpad #key-6 {
+  width: 124px;
+  height: 123px;
+  padding: 7px;
+  text-align: center;
+  color: white;
+  font-size: 96px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/numpad_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+#CalculatorView .plate-big-gray .numpad-container .numpad #key-6.pressed {
+  background: url("../../img/ui/corejs/keyboards/numpad_button_pressed.jpg") center center no-repeat;
+}
+/* line 91, ../scss/_CalculatorView.scss */
+#CalculatorView .plate-big-gray .numpad-container .numpad #key-7 {
+  width: 124px;
+  height: 123px;
+  padding: 7px;
+  text-align: center;
+  color: white;
+  font-size: 96px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/numpad_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+#CalculatorView .plate-big-gray .numpad-container .numpad #key-7.pressed {
+  background: url("../../img/ui/corejs/keyboards/numpad_button_pressed.jpg") center center no-repeat;
+}
+/* line 91, ../scss/_CalculatorView.scss */
+#CalculatorView .plate-big-gray .numpad-container .numpad #key-8 {
+  width: 124px;
+  height: 123px;
+  padding: 7px;
+  text-align: center;
+  color: white;
+  font-size: 96px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/numpad_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+#CalculatorView .plate-big-gray .numpad-container .numpad #key-8.pressed {
+  background: url("../../img/ui/corejs/keyboards/numpad_button_pressed.jpg") center center no-repeat;
+}
+/* line 91, ../scss/_CalculatorView.scss */
+#CalculatorView .plate-big-gray .numpad-container .numpad #key-9 {
+  width: 124px;
+  height: 123px;
+  padding: 7px;
+  text-align: center;
+  color: white;
+  font-size: 96px;
+  font-weight: bold;
+  line-height: normal;
+  background: url("../../img/ui/corejs/keyboards/numpad_button.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+#CalculatorView .plate-big-gray .numpad-container .numpad #key-9.pressed {
+  background: url("../../img/ui/corejs/keyboards/numpad_button_pressed.jpg") center center no-repeat;
+}
+/* line 103, ../scss/_CalculatorView.scss */
+#CalculatorView .plate-big-gray .numpad-container .numpad #key-0 {
+  width: 394px;
+  height: 112px;
+  background: url("../../img/ui/corejs/keyboards/numpad_button0.jpg") center center no-repeat;
+}
+/* line 14, ../scss/_mixins.scss */
+#CalculatorView .plate-big-gray .numpad-container .numpad #key-0.pressed {
+  background: url("../../img/ui/corejs/keyboards/numpad_button0_pressed.jpg") center center no-repeat;
+}
+/* line 112, ../scss/_CalculatorView.scss */
+#CalculatorView .plate-blue-edge {
+  font-size: 20px;
+  width: 400px;
+  height: 598px;
+  position: relative;
+}
+/* line 67, ../scss/_mixins.scss */
+#CalculatorView .plate-blue-edge .text-container {
+  position: absolute;
+  padding: 0;
+  width: 360px;
+  left: 20px;
+  line-height: 598px;
+}
+/* line 75, ../scss/_mixins.scss */
+#CalculatorView .plate-blue-edge .tf-l {
+  width: 20px;
+  height: 598px;
+  left: 0px;
+  position: absolute;
+  background: url("../../img/ui/corejs/plates/plate_blue_edge_l.jpg") 0px top no-repeat;
+}
+/* line 82, ../scss/_mixins.scss */
+#CalculatorView .plate-blue-edge .tf-c {
+  width: 360px;
+  height: 598px;
+  position: absolute;
+  left: 20px;
+  background: url("../../img/ui/corejs/plates/plate_blue_edge_c.jpg");
+}
+/* line 89, ../scss/_mixins.scss */
+#CalculatorView .plate-blue-edge .tf-r {
+  width: 20px;
+  height: 598px;
+  position: absolute;
+  left: 380px;
+  background: url("../../img/ui/corejs/plates/plate_blue_edge_r.jpg") 0px top no-repeat;
+}
+/* line 116, ../scss/_CalculatorView.scss */
+#CalculatorView .plate-blue-edge .text-container {
+  line-height: normal;
+  text-align: center;
+  padding-top: 20px;
+}
+/* line 122, ../scss/_CalculatorView.scss */
+#CalculatorView .plate-blue-edge h3 {
+  font-size: 25px;
+  font-weight: bold;
+  color: #ff6622;
+  margin-bottom: 10px;
+}
+/* line 128, ../scss/_CalculatorView.scss */
+#CalculatorView .plate-blue-edge p {
+  padding-bottom: 5px;
+}
+/* line 131, ../scss/_CalculatorView.scss */
+#CalculatorView .plate-blue-edge strong {
+  font-size: 25px;
+  line-height: 40px;
+}
+/* line 136, ../scss/_CalculatorView.scss */
+#CalculatorView .plate-blue-edge hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/* line 141, ../scss/_CalculatorView.scss */
+#CalculatorView .plate-blue-edge #to-insert {
+  width: 345px;
+  margin-left: 7.5px;
+  margin-right: 7.5px;
+  width: 345px;
+  height: 74px;
+  position: relative;
+}
+/* line 67, ../scss/_mixins.scss */
+#CalculatorView .plate-blue-edge #to-insert .text-container {
+  position: absolute;
+  padding: 0;
+  width: 315px;
+  left: 15px;
+  line-height: 74px;
+}
+/* line 75, ../scss/_mixins.scss */
+#CalculatorView .plate-blue-edge #to-insert .tf-l {
+  width: 15px;
+  height: 74px;
+  left: 0px;
+  position: absolute;
+  background: url("../../img/ui/corejs/input/min_cash_calc_l.jpg") 0px top no-repeat;
+}
+/* line 82, ../scss/_mixins.scss */
+#CalculatorView .plate-blue-edge #to-insert .tf-c {
+  width: 315px;
+  height: 74px;
+  position: absolute;
+  left: 15px;
+  background: url("../../img/ui/corejs/input/min_cash_calc_c.jpg");
+}
+/* line 89, ../scss/_mixins.scss */
+#CalculatorView .plate-blue-edge #to-insert .tf-r {
+  width: 15px;
+  height: 74px;
+  position: absolute;
+  left: 330px;
+  background: url("../../img/ui/corejs/input/min_cash_calc_r.jpg") 0px top no-repeat;
+}
+/* line 145, ../scss/_CalculatorView.scss */
+#CalculatorView .plate-blue-edge #to-insert .text-container {
+  color: white;
+  font-size: 55px;
+  font-weight: bold;
+  text-align: left;
+  text-align: center;
+}
+/* line 152, ../scss/_CalculatorView.scss */
+#CalculatorView .plate-blue-edge #sys-commission, #CalculatorView .plate-blue-edge #add-commission {
+  width: 250px;
+  margin-left: 55px;
+  margin-right: 55px;
+  width: 250px;
+  height: 54px;
+  position: relative;
+}
+/* line 67, ../scss/_mixins.scss */
+#CalculatorView .plate-blue-edge #sys-commission .text-container, #CalculatorView .plate-blue-edge #add-commission .text-container {
+  position: absolute;
+  padding: 0;
+  width: 214px;
+  left: 18px;
+  line-height: 54px;
+}
+/* line 75, ../scss/_mixins.scss */
+#CalculatorView .plate-blue-edge #sys-commission .tf-l, #CalculatorView .plate-blue-edge #add-commission .tf-l {
+  width: 18px;
+  height: 54px;
+  left: 0px;
+  position: absolute;
+  background: url("../../img/ui/corejs/input/commiss_calc_l.jpg") 0px top no-repeat;
+}
+/* line 82, ../scss/_mixins.scss */
+#CalculatorView .plate-blue-edge #sys-commission .tf-c, #CalculatorView .plate-blue-edge #add-commission .tf-c {
+  width: 214px;
+  height: 54px;
+  position: absolute;
+  left: 18px;
+  background: url("../../img/ui/corejs/input/commiss_calc_c.jpg");
+}
+/* line 89, ../scss/_mixins.scss */
+#CalculatorView .plate-blue-edge #sys-commission .tf-r, #CalculatorView .plate-blue-edge #add-commission .tf-r {
+  width: 18px;
+  height: 54px;
+  position: absolute;
+  left: 232px;
+  background: url("../../img/ui/corejs/input/commiss_calc_r.jpg") 0px top no-repeat;
+}
+/* line 156, ../scss/_CalculatorView.scss */
+#CalculatorView .plate-blue-edge #sys-commission .text-container, #CalculatorView .plate-blue-edge #add-commission .text-container {
+  color: #2266bb;
+  font-size: 35px;
+  font-weight: normal;
+  text-align: left;
+  text-align: center;
+}
+/* line 163, ../scss/_CalculatorView.scss */
+#CalculatorView .plate-blue-edge #change {
+  width: 250px;
+  margin-left: 55px;
+  margin-right: 55px;
+  width: 250px;
+  height: 52px;
+  position: relative;
+}
+/* line 67, ../scss/_mixins.scss */
+#CalculatorView .plate-blue-edge #change .text-container {
+  position: absolute;
+  padding: 0;
+  width: 218px;
+  left: 16px;
+  line-height: 52px;
+}
+/* line 75, ../scss/_mixins.scss */
+#CalculatorView .plate-blue-edge #change .tf-l {
+  width: 16px;
+  height: 52px;
+  left: 0px;
+  position: absolute;
+  background: url("../../img/ui/corejs/input/change_calc_l.jpg") 0px top no-repeat;
+}
+/* line 82, ../scss/_mixins.scss */
+#CalculatorView .plate-blue-edge #change .tf-c {
+  width: 218px;
+  height: 52px;
+  position: absolute;
+  left: 16px;
+  background: url("../../img/ui/corejs/input/change_calc_c.jpg");
+}
+/* line 89, ../scss/_mixins.scss */
+#CalculatorView .plate-blue-edge #change .tf-r {
+  width: 16px;
+  height: 52px;
+  position: absolute;
+  left: 234px;
+  background: url("../../img/ui/corejs/input/change_calc_r.jpg") 0px top no-repeat;
+}
+/* line 167, ../scss/_CalculatorView.scss */
+#CalculatorView .plate-blue-edge #change .text-container {
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+  text-align: left;
+  text-align: center;
+}
+/* line 174, ../scss/_CalculatorView.scss */
+#CalculatorView .plate-blue-edge .last {
+  padding-top: 10px;
+}
+/* line 180, ../scss/_CalculatorView.scss */
+#CalculatorView #calc-ok-button {
+  margin-top: 30px;
+  width: 304px;
+  margin-left: 48px;
+  margin-right: 48px;
+}
+
+/* line 5, ../scss/_FavouritesView.scss */
+#FavouritesView #left-button, #FavouritesView #right-button {
+  position: absolute;
+  width: 67px;
+  height: 122px;
+  top: 235px;
+}
+/* line 11, ../scss/_FavouritesView.scss */
+#FavouritesView #left-button {
+  left: 50px;
+}
+/* line 14, ../scss/_FavouritesView.scss */
+#FavouritesView #right-button {
+  right: 50px;
+}
+/* line 18, ../scss/_FavouritesView.scss */
+#FavouritesView #favourites-container {
+  width: 1000px;
+  margin-left: 140px;
+  margin-right: 140px;
+  position: absolute;
+  height: 620px;
+  overflow: hidden;
+}
+/* line 24, ../scss/_FavouritesView.scss */
+#FavouritesView #favourites-container #favourites-content {
+  height: 620px;
+  width: 10000px;
+  top: 0px;
+}
+/* line 29, ../scss/_FavouritesView.scss */
+#FavouritesView #favourites-container #favourites-content .page {
+  width: 1000px;
+  float: left;
+  display: inline;
+  position: relative;
+}
+/* line 38, ../scss/_FavouritesView.scss */
+#FavouritesView .element {
+  clear: both;
+  font-size: 38px;
+  height: 155px;
+}
+/* line 44, ../scss/_FavouritesView.scss */
+#FavouritesView #acc-radio-1, #FavouritesView #acc-radio-2, #FavouritesView #acc-radio-3, #FavouritesView #acc-radio-4, #FavouritesView #acc-radio-5, #FavouritesView #acc-radio-6, #FavouritesView #acc-radio-7, #FavouritesView #acc-radio-8, #FavouritesView #acc-radio-9, #FavouritesView #acc-radio-10, #FavouritesView #acc-radio-11, #FavouritesView #acc-radio-12, #FavouritesView #acc-radio-13, #FavouritesView #acc-radio-14, #FavouritesView #acc-radio-15, #FavouritesView #acc-radio-16, #FavouritesView #acc-radio-17, #FavouritesView #acc-radio-18, #FavouritesView #acc-radio-19, #FavouritesView #acc-radio-20, #FavouritesView #acc-radio-21, #FavouritesView #acc-radio-22, #FavouritesView #acc-radio-23, #FavouritesView #acc-radio-24, #FavouritesView #acc-radio-25, #FavouritesView #acc-radio-26, #FavouritesView #acc-radio-27, #FavouritesView #acc-radio-28, #FavouritesView #acc-radio-29, #FavouritesView #acc-radio-30, #FavouritesView #acc-radio-31, #FavouritesView #acc-radio-32, #FavouritesView #acc-radio-33, #FavouritesView #acc-radio-34, #FavouritesView #acc-radio-35, #FavouritesView #acc-radio-36, #FavouritesView #acc-radio-37, #FavouritesView #acc-radio-38, #FavouritesView #acc-radio-39, #FavouritesView #acc-radio-40, #FavouritesView #acc-radio-41, #FavouritesView #acc-radio-42, #FavouritesView #acc-radio-43, #FavouritesView #acc-radio-44, #FavouritesView #acc-radio-45, #FavouritesView #acc-radio-46, #FavouritesView #acc-radio-47, #FavouritesView #acc-radio-48, #FavouritesView #acc-radio-49, #FavouritesView #acc-radio-50, #FavouritesView #acc-radio-51, #FavouritesView #acc-radio-52, #FavouritesView #acc-radio-53, #FavouritesView #acc-radio-54, #FavouritesView #acc-radio-55, #FavouritesView #acc-radio-56, #FavouritesView #acc-radio-57, #FavouritesView #acc-radio-58, #FavouritesView #acc-radio-59, #FavouritesView #acc-radio-60 {
+  float: left;
+  display: inline;
+  text-align: left;
+  margin-left: 130px;
+  margin-right: 60px;
+}
+/* line 55, ../scss/_FavouritesView.scss */
+#FavouritesView #acc-radio-1 .button-content, #FavouritesView #acc-radio-2 .button-content, #FavouritesView #acc-radio-3 .button-content, #FavouritesView #acc-radio-4 .button-content, #FavouritesView #acc-radio-5 .button-content, #FavouritesView #acc-radio-6 .button-content, #FavouritesView #acc-radio-7 .button-content, #FavouritesView #acc-radio-8 .button-content, #FavouritesView #acc-radio-9 .button-content, #FavouritesView #acc-radio-10 .button-content, #FavouritesView #acc-radio-11 .button-content, #FavouritesView #acc-radio-12 .button-content, #FavouritesView #acc-radio-13 .button-content, #FavouritesView #acc-radio-14 .button-content, #FavouritesView #acc-radio-15 .button-content, #FavouritesView #acc-radio-16 .button-content, #FavouritesView #acc-radio-17 .button-content, #FavouritesView #acc-radio-18 .button-content, #FavouritesView #acc-radio-19 .button-content, #FavouritesView #acc-radio-20 .button-content, #FavouritesView #acc-radio-21 .button-content, #FavouritesView #acc-radio-22 .button-content, #FavouritesView #acc-radio-23 .button-content, #FavouritesView #acc-radio-24 .button-content, #FavouritesView #acc-radio-25 .button-content, #FavouritesView #acc-radio-26 .button-content, #FavouritesView #acc-radio-27 .button-content, #FavouritesView #acc-radio-28 .button-content, #FavouritesView #acc-radio-29 .button-content, #FavouritesView #acc-radio-30 .button-content, #FavouritesView #acc-radio-31 .button-content, #FavouritesView #acc-radio-32 .button-content, #FavouritesView #acc-radio-33 .button-content, #FavouritesView #acc-radio-34 .button-content, #FavouritesView #acc-radio-35 .button-content, #FavouritesView #acc-radio-36 .button-content, #FavouritesView #acc-radio-37 .button-content, #FavouritesView #acc-radio-38 .button-content, #FavouritesView #acc-radio-39 .button-content, #FavouritesView #acc-radio-40 .button-content, #FavouritesView #acc-radio-41 .button-content, #FavouritesView #acc-radio-42 .button-content, #FavouritesView #acc-radio-43 .button-content, #FavouritesView #acc-radio-44 .button-content, #FavouritesView #acc-radio-45 .button-content, #FavouritesView #acc-radio-46 .button-content, #FavouritesView #acc-radio-47 .button-content, #FavouritesView #acc-radio-48 .button-content, #FavouritesView #acc-radio-49 .button-content, #FavouritesView #acc-radio-50 .button-content, #FavouritesView #acc-radio-51 .button-content, #FavouritesView #acc-radio-52 .button-content, #FavouritesView #acc-radio-53 .button-content, #FavouritesView #acc-radio-54 .button-content, #FavouritesView #acc-radio-55 .button-content, #FavouritesView #acc-radio-56 .button-content, #FavouritesView #acc-radio-57 .button-content, #FavouritesView #acc-radio-58 .button-content, #FavouritesView #acc-radio-59 .button-content, #FavouritesView #acc-radio-60 .button-content {
+  font-weight: normal;
+  line-height: 1.5;
+  padding-left: 15px;
+  padding-top: 15px;
+}
+/* line 60, ../scss/_FavouritesView.scss */
+#FavouritesView #acc-radio-1 .button-content strong, #FavouritesView #acc-radio-2 .button-content strong, #FavouritesView #acc-radio-3 .button-content strong, #FavouritesView #acc-radio-4 .button-content strong, #FavouritesView #acc-radio-5 .button-content strong, #FavouritesView #acc-radio-6 .button-content strong, #FavouritesView #acc-radio-7 .button-content strong, #FavouritesView #acc-radio-8 .button-content strong, #FavouritesView #acc-radio-9 .button-content strong, #FavouritesView #acc-radio-10 .button-content strong, #FavouritesView #acc-radio-11 .button-content strong, #FavouritesView #acc-radio-12 .button-content strong, #FavouritesView #acc-radio-13 .button-content strong, #FavouritesView #acc-radio-14 .button-content strong, #FavouritesView #acc-radio-15 .button-content strong, #FavouritesView #acc-radio-16 .button-content strong, #FavouritesView #acc-radio-17 .button-content strong, #FavouritesView #acc-radio-18 .button-content strong, #FavouritesView #acc-radio-19 .button-content strong, #FavouritesView #acc-radio-20 .button-content strong, #FavouritesView #acc-radio-21 .button-content strong, #FavouritesView #acc-radio-22 .button-content strong, #FavouritesView #acc-radio-23 .button-content strong, #FavouritesView #acc-radio-24 .button-content strong, #FavouritesView #acc-radio-25 .button-content strong, #FavouritesView #acc-radio-26 .button-content strong, #FavouritesView #acc-radio-27 .button-content strong, #FavouritesView #acc-radio-28 .button-content strong, #FavouritesView #acc-radio-29 .button-content strong, #FavouritesView #acc-radio-30 .button-content strong, #FavouritesView #acc-radio-31 .button-content strong, #FavouritesView #acc-radio-32 .button-content strong, #FavouritesView #acc-radio-33 .button-content strong, #FavouritesView #acc-radio-34 .button-content strong, #FavouritesView #acc-radio-35 .button-content strong, #FavouritesView #acc-radio-36 .button-content strong, #FavouritesView #acc-radio-37 .button-content strong, #FavouritesView #acc-radio-38 .button-content strong, #FavouritesView #acc-radio-39 .button-content strong, #FavouritesView #acc-radio-40 .button-content strong, #FavouritesView #acc-radio-41 .button-content strong, #FavouritesView #acc-radio-42 .button-content strong, #FavouritesView #acc-radio-43 .button-content strong, #FavouritesView #acc-radio-44 .button-content strong, #FavouritesView #acc-radio-45 .button-content strong, #FavouritesView #acc-radio-46 .button-content strong, #FavouritesView #acc-radio-47 .button-content strong, #FavouritesView #acc-radio-48 .button-content strong, #FavouritesView #acc-radio-49 .button-content strong, #FavouritesView #acc-radio-50 .button-content strong, #FavouritesView #acc-radio-51 .button-content strong, #FavouritesView #acc-radio-52 .button-content strong, #FavouritesView #acc-radio-53 .button-content strong, #FavouritesView #acc-radio-54 .button-content strong, #FavouritesView #acc-radio-55 .button-content strong, #FavouritesView #acc-radio-56 .button-content strong, #FavouritesView #acc-radio-57 .button-content strong, #FavouritesView #acc-radio-58 .button-content strong, #FavouritesView #acc-radio-59 .button-content strong, #FavouritesView #acc-radio-60 .button-content strong {
+  font-weight: bold;
+  font-size: 28px;
+}
+/* line 66, ../scss/_FavouritesView.scss */
+#FavouritesView #acc-radio-1 .button-ico, #FavouritesView #acc-radio-2 .button-ico, #FavouritesView #acc-radio-3 .button-ico, #FavouritesView #acc-radio-4 .button-ico, #FavouritesView #acc-radio-5 .button-ico, #FavouritesView #acc-radio-6 .button-ico, #FavouritesView #acc-radio-7 .button-ico, #FavouritesView #acc-radio-8 .button-ico, #FavouritesView #acc-radio-9 .button-ico, #FavouritesView #acc-radio-10 .button-ico, #FavouritesView #acc-radio-11 .button-ico, #FavouritesView #acc-radio-12 .button-ico, #FavouritesView #acc-radio-13 .button-ico, #FavouritesView #acc-radio-14 .button-ico, #FavouritesView #acc-radio-15 .button-ico, #FavouritesView #acc-radio-16 .button-ico, #FavouritesView #acc-radio-17 .button-ico, #FavouritesView #acc-radio-18 .button-ico, #FavouritesView #acc-radio-19 .button-ico, #FavouritesView #acc-radio-20 .button-ico, #FavouritesView #acc-radio-21 .button-ico, #FavouritesView #acc-radio-22 .button-ico, #FavouritesView #acc-radio-23 .button-ico, #FavouritesView #acc-radio-24 .button-ico, #FavouritesView #acc-radio-25 .button-ico, #FavouritesView #acc-radio-26 .button-ico, #FavouritesView #acc-radio-27 .button-ico, #FavouritesView #acc-radio-28 .button-ico, #FavouritesView #acc-radio-29 .button-ico, #FavouritesView #acc-radio-30 .button-ico, #FavouritesView #acc-radio-31 .button-ico, #FavouritesView #acc-radio-32 .button-ico, #FavouritesView #acc-radio-33 .button-ico, #FavouritesView #acc-radio-34 .button-ico, #FavouritesView #acc-radio-35 .button-ico, #FavouritesView #acc-radio-36 .button-ico, #FavouritesView #acc-radio-37 .button-ico, #FavouritesView #acc-radio-38 .button-ico, #FavouritesView #acc-radio-39 .button-ico, #FavouritesView #acc-radio-40 .button-ico, #FavouritesView #acc-radio-41 .button-ico, #FavouritesView #acc-radio-42 .button-ico, #FavouritesView #acc-radio-43 .button-ico, #FavouritesView #acc-radio-44 .button-ico, #FavouritesView #acc-radio-45 .button-ico, #FavouritesView #acc-radio-46 .button-ico, #FavouritesView #acc-radio-47 .button-ico, #FavouritesView #acc-radio-48 .button-ico, #FavouritesView #acc-radio-49 .button-ico, #FavouritesView #acc-radio-50 .button-ico, #FavouritesView #acc-radio-51 .button-ico, #FavouritesView #acc-radio-52 .button-ico, #FavouritesView #acc-radio-53 .button-ico, #FavouritesView #acc-radio-54 .button-ico, #FavouritesView #acc-radio-55 .button-ico, #FavouritesView #acc-radio-56 .button-ico, #FavouritesView #acc-radio-57 .button-ico, #FavouritesView #acc-radio-58 .button-ico, #FavouritesView #acc-radio-59 .button-ico, #FavouritesView #acc-radio-60 .button-ico {
+  float: left;
+  display: inline;
+  background: url("../../img/ui/corejs/icons/checkbox_off.jpg") center center no-repeat;
+  width: 80px;
+  height: 146px;
+}
+/* line 74, ../scss/_FavouritesView.scss */
+#FavouritesView #acc-radio-1.pressed, #FavouritesView .pressed#acc-radio-2, #FavouritesView .pressed#acc-radio-3, #FavouritesView .pressed#acc-radio-4, #FavouritesView .pressed#acc-radio-5, #FavouritesView .pressed#acc-radio-6, #FavouritesView .pressed#acc-radio-7, #FavouritesView .pressed#acc-radio-8, #FavouritesView .pressed#acc-radio-9, #FavouritesView .pressed#acc-radio-10, #FavouritesView .pressed#acc-radio-11, #FavouritesView .pressed#acc-radio-12, #FavouritesView .pressed#acc-radio-13, #FavouritesView .pressed#acc-radio-14, #FavouritesView .pressed#acc-radio-15, #FavouritesView .pressed#acc-radio-16, #FavouritesView .pressed#acc-radio-17, #FavouritesView .pressed#acc-radio-18, #FavouritesView .pressed#acc-radio-19, #FavouritesView .pressed#acc-radio-20, #FavouritesView .pressed#acc-radio-21, #FavouritesView .pressed#acc-radio-22, #FavouritesView .pressed#acc-radio-23, #FavouritesView .pressed#acc-radio-24, #FavouritesView .pressed#acc-radio-25, #FavouritesView .pressed#acc-radio-26, #FavouritesView .pressed#acc-radio-27, #FavouritesView .pressed#acc-radio-28, #FavouritesView .pressed#acc-radio-29, #FavouritesView .pressed#acc-radio-30, #FavouritesView .pressed#acc-radio-31, #FavouritesView .pressed#acc-radio-32, #FavouritesView .pressed#acc-radio-33, #FavouritesView .pressed#acc-radio-34, #FavouritesView .pressed#acc-radio-35, #FavouritesView .pressed#acc-radio-36, #FavouritesView .pressed#acc-radio-37, #FavouritesView .pressed#acc-radio-38, #FavouritesView .pressed#acc-radio-39, #FavouritesView .pressed#acc-radio-40, #FavouritesView .pressed#acc-radio-41, #FavouritesView .pressed#acc-radio-42, #FavouritesView .pressed#acc-radio-43, #FavouritesView .pressed#acc-radio-44, #FavouritesView .pressed#acc-radio-45, #FavouritesView .pressed#acc-radio-46, #FavouritesView .pressed#acc-radio-47, #FavouritesView .pressed#acc-radio-48, #FavouritesView .pressed#acc-radio-49, #FavouritesView .pressed#acc-radio-50, #FavouritesView .pressed#acc-radio-51, #FavouritesView .pressed#acc-radio-52, #FavouritesView .pressed#acc-radio-53, #FavouritesView .pressed#acc-radio-54, #FavouritesView .pressed#acc-radio-55, #FavouritesView .pressed#acc-radio-56, #FavouritesView .pressed#acc-radio-57, #FavouritesView .pressed#acc-radio-58, #FavouritesView .pressed#acc-radio-59, #FavouritesView .pressed#acc-radio-60, #FavouritesView #acc-radio-1.toggled, #FavouritesView .toggled#acc-radio-2, #FavouritesView .toggled#acc-radio-3, #FavouritesView .toggled#acc-radio-4, #FavouritesView .toggled#acc-radio-5, #FavouritesView .toggled#acc-radio-6, #FavouritesView .toggled#acc-radio-7, #FavouritesView .toggled#acc-radio-8, #FavouritesView .toggled#acc-radio-9, #FavouritesView .toggled#acc-radio-10, #FavouritesView .toggled#acc-radio-11, #FavouritesView .toggled#acc-radio-12, #FavouritesView .toggled#acc-radio-13, #FavouritesView .toggled#acc-radio-14, #FavouritesView .toggled#acc-radio-15, #FavouritesView .toggled#acc-radio-16, #FavouritesView .toggled#acc-radio-17, #FavouritesView .toggled#acc-radio-18, #FavouritesView .toggled#acc-radio-19, #FavouritesView .toggled#acc-radio-20, #FavouritesView .toggled#acc-radio-21, #FavouritesView .toggled#acc-radio-22, #FavouritesView .toggled#acc-radio-23, #FavouritesView .toggled#acc-radio-24, #FavouritesView .toggled#acc-radio-25, #FavouritesView .toggled#acc-radio-26, #FavouritesView .toggled#acc-radio-27, #FavouritesView .toggled#acc-radio-28, #FavouritesView .toggled#acc-radio-29, #FavouritesView .toggled#acc-radio-30, #FavouritesView .toggled#acc-radio-31, #FavouritesView .toggled#acc-radio-32, #FavouritesView .toggled#acc-radio-33, #FavouritesView .toggled#acc-radio-34, #FavouritesView .toggled#acc-radio-35, #FavouritesView .toggled#acc-radio-36, #FavouritesView .toggled#acc-radio-37, #FavouritesView .toggled#acc-radio-38, #FavouritesView .toggled#acc-radio-39, #FavouritesView .toggled#acc-radio-40, #FavouritesView .toggled#acc-radio-41, #FavouritesView .toggled#acc-radio-42, #FavouritesView .toggled#acc-radio-43, #FavouritesView .toggled#acc-radio-44, #FavouritesView .toggled#acc-radio-45, #FavouritesView .toggled#acc-radio-46, #FavouritesView .toggled#acc-radio-47, #FavouritesView .toggled#acc-radio-48, #FavouritesView .toggled#acc-radio-49, #FavouritesView .toggled#acc-radio-50, #FavouritesView .toggled#acc-radio-51, #FavouritesView .toggled#acc-radio-52, #FavouritesView .toggled#acc-radio-53, #FavouritesView .toggled#acc-radio-54, #FavouritesView .toggled#acc-radio-55, #FavouritesView .toggled#acc-radio-56, #FavouritesView .toggled#acc-radio-57, #FavouritesView .toggled#acc-radio-58, #FavouritesView .toggled#acc-radio-59, #FavouritesView .toggled#acc-radio-60 {
+  background: url("../../img/ui/corejs/buttons/blank_gray_big_pressed.jpg") center center no-repeat;
+}
+/* line 78, ../scss/_FavouritesView.scss */
+#FavouritesView #acc-radio-1.pressed .button-ico, #FavouritesView .pressed#acc-radio-2 .button-ico, #FavouritesView .pressed#acc-radio-3 .button-ico, #FavouritesView .pressed#acc-radio-4 .button-ico, #FavouritesView .pressed#acc-radio-5 .button-ico, #FavouritesView .pressed#acc-radio-6 .button-ico, #FavouritesView .pressed#acc-radio-7 .button-ico, #FavouritesView .pressed#acc-radio-8 .button-ico, #FavouritesView .pressed#acc-radio-9 .button-ico, #FavouritesView .pressed#acc-radio-10 .button-ico, #FavouritesView .pressed#acc-radio-11 .button-ico, #FavouritesView .pressed#acc-radio-12 .button-ico, #FavouritesView .pressed#acc-radio-13 .button-ico, #FavouritesView .pressed#acc-radio-14 .button-ico, #FavouritesView .pressed#acc-radio-15 .button-ico, #FavouritesView .pressed#acc-radio-16 .button-ico, #FavouritesView .pressed#acc-radio-17 .button-ico, #FavouritesView .pressed#acc-radio-18 .button-ico, #FavouritesView .pressed#acc-radio-19 .button-ico, #FavouritesView .pressed#acc-radio-20 .button-ico, #FavouritesView .pressed#acc-radio-21 .button-ico, #FavouritesView .pressed#acc-radio-22 .button-ico, #FavouritesView .pressed#acc-radio-23 .button-ico, #FavouritesView .pressed#acc-radio-24 .button-ico, #FavouritesView .pressed#acc-radio-25 .button-ico, #FavouritesView .pressed#acc-radio-26 .button-ico, #FavouritesView .pressed#acc-radio-27 .button-ico, #FavouritesView .pressed#acc-radio-28 .button-ico, #FavouritesView .pressed#acc-radio-29 .button-ico, #FavouritesView .pressed#acc-radio-30 .button-ico, #FavouritesView .pressed#acc-radio-31 .button-ico, #FavouritesView .pressed#acc-radio-32 .button-ico, #FavouritesView .pressed#acc-radio-33 .button-ico, #FavouritesView .pressed#acc-radio-34 .button-ico, #FavouritesView .pressed#acc-radio-35 .button-ico, #FavouritesView .pressed#acc-radio-36 .button-ico, #FavouritesView .pressed#acc-radio-37 .button-ico, #FavouritesView .pressed#acc-radio-38 .button-ico, #FavouritesView .pressed#acc-radio-39 .button-ico, #FavouritesView .pressed#acc-radio-40 .button-ico, #FavouritesView .pressed#acc-radio-41 .button-ico, #FavouritesView .pressed#acc-radio-42 .button-ico, #FavouritesView .pressed#acc-radio-43 .button-ico, #FavouritesView .pressed#acc-radio-44 .button-ico, #FavouritesView .pressed#acc-radio-45 .button-ico, #FavouritesView .pressed#acc-radio-46 .button-ico, #FavouritesView .pressed#acc-radio-47 .button-ico, #FavouritesView .pressed#acc-radio-48 .button-ico, #FavouritesView .pressed#acc-radio-49 .button-ico, #FavouritesView .pressed#acc-radio-50 .button-ico, #FavouritesView .pressed#acc-radio-51 .button-ico, #FavouritesView .pressed#acc-radio-52 .button-ico, #FavouritesView .pressed#acc-radio-53 .button-ico, #FavouritesView .pressed#acc-radio-54 .button-ico, #FavouritesView .pressed#acc-radio-55 .button-ico, #FavouritesView .pressed#acc-radio-56 .button-ico, #FavouritesView .pressed#acc-radio-57 .button-ico, #FavouritesView .pressed#acc-radio-58 .button-ico, #FavouritesView .pressed#acc-radio-59 .button-ico, #FavouritesView .pressed#acc-radio-60 .button-ico, #FavouritesView #acc-radio-1.toggled .button-ico, #FavouritesView .toggled#acc-radio-2 .button-ico, #FavouritesView .toggled#acc-radio-3 .button-ico, #FavouritesView .toggled#acc-radio-4 .button-ico, #FavouritesView .toggled#acc-radio-5 .button-ico, #FavouritesView .toggled#acc-radio-6 .button-ico, #FavouritesView .toggled#acc-radio-7 .button-ico, #FavouritesView .toggled#acc-radio-8 .button-ico, #FavouritesView .toggled#acc-radio-9 .button-ico, #FavouritesView .toggled#acc-radio-10 .button-ico, #FavouritesView .toggled#acc-radio-11 .button-ico, #FavouritesView .toggled#acc-radio-12 .button-ico, #FavouritesView .toggled#acc-radio-13 .button-ico, #FavouritesView .toggled#acc-radio-14 .button-ico, #FavouritesView .toggled#acc-radio-15 .button-ico, #FavouritesView .toggled#acc-radio-16 .button-ico, #FavouritesView .toggled#acc-radio-17 .button-ico, #FavouritesView .toggled#acc-radio-18 .button-ico, #FavouritesView .toggled#acc-radio-19 .button-ico, #FavouritesView .toggled#acc-radio-20 .button-ico, #FavouritesView .toggled#acc-radio-21 .button-ico, #FavouritesView .toggled#acc-radio-22 .button-ico, #FavouritesView .toggled#acc-radio-23 .button-ico, #FavouritesView .toggled#acc-radio-24 .button-ico, #FavouritesView .toggled#acc-radio-25 .button-ico, #FavouritesView .toggled#acc-radio-26 .button-ico, #FavouritesView .toggled#acc-radio-27 .button-ico, #FavouritesView .toggled#acc-radio-28 .button-ico, #FavouritesView .toggled#acc-radio-29 .button-ico, #FavouritesView .toggled#acc-radio-30 .button-ico, #FavouritesView .toggled#acc-radio-31 .button-ico, #FavouritesView .toggled#acc-radio-32 .button-ico, #FavouritesView .toggled#acc-radio-33 .button-ico, #FavouritesView .toggled#acc-radio-34 .button-ico, #FavouritesView .toggled#acc-radio-35 .button-ico, #FavouritesView .toggled#acc-radio-36 .button-ico, #FavouritesView .toggled#acc-radio-37 .button-ico, #FavouritesView .toggled#acc-radio-38 .button-ico, #FavouritesView .toggled#acc-radio-39 .button-ico, #FavouritesView .toggled#acc-radio-40 .button-ico, #FavouritesView .toggled#acc-radio-41 .button-ico, #FavouritesView .toggled#acc-radio-42 .button-ico, #FavouritesView .toggled#acc-radio-43 .button-ico, #FavouritesView .toggled#acc-radio-44 .button-ico, #FavouritesView .toggled#acc-radio-45 .button-ico, #FavouritesView .toggled#acc-radio-46 .button-ico, #FavouritesView .toggled#acc-radio-47 .button-ico, #FavouritesView .toggled#acc-radio-48 .button-ico, #FavouritesView .toggled#acc-radio-49 .button-ico, #FavouritesView .toggled#acc-radio-50 .button-ico, #FavouritesView .toggled#acc-radio-51 .button-ico, #FavouritesView .toggled#acc-radio-52 .button-ico, #FavouritesView .toggled#acc-radio-53 .button-ico, #FavouritesView .toggled#acc-radio-54 .button-ico, #FavouritesView .toggled#acc-radio-55 .button-ico, #FavouritesView .toggled#acc-radio-56 .button-ico, #FavouritesView .toggled#acc-radio-57 .button-ico, #FavouritesView .toggled#acc-radio-58 .button-ico, #FavouritesView .toggled#acc-radio-59 .button-ico, #FavouritesView .toggled#acc-radio-60 .button-ico {
+  background: url("../../img/ui/corejs/icons/checkbox_on.jpg") center center no-repeat;
+}
+/* line 85, ../scss/_FavouritesView.scss */
+#FavouritesView #change-button-1, #FavouritesView #change-button-2, #FavouritesView #change-button-3, #FavouritesView #change-button-4, #FavouritesView #change-button-5, #FavouritesView #change-button-6, #FavouritesView #change-button-7, #FavouritesView #change-button-8, #FavouritesView #change-button-9, #FavouritesView #change-button-10, #FavouritesView #change-button-11, #FavouritesView #change-button-12, #FavouritesView #change-button-13, #FavouritesView #change-button-14, #FavouritesView #change-button-15, #FavouritesView #change-button-16, #FavouritesView #change-button-17, #FavouritesView #change-button-18, #FavouritesView #change-button-19, #FavouritesView #change-button-20, #FavouritesView #change-button-21, #FavouritesView #change-button-22, #FavouritesView #change-button-23, #FavouritesView #change-button-24, #FavouritesView #change-button-25, #FavouritesView #change-button-26, #FavouritesView #change-button-27, #FavouritesView #change-button-28, #FavouritesView #change-button-29, #FavouritesView #change-button-30, #FavouritesView #change-button-31, #FavouritesView #change-button-32, #FavouritesView #change-button-33, #FavouritesView #change-button-34, #FavouritesView #change-button-35, #FavouritesView #change-button-36, #FavouritesView #change-button-37, #FavouritesView #change-button-38, #FavouritesView #change-button-39, #FavouritesView #change-button-40, #FavouritesView #change-button-41, #FavouritesView #change-button-42, #FavouritesView #change-button-43, #FavouritesView #change-button-44, #FavouritesView #change-button-45, #FavouritesView #change-button-46, #FavouritesView #change-button-47, #FavouritesView #change-button-48, #FavouritesView #change-button-49, #FavouritesView #change-button-50, #FavouritesView #change-button-51, #FavouritesView #change-button-52, #FavouritesView #change-button-53, #FavouritesView #change-button-54, #FavouritesView #change-button-55, #FavouritesView #change-button-56, #FavouritesView #change-button-57, #FavouritesView #change-button-58, #FavouritesView #change-button-59, #FavouritesView #change-button-60 {
+  float: left;
+  margin-top: 28px;
+}
+/* line 91, ../scss/_FavouritesView.scss */
+#FavouritesView #change-button-1 .button-content, #FavouritesView #change-button-2 .button-content, #FavouritesView #change-button-3 .button-content, #FavouritesView #change-button-4 .button-content, #FavouritesView #change-button-5 .button-content, #FavouritesView #change-button-6 .button-content, #FavouritesView #change-button-7 .button-content, #FavouritesView #change-button-8 .button-content, #FavouritesView #change-button-9 .button-content, #FavouritesView #change-button-10 .button-content, #FavouritesView #change-button-11 .button-content, #FavouritesView #change-button-12 .button-content, #FavouritesView #change-button-13 .button-content, #FavouritesView #change-button-14 .button-content, #FavouritesView #change-button-15 .button-content, #FavouritesView #change-button-16 .button-content, #FavouritesView #change-button-17 .button-content, #FavouritesView #change-button-18 .button-content, #FavouritesView #change-button-19 .button-content, #FavouritesView #change-button-20 .button-content, #FavouritesView #change-button-21 .button-content, #FavouritesView #change-button-22 .button-content, #FavouritesView #change-button-23 .button-content, #FavouritesView #change-button-24 .button-content, #FavouritesView #change-button-25 .button-content, #FavouritesView #change-button-26 .button-content, #FavouritesView #change-button-27 .button-content, #FavouritesView #change-button-28 .button-content, #FavouritesView #change-button-29 .button-content, #FavouritesView #change-button-30 .button-content, #FavouritesView #change-button-31 .button-content, #FavouritesView #change-button-32 .button-content, #FavouritesView #change-button-33 .button-content, #FavouritesView #change-button-34 .button-content, #FavouritesView #change-button-35 .button-content, #FavouritesView #change-button-36 .button-content, #FavouritesView #change-button-37 .button-content, #FavouritesView #change-button-38 .button-content, #FavouritesView #change-button-39 .button-content, #FavouritesView #change-button-40 .button-content, #FavouritesView #change-button-41 .button-content, #FavouritesView #change-button-42 .button-content, #FavouritesView #change-button-43 .button-content, #FavouritesView #change-button-44 .button-content, #FavouritesView #change-button-45 .button-content, #FavouritesView #change-button-46 .button-content, #FavouritesView #change-button-47 .button-content, #FavouritesView #change-button-48 .button-content, #FavouritesView #change-button-49 .button-content, #FavouritesView #change-button-50 .button-content, #FavouritesView #change-button-51 .button-content, #FavouritesView #change-button-52 .button-content, #FavouritesView #change-button-53 .button-content, #FavouritesView #change-button-54 .button-content, #FavouritesView #change-button-55 .button-content, #FavouritesView #change-button-56 .button-content, #FavouritesView #change-button-57 .button-content, #FavouritesView #change-button-58 .button-content, #FavouritesView #change-button-59 .button-content, #FavouritesView #change-button-60 .button-content {
+  padding-left: 25px;
+  width: 150px;
+  font-weight: bold;
+  text-align: left;
+  float: left;
+  display: inline;
+}
+/* line 100, ../scss/_FavouritesView.scss */
+#FavouritesView #change-button-1 .button-ico, #FavouritesView #change-button-2 .button-ico, #FavouritesView #change-button-3 .button-ico, #FavouritesView #change-button-4 .button-ico, #FavouritesView #change-button-5 .button-ico, #FavouritesView #change-button-6 .button-ico, #FavouritesView #change-button-7 .button-ico, #FavouritesView #change-button-8 .button-ico, #FavouritesView #change-button-9 .button-ico, #FavouritesView #change-button-10 .button-ico, #FavouritesView #change-button-11 .button-ico, #FavouritesView #change-button-12 .button-ico, #FavouritesView #change-button-13 .button-ico, #FavouritesView #change-button-14 .button-ico, #FavouritesView #change-button-15 .button-ico, #FavouritesView #change-button-16 .button-ico, #FavouritesView #change-button-17 .button-ico, #FavouritesView #change-button-18 .button-ico, #FavouritesView #change-button-19 .button-ico, #FavouritesView #change-button-20 .button-ico, #FavouritesView #change-button-21 .button-ico, #FavouritesView #change-button-22 .button-ico, #FavouritesView #change-button-23 .button-ico, #FavouritesView #change-button-24 .button-ico, #FavouritesView #change-button-25 .button-ico, #FavouritesView #change-button-26 .button-ico, #FavouritesView #change-button-27 .button-ico, #FavouritesView #change-button-28 .button-ico, #FavouritesView #change-button-29 .button-ico, #FavouritesView #change-button-30 .button-ico, #FavouritesView #change-button-31 .button-ico, #FavouritesView #change-button-32 .button-ico, #FavouritesView #change-button-33 .button-ico, #FavouritesView #change-button-34 .button-ico, #FavouritesView #change-button-35 .button-ico, #FavouritesView #change-button-36 .button-ico, #FavouritesView #change-button-37 .button-ico, #FavouritesView #change-button-38 .button-ico, #FavouritesView #change-button-39 .button-ico, #FavouritesView #change-button-40 .button-ico, #FavouritesView #change-button-41 .button-ico, #FavouritesView #change-button-42 .button-ico, #FavouritesView #change-button-43 .button-ico, #FavouritesView #change-button-44 .button-ico, #FavouritesView #change-button-45 .button-ico, #FavouritesView #change-button-46 .button-ico, #FavouritesView #change-button-47 .button-ico, #FavouritesView #change-button-48 .button-ico, #FavouritesView #change-button-49 .button-ico, #FavouritesView #change-button-50 .button-ico, #FavouritesView #change-button-51 .button-ico, #FavouritesView #change-button-52 .button-ico, #FavouritesView #change-button-53 .button-ico, #FavouritesView #change-button-54 .button-ico, #FavouritesView #change-button-55 .button-ico, #FavouritesView #change-button-56 .button-ico, #FavouritesView #change-button-57 .button-ico, #FavouritesView #change-button-58 .button-ico, #FavouritesView #change-button-59 .button-ico, #FavouritesView #change-button-60 .button-ico {
+  float: left;
+  display: inline;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+/* line 3, ../scss/_FinalView.scss */
+#FinalView h2 {
+  width: 1280px;
+  margin-left: 0px;
+  margin-right: 0px;
+  line-height: normal;
+  text-align: center;
+  font-size: 40px;
+  font-weight: normal;
+  padding-bottom: 40px;
+}
+/* line 12, ../scss/_FinalView.scss */
+#FinalView .info {
+  margin-top: 280px;
+  color: #666666;
+  text-align: center;
+}
+/* line 16, ../scss/_FinalView.scss */
+#FinalView .info strong {
+  font-size: 22px;
+  font-weight: bold;
+}
+/* line 22, ../scss/_FinalView.scss */
+#FinalView p.fiscal {
+  position: absolute;
+  width: 1280px;
+  top: 160px;
+  color: #2266bb;
+  font-size: 20px;
+  text-align: center;
+}

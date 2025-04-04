@@ -1,0 +1,72 @@
+
+<?xml version="1.0" encoding="utf-8" ?>
+<objects
+	xmlns:util="http://www.springactionscript.org/schema/util"
+	>
+	<property file="afisha-config.properties"/>
+		
+	<!--object 
+		id="mainInstance"
+		class="ru.mobw.afisha.Main"
+		factory-method="getView"
+		/-->
+	<util:invoke 
+		target-class="ru.mobw.afisha.Main" 
+		target-method="getView" 
+		id="mainInstance"
+		/>
+	
+	<object
+		id="appConfig"
+		class="ru.mobw.coreas3.app.config.Config">
+		<property name="debugMode" value="${config.debugMode}"/>
+		<property name="testMode" value="${config.testMode}"/>
+		<property name="exitURL" value="${config.exitURL}"/>
+		<property name="phonesListURL" value="${config.phonesListURL}"/>
+		<property name="phonesListFallbackURL" value="${config.phonesListFallbackURL}"/>
+		<property name="noPrinterAlertString" value="${err.noPrinter}"/>		
+		<property name="version" value="${config.version}"/>
+		<property name="appName" value="${config.appName}"/>
+		<property name="lkDisabledAlertString" value="${err.lkDisabled}"/>
+		<property name="prvDisabledAlertString" value="${err.prvDenied}"/>
+		<property name="serverErrorString" value="${err.serviceCallError}"/>
+		<property name="serverTimeoutString" value="${err.timeout}"/>
+		<property name="insufficientCashAlertString" value="${msg.insufficientCash}"/>
+		<property name="maxCashExceeded" value="${err.overSum}"/>
+		<property name="insufficientBalance" value="${msg.insufficientBalance}"/>
+		<property name="paymentTitle" value="${payment.title}"/>
+		<property name="topAdv" value="${check.topAdv}"/>
+		<property name="bottomAdv" value="${check.bottomAdv}"/>
+		<property name="walletPrvId" value="${config.walletPrvId}"/>
+		<property name="maxCash" value="${num.maxCash}"/>
+		<property name="inflateResponse" value="${config.response.inflate}"/>
+		
+		<property name="providerIDsOSMP">
+			<value>
+				<dictionary>
+					<entry value="7803">
+						<key>afisha</key>
+					</entry>
+				</dictionary>
+			</value>
+		</property>
+		<property name="providerNames">
+			<value>
+				<dictionary>
+					<entry value="Рамблер Касса">
+						<key>afisha</key>
+					</entry>
+				</dictionary>
+			</value>
+		</property>
+	</object>
+	
+	<object 
+		id="application" 
+		class="ru.mobw.coreas3.app.QiwiApplication"
+		init-method="onAppCreated">
+		<property name="view" ref="mainInstance" />
+		<property name="config" ref="appConfig" />
+		<property name="flow" ref="flow"/>
+	</object>
+</objects>

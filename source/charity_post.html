@@ -1,0 +1,66 @@
+<html>
+<head>
+	<title>Groups/Providers</title>
+	<meta http-equiv="content-type" content="text/html; charset=windows-1251" />
+	<meta http-equiv="pragma" content="no-cache" />
+	<meta http-equiv="refresh" content="120; URL=./index.html" />
+	
+	<script type="text/javascript" src="./js/engine/utils.js"></script>
+	<script type="text/javascript" src="./js/engine/base.js"></script>
+	<script type="text/javascript" src="./js/engine/storage.js"></script>
+	<script type="text/javascript">
+
+	    function getMinSumm(sPrvId) {
+            switch (sPrvId.toString()) {
+                case '2'    : return '2';
+                case '4'    : return '30';
+                case '36'   : return '10';
+                case '42'   : return '2';
+                case '60'   : return '10';
+                case '79'   : return '100';
+                case '84'   : return '5';
+                case '96'   : return '10';
+                case '279'  : return '10';
+                case '303'  : return '5';
+                case '329'  : return '5';
+                case '352'  : return '5';
+                case '358'  : return '10';
+                case '383'  : return '50';
+                case '881'  : return '5';
+                default: return '1';
+            }
+        }
+	    
+	    function press() {
+            var oPayInfo = Object.deserialize(storage.get("pay_info")),
+                o = {};
+            
+            o.id = oPayInfo.prvId;
+            o.name = oPayInfo.prvName;
+            o.account = oPayInfo.account;
+            storage.put("pay_info2", o.serialize());
+            $("PrvId2").value = oPayInfo.prvId;
+            $("PrvName2").value = oPayInfo.prvName;
+            $("AccNum2").value = oPayInfo.account.substr(1).replace(new RegExp("[() -]", "g"), "");
+            $("MinCashLimit2").value = getMinSumm(oPayInfo.prvId);
+            ff.submit();
+	    }
+	    
+    </script>
+</head>
+<body onload="press();" style="margin: opx; padding: 0px; border: 0px;">
+    <form id="ff" name="ff" method="post" action="./enter_summ_delivery.html">
+        <input type="hidden" id="prv_id" name="prv_id" value="1665" />
+        <input type="hidden" id="prv_name" name="prv_name" value="Подари жизнь" />
+        <input type="hidden" id="getAccountNumber" name="getAccountNumber" value="0000000000" />
+        <input type="hidden" id="_extra_fixed_int_summ" name="_extra_fixed_int_summ" value="1" />
+        <input type="hidden" name="_extra_enter_summ_page" value="enter_summ_delivery.html" />
+        
+        <input type="hidden" name="PrvId2" value="" />
+        <input type="hidden" name="PrvName2" value="" />
+        <input type="hidden" name="AccNum2" value="" />
+        <input type="hidden" name="MinCashLimit2" value="" />
+        <input type="hidden" name="EmbedParams" value="" />  
+    </form>
+</body>
+</html>

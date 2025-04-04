@@ -1,0 +1,22 @@
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=windows-1251">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="refresh" content="300; URL=./index.html">
+</head>
+<script type="text/javascript" src="./js/engine/utils.js"></script>
+<script type="text/javascript" src="./js/engine/storage.js"></script>
+<script type="text/javascript">
+    function start(){
+      var s = top.storage.get("_qw_exit_path");
+       if(s != null && s != '')
+          window.location.href=s;
+       else
+          window.location.href='index.html';
+    }
+
+</script>
+
+<body onload="start();" bgcolor="#999999" style="border:0;margin:0">
+</body>
+</html>

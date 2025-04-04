@@ -1,0 +1,127 @@
+﻿<config>
+   <exchange_rate filter="KZT" value="rate_qiwi"/>
+   <caption_QK>Введите номер телефона в системе QIWI Кошелёк</caption_QK>
+   <prv_id>7388</prv_id>
+   <langs default_lang="ru">
+       <lang>ru</lang>
+   </langs>
+   <providers>
+   <prv prvid="21118" mask="\d+" maxLength="30" osmp_id="6151" name="A-System Group" />
+   <prv prvid="20494" mask="+7(\d{3})\d{3}-\d{2}-\d{2}" maxLength="10" osmp_id="5943" name="Activ">
+      <mask value="+7(\d{3})\d{3}-\d{2}-\d{2}">701XXXXXXX</mask>
+      <mask value="+7(\d{3})\d{3}-\d{2}-\d{2}">702XXXXXXX</mask>
+      <mask value="+7(\d{3})\d{3}-\d{2}-\d{2}">775XXXXXXX</mask>
+    </prv>
+   <prv prvid="21173" mask="\d{7}" maxLength="7" osmp_id="6152" name="Aero"/>
+   <prv prvid="21191" mask="\w+" maxLength="11" osmp_id="6154" name="Almaline"/>
+   <prv prvid="21161" mask="\d{7}" maxLength="7" osmp_id="6155" name="BeNetCom"/>
+   <prv prvid="21164" mask="\d{8}" maxLength="8" osmp_id="6156" name="BigSkidki.kz"/>
+   <prv prvid="21107" mask="\w+" maxLength="25" osmp_id="" name="CV - Job"/>
+   <prv prvid="21184" mask="\d+" maxLength="11" osmp_id="6157" name="Chocolife.me - Оплата заказа"/>
+   <prv prvid="21185" mask="\w+" maxLength="25" osmp_id="6158" name="Chocolife.me - Пополнение счета"/>
+   <prv prvid="21142" mask="\d+" maxLength="11" osmp_id="6398" name="DETECT.KZ"/>
+   <prv prvid="21093" mask="\w+" maxLength="20" osmp_id="6399" name="DNR.kz"/>
+   <prv prvid="20492" mask="(\d{3})\d{3}-\d{2}-\d{2}" maxLength="10" osmp_id="6400" name="Dalacom Pathword (АО Алтел)">
+       <mask value="(\d{3})\d{3}-\d{2}-\d{2}">700XXXXXXX</mask>
+    </prv>
+   <prv prvid="21181" mask="\w+" maxLength="11" osmp_id="6401" name="Digital TV г. Павлодар (Телевидение)"/>
+   <prv prvid="21158" mask="\d{5}" maxLength="5" osmp_id="6404" name="Digital TV г. Актау"/>
+   <prv prvid="21166" mask="\d{6}" maxLength="6" osmp_id="6605" name="Digital TV г. Павлодар (Интернет)"/>
+   <prv prvid="21136" mask="\w+" maxLength="25" osmp_id="6606" name="GSM - INFORM Казахстан"/>
+   <prv prvid="21108" mask="\w+" maxLength="20" osmp_id="6607" name="Garena Казахстан"/>
+   <prv prvid="21175" mask="\w+" maxLength="11" osmp_id="6608" name="GuidejetSoftTracker"/>
+   <prv prvid="21119" mask="\d+" maxLength="30" osmp_id="6621" name="Helloparty"/>
+   <prv prvid="21171" mask="\w+" maxLength="25" osmp_id="6622" name="Hosting.kz"/>
+   <prv prvid="21132" mask="\d+" maxLength="20" osmp_id="6624" name="I-Forward"/>
+   <prv prvid="21187" mask="\d+" maxLength="12" osmp_id="8485" name="INSIDE"/>
+   <prv prvid="21165" mask="\d{6}" maxLength="6" osmp_id="6625" name="Intertel"/>
+   <prv prvid="20493" mask="+7(\d{3})\d{3}-\d{2}-\d{2}" maxLength="10" osmp_id="5945" name="K-Cell">
+      <mask value="+7(\d{3})\d{3}-\d{2}-\d{2}">701XXXXXXX</mask>
+      <mask value="+7(\d{3})\d{3}-\d{2}-\d{2}">702XXXXXXX</mask>
+      <mask value="+7(\d{3})\d{3}-\d{2}-\d{2}">775XXXXXXX</mask>
+   </prv>
+   <prv prvid="21100" mask="\w+" maxLength="20" osmp_id="8501" name="Legalsoft Казахстан" />
+   <prv prvid="21168" mask="\d+" maxLength="10" osmp_id="6626" name="Mary Kay" />
+   <prv prvid="21145" mask="\d{7}" maxLength="7" osmp_id="" name="Mobile One"/>
+   <prv prvid="20551" mask="+7(\d{3})\d{3}-\d{2}-\d{2}" maxLength="10" osmp_id="5947" name="NEO">
+       <mask value="+7(\d{3})\d{3}-\d{2}-\d{2}">707XXXXXXX</mask>
+    </prv>
+   <prv prvid="21112" mask="\d{6}" maxLength="6" osmp_id="6679" name="NETRING-Service"/>
+   <prv prvid="21111" mask="\d{10}" maxLength="10" osmp_id="6681" name="Promtell - телефония"  />
+   <prv prvid="21110" mask="\d+" maxLength="10" osmp_id="6682" name="Promtell - услуги связи" />
+   <prv prvid="21109" mask="\d{6}" maxLength="6" osmp_id="6683" name="Promtell - пополнение телефонной карты" />
+   <prv prvid="21128" mask="IS014–\d{4}" maxLength="10" osmp_id="6685" name="Q.net"  />
+   <prv prvid="21178" mask="\w+" maxLength="25" osmp_id="8492" name="Rotaract club of Almaty" />
+   <prv prvid="21150" mask="\d+" maxLength="5" osmp_id="7308" name="SMARTNET Дополнительные услуги ТВ" />
+   <prv prvid="21157" mask="\d+" maxLength="5" osmp_id="7309" name="SMARTNET Услуги связи" />
+   <prv prvid="21102" mask="\d{10}" maxLength="10" osmp_id="7310" name="Sky Telecom Казахстан" />
+   <prv prvid="21188" mask="\d{10}" maxLength="10" osmp_id="8493" name="Slivki.kz" />
+   <prv prvid="21092" mask="\w+" maxLength="20" osmp_id="8494" name="TWINCOMM NETWORK" />
+   <prv prvid="21190" mask="+7(\d{3})\d{3}-\d{2}-\d{2}" maxLength="10" osmp_id="8491" name="Tele2 Казахстан">
+      <mask value="+7(\d{3})\d{3}-\d{2}-\d{2}">707XXXXXXX</mask>
+    </prv>
+   <prv prvid="21137" mask="\d+" maxLength="12" osmp_id="" name="The Last City" />
+   <prv prvid="21160" mask="\w+" maxLength="25" osmp_id="7311" name="Torgo - Магазин" />
+   <prv prvid="21159" mask="\w+" maxLength="25" osmp_id="7312" name="Torgo - Торговая база" />
+   <prv prvid="21126" mask="\w+" maxLength="10" osmp_id="7313" name="ZENIT.KZ"  />
+   <prv prvid="21177" mask="\d+" maxLength="12" osmp_id="7314" name="Алматы Домофон" />
+   <prv prvid="21192" mask="\d+" maxLength="5" osmp_id="8484" name="Ардана" />
+   <prv prvid="21131" mask="\d{6}" maxLength="6" osmp_id="7315" name="Астанателеком"/>
+   <prv prvid="21169" mask="\d{6}" maxLength="6" osmp_id="7316" name="Балхаш - Электронный Город"/>
+   <prv prvid="20479" mask="+7(\d{3})\d{3}-\d{2}-\d{2}" maxLength="10" osmp_id="5946" name="Билайн Казахстан" >
+      <mask value="+7(\d{3})\d{3}-\d{2}-\d{2}">777XXXXXXX</mask>
+      <mask value="+7(\d{3})\d{3}-\d{2}-\d{2}">705XXXXXXX</mask>
+      <mask value="+7(\d{3})\d{3}-\d{2}-\d{2}">771XXXXXXX</mask>
+    </prv>
+   <prv prvid="21146" mask="\d+" maxLength="10" osmp_id="7317" name="Ваш Домофон Казахстан" />
+   <prv prvid="21138" mask="\d{7}" maxLength="7" osmp_id="7348" name="Горгаз - сервис"  />
+   <prv prvid="21189" mask="(\d{3})\d{3}-\d{2}-\d{2}" maxLength="10" osmp_id="7349" name="ДОС"/>
+   <prv prvid="21106" mask="\w+" maxLength="11" osmp_id="7350" name="ЕШКО за дополнительные материалы" />
+   <prv prvid="21105" mask="\w+" maxLength="11" osmp_id="7351" name="ЕШКО за итоговый тест" />
+   <prv prvid="21104" mask="\w+" maxLength="11" osmp_id="7352" name="ЕШКО за обучение" />
+   <prv prvid="21098" mask="\w+" maxLength="20" osmp_id="8495" name="Елдин камкорлыгы"  />
+   <prv prvid="21124" mask="\d+" maxLength="10" osmp_id="8496" name="ЖКХ (Спецмашин, вывоз мусора г. Павлодар)" />
+   <prv prvid="21091" mask="\w+" maxLength="20" osmp_id="" name="Ивентис Телеком Казахстан" />
+   <prv prvid="21101" mask="\d{10}" maxLength="10" osmp_id="7353" name="Интернет Дома" />
+   <prv prvid="21186" mask="\d+" maxLength="11" osmp_id="8497" name="КИО"  />
+   <prv prvid="21170" mask="\d+" maxLength="10" osmp_id="8498" name="КазТелеТот"/>
+   <prv prvid="21174" mask="\d{10}" maxLength="10" osmp_id="7443" name="Казахтелеком"  />
+   <prv prvid="21163" mask="\d+" maxLength="15" osmp_id="7462" name="Караганда-биллинг - Вывоз мусора" />
+   <prv prvid="21139" mask="\d{6}" maxLength="6" osmp_id="" name="Кокшетау Энерго Центр" />
+   <prv prvid="21116" mask="\d+" maxLength="30" osmp_id="7463" name="Колеса"  />
+   <prv prvid="21117" mask="\d+" maxLength="30" osmp_id="7464" name="Крыша" />
+   <prv prvid="21176" mask="\w+" maxLength="11" osmp_id="7465" name="КупиКупон Казахстан" />
+   <prv prvid="21115" mask="\w+" maxLength="25" osmp_id="7602" name="Кызылорда Жарык Сервис" />
+   <prv prvid="21143" mask="\d{8}" maxLength="8" osmp_id="8489" name="Кызылорда Энергосервис"  />
+   <prv prvid="21094" mask="\d+" maxLength="16" osmp_id="7557" name="МАЭК - Казатомпром"  />
+   <prv prvid="21097" mask="\w+" maxLength="20" osmp_id="7558" name="Мамба Казахстан"  />
+   <prv prvid="21148" mask="\d{6}" maxLength="6" osmp_id="7588" name="Мюль Сервис" />
+   <prv prvid="21147" mask="\w+" maxLength="15" osmp_id="7603" name="НикоСиС"  />
+   <prv prvid="21099" mask="\w+" maxLength="20" osmp_id="7604" name="ОО ЗАМ-ЗАМ" />
+   <prv prvid="21180" mask="\w+" maxLength="11" osmp_id="7605" name="Окушылар.кз"  />
+   <prv prvid="21167" mask="\d+" maxLength="10" osmp_id="7610" name="Орал Су Арнасы" />
+   <prv prvid="21134" mask="\d+" maxLength="11" osmp_id="8488" name="Павлодарлифт" />
+   <prv prvid="21133" mask="\d{8}" maxLength="8" osmp_id="8487" name="РЭМлифт"  />
+   <prv prvid="21149" mask="\d{10}" maxLength="10" osmp_id="7612" name="СМС-Дневник (г. Караганда)" />
+   <prv prvid="21103" mask="\d{10}" maxLength="10" osmp_id="7613"name="СМС–Дневник (г. Уральск)" />
+   <prv prvid="21127" mask="\d{8}" maxLength="8" osmp_id="7615" name="СМС–Дневник (г. Рудный)"  />
+   <prv prvid="21121" mask="\d+" maxLength="10" osmp_id="7616" name="СМС-Дневник (г. Павлодар)"  />
+   <prv prvid="21120" mask="\d{10}" maxLength="10" osmp_id="7617" name="СМС-Дневник (г. Алматы)" />
+   <prv prvid="21122" mask="\d{10}" maxLength="10" osmp_id="7618" name="СМС-Дневник (г. Атырау)"  />
+   <prv prvid="21183" mask="\d{10}" maxLength="10" osmp_id="7619" name="СМС-дневник (г. Костанай)" />
+   <prv prvid="21156" mask="\d{8}" maxLength="8" osmp_id="7621" name="Семей Водоканал" />
+   <prv prvid="21090" mask="\d+" maxLength="10" osmp_id="7622" name="ТОО КЭЦ"  />
+   <prv prvid="21182" mask="\d+" maxLength="12" osmp_id="7623" name="Такси XXI век Казахстан" />
+   <prv prvid="21193" mask="\d+" maxLength="7" osmp_id="7815" name="Тотобет"  />
+   <prv prvid="21114" mask="\w+" maxLength="8" osmp_id="7816" name="Улы Асу" />
+   <prv prvid="21089" mask="\d+" maxLength="12" osmp_id="7817" name="ШыгысЭнерго - подключение"  />
+   <prv prvid="21088" mask="\d+" maxLength="12" osmp_id="7818" name="ШыгысЭнерго - штрафная неустойка"  />
+   <prv prvid="21086" mask="\d+" maxLength="12" osmp_id="7891" name="ШыгысЭнерго - электроэнергия" />
+   <prv prvid="21087" mask="\d+" maxLength="12" osmp_id="7892" name="ШыгысЭнерго – за акты" />
+   <prv prvid="21125" mask="\w+" maxLength="11" osmp_id="7894" name="Шымкент-онлайн"  />
+   <prv prvid="21162" mask="\d{10}" maxLength="10" osmp_id="7896" name="Электронная школа Казахстан" />
+   <prv prvid="21179" mask="\w+" maxLength="15" osmp_id="8486" name="Электронный дневник (г. Аксай)"  />
+   <prv prvid="21095" mask="\d+" maxLength="30" osmp_id="7899" name="вКонтакте Казахстан"  />
+   <prv prvid="21123" mask="\d+" maxLength="10" osmp_id="" name="Подписка на журнал (VOX Populi)"  />
+   </providers>
+</config>

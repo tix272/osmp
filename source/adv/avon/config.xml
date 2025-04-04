@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  ~ Copyright (c) 2011.
+  ~ @author: V.Pavkin
+  -->
+
+<script>
+	<config totalTime="1195" defaultIdleTime="120" version="1.1">
+
+		<session>
+			<var key="fake_pages.timerPopup.index" value="10"/>
+			<var key="fake_pages.timerPopup.stat" value="catalog"/>
+			<var key="fake_pages.retryPopup.index" value="11"/>
+			<var key="fake_pages.retryPopup.stat" value="catalog"/>
+			<var key="fake_pages.noRegPopup.index" value="12"/>
+			<var key="fake_pages.noRegPopup.stat" value="bad"/>
+
+			<var key="check_status.PrvId" value="323"/>
+			<var key="check_status.TermId" value="true"/>
+
+			<var key="settings.MGT_path_format" value="page:time"/>
+			<var key="settings.MGT_date_format" value="yyyy-mm-dd hh:nn:ss"/>
+			<var key="settings.MGT_exit_last_page" value="true"/>
+			<var key="settings.exclude_zero_page" value="true"/>
+
+			<var key="settings.project_name" value="Avon"/>
+			<var key="settings.project_version" value="2.2.3adv"/>
+		</session>
+
+		<statistic defaultProfile="bad">
+			<add>
+				<bad>
+					<var name="_extra_MGT_id_session" value="id_session"/>
+					<var name="_extra_MGT_login" value="login"/>
+					<var name="_extra_MGT_pass" value="pass"/>
+				</bad>
+				<catalog>
+					<includeProfile name="bad"/>
+					<var name="_extra_MGT_fio" value="fio"/>
+					<var name="_extra_MGT_cl_amount" value="cl_amount"/>
+					<var name="_extra_MGT_sum_dec" value="sum_dec"/>
+					<var name="_extra_MGT_sp_delivery" value="sp_delivery"/>
+					<var name="_extra_MGT_punkt" value="punkt"/>
+					<var name="_extra_MGT_delivery_date" value="delivery_date"/>
+					<var name="_extra_MGT_catalog1_name" value="catalog1_name"/>
+					<var name="_extra_MGT_catalog2_name" value="catalog2_name"/>
+					<var name="_extra_MGT_catalog1_amount" value="catalog1_amount"/>
+					<var name="_extra_MGT_catalog2_amount" value="catalog2_amount"/>
+				</catalog>
+				<cena>
+					<includeProfile name="catalog"/>
+					<var name="_extra_MGT_goods" value="goods"/>
+					<var name="_extra_MGT_cena" value="cena"/>
+				</cena>
+				<oplat>
+					<includeProfile name="cena"/>
+					<var name="_extra_MGT_oplat" value="oplat"/>
+				</oplat>
+			</add>
+			<object>
+				<variable name="prv_id" value="323"/>
+				<variable name="prv_name" value="Magitel"/>
+				<variable name="_extra_MGT_project_number" value="1045"/>
+				<variable name="_extra_no_print_check" value="true"/>
+				<variable name="_extra_fake_provider" value="true"/>
+				<variable name="_extra_result_int_page" value="return.html"/>
+				<variable name="_extra_MGT_exit" value="return.html"/>
+				<variable name="getAccountNumber" value="0000000000"/>
+			</object>
+			<bad vars="_extra_MGT_project_number,_extra_MGT_exit,_extra_MGT_date,_extra_MGT_time,_extra_MGT_path"
+				 post="return.html"/>
+			<catalog vars="_extra_MGT_project_number,_extra_MGT_exit,_extra_MGT_date,_extra_MGT_time,_extra_MGT_path"
+					 post="return.html"/>
+			<cena vars="_extra_MGT_project_number,_extra_MGT_exit,_extra_MGT_date,_extra_MGT_time,_extra_MGT_path"
+				  post="return.html"/>
+			<oplat vars="_extra_MGT_project_number,_extra_MGT_exit,_extra_MGT_date,_extra_MGT_time,_extra_MGT_path"
+				   post="return.html"/>
+
+		</statistic>
+
+		<defaultBackground type="0" name="bg_0"/>
+
+		<pages>
+
+			<!-- 0 -->
+			<page name="checkStatus">
+				<content type="2" name="CheckStatusPage">
+					<componentEvents>
+						<event name="fail" page="onlineFailPage"/>
+						<event name="success" page="loginPage"/>
+					</componentEvents>
+				</content>
+			</page>
+
+			<!--1, 2-->
+			<page name="loginPage" idleTime="180">
+				<content type="1" name="btn_exit" pos="50,855"/>
+				<content type="2" name="LoginPage">
+					<componentEvents>
+						<event name="next_action" page="selectOrderTypePage"/>
+						<event name="online_fail" page="onlineFailPage"/>
+					</componentEvents>
+				</content>
+			</page>
+
+			<!--3-->
+			<page name="selectOrderTypePage" index="3" stat="catalog">
+				<content type="2" name="SelectOrderTypePage">
+					<componentEvents>
+						<event name="next_action" page="orderPage"/>
+					</componentEvents>
+				</content>
+				<content type="1" name="btn_exit" pos="50,855"/>
+			</page>
+
+			<!--4-->
+			<page name="orderPage"  index="4" idleTime="300" stat="catalog">
+				<content type="2" name="OrderPage">
+					<componentEvents>
+						<event name="exit"/>
+						<event name="online_fail" page="onlineFailPage"/>
+						<event name="internet_offers" page="internetOffersPage"/>
+						<event name="final_order_page" page="finalOrderPage"/>
+					</componentEvents>
+				</content>
+				<content type="1" name="btn_back" page="selectOrderTypePage" pos="50,855"/>
+
+			</page>
+
+			<!--5-->
+			<page name="onlineFailPage"  index="5" stat="cena" idleTime="10">
+				<content type="0" name="online_fail_bg"/>
+				<content type="1" name="btn_exit" pos="50,855"/>
+			</page>
+
+			<!--6-->
+			<page name="internetOffersPage"  index="6" stat="cena" idleTime="300">
+				<content type="2" name="InternetOffersPage">
+					<componentEvents>
+						<event name="exit"/>
+						<event name="next_action" page="finalOrderPage"/>
+					</componentEvents>
+				</content>
+				<content type="1" name="btn_back" page="orderPage" pos="50,855"/>
+			</page>
+
+			<!--8-->
+			<page name="finalOrderPage"  index="7" stat="cena">
+				<content type="2" name="FinalOrderPage">
+					<componentEvents>
+						<event name="next_action" page="finalPage"/>
+						<event name="internet_offers" page="internetOffersPage"/>
+						<event name="order" page="orderPage"/>
+					</componentEvents>
+				</content>
+			</page>
+
+			<!--9-->
+			<page name="finalPage" index="8" stat="cena">
+				<content type="2" name="FinalPage"/>
+				<content type="1" name="btn_back" page="finalOrderPage" pos="50,855"/>
+				<content type="1" name="arr_right_medium_copy_3" page="thanksPage" pos="950,855"/>
+			</page>
+
+			<!--10-->
+			<page name="thanksPage"  index="9" stat="oplat" idleTime="10">
+				<content type="0" name="thanks_bg"/>
+				<content type="2" name="ThanksPage">
+					<componentEvents>
+						<event name="next_action"/>
+					</componentEvents>
+				</content>
+				<content type="1" name="btn_exit" pos="50,855"/>
+			</page>
+
+		</pages>
+
+	</config>
+</script>
+

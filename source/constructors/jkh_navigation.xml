@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects>
+	<object 
+		id="route" 
+		class="ru.mobw.coreas3.app.flow.navigation.route.RouteData"
+		>
+		<property name="navData">
+			<value>
+				<![CDATA[
+					@default = (@base, paymentEnd, exit);
+				          
+					@base = (
+						start,
+						%selectOferta,
+						enterAccount,
+						selectOwe,
+            			changePeriod>>@otherPeriod,
+						changeTypeSelect,
+						enterTelephone,						
+						%typeSelect	         				
+					);
+					
+					@otherPeriod = (changeOtherPeriod, selectOweMonth);
+					
+					%typeSelect = (
+						changeToWallet => changeToWallet,
+						changeToMobile => changeToMobile
+					);
+					
+					%selectOferta = (
+						changeToZKUOferta => zkuOferta,
+						changeToQIWIOferta => qiwiOferta
+					);          
+				]]>
+			</value>
+		</property>
+	</object>
+</objects>

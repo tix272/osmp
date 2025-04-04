@@ -1,0 +1,78 @@
+﻿@import url("base.css");
+
+#content
+{
+	width: 1280px;
+	height: 1024px;
+}
+
+#qiwi_logo
+{
+    width: 86px;
+    height: 140px;
+    margin: 24px 0px 0px 51px;
+    background: url('../img/ui/qiwicel.gif') no-repeat;
+}
+
+#block1
+{
+	width: 900px;
+	height: 301px;
+}
+
+#b1
+{
+	width: 32px;
+	height: 301px;
+	float: left;
+	background: url('../img/ui/vc/txs_left.gif') no-repeat;
+}
+
+#b2
+{
+	width: 836px;
+	height: 301px;
+	float: left;
+	text-align: center;
+	background: url('../img/ui/vc/txs_centre.gif');
+}
+
+#b3
+{
+	width: 32px;
+	height: 301px;
+	float: right;
+	background: url('../img/ui/vc/txs_right.gif') no-repeat;
+}
+
+#p1
+{
+	color: White;
+	font-size: 25px;
+	font-weight: bold;
+	margin-top: 35px;
+}
+
+#p2
+{
+	color: #cccccc;
+	font-size: 25px;
+	font-weight: lighter;
+	margin-top: 60px;
+}
+
+#p3
+{
+	color: #ff6622;
+	font-size: 47px;
+	font-weight: bold;
+	margin-top: 23px;
+}
+
+#menuBtn
+{
+	width: 301px;
+	height: 121px;
+	margin: 59px 0px 0px 0px;
+}
+

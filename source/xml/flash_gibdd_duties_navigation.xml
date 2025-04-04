@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects>
+	<object id="route" class="ru.mobw.coreas3.app.flow.navigation.route.RouteData">
+		<property name="navData">
+			<value>
+				<![CDATA[
+					
+					@default = (init, @main);
+					
+					@main = (type, %typeSwitch, default, %defaultSwitch, @common, final, %finalSwitch);
+					
+					%typeSwitch = (
+						exm => exm,
+						reg => reg,
+						information => information,
+						offertus => offertus
+					);
+					
+					%defaultSwitch = (
+						other => @division
+					);
+					
+					@division = (division, region);
+					
+					@common = (name, address, change, phone, method, %methodSwitch);
+					
+					%methodSwitch = (
+						cash => @cash,
+						balance => @balance
+					);
+					
+					@cash = (confirmation, cash);
+					@balance = (confirmation, t:pin, balance, %balanceSwitch);
+					
+					%balanceSwitch = (
+						insufficient => cash
+					);
+					
+					%finalSwitch = (
+						other => @main
+					);
+					
+				]]>
+			</value>
+		</property>
+	</object>
+</objects>

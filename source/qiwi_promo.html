@@ -1,0 +1,119 @@
+<html>
+<head>
+	<title>Validate_Confirm</title>
+	<meta http-equiv="content-type" content="text/html; charset=windows-1251" />
+	<meta http-equiv="pragma" content="no-cache" />
+	<meta http-equiv="refresh" content="180; URL=./index.html" />
+	<link rel="stylesheet" href="./css/qiwi_promo.css" type="text/css" />
+	<script type="text/javascript" src="./js/engine/utils.js"></script>
+	<script type="text/javascript" src="./js/engine/base.js"></script>
+	<script type="text/javascript" src="./js/engine/storage.js"></script>
+	<script type="text/javascript" src="./js/engine/advert.js"></script>
+	<script type="text/javascript" src="./advert_content.js"></script>
+	<script type="text/javascript">
+
+        function init() {
+		    var oBtn = new CImageButton(null, "search_btn", 'page_search', "SEARCH", "./img/ui/navigation/search_anim.gif");
+		    oBtn.attachListener("onClick", onSearchBtnClick);
+		    oBtn.render();
+		    startAdvert("qiwi_promo");
+        }
+
+        function onBackBtnClick() {
+            new CInnerShadow('btn_left');
+            setTimeout(function () { document.location.href = "./main.html"; }, 100);
+
+        }
+
+        function onMenuBtnClick() {
+            new CInnerShadow('btn_center');
+            setTimeout(function () { document.location.href = "./index.html"; }, 100);
+        }
+
+        function onSearchBtnClick() {
+            document.location.href = "./search_providers.html";
+        }
+
+    </script>
+</head>
+<body onload="init();">
+<div id="content" align="left">
+    <div id="container1">
+        <div id="qiwi_logo"><img alt="" src="./img/ui/qiwicel.gif" /></div>
+        <div id="advert_1"></div>
+    </div>
+    <div id="work_place">
+	<div id="page_search" style="width: 301px; height: 121px; float: left;"></div>
+	<div class="section-holder" style="float: right;">
+		<div class="section-icon" style="background: url('img/ui_item/icon_promo.gif')"></div>
+		<div class="section-title">Qiwi Promo</div>
+	</div>
+        <table cellpadding="0" cellspacing="0" border="0" width="100%" height="533" style="clear: both">
+            <tr>
+                <td align="center">
+                    <div class="advert" id="advert_2"></div>
+                </td>
+                <td align="center">
+                    <div class="advert" id="advert_3"></div>
+                </td>
+                <td align="center">
+                    <div class="advert" id="advert_4"></div>
+                </td>
+                <td align="center">
+                    <div class="advert" id="advert_5"></div>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <div class="advert" id="advert_6"></div>
+                </td>
+                <td align="center">
+                    <div class="advert" id="advert_7"></div>
+                </td>
+                <td align="center">
+                    <div class="advert" id="advert_8"></div>
+                </td>
+                <td align="center">
+                    <div class="advert" id="advert_9"></div>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <div class="advert" id="advert_10"></div>
+                </td>
+                <td align="center">
+                    <div class="advert" id="advert_11"></div>
+                </td>
+                <td align="center">
+                    <div class="advert" id="advert_12"></div>
+                </td>
+                <td align="center">
+                    <div class="advert" id="advert_13"></div>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <div class="advert" id="advert_14"></div>
+                </td>
+                <td align="center">
+                    <div class="advert" id="advert_15"></div>
+                </td>
+                <td align="center">
+                    <div class="advert" id="advert_16"></div>
+                </td>
+                <td align="center">
+                    <div class="advert" id="advert_17"></div>
+                </td>
+            </tr>      
+        </table>
+    </div>
+	<div id="btn_left" class="bottom-button-left" onclick="onBackBtnClick();">
+	    <img src="./img/ui/navigation/back.gif" />
+	</div>
+	<div id="btn_center" class="bottom-button-center" onclick="onMenuBtnClick();">
+	    <img src="./img/ui/navigation/menu.gif" />
+	</div>
+	<div id="btn_right" class="bottom-button-right"></div>
+</div>
+</body>
+</html>
